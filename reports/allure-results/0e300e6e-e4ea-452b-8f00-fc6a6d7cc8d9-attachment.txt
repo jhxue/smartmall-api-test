@@ -1,0 +1,77 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "devans@example.com",
+    "password": "!K3*7Pk&bx"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 2
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "devans@example.com",
+    "password": "!K3*7Pk&bx"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "907df481-1182-455c-8b5a-c32d9f3cf0bd"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/2, body:
+{
+    "phone": "429-561-2336",
+    "email": "deborah02@example.org",
+    "address": {
+        "city": "North Holly",
+        "street": "Carroll Crest",
+        "home_number": "83999"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/2, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Farmer%20Inc
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Farmer%20Inc, status: 201, body:
+{
+    "items": [],
+    "name": "Farmer Inc",
+    "uuid": "1"
+}
+2025-08-12 22:40:21 INFO Add new item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/item/Balanced%20mission-critical%20attitude, body:
+{
+    "name": "Balanced mission-critical attitude",
+    "price": 84747,
+    "store_id": "1"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/item/Balanced%20mission-critical%20attitude, status: 201, body:
+{
+    "itemID": 1,
+    "name": "Balanced mission-critical attitude",
+    "price": 84747
+}
+2025-08-12 22:40:21 INFO Add user balance
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/balance/2, body: {
+    "balance": 143135
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/balance/2, status: 201, body:
+{
+    "balance": 143135.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:40:21 INFO Pay item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/pay/2, body: {
+    "itemId": 1
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/pay/2, status: 200, body:
+{
+    "balance": 58388.0,
+    "message": "Payment successful",
+    "name": "Balanced mission-critical attitude",
+    "price": 84747.0
+}

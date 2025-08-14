@@ -1,0 +1,50 @@
+2025-08-12 22:33:39 [32mINFO[0m Register new user
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "joseph05@example.com",
+    "password": "&0JE$xbcS0"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 258
+}
+2025-08-12 22:33:39 [32mINFO[0m Access to store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "joseph05@example.com",
+    "password": "&0JE$xbcS0"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "08a682b6-7c94-4931-847f-be5fc7d823e7"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user info
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/258, body:
+{
+    "phone": "485-355-8663x94961",
+    "email": "gabrielle53@example.org",
+    "address": {
+        "city": "East Brandonborough",
+        "street": "Dickson Villages",
+        "home_number": "566"
+    }
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/258, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Beck%20Group
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Beck%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Beck Group",
+    "uuid": "147"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Beck%20Group
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Beck%20Group, status: 400, body:
+{
+    "message": "A store with name 'Beck Group' already exists."
+}

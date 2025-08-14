@@ -1,0 +1,74 @@
+2025-08-12 22:41:10 [32mINFO[0m Register new user
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "joseph95@example.org",
+    "password": "Hd0vIlQZB)"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 3
+}
+2025-08-12 22:41:10 [32mINFO[0m Access to store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "joseph95@example.org",
+    "password": "Hd0vIlQZB)"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "0d1d8338-4980-40fb-9911-5238d45e876d"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add user info
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/3, body:
+{
+    "phone": "(203)693-4520",
+    "email": "doughertyangela@example.com",
+    "address": {
+        "city": "Lake Carolshire",
+        "street": "Sosa Common",
+        "home_number": "9074"
+    }
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/3, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Smith-Keller
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Smith-Keller, status: 201, body:
+{
+    "items": [],
+    "name": "Smith-Keller",
+    "uuid": "2"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new item
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Operative%20discrete%20leverage, body:
+{
+    "name": "Operative discrete leverage",
+    "price": 62674,
+    "store_id": "2"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Operative%20discrete%20leverage, status: 201, body:
+{
+    "itemID": 2,
+    "name": "Operative discrete leverage",
+    "price": 62674
+}
+2025-08-12 22:41:10 [32mINFO[0m Add user balance
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/3, body: {
+    "balance": 127574
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/3, status: 201, body:
+{
+    "balance": 127574.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:41:10 [32mINFO[0m Pay item
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/3, body: {
+    "itemId": 2000
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/3, status: 404, body:
+{
+    "message": "Item not found"
+}

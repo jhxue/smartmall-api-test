@@ -1,0 +1,74 @@
+2025-08-12 22:43:16 [32mINFO[0m Register new user
+2025-08-12 22:43:16 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "vdean@example.org",
+    "password": "@RT4QMEa#4"
+}
+2025-08-12 22:43:16 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 34
+}
+2025-08-12 22:43:17 [32mINFO[0m Access to store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "vdean@example.org",
+    "password": "@RT4QMEa#4"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "320ca2df-96de-49a3-a4a6-b0aa04a4b71f"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user info
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/34, body:
+{
+    "phone": "001-915-747-6953",
+    "email": "xfernandez@example.com",
+    "address": {
+        "city": "Amyview",
+        "street": "Brooks Manor",
+        "home_number": "31445"
+    }
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/34, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Nelson%20and%20Sons
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Nelson%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Nelson and Sons",
+    "uuid": "20"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new item
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Mandatory%20object-oriented%20support, body:
+{
+    "name": "Mandatory object-oriented support",
+    "price": 64665,
+    "store_id": "20"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Mandatory%20object-oriented%20support, status: 201, body:
+{
+    "itemID": 13,
+    "name": "Mandatory object-oriented support",
+    "price": 64665
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user balance
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/34, body: {
+    "balance": 0
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/34, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:43:17 [32mINFO[0m Pay item
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/34, body: {
+    "itemId": 13
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/34, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 64665.0"
+}

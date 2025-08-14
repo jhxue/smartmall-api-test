@@ -1,0 +1,74 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "johnsonkevin@example.org",
+    "password": "!9RuJwpZcd"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 3
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "johnsonkevin@example.org",
+    "password": "!9RuJwpZcd"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "66a81d97-05b5-419c-84a1-17285907eff7"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/3, body:
+{
+    "phone": "6058873762",
+    "email": "angie79@example.net",
+    "address": {
+        "city": "North Michael",
+        "street": "Suzanne Views",
+        "home_number": "2351"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/3, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Chandler-Lee
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Chandler-Lee, status: 201, body:
+{
+    "items": [],
+    "name": "Chandler-Lee",
+    "uuid": "2"
+}
+2025-08-12 22:40:21 INFO Add new item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/item/Enterprise-wide%20contextually-based%20circuit, body:
+{
+    "name": "Enterprise-wide contextually-based circuit",
+    "price": 7113,
+    "store_id": "2"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/item/Enterprise-wide%20contextually-based%20circuit, status: 201, body:
+{
+    "itemID": 2,
+    "name": "Enterprise-wide contextually-based circuit",
+    "price": 7113
+}
+2025-08-12 22:40:21 INFO Add user balance
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/balance/3, body: {
+    "balance": 165625
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/balance/3, status: 201, body:
+{
+    "balance": 165625.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:40:21 INFO Pay item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/pay/3, body: {
+    "itemId": 2000
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/pay/3, status: 404, body:
+{
+    "message": "Item not found"
+}

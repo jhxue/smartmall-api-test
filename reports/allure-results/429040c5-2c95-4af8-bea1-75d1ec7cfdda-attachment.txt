@@ -1,0 +1,53 @@
+2025-08-12 22:35:46 [32mINFO[0m Register new user
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "brandi26@example.org",
+    "password": "h2$OiXAK$&"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 77
+}
+2025-08-12 22:35:46 [32mINFO[0m Access to store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "brandi26@example.org",
+    "password": "h2$OiXAK$&"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "fe5ace70-69cc-4299-a244-c8807123905a"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user info
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/77, body:
+{
+    "phone": "+1-974-292-5724",
+    "email": "wilkersonjoseph@example.net",
+    "address": {
+        "city": "Simonville",
+        "street": "Colin Key",
+        "home_number": "27576"
+    }
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/77, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Thompson,%20Mitchell%20and%20Blevins
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Thompson,%20Mitchell%20and%20Blevins, status: 201, body:
+{
+    "items": [],
+    "name": "Thompson, Mitchell and Blevins",
+    "uuid": "48"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user balance
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/77, body: {
+    "balance": 185199
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/77, status: 201, body:
+{
+    "balance": 185199.0,
+    "message": "Balance added successfully"
+}

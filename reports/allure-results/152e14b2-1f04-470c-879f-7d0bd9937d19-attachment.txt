@@ -1,0 +1,63 @@
+2025-08-12 21:34:38 [32mINFO[0m Register new user
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jonathanwilliamson@example.org",
+    "password": "_7Jl!@2gDr"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 11
+}
+2025-08-12 21:34:38 [32mINFO[0m Access to store
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jonathanwilliamson@example.org",
+    "password": "_7Jl!@2gDr"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "f6c92093-5e7f-44d4-aecc-a378b49ef0e4"
+}
+2025-08-12 21:34:38 [32mINFO[0m Add user info
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/11, body:
+{
+    "phone": "473-776-3229x95927",
+    "email": "ccarter@example.com",
+    "address": {
+        "city": "North Stephanieberg",
+        "street": "Jones Knolls",
+        "home_number": "375"
+    }
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/11, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:34:38 [32mINFO[0m Add new store
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Rush,%20Barrera%20and%20Griffin
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Rush,%20Barrera%20and%20Griffin, status: 201, body:
+{
+    "items": [],
+    "name": "Rush, Barrera and Griffin",
+    "uuid": "8"
+}
+2025-08-12 21:34:38 [32mINFO[0m Add new item
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Upgradable%20methodical%20website, body:
+{
+    "name": "Upgradable methodical website",
+    "price": 97847,
+    "store_id": "8"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Upgradable%20methodical%20website, status: 201, body:
+{
+    "itemID": 8,
+    "name": "Upgradable methodical website",
+    "price": 97847
+}
+2025-08-12 21:34:38 [32mINFO[0m Get item
+2025-08-12 21:34:38 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-12 21:34:38 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

@@ -1,0 +1,68 @@
+2025-08-12 22:41:10 [32mINFO[0m Register new user
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "davidstewart@example.net",
+    "password": "A+6L%mqg0h"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 8
+}
+2025-08-12 22:41:10 [32mINFO[0m Access to store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "davidstewart@example.net",
+    "password": "A+6L%mqg0h"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "46726ee2-7ed8-4140-a88c-7fd2c2d84f3e"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add user info
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/8, body:
+{
+    "phone": "569-503-7620x704",
+    "email": "tiffanywilliams@example.org",
+    "address": {
+        "city": "East Adrianaberg",
+        "street": "Perry Land",
+        "home_number": "3085"
+    }
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/8, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Jackson%20Inc
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Jackson%20Inc, status: 201, body:
+{
+    "items": [],
+    "name": "Jackson Inc",
+    "uuid": "5"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new item
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Future-proofed%20web-enabled%20policy, body:
+{
+    "name": "Future-proofed web-enabled policy",
+    "price": 21690,
+    "store_id": "5"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Future-proofed%20web-enabled%20policy, status: 201, body:
+{
+    "itemID": 5,
+    "name": "Future-proofed web-enabled policy",
+    "price": 21690
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new item
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Future-proofed%20web-enabled%20policy, body:
+{
+    "name": "Future-proofed web-enabled policy",
+    "price": 21690,
+    "store_id": "5"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Future-proofed%20web-enabled%20policy, status: 400, body:
+{
+    "message": "An item with name 'Future-proofed web-enabled policy' already exists."
+}

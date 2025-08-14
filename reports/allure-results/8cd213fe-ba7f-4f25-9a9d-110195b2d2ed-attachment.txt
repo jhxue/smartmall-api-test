@@ -1,0 +1,63 @@
+2025-08-12 22:35:46 [32mINFO[0m Register new user
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jknox@example.net",
+    "password": "Nmc0OpBEA&"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 71
+}
+2025-08-12 22:35:46 [32mINFO[0m Access to store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jknox@example.net",
+    "password": "Nmc0OpBEA&"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "c520fcec-3298-4b28-84ae-76a735b20f00"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user info
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/71, body:
+{
+    "phone": "+1-577-215-6224x612",
+    "email": "bfinley@example.com",
+    "address": {
+        "city": "Emmafurt",
+        "street": "Katie Mall",
+        "home_number": "11763"
+    }
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/71, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Smith,%20Wong%20and%20Forbes
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Smith,%20Wong%20and%20Forbes, status: 201, body:
+{
+    "items": [],
+    "name": "Smith, Wong and Forbes",
+    "uuid": "42"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new item
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Exclusive%20secondary%20hardware, body:
+{
+    "name": "Exclusive secondary hardware",
+    "price": 65090,
+    "store_id": "42"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Exclusive%20secondary%20hardware, status: 201, body:
+{
+    "itemID": 30,
+    "name": "Exclusive secondary hardware",
+    "price": 65090
+}
+2025-08-12 22:35:46 [32mINFO[0m Get item
+2025-08-12 22:35:46 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-12 22:35:46 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

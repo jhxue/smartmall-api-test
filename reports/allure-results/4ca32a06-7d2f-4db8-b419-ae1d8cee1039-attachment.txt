@@ -1,0 +1,52 @@
+2025-08-12 22:33:47 [32mINFO[0m Register new user
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "andrea87@example.org",
+    "password": "X^WU*7Z)yo"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 289
+}
+2025-08-12 22:33:47 [32mINFO[0m Access to store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "andrea87@example.org",
+    "password": "X^WU*7Z)yo"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "f02916e9-e2a8-40ae-8ad1-385d7d564ae9"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add user info
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/289, body:
+{
+    "phone": "001-762-943-6284x0375",
+    "email": "rjohnson@example.org",
+    "address": {
+        "city": "Hicksstad",
+        "street": "Antonio Island",
+        "home_number": "9547"
+    }
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/289, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Peterson%20Inc
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Peterson%20Inc, status: 201, body:
+{
+    "items": [],
+    "name": "Peterson Inc",
+    "uuid": "164"
+}
+2025-08-12 22:33:47 [32mINFO[0m Get store
+2025-08-12 22:33:47 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/Peterson%20Inc
+2025-08-12 22:33:47 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/Peterson%20Inc, status: 200, body:
+{
+    "items": [],
+    "name": "Peterson Inc",
+    "uuid": "164"
+}

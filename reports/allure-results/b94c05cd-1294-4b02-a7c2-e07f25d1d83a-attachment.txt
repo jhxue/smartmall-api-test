@@ -1,0 +1,74 @@
+2025-08-12 22:34:07 [32mINFO[0m Register new user
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "tammymorgan@example.net",
+    "password": "d%8I(af6!x"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 308
+}
+2025-08-12 22:34:07 [32mINFO[0m Access to store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "tammymorgan@example.net",
+    "password": "d%8I(af6!x"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "775d17ba-7761-4485-b096-bb5c42682722"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user info
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/308, body:
+{
+    "phone": "001-581-364-4892",
+    "email": "williamstevens@example.com",
+    "address": {
+        "city": "Angelaview",
+        "street": "Bianca Locks",
+        "home_number": "192"
+    }
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/308, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Allen%20LLC
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Allen%20LLC, status: 201, body:
+{
+    "items": [],
+    "name": "Allen LLC",
+    "uuid": "172"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new item
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Multi-tiered%20full-range%20secured%20line, body:
+{
+    "name": "Multi-tiered full-range secured line",
+    "price": 61105,
+    "store_id": "172"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Multi-tiered%20full-range%20secured%20line, status: 201, body:
+{
+    "itemID": 111,
+    "name": "Multi-tiered full-range secured line",
+    "price": 61105
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user balance
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/308, body: {
+    "balance": 0
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/308, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:34:07 [32mINFO[0m Pay item
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/308, body: {
+    "itemId": 111
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/308, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 61105.0"
+}

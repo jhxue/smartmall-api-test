@@ -1,0 +1,53 @@
+2025-08-12 22:34:07 [32mINFO[0m Register new user
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "awyatt@example.com",
+    "password": "8stFzIqm%d"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 321
+}
+2025-08-12 22:34:07 [32mINFO[0m Access to store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "awyatt@example.com",
+    "password": "8stFzIqm%d"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "d3fa31c9-197d-4cd8-a386-456822215ea9"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user info
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/321, body:
+{
+    "phone": "+1-501-682-2672",
+    "email": "jennyreed@example.com",
+    "address": {
+        "city": "Mandyton",
+        "street": "Miller Village",
+        "home_number": "82611"
+    }
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/321, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Marks-Cortez
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Marks-Cortez, status: 201, body:
+{
+    "items": [],
+    "name": "Marks-Cortez",
+    "uuid": "183"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user balance
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/321, body: {
+    "balance": 108965
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/321, status: 201, body:
+{
+    "balance": 108965.0,
+    "message": "Balance added successfully"
+}

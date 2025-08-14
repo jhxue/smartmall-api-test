@@ -1,0 +1,36 @@
+2025-08-12 22:33:39 [32mINFO[0m Register new user
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "lisamiller@example.net",
+    "password": "To+TG5uR*0"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 265
+}
+2025-08-12 22:33:39 [32mINFO[0m Access to store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "lisamiller@example.net",
+    "password": "To+TG5uR*0"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b4a81fce-72a9-47bf-ac64-1d7bab4de3fb"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user info
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/265, body:
+{
+    "phone": "(452)346-4439x125",
+    "email": "blackwelljohn@example.net",
+    "address": {
+        "city": "New Shirleyview",
+        "street": "Jacob Club",
+        "home_number": "32724"
+    }
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/265, status: 200, body:
+{
+    "message": "User info created successfully."
+}

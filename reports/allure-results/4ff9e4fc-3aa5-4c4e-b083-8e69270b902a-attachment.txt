@@ -1,0 +1,42 @@
+2025-08-12 22:43:17 [32mINFO[0m Register new user
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "williammoody@example.net",
+    "password": "@8sBNUUyrL"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 56
+}
+2025-08-12 22:43:17 [32mINFO[0m Access to store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "williammoody@example.net",
+    "password": "@8sBNUUyrL"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b9d5720c-ee3f-4699-ad05-8ce3c970624d"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user info
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/56, body:
+{
+    "phone": "330-656-8497x036",
+    "email": "michael01@example.com",
+    "address": {
+        "city": "Port Christinatown",
+        "street": "Brittany Street",
+        "home_number": "5331"
+    }
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/56, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:43:17 [32mINFO[0m Delete user info
+2025-08-12 22:43:17 [32mINFO[0m Request method: DELETE, url: http://127.0.0.1:8080/user_info/1000
+2025-08-12 22:43:17 [32mINFO[0m Response method: DELETE, url: http://127.0.0.1:8080/user_info/1000, status: 404, body:
+{
+    "message": "User info not found."
+}

@@ -1,0 +1,36 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "eric63@example.org",
+    "password": "yvl4QqeX$I"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 21
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "eric63@example.org",
+    "password": "yvl4QqeX$I"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "08e85668-8253-4500-b6af-7aa68b8ebdfe"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:22 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/21, body:
+{
+    "phone": "867.970.5113x9271",
+    "email": "trujillodiane@example.com",
+    "address": {
+        "city": "Port Allentown",
+        "street": "Jennifer Parkway",
+        "home_number": "78667"
+    }
+}
+2025-08-12 22:40:22 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/21, status: 200, body:
+{
+    "message": "User info created successfully."
+}

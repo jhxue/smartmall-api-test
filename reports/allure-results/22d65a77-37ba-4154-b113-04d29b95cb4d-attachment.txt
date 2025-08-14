@@ -1,0 +1,77 @@
+2025-08-12 22:33:39 [32mINFO[0m Register new user
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "yfigueroa@example.com",
+    "password": "yq2Tqik5_^"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 246
+}
+2025-08-12 22:33:39 [32mINFO[0m Access to store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "yfigueroa@example.com",
+    "password": "yq2Tqik5_^"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "9e6657c6-1987-40c9-aeda-c7b8f5ab4756"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user info
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/246, body:
+{
+    "phone": "(613)455-2708x4054",
+    "email": "johnpatton@example.org",
+    "address": {
+        "city": "South Brittany",
+        "street": "Anthony Mountain",
+        "home_number": "54082"
+    }
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/246, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Parker%20LLC
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Parker%20LLC, status: 201, body:
+{
+    "items": [],
+    "name": "Parker LLC",
+    "uuid": "137"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new item
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Quality-focused%20static%20utilization, body:
+{
+    "name": "Quality-focused static utilization",
+    "price": 12674,
+    "store_id": "137"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Quality-focused%20static%20utilization, status: 201, body:
+{
+    "itemID": 88,
+    "name": "Quality-focused static utilization",
+    "price": 12674
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user balance
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/246, body: {
+    "balance": 111751
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/246, status: 201, body:
+{
+    "balance": 111751.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:33:39 [32mINFO[0m Pay item
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/246, body: {
+    "itemId": 88
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/246, status: 200, body:
+{
+    "balance": 99077.0,
+    "message": "Payment successful",
+    "name": "Quality-focused static utilization",
+    "price": 12674.0
+}

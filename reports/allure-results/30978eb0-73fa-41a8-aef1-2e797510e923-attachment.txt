@@ -1,0 +1,68 @@
+2025-08-12 22:33:47 [32mINFO[0m Register new user
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "theresachavez@example.org",
+    "password": "f*c1ZIIf$p"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 282
+}
+2025-08-12 22:33:47 [32mINFO[0m Access to store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "theresachavez@example.org",
+    "password": "f*c1ZIIf$p"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "28560f3b-324e-4bc5-9599-7ea8994862d5"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add user info
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/282, body:
+{
+    "phone": "001-509-606-1647x19170",
+    "email": "william26@example.com",
+    "address": {
+        "city": "Laurenland",
+        "street": "Maldonado River",
+        "home_number": "116"
+    }
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/282, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Scott-Mitchell
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Scott-Mitchell, status: 201, body:
+{
+    "items": [],
+    "name": "Scott-Mitchell",
+    "uuid": "157"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new item
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Reduced%20fresh-thinking%20infrastructure, body:
+{
+    "name": "Reduced fresh-thinking infrastructure",
+    "price": 9708,
+    "store_id": "157"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Reduced%20fresh-thinking%20infrastructure, status: 201, body:
+{
+    "itemID": 102,
+    "name": "Reduced fresh-thinking infrastructure",
+    "price": 9708
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new item
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Reduced%20fresh-thinking%20infrastructure, body:
+{
+    "name": "Reduced fresh-thinking infrastructure",
+    "price": 9708,
+    "store_id": "157"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Reduced%20fresh-thinking%20infrastructure, status: 400, body:
+{
+    "message": "An item with name 'Reduced fresh-thinking infrastructure' already exists."
+}

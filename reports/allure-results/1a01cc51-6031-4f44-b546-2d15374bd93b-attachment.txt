@@ -1,0 +1,66 @@
+2025-08-12 22:33:47 [32mINFO[0m Register new user
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "perezashley@example.org",
+    "password": "w5SJ^FVO*O"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 284
+}
+2025-08-12 22:33:47 [32mINFO[0m Access to store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "perezashley@example.org",
+    "password": "w5SJ^FVO*O"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "3d471eb3-2043-4131-a05d-9268785020e9"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add user info
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/284, body:
+{
+    "phone": "(914)545-7284x4306",
+    "email": "alexandra73@example.org",
+    "address": {
+        "city": "Riveratown",
+        "street": "Mcintyre Row",
+        "home_number": "3189"
+    }
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/284, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Henson%20LLC
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Henson%20LLC, status: 201, body:
+{
+    "items": [],
+    "name": "Henson LLC",
+    "uuid": "159"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new item
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Total%20foreground%20strategy, body:
+{
+    "name": "Total foreground strategy",
+    "price": 31207,
+    "store_id": "159"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Total%20foreground%20strategy, status: 201, body:
+{
+    "itemID": 104,
+    "name": "Total foreground strategy",
+    "price": 31207
+}
+2025-08-12 22:33:47 [32mINFO[0m Get item
+2025-08-12 22:33:47 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Total%20foreground%20strategy
+2025-08-12 22:33:47 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Total%20foreground%20strategy, status: 200, body:
+{
+    "itemID": 104,
+    "name": "Total foreground strategy",
+    "price": 31207,
+    "store_id": "159"
+}

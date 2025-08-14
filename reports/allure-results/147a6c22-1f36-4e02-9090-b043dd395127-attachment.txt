@@ -1,0 +1,77 @@
+2025-08-12 22:29:49 [32mINFO[0m Register new user
+2025-08-12 22:29:49 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "joshuajones@example.org",
+    "password": "+eLk3$Kkps"
+}
+2025-08-12 22:29:49 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 94
+}
+2025-08-12 22:29:49 [32mINFO[0m Access to store
+2025-08-12 22:29:49 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "joshuajones@example.org",
+    "password": "+eLk3$Kkps"
+}
+2025-08-12 22:29:49 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "875b701c-38d4-4a61-a223-fb769b95f4b5"
+}
+2025-08-12 22:29:49 [32mINFO[0m Add user info
+2025-08-12 22:29:49 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/94, body:
+{
+    "phone": "9987512318",
+    "email": "perezcody@example.net",
+    "address": {
+        "city": "South Erin",
+        "street": "Alexander Ranch",
+        "home_number": "8993"
+    }
+}
+2025-08-12 22:29:49 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/94, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:29:49 [32mINFO[0m Add new store
+2025-08-12 22:29:49 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Brooks,%20Price%20and%20Austin
+2025-08-12 22:29:49 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Brooks,%20Price%20and%20Austin, status: 201, body:
+{
+    "items": [],
+    "name": "Brooks, Price and Austin",
+    "uuid": "52"
+}
+2025-08-12 22:29:49 [32mINFO[0m Add new item
+2025-08-12 22:29:49 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Synergized%20encompassing%20synergy, body:
+{
+    "name": "Synergized encompassing synergy",
+    "price": 22421,
+    "store_id": "52"
+}
+2025-08-12 22:29:49 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Synergized%20encompassing%20synergy, status: 201, body:
+{
+    "itemID": 34,
+    "name": "Synergized encompassing synergy",
+    "price": 22421
+}
+2025-08-12 22:29:49 [32mINFO[0m Add user balance
+2025-08-12 22:29:49 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/94, body: {
+    "balance": 132518
+}
+2025-08-12 22:29:49 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/94, status: 201, body:
+{
+    "balance": 132518.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:29:49 [32mINFO[0m Pay item
+2025-08-12 22:29:49 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/94, body: {
+    "itemId": 34
+}
+2025-08-12 22:29:49 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/94, status: 200, body:
+{
+    "balance": 110097.0,
+    "message": "Payment successful",
+    "name": "Synergized encompassing synergy",
+    "price": 22421.0
+}

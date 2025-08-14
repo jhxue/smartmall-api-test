@@ -1,0 +1,51 @@
+2025-08-12 22:30:43 [32mINFO[0m Register new user
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "lauren55@example.com",
+    "password": ")twW2DydYb"
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 205
+}
+2025-08-12 22:30:43 [32mINFO[0m Access to store
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "lauren55@example.com",
+    "password": ")twW2DydYb"
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "0d8ff273-4143-4ccf-9f5f-1425a9a8fb8f"
+}
+2025-08-12 22:30:43 [32mINFO[0m Add user info
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/205, body:
+{
+    "phone": "918-680-5416x380",
+    "email": "qwest@example.org",
+    "address": {
+        "city": "Smallfurt",
+        "street": "Thompson Mountain",
+        "home_number": "8594"
+    }
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/205, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:43 [32mINFO[0m Add user info
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/205, body:
+{
+    "phone": "918-680-5416x380",
+    "email": "qwest@example.org",
+    "address": {
+        "city": "Smallfurt",
+        "street": "Thompson Mountain",
+        "home_number": "8594"
+    }
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/205, status: 400, body:
+{
+    "message": "User info already exists"
+}

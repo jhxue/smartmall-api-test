@@ -1,0 +1,118 @@
+2025-08-14 18:05:54 [32mINFO[0m Register new user
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "lauren14@example.org",
+    "password": "GXx(p17yu*"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 12
+}
+2025-08-14 18:05:54 [32mINFO[0m Access to store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "lauren14@example.org",
+    "password": "GXx(p17yu*"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "def650dc-d6c1-454c-9b52-94bfaed8ac5d"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add user info
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/12, body:
+{
+    "phone": "235.867.6224",
+    "email": "vsantos@example.com",
+    "address": {
+        "city": "Arnoldtown",
+        "street": "Collins Cliff",
+        "home_number": "48891"
+    }
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/12, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Harris-Davis
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Harris-Davis, status: 201, body:
+{
+    "items": [],
+    "name": "Harris-Davis",
+    "uuid": "9"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new item
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Focused%20asymmetric%20website, body:
+{
+    "name": "Focused asymmetric website",
+    "price": 73678,
+    "store_id": "9"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Focused%20asymmetric%20website, status: 201, body:
+{
+    "itemID": 9,
+    "name": "Focused asymmetric website",
+    "price": 73678
+}
+2025-08-14 18:05:54 [32mINFO[0m Get all items
+2025-08-14 18:05:54 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/items
+2025-08-14 18:05:54 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/items, status: 200, body:
+{
+    "items": [
+        {
+            "itemID": 1,
+            "name": "Exclusive well-modulated knowledge user",
+            "price": 42557,
+            "store_id": "1"
+        },
+        {
+            "itemID": 2,
+            "name": "Business-focused systemic moderator",
+            "price": 6088,
+            "store_id": "2"
+        },
+        {
+            "itemID": 3,
+            "name": "Enterprise-wide methodical success",
+            "price": 71201,
+            "store_id": "3"
+        },
+        {
+            "itemID": 4,
+            "name": "Future-proofed transitional software",
+            "price": 13635,
+            "store_id": "4"
+        },
+        {
+            "itemID": 5,
+            "name": "Right-sized client-driven success",
+            "price": 33674,
+            "store_id": "5"
+        },
+        {
+            "itemID": 6,
+            "name": "Cross-platform logistical product",
+            "price": 16561,
+            "store_id": "6"
+        },
+        {
+            "itemID": 7,
+            "name": "Devolved dynamic Internet solution",
+            "price": 16889,
+            "store_id": "7"
+        },
+        {
+            "itemID": 8,
+            "name": "Self-enabling 3rdgeneration help-desk",
+            "price": 25392,
+            "store_id": "8"
+        },
+        {
+            "itemID": 9,
+            "name": "Focused asymmetric website",
+            "price": 73678,
+            "store_id": "9"
+        }
+    ]
+}

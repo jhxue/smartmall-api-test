@@ -1,0 +1,73 @@
+2025-08-12 22:35:46 [32mINFO[0m Register new user
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kburton@example.com",
+    "password": "@7E53qk5#y"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 79
+}
+2025-08-12 22:35:46 [32mINFO[0m Access to store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kburton@example.com",
+    "password": "@7E53qk5#y"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "77fb643a-20e1-45f9-8935-6efaafbe7744"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user info
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/79, body:
+{
+    "phone": "(780)469-4016x8342",
+    "email": "boyledavid@example.net",
+    "address": {
+        "city": "West Audrey",
+        "street": "Cory Ranch",
+        "home_number": "0115"
+    }
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/79, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Gomez-Ramirez
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Gomez-Ramirez, status: 201, body:
+{
+    "items": [],
+    "name": "Gomez-Ramirez",
+    "uuid": "50"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new item
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Innovative%20analyzing%20capacity, body:
+{
+    "name": "Innovative analyzing capacity",
+    "price": 97846,
+    "store_id": "50"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Innovative%20analyzing%20capacity, status: 201, body:
+{
+    "itemID": 32,
+    "name": "Innovative analyzing capacity",
+    "price": 97846
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user balance
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/79, body: {
+    "balance": 172813
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/79, status: 201, body:
+{
+    "balance": 172813.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:46 [32mINFO[0m Get user balance
+2025-08-12 22:35:46 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/79
+2025-08-12 22:35:46 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/79, status: 200, body:
+{
+    "balance": 172813.0,
+    "message": "Balance retrieved successfully"
+}

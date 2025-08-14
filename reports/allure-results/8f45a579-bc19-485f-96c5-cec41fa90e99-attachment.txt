@@ -1,0 +1,74 @@
+2025-08-13 20:22:36 [32mINFO[0m Register new user
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "elliskimberly@example.org",
+    "password": "_!n!1B#nF&"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 4
+}
+2025-08-13 20:22:36 [32mINFO[0m Access to store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "elliskimberly@example.org",
+    "password": "_!n!1B#nF&"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "9fbfd342-923d-4c52-b5ff-4dd8e9b4e35f"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add user info
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/4, body:
+{
+    "phone": "+1-969-566-4222x6708",
+    "email": "carlosdavis@example.net",
+    "address": {
+        "city": "Ramosmouth",
+        "street": "Stephanie Haven",
+        "home_number": "014"
+    }
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/4, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Cooley-Smith
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Cooley-Smith, status: 201, body:
+{
+    "items": [],
+    "name": "Cooley-Smith",
+    "uuid": "3"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new item
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Synergistic%205thgeneration%20utilization, body:
+{
+    "name": "Synergistic 5thgeneration utilization",
+    "price": 66294,
+    "store_id": "3"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Synergistic%205thgeneration%20utilization, status: 201, body:
+{
+    "itemID": 3,
+    "name": "Synergistic 5thgeneration utilization",
+    "price": 66294
+}
+2025-08-13 20:22:36 [32mINFO[0m Add user balance
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/4, body: {
+    "balance": 0
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/4, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-13 20:22:36 [32mINFO[0m Pay item
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/4, body: {
+    "itemId": 3
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/4, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 66294.0"
+}

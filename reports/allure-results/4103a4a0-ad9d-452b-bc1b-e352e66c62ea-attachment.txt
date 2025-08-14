@@ -1,0 +1,36 @@
+2025-08-12 22:41:11 [32mINFO[0m Register new user
+2025-08-12 22:41:11 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "eugenemcknight@example.net",
+    "password": "dI^7WTh7Gb"
+}
+2025-08-12 22:41:11 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 21
+}
+2025-08-12 22:41:11 [32mINFO[0m Access to store
+2025-08-12 22:41:11 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "eugenemcknight@example.net",
+    "password": "dI^7WTh7Gb"
+}
+2025-08-12 22:41:11 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "ecee3c97-d1cf-40e3-b24c-842bfa595ce7"
+}
+2025-08-12 22:41:11 [32mINFO[0m Add user info
+2025-08-12 22:41:11 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/21, body:
+{
+    "phone": "566.537.7500x673",
+    "email": "nortoncheryl@example.com",
+    "address": {
+        "city": "Port Gregory",
+        "street": "Carrie Overpass",
+        "home_number": "72242"
+    }
+}
+2025-08-12 22:41:11 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/21, status: 200, body:
+{
+    "message": "User info created successfully."
+}

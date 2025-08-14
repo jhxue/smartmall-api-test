@@ -1,0 +1,66 @@
+2025-08-12 22:06:03 [32mINFO[0m Register new user
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "allisonfox@example.net",
+    "password": "X0@2Is+t^5"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 72
+}
+2025-08-12 22:06:03 [32mINFO[0m Access to store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "allisonfox@example.net",
+    "password": "X0@2Is+t^5"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "932a335f-61cf-4d31-918c-b009b9772e1b"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user info
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/72, body:
+{
+    "phone": "6039597673",
+    "email": "jonesmary@example.org",
+    "address": {
+        "city": "New Zachary",
+        "street": "West Burg",
+        "home_number": "97013"
+    }
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/72, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Smith%20Ltd
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Smith%20Ltd, status: 201, body:
+{
+    "items": [],
+    "name": "Smith Ltd",
+    "uuid": "41"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new item
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Monitored%20static%20help-desk, body:
+{
+    "name": "Monitored static help-desk",
+    "price": 9775,
+    "store_id": "41"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Monitored%20static%20help-desk, status: 201, body:
+{
+    "itemID": 29,
+    "name": "Monitored static help-desk",
+    "price": 9775
+}
+2025-08-12 22:06:03 [32mINFO[0m Get item
+2025-08-12 22:06:03 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Monitored%20static%20help-desk
+2025-08-12 22:06:03 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Monitored%20static%20help-desk, status: 200, body:
+{
+    "itemID": 29,
+    "name": "Monitored static help-desk",
+    "price": 9775,
+    "store_id": "41"
+}

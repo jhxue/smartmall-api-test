@@ -1,0 +1,44 @@
+2025-08-13 20:22:36 [32mINFO[0m Register new user
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "marcia37@example.org",
+    "password": "_4c8PQdRXw"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 13
+}
+2025-08-13 20:22:36 [32mINFO[0m Access to store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "marcia37@example.org",
+    "password": "_4c8PQdRXw"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "3b07b8b1-5813-4859-aab5-1ebd9d723041"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add user info
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/13, body:
+{
+    "phone": "(362)346-5133x7520",
+    "email": "crystalpetersen@example.com",
+    "address": {
+        "city": "Lake Josephborough",
+        "street": "Zachary Glen",
+        "home_number": "0427"
+    }
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/13, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Knight%20LLC
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Knight%20LLC, status: 201, body:
+{
+    "items": [],
+    "name": "Knight LLC",
+    "uuid": "10"
+}

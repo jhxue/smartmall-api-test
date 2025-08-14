@@ -1,0 +1,71 @@
+2025-08-12 21:34:38 [32mINFO[0m Register new user
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "eclark@example.com",
+    "password": "+rGxx9D0O3"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 9
+}
+2025-08-12 21:34:38 [32mINFO[0m Access to store
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "eclark@example.com",
+    "password": "+rGxx9D0O3"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "7d130ba7-503f-44da-9d06-dcb0080d14d0"
+}
+2025-08-12 21:34:38 [32mINFO[0m Add user info
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/9, body:
+{
+    "phone": "7764082123",
+    "email": "david36@example.net",
+    "address": {
+        "city": "Lisaton",
+        "street": "Roberto Union",
+        "home_number": "826"
+    }
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/9, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:34:38 [32mINFO[0m Add new store
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Smith,%20Pena%20and%20Braun
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Smith,%20Pena%20and%20Braun, status: 201, body:
+{
+    "items": [],
+    "name": "Smith, Pena and Braun",
+    "uuid": "6"
+}
+2025-08-12 21:34:38 [32mINFO[0m Add new item
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Object-based%20system-worthy%20interface, body:
+{
+    "name": "Object-based system-worthy interface",
+    "price": 10860,
+    "store_id": "6"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Object-based%20system-worthy%20interface, status: 201, body:
+{
+    "itemID": 6,
+    "name": "Object-based system-worthy interface",
+    "price": 10860
+}
+2025-08-12 21:34:38 [32mINFO[0m Change item
+2025-08-12 21:34:38 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Object-based%20system-worthy%20interface, body:
+{
+    "name": "Object-based system-worthy interface",
+    "price": 70603,
+    "store_id": "6"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Object-based%20system-worthy%20interface, status: 200, body:
+{
+    "itemID": 6,
+    "name": "Object-based system-worthy interface",
+    "price": 70603,
+    "store_id": "6"
+}

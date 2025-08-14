@@ -1,0 +1,52 @@
+2025-08-12 22:35:20 [32mINFO[0m Register new user
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "umccarthy@example.org",
+    "password": "!g3JwLzXK@"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 18
+}
+2025-08-12 22:35:20 [32mINFO[0m Access to store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "umccarthy@example.org",
+    "password": "!g3JwLzXK@"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "6ea99a8d-0a6b-4895-a375-88b3408f2ec8"
+}
+2025-08-12 22:35:20 [32mINFO[0m Add user info
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/18, body:
+{
+    "phone": "526-908-6050x486",
+    "email": "polson@example.com",
+    "address": {
+        "city": "New Christinetown",
+        "street": "Henry River",
+        "home_number": "625"
+    }
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/18, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:20 [32mINFO[0m Add new store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Riddle%20Inc
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Riddle%20Inc, status: 201, body:
+{
+    "items": [],
+    "name": "Riddle Inc",
+    "uuid": "15"
+}
+2025-08-12 22:35:20 [32mINFO[0m Add user balance
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2000, body: {
+    "balance": 150144
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "User not found."
+}

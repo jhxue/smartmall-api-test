@@ -1,0 +1,74 @@
+2025-08-12 22:33:08 [32mINFO[0m Register new user
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "hwarner@example.net",
+    "password": "2z4o6ZyeR@"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 218
+}
+2025-08-12 22:33:08 [32mINFO[0m Access to store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "hwarner@example.net",
+    "password": "2z4o6ZyeR@"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "f165c64a-333d-4321-a783-748008a93e90"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add user info
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/218, body:
+{
+    "phone": "381-639-9003x414",
+    "email": "jackie38@example.net",
+    "address": {
+        "city": "Lake Susan",
+        "street": "Eric Land",
+        "home_number": "673"
+    }
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/218, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Carr,%20Wolfe%20and%20Mata
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Carr,%20Wolfe%20and%20Mata, status: 201, body:
+{
+    "items": [],
+    "name": "Carr, Wolfe and Mata",
+    "uuid": "122"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new item
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Pre-emptive%20transitional%20system%20engine, body:
+{
+    "name": "Pre-emptive transitional system engine",
+    "price": 51179,
+    "store_id": "122"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Pre-emptive%20transitional%20system%20engine, status: 201, body:
+{
+    "itemID": 80,
+    "name": "Pre-emptive transitional system engine",
+    "price": 51179
+}
+2025-08-12 22:33:08 [32mINFO[0m Add user balance
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/218, body: {
+    "balance": 0
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/218, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:33:08 [32mINFO[0m Pay item
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/218, body: {
+    "itemId": 80
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/218, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 51179.0"
+}

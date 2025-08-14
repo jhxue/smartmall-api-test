@@ -1,0 +1,77 @@
+2025-08-12 20:56:05 [32mINFO[0m Register new user
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "xyoder@example.org",
+    "password": "ic2I35gZ$%"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 2
+}
+2025-08-12 20:56:05 [32mINFO[0m Access to store
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "xyoder@example.org",
+    "password": "ic2I35gZ$%"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "3b2ef71d-e3ca-4cb9-9b44-56934c3369bc"
+}
+2025-08-12 20:56:05 [32mINFO[0m Add user info
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/2, body:
+{
+    "phone": "893-299-3493x694",
+    "email": "uraymond@example.org",
+    "address": {
+        "city": "Emilyburgh",
+        "street": "Jones Throughway",
+        "home_number": "75756"
+    }
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/2, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 20:56:05 [32mINFO[0m Add new store
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Morgan-Booth
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Morgan-Booth, status: 201, body:
+{
+    "items": [],
+    "name": "Morgan-Booth",
+    "uuid": "1"
+}
+2025-08-12 20:56:05 [32mINFO[0m Add new item
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Programmable%20modular%20archive, body:
+{
+    "name": "Programmable modular archive",
+    "price": 69787,
+    "store_id": "1"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Programmable%20modular%20archive, status: 201, body:
+{
+    "itemID": 1,
+    "name": "Programmable modular archive",
+    "price": 69787
+}
+2025-08-12 20:56:05 [32mINFO[0m Add user balance
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2, body: {
+    "balance": 197181
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2, status: 201, body:
+{
+    "balance": 197181.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 20:56:05 [32mINFO[0m Pay item
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/2, body: {
+    "itemId": 1
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/2, status: 200, body:
+{
+    "balance": 127394.0,
+    "message": "Payment successful",
+    "name": "Programmable modular archive",
+    "price": 69787.0
+}

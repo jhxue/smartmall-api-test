@@ -1,0 +1,66 @@
+2025-08-12 22:33:08 [32mINFO[0m Register new user
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "john57@example.com",
+    "password": "&2BR+kvapY"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 224
+}
+2025-08-12 22:33:08 [32mINFO[0m Access to store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "john57@example.com",
+    "password": "&2BR+kvapY"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b7c05104-1225-40d3-96ff-143935ae2cf3"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add user info
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/224, body:
+{
+    "phone": "001-927-905-3922",
+    "email": "hayeslindsey@example.net",
+    "address": {
+        "city": "West Randallshire",
+        "street": "Carolyn Inlet",
+        "home_number": "6073"
+    }
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/224, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Rose,%20Roberts%20and%20Rivas
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Rose,%20Roberts%20and%20Rivas, status: 201, body:
+{
+    "items": [],
+    "name": "Rose, Roberts and Rivas",
+    "uuid": "126"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new item
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Distributed%20context-sensitive%20function, body:
+{
+    "name": "Distributed context-sensitive function",
+    "price": 60309,
+    "store_id": "126"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Distributed%20context-sensitive%20function, status: 201, body:
+{
+    "itemID": 84,
+    "name": "Distributed context-sensitive function",
+    "price": 60309
+}
+2025-08-12 22:33:08 [32mINFO[0m Get item
+2025-08-12 22:33:08 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Distributed%20context-sensitive%20function
+2025-08-12 22:33:08 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Distributed%20context-sensitive%20function, status: 200, body:
+{
+    "itemID": 84,
+    "name": "Distributed context-sensitive function",
+    "price": 60309,
+    "store_id": "126"
+}

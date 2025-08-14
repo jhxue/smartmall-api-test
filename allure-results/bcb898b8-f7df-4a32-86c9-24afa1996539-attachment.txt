@@ -1,0 +1,118 @@
+2025-08-12 20:56:05 [32mINFO[0m Register new user
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "pcollins@example.net",
+    "password": "^T9O+OJjg!"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 12
+}
+2025-08-12 20:56:05 [32mINFO[0m Access to store
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "pcollins@example.net",
+    "password": "^T9O+OJjg!"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "8e0e9ebb-bb9b-4568-b47c-57737bc18303"
+}
+2025-08-12 20:56:05 [32mINFO[0m Add user info
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/12, body:
+{
+    "phone": "417-664-0622x526",
+    "email": "kimberlynelson@example.net",
+    "address": {
+        "city": "Pamelaport",
+        "street": "Michael Key",
+        "home_number": "083"
+    }
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/12, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 20:56:05 [32mINFO[0m Add new store
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Russell,%20Holmes%20and%20Daniel
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Russell,%20Holmes%20and%20Daniel, status: 201, body:
+{
+    "items": [],
+    "name": "Russell, Holmes and Daniel",
+    "uuid": "9"
+}
+2025-08-12 20:56:05 [32mINFO[0m Add new item
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Inverse%20well-modulated%20implementation, body:
+{
+    "name": "Inverse well-modulated implementation",
+    "price": 26556,
+    "store_id": "9"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Inverse%20well-modulated%20implementation, status: 201, body:
+{
+    "itemID": 9,
+    "name": "Inverse well-modulated implementation",
+    "price": 26556
+}
+2025-08-12 20:56:05 [32mINFO[0m Get all items
+2025-08-12 20:56:05 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/items
+2025-08-12 20:56:05 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/items, status: 200, body:
+{
+    "items": [
+        {
+            "itemID": 1,
+            "name": "Programmable modular archive",
+            "price": 69787,
+            "store_id": "1"
+        },
+        {
+            "itemID": 2,
+            "name": "Distributed grid-enabled moderator",
+            "price": 14301,
+            "store_id": "2"
+        },
+        {
+            "itemID": 3,
+            "name": "Self-enabling zero tolerance firmware",
+            "price": 63794,
+            "store_id": "3"
+        },
+        {
+            "itemID": 4,
+            "name": "Triple-buffered interactive strategy",
+            "price": 68444,
+            "store_id": "4"
+        },
+        {
+            "itemID": 5,
+            "name": "Profound mission-critical Graphic Interface",
+            "price": 18456,
+            "store_id": "5"
+        },
+        {
+            "itemID": 6,
+            "name": "Optional eco-centric matrix",
+            "price": 1902,
+            "store_id": "6"
+        },
+        {
+            "itemID": 7,
+            "name": "Pre-emptive asymmetric website",
+            "price": 53487,
+            "store_id": "7"
+        },
+        {
+            "itemID": 8,
+            "name": "Cross-group intangible hardware",
+            "price": 58642,
+            "store_id": "8"
+        },
+        {
+            "itemID": 9,
+            "name": "Inverse well-modulated implementation",
+            "price": 26556,
+            "store_id": "9"
+        }
+    ]
+}

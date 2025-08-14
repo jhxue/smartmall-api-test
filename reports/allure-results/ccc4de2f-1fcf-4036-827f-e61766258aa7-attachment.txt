@@ -1,0 +1,72 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kyle58@example.net",
+    "password": "*6RRuG^r#D"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 20
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kyle58@example.net",
+    "password": "*6RRuG^r#D"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "4e9f727c-030b-47a6-837f-addadbda2a98"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/20, body:
+{
+    "phone": "+1-484-950-7351x4855",
+    "email": "udiaz@example.com",
+    "address": {
+        "city": "North Michelle",
+        "street": "Haynes Oval",
+        "home_number": "1450"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/20, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Cooper%20LLC
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Cooper%20LLC, status: 201, body:
+{
+    "items": [],
+    "name": "Cooper LLC",
+    "uuid": "17"
+}
+2025-08-12 22:40:21 INFO Add new item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/item/Total%20zero%20administration%20open%20system, body:
+{
+    "name": "Total zero administration open system",
+    "price": 28174,
+    "store_id": "17"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/item/Total%20zero%20administration%20open%20system, status: 201, body:
+{
+    "itemID": 11,
+    "name": "Total zero administration open system",
+    "price": 28174
+}
+2025-08-12 22:40:21 INFO Add user balance
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/balance/20, body: {
+    "balance": 172923
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/balance/20, status: 201, body:
+{
+    "balance": 172923.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:40:21 INFO Get user balance
+2025-08-12 22:40:21 INFO Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:40:21 INFO Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

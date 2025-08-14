@@ -1,0 +1,118 @@
+2025-08-13 20:22:36 [32mINFO[0m Register new user
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "wingram@example.com",
+    "password": "Y8nzo0Zc_9"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 12
+}
+2025-08-13 20:22:36 [32mINFO[0m Access to store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "wingram@example.com",
+    "password": "Y8nzo0Zc_9"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "138726f3-29e1-47dd-8dc8-46ed1b86f894"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add user info
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/12, body:
+{
+    "phone": "522-968-9017",
+    "email": "kingdaniel@example.org",
+    "address": {
+        "city": "Lake Angelica",
+        "street": "Eric Track",
+        "home_number": "13547"
+    }
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/12, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Soto%20LLC
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Soto%20LLC, status: 201, body:
+{
+    "items": [],
+    "name": "Soto LLC",
+    "uuid": "9"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new item
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/User-friendly%20solution-oriented%20knowledge%20user, body:
+{
+    "name": "User-friendly solution-oriented knowledge user",
+    "price": 8753,
+    "store_id": "9"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/User-friendly%20solution-oriented%20knowledge%20user, status: 201, body:
+{
+    "itemID": 9,
+    "name": "User-friendly solution-oriented knowledge user",
+    "price": 8753
+}
+2025-08-13 20:22:36 [32mINFO[0m Get all items
+2025-08-13 20:22:36 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/items
+2025-08-13 20:22:36 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/items, status: 200, body:
+{
+    "items": [
+        {
+            "itemID": 1,
+            "name": "User-friendly composite strategy",
+            "price": 20529,
+            "store_id": "1"
+        },
+        {
+            "itemID": 2,
+            "name": "Streamlined multi-state hierarchy",
+            "price": 97734,
+            "store_id": "2"
+        },
+        {
+            "itemID": 3,
+            "name": "Synergistic 5thgeneration utilization",
+            "price": 66294,
+            "store_id": "3"
+        },
+        {
+            "itemID": 4,
+            "name": "Profound mobile initiative",
+            "price": 7707,
+            "store_id": "4"
+        },
+        {
+            "itemID": 5,
+            "name": "Enterprise-wide secondary solution",
+            "price": 33223,
+            "store_id": "5"
+        },
+        {
+            "itemID": 6,
+            "name": "Distributed optimal success",
+            "price": 22182,
+            "store_id": "6"
+        },
+        {
+            "itemID": 7,
+            "name": "Up-sized uniform ability",
+            "price": 81696,
+            "store_id": "7"
+        },
+        {
+            "itemID": 8,
+            "name": "Streamlined demand-driven intranet",
+            "price": 91980,
+            "store_id": "8"
+        },
+        {
+            "itemID": 9,
+            "name": "User-friendly solution-oriented knowledge user",
+            "price": 8753,
+            "store_id": "9"
+        }
+    ]
+}

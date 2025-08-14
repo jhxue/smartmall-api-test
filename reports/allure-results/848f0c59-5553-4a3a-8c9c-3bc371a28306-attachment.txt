@@ -1,0 +1,71 @@
+2025-08-12 22:33:39 [32mINFO[0m Register new user
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "donald73@example.com",
+    "password": "%C6kFRCfZm"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 253
+}
+2025-08-12 22:33:39 [32mINFO[0m Access to store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "donald73@example.com",
+    "password": "%C6kFRCfZm"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "54b418ac-055f-4cc5-a7df-d78abd288db7"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user info
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/253, body:
+{
+    "phone": "+1-857-445-7838x42861",
+    "email": "joseph67@example.com",
+    "address": {
+        "city": "West Patrick",
+        "street": "Terri Estate",
+        "home_number": "40755"
+    }
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/253, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Sims%20Inc
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Sims%20Inc, status: 201, body:
+{
+    "items": [],
+    "name": "Sims Inc",
+    "uuid": "142"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new item
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Advanced%20scalable%20leverage, body:
+{
+    "name": "Advanced scalable leverage",
+    "price": 11211,
+    "store_id": "142"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Advanced%20scalable%20leverage, status: 201, body:
+{
+    "itemID": 93,
+    "name": "Advanced scalable leverage",
+    "price": 11211
+}
+2025-08-12 22:33:39 [32mINFO[0m Change item
+2025-08-12 22:33:39 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Advanced%20scalable%20leverage, body:
+{
+    "name": "Advanced scalable leverage",
+    "price": 24870,
+    "store_id": "142"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Advanced%20scalable%20leverage, status: 200, body:
+{
+    "itemID": 93,
+    "name": "Advanced scalable leverage",
+    "price": 24870,
+    "store_id": "142"
+}

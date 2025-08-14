@@ -1,0 +1,50 @@
+2025-08-12 22:35:46 [32mINFO[0m Register new user
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "gillespiethomas@example.net",
+    "password": "w9j*jSE2!@"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 74
+}
+2025-08-12 22:35:46 [32mINFO[0m Access to store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "gillespiethomas@example.net",
+    "password": "w9j*jSE2!@"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b3358e71-4036-4a6c-a252-04c17d2941b3"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user info
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/74, body:
+{
+    "phone": "560-894-8972",
+    "email": "hwilliams@example.org",
+    "address": {
+        "city": "Piercefurt",
+        "street": "Cobb Crescent",
+        "home_number": "8445"
+    }
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/74, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Marshall,%20Horton%20and%20Chen
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Marshall,%20Horton%20and%20Chen, status: 201, body:
+{
+    "items": [],
+    "name": "Marshall, Horton and Chen",
+    "uuid": "45"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Marshall,%20Horton%20and%20Chen
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Marshall,%20Horton%20and%20Chen, status: 400, body:
+{
+    "message": "A store with name 'Marshall, Horton and Chen' already exists."
+}

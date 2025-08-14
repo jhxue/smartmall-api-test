@@ -1,0 +1,57 @@
+2025-08-12 21:49:44 [32mINFO[0m Register new user
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "pdecker@example.net",
+    "password": "N2PNx@Wx+h"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 37
+}
+2025-08-12 21:49:44 [32mINFO[0m Access to store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "pdecker@example.net",
+    "password": "N2PNx@Wx+h"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "f5895d65-8323-43c4-ab0b-530e159b4472"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add user info
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/37, body:
+{
+    "phone": "337.909.4444",
+    "email": "christinaluna@example.com",
+    "address": {
+        "city": "Justinchester",
+        "street": "Lane Skyway",
+        "home_number": "1492"
+    }
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/37, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Davis-Williams
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Davis-Williams, status: 201, body:
+{
+    "items": [],
+    "name": "Davis-Williams",
+    "uuid": "21"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new item
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Expanded%20zero%20administration%20portal, body:
+{
+    "name": "Expanded zero administration portal",
+    "price": 51699,
+    "store_id": "21"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Expanded%20zero%20administration%20portal, status: 201, body:
+{
+    "itemID": 15,
+    "name": "Expanded zero administration portal",
+    "price": 51699
+}

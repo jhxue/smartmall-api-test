@@ -1,0 +1,45 @@
+2025-08-12 22:29:50 [32mINFO[0m Register new user
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "duncantodd@example.com",
+    "password": "6@*1ER4e+m"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 111
+}
+2025-08-12 22:29:50 [32mINFO[0m Access to store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "duncantodd@example.com",
+    "password": "6@*1ER4e+m"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "57141437-28d6-4fd7-9d5b-6ec2fc96bb71"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add user info
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/111, body:
+{
+    "phone": "(495)275-2717",
+    "email": "ericrobinson@example.org",
+    "address": {
+        "city": "North Cherylbury",
+        "street": "Carlos Junction",
+        "home_number": "320"
+    }
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/111, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Mullins,%20Schmidt%20and%20Fox
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Mullins,%20Schmidt%20and%20Fox, status: 201, body:
+{
+    "items": [],
+    "name": "Mullins, Schmidt and Fox",
+    "uuid": "67"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new item

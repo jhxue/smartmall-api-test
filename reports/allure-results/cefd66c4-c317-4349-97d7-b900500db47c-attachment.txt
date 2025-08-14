@@ -1,0 +1,38 @@
+2025-08-14 18:05:54 [32mINFO[0m Register new user
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "carrmichael@example.net",
+    "password": "+)S32BlD&P"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 24
+}
+2025-08-14 18:05:54 [32mINFO[0m Access to store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "carrmichael@example.net",
+    "password": "+)S32BlD&P"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "6bce7cef-7728-42ad-945b-7f227f96f490"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add user info
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/24, body:
+{
+    "phone": "001-919-260-0151",
+    "email": "twoodward@example.org",
+    "address": {
+        "city": "Amandastad",
+        "street": "Tamara Pass",
+        "home_number": "5817"
+    }
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/24, status: 401, body:
+{
+    "description": "Request does not contain an access token",
+    "error": "Authorization Required",
+    "status_code": 401
+}

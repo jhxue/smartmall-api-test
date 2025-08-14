@@ -1,0 +1,66 @@
+2025-08-12 22:34:07 [32mINFO[0m Register new user
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "alan76@example.net",
+    "password": "*f$6I1jHo0"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 314
+}
+2025-08-12 22:34:07 [32mINFO[0m Access to store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "alan76@example.net",
+    "password": "*f$6I1jHo0"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "4f95c1cf-d7bf-4222-9042-1f4a06bfb299"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user info
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/314, body:
+{
+    "phone": "(736)364-3988",
+    "email": "acostacarrie@example.org",
+    "address": {
+        "city": "Wesleyview",
+        "street": "Patricia Branch",
+        "home_number": "00188"
+    }
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/314, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Garcia-Pham
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Garcia-Pham, status: 201, body:
+{
+    "items": [],
+    "name": "Garcia-Pham",
+    "uuid": "176"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new item
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Function-based%20human-resource%20structure, body:
+{
+    "name": "Function-based human-resource structure",
+    "price": 71283,
+    "store_id": "176"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Function-based%20human-resource%20structure, status: 201, body:
+{
+    "itemID": 115,
+    "name": "Function-based human-resource structure",
+    "price": 71283
+}
+2025-08-12 22:34:07 [32mINFO[0m Get item
+2025-08-12 22:34:07 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Function-based%20human-resource%20structure
+2025-08-12 22:34:07 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Function-based%20human-resource%20structure, status: 200, body:
+{
+    "itemID": 115,
+    "name": "Function-based human-resource structure",
+    "price": 71283,
+    "store_id": "176"
+}

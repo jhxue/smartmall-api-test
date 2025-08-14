@@ -1,0 +1,68 @@
+2025-08-12 22:35:46 [32mINFO[0m Register new user
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jacobphillips@example.net",
+    "password": "(TuSyffc@5"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 68
+}
+2025-08-12 22:35:46 [32mINFO[0m Access to store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jacobphillips@example.net",
+    "password": "(TuSyffc@5"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "bd7b7fe6-b9fc-44e9-a5f1-e0be43eb80f6"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user info
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/68, body:
+{
+    "phone": "9782013526",
+    "email": "smithjohn@example.com",
+    "address": {
+        "city": "New Ryan",
+        "street": "Reynolds Walk",
+        "home_number": "266"
+    }
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/68, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Gonzales%20Group
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Gonzales%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Gonzales Group",
+    "uuid": "39"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new item
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Extended%20heuristic%20project, body:
+{
+    "name": "Extended heuristic project",
+    "price": 77985,
+    "store_id": "39"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Extended%20heuristic%20project, status: 201, body:
+{
+    "itemID": 27,
+    "name": "Extended heuristic project",
+    "price": 77985
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new item
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Extended%20heuristic%20project, body:
+{
+    "name": "Extended heuristic project",
+    "price": 77985,
+    "store_id": "39"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Extended%20heuristic%20project, status: 400, body:
+{
+    "message": "An item with name 'Extended heuristic project' already exists."
+}

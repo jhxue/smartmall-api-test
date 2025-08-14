@@ -1,0 +1,74 @@
+2025-08-12 22:41:39 [32mINFO[0m Register new user
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "johnsonclinton@example.org",
+    "password": "58h6HyRQv%"
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 3
+}
+2025-08-12 22:41:39 [32mINFO[0m Access to store
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "johnsonclinton@example.org",
+    "password": "58h6HyRQv%"
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b0dde5fd-42e4-4552-b88f-53508989cc6a"
+}
+2025-08-12 22:41:39 [32mINFO[0m Add user info
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/3, body:
+{
+    "phone": "+1-728-347-3096",
+    "email": "alexis15@example.org",
+    "address": {
+        "city": "East Michaelborough",
+        "street": "Michelle Path",
+        "home_number": "42389"
+    }
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/3, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:39 [32mINFO[0m Add new store
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Black-Ramsey
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Black-Ramsey, status: 201, body:
+{
+    "items": [],
+    "name": "Black-Ramsey",
+    "uuid": "2"
+}
+2025-08-12 22:41:39 [32mINFO[0m Add new item
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Programmable%20system-worthy%20model, body:
+{
+    "name": "Programmable system-worthy model",
+    "price": 44045,
+    "store_id": "2"
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Programmable%20system-worthy%20model, status: 201, body:
+{
+    "itemID": 2,
+    "name": "Programmable system-worthy model",
+    "price": 44045
+}
+2025-08-12 22:41:39 [32mINFO[0m Add user balance
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/3, body: {
+    "balance": 111943
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/3, status: 201, body:
+{
+    "balance": 111943.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:41:39 [32mINFO[0m Pay item
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/3, body: {
+    "itemId": 2000
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/3, status: 404, body:
+{
+    "message": "Item not found"
+}

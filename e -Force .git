@@ -1,0 +1,28 @@
+af763ea jhxue jhxue@example.com Initial commit
+be2eb6a jhxue jhxue@example.com  初始化SmartMall API测试框架项目
+3488451 unknown jhxue77@gmail.com feat: 重构为SmartMall API测试框架 - 更新项目名称和文档
+50bf300 and-buk and.bukalov@gmail.com Fix README.md
+8320d70 and-buk and.bukalov@gmail.com Fix README.md
+377157b and-buk and.bukalov@gmail.com Update requirements file
+ee9be03 and-buk and.bukalov@gmail.com Update README content
+4570fba and-buk and.bukalov@gmail.com Update README content
+8e089b4 and-buk and.bukalov@gmail.com Mark tests as positive and negative
+278e99c and-buk and.bukalov@gmail.com Add tests.
+76cb4ac and-buk and.bukalov@gmail.com Update README content
+a1d8008 and-buk and.bukalov@gmail.com Add change item info test
+fb8d76b and-buk and.bukalov@gmail.com Update Item class
+0232ce5 and-buk and.bukalov@gmail.com Update UserStore class
+f4c2e28 and-buk and.bukalov@gmail.com Add item fixture
+710b254 and-buk and.bukalov@gmail.com Add build status badge
+06f03de and-buk and.bukalov@gmail.com Add item test
+52020a8 and-buk and.bukalov@gmail.com Add store test
+b492e28 and-buk and.bukalov@gmail.com Add user_info test
+f1533a5 and-buk and.bukalov@gmail.com Merge remote-tracking branch 'origin/main'
+e4a236b and-buk and.bukalov@gmail.com Add auth test
+a40c400 Andrei Bukalov 67602840+and-buk@users.noreply.github.com Create tests.yml
+7c44330 and-buk and.bukalov@gmail.com Add requirements.txt
+334edcf and-buk and.bukalov@gmail.com Add register user test
+c51fa40 and-buk and.bukalov@gmail.com Add pre-commit config file
+52aacc2 and-buk and.bukalov@gmail.com Add pytest.ini
+bd3718e and-buk and.bukalov@gmail.com Add gitignore
+8bc7d79 and-buk and.bukalov@gmail.com Initial commit

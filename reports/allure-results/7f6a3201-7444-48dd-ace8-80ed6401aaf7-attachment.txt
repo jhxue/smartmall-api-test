@@ -1,0 +1,72 @@
+2025-08-13 17:26:05 [32mINFO[0m Register new user
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "yvetteharrison@example.net",
+    "password": "*Um2BTaFi2"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 20
+}
+2025-08-13 17:26:05 [32mINFO[0m Access to store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "yvetteharrison@example.net",
+    "password": "*Um2BTaFi2"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "01a42b5d-bfd7-4f5e-9578-019df46d5ca8"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user info
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/20, body:
+{
+    "phone": "+1-898-846-6786x3476",
+    "email": "lrichardson@example.org",
+    "address": {
+        "city": "New Olivia",
+        "street": "Carol Drive",
+        "home_number": "862"
+    }
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/20, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Foster%20Ltd
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Foster%20Ltd, status: 201, body:
+{
+    "items": [],
+    "name": "Foster Ltd",
+    "uuid": "17"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new item
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Customizable%203rdgeneration%20protocol, body:
+{
+    "name": "Customizable 3rdgeneration protocol",
+    "price": 93218,
+    "store_id": "17"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Customizable%203rdgeneration%20protocol, status: 201, body:
+{
+    "itemID": 11,
+    "name": "Customizable 3rdgeneration protocol",
+    "price": 93218
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user balance
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/20, body: {
+    "balance": 198612
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/20, status: 201, body:
+{
+    "balance": 198612.0,
+    "message": "Balance added successfully"
+}
+2025-08-13 17:26:05 [32mINFO[0m Get user balance
+2025-08-13 17:26:05 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-13 17:26:05 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

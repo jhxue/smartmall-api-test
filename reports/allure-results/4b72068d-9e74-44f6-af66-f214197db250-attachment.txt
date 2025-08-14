@@ -1,0 +1,73 @@
+2025-08-12 22:33:39 [32mINFO[0m Register new user
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "hartkrista@example.com",
+    "password": "4U559lQa@D"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 263
+}
+2025-08-12 22:33:39 [32mINFO[0m Access to store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "hartkrista@example.com",
+    "password": "4U559lQa@D"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "844ef5de-4bd1-4e8b-946e-321ede5a973f"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user info
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/263, body:
+{
+    "phone": "646.768.7053x3859",
+    "email": "lucasjason@example.org",
+    "address": {
+        "city": "South John",
+        "street": "Hill Hills",
+        "home_number": "7369"
+    }
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/263, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Spencer-Macias
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Spencer-Macias, status: 201, body:
+{
+    "items": [],
+    "name": "Spencer-Macias",
+    "uuid": "152"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new item
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Re-contextualized%20discrete%20concept, body:
+{
+    "name": "Re-contextualized discrete concept",
+    "price": 94885,
+    "store_id": "152"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Re-contextualized%20discrete%20concept, status: 201, body:
+{
+    "itemID": 97,
+    "name": "Re-contextualized discrete concept",
+    "price": 94885
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user balance
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/263, body: {
+    "balance": 165821
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/263, status: 201, body:
+{
+    "balance": 165821.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:33:39 [32mINFO[0m Get user balance
+2025-08-12 22:33:39 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/263
+2025-08-12 22:33:39 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/263, status: 200, body:
+{
+    "balance": 165821.0,
+    "message": "Balance retrieved successfully"
+}

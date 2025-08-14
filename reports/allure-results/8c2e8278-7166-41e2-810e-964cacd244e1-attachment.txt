@@ -1,0 +1,66 @@
+2025-08-12 21:49:44 [32mINFO[0m Register new user
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "qmahoney@example.net",
+    "password": "M20t+LXw!r"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 40
+}
+2025-08-12 21:49:44 [32mINFO[0m Access to store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "qmahoney@example.net",
+    "password": "M20t+LXw!r"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "6f9d3371-a719-4d1e-8c68-395be5216efc"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add user info
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/40, body:
+{
+    "phone": "972-962-6814",
+    "email": "zbrown@example.org",
+    "address": {
+        "city": "Rodrigueztown",
+        "street": "Douglas Valley",
+        "home_number": "64583"
+    }
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/40, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Weber-Gilbert
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Weber-Gilbert, status: 201, body:
+{
+    "items": [],
+    "name": "Weber-Gilbert",
+    "uuid": "24"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new item
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Fundamental%20homogeneous%20hub, body:
+{
+    "name": "Fundamental homogeneous hub",
+    "price": 81894,
+    "store_id": "24"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Fundamental%20homogeneous%20hub, status: 201, body:
+{
+    "itemID": 18,
+    "name": "Fundamental homogeneous hub",
+    "price": 81894
+}
+2025-08-12 21:49:44 [32mINFO[0m Get item
+2025-08-12 21:49:44 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Fundamental%20homogeneous%20hub
+2025-08-12 21:49:44 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Fundamental%20homogeneous%20hub, status: 200, body:
+{
+    "itemID": 18,
+    "name": "Fundamental homogeneous hub",
+    "price": 81894,
+    "store_id": "24"
+}

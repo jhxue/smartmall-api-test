@@ -1,0 +1,71 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "davispeggy@example.org",
+    "password": "%277coF6zJ"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 9
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "davispeggy@example.org",
+    "password": "%277coF6zJ"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b6645724-ff2d-450c-acb6-4adac3ce149e"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/9, body:
+{
+    "phone": "940-958-5574",
+    "email": "amberrollins@example.org",
+    "address": {
+        "city": "Lucasmouth",
+        "street": "Steven Common",
+        "home_number": "946"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/9, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Mahoney,%20Norman%20and%20Glenn
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Mahoney,%20Norman%20and%20Glenn, status: 201, body:
+{
+    "items": [],
+    "name": "Mahoney, Norman and Glenn",
+    "uuid": "6"
+}
+2025-08-12 22:40:21 INFO Add new item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/item/Distributed%20regional%20matrix, body:
+{
+    "name": "Distributed regional matrix",
+    "price": 52010,
+    "store_id": "6"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/item/Distributed%20regional%20matrix, status: 201, body:
+{
+    "itemID": 6,
+    "name": "Distributed regional matrix",
+    "price": 52010
+}
+2025-08-12 22:40:21 INFO Change item
+2025-08-12 22:40:21 INFO Request method: PUT, url: http://127.0.0.1:8080/item/Distributed%20regional%20matrix, body:
+{
+    "name": "Distributed regional matrix",
+    "price": 53315,
+    "store_id": "6"
+}
+2025-08-12 22:40:21 INFO Response method: PUT, url: http://127.0.0.1:8080/item/Distributed%20regional%20matrix, status: 200, body:
+{
+    "itemID": 6,
+    "name": "Distributed regional matrix",
+    "price": 53315,
+    "store_id": "6"
+}

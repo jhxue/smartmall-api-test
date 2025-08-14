@@ -1,0 +1,52 @@
+2025-08-12 22:33:39 [32mINFO[0m Register new user
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "mercadonicole@example.com",
+    "password": "4nv^&IyN)u"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 262
+}
+2025-08-12 22:33:39 [32mINFO[0m Access to store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "mercadonicole@example.com",
+    "password": "4nv^&IyN)u"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "5be4ac44-4f05-43ab-9e5d-f24eddd48597"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user info
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/262, body:
+{
+    "phone": "001-206-988-1546x9224",
+    "email": "johnsonmary@example.com",
+    "address": {
+        "city": "West William",
+        "street": "Ward Roads",
+        "home_number": "6063"
+    }
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/262, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Forbes-Young
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Forbes-Young, status: 201, body:
+{
+    "items": [],
+    "name": "Forbes-Young",
+    "uuid": "151"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user balance
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2000, body: {
+    "balance": 166834
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "User not found."
+}

@@ -1,0 +1,57 @@
+2025-08-12 22:35:37 [32mINFO[0m Register new user
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "tnavarro@example.net",
+    "password": "+d58VYsQ(+"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 37
+}
+2025-08-12 22:35:37 [32mINFO[0m Access to store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "tnavarro@example.net",
+    "password": "+d58VYsQ(+"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "e7367c67-08cf-489d-9431-2a0b7c40860c"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add user info
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/37, body:
+{
+    "phone": "6327583963",
+    "email": "greenmelissa@example.com",
+    "address": {
+        "city": "East Matthewburgh",
+        "street": "Marquez Dale",
+        "home_number": "2950"
+    }
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/37, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Silva,%20Moore%20and%20Lee
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Silva,%20Moore%20and%20Lee, status: 201, body:
+{
+    "items": [],
+    "name": "Silva, Moore and Lee",
+    "uuid": "21"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new item
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Organized%20non-volatile%20strategy, body:
+{
+    "name": "Organized non-volatile strategy",
+    "price": 4485,
+    "store_id": "21"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Organized%20non-volatile%20strategy, status: 201, body:
+{
+    "itemID": 15,
+    "name": "Organized non-volatile strategy",
+    "price": 4485
+}

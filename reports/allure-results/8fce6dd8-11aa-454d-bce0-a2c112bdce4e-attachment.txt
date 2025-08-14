@@ -1,0 +1,22 @@
+2025-08-12 22:40:21 INFO Start SmartMall API tests, url is http://127.0.0.1:8080
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "lewisallen@example.org",
+    "password": "+dF8V(wWF("
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 1
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "lewisallen@example.org",
+    "password": "+dF8V(wWF("
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "7cc07835-b959-46d6-b9bb-4b60820e682c"
+}

@@ -1,0 +1,71 @@
+2025-08-12 22:43:17 [32mINFO[0m Register new user
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "clarkcristian@example.net",
+    "password": "382AyX_E%n"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 39
+}
+2025-08-12 22:43:17 [32mINFO[0m Access to store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "clarkcristian@example.net",
+    "password": "382AyX_E%n"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "fdcabe56-b976-41f6-b4d6-dd4dfabb95f6"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user info
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/39, body:
+{
+    "phone": "001-587-744-3249x769",
+    "email": "hardinkatherine@example.org",
+    "address": {
+        "city": "Lake Sierraburgh",
+        "street": "Lee Brooks",
+        "home_number": "85478"
+    }
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/39, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Church%20Group
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Church%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Church Group",
+    "uuid": "23"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new item
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Grass-roots%20intangible%20approach, body:
+{
+    "name": "Grass-roots intangible approach",
+    "price": 75593,
+    "store_id": "23"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Grass-roots%20intangible%20approach, status: 201, body:
+{
+    "itemID": 16,
+    "name": "Grass-roots intangible approach",
+    "price": 75593
+}
+2025-08-12 22:43:17 [32mINFO[0m Change item
+2025-08-12 22:43:17 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Grass-roots%20intangible%20approach, body:
+{
+    "name": "Grass-roots intangible approach",
+    "price": 37648,
+    "store_id": "23"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Grass-roots%20intangible%20approach, status: 200, body:
+{
+    "itemID": 16,
+    "name": "Grass-roots intangible approach",
+    "price": 37648,
+    "store_id": "23"
+}

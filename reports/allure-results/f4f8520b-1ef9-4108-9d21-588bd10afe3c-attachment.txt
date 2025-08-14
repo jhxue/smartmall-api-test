@@ -1,0 +1,74 @@
+2025-08-12 22:30:29 [32mINFO[0m Register new user
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "raymond39@example.org",
+    "password": "+4y+UaWbY%"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 126
+}
+2025-08-12 22:30:29 [32mINFO[0m Access to store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "raymond39@example.org",
+    "password": "+4y+UaWbY%"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "9a3fe743-cb59-43f0-8c9f-0ca3b80c6048"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user info
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/126, body:
+{
+    "phone": "226.256.5011x6434",
+    "email": "johnsonsylvia@example.org",
+    "address": {
+        "city": "Estradafurt",
+        "street": "Baker Forge",
+        "home_number": "987"
+    }
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/126, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Hunter-Miller
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Hunter-Miller, status: 201, body:
+{
+    "items": [],
+    "name": "Hunter-Miller",
+    "uuid": "71"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new item
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Quality-focused%20local%20emulation, body:
+{
+    "name": "Quality-focused local emulation",
+    "price": 71391,
+    "store_id": "71"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Quality-focused%20local%20emulation, status: 201, body:
+{
+    "itemID": 46,
+    "name": "Quality-focused local emulation",
+    "price": 71391
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user balance
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/126, body: {
+    "balance": 0
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/126, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:30:29 [32mINFO[0m Pay item
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/126, body: {
+    "itemId": 46
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/126, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 71391.0"
+}

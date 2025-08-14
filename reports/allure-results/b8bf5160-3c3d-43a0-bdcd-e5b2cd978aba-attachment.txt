@@ -1,0 +1,50 @@
+2025-08-14 18:05:54 [32mINFO[0m Register new user
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "thomas73@example.net",
+    "password": "&4+SQfhu&z"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 14
+}
+2025-08-14 18:05:54 [32mINFO[0m Access to store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "thomas73@example.net",
+    "password": "&4+SQfhu&z"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "a7de6677-232b-408f-b21b-785307492fe8"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add user info
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/14, body:
+{
+    "phone": "(962)735-0455",
+    "email": "steelewilliam@example.net",
+    "address": {
+        "city": "East Carol",
+        "street": "Zachary Estates",
+        "home_number": "36144"
+    }
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/14, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Glenn%20and%20Sons
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Glenn%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Glenn and Sons",
+    "uuid": "11"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Glenn%20and%20Sons
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Glenn%20and%20Sons, status: 400, body:
+{
+    "message": "A store with name 'Glenn and Sons' already exists."
+}

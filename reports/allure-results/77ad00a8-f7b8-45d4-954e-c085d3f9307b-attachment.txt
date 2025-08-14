@@ -1,0 +1,74 @@
+2025-08-12 22:30:42 [32mINFO[0m Register new user
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "raysharon@example.com",
+    "password": "mh7VjfsG*)"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 185
+}
+2025-08-12 22:30:42 [32mINFO[0m Access to store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "raysharon@example.com",
+    "password": "mh7VjfsG*)"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b31a0e0d-bdac-4f8f-99fa-d4999ad1e571"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add user info
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/185, body:
+{
+    "phone": "922-997-3472x102",
+    "email": "warrenbenjamin@example.org",
+    "address": {
+        "city": "South Loriport",
+        "street": "Smith Station",
+        "home_number": "659"
+    }
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/185, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Garza,%20Martin%20and%20Martinez
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Garza,%20Martin%20and%20Martinez, status: 201, body:
+{
+    "items": [],
+    "name": "Garza, Martin and Martinez",
+    "uuid": "103"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new item
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Self-enabling%20leadingedge%20protocol, body:
+{
+    "name": "Self-enabling leadingedge protocol",
+    "price": 23663,
+    "store_id": "103"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Self-enabling%20leadingedge%20protocol, status: 201, body:
+{
+    "itemID": 67,
+    "name": "Self-enabling leadingedge protocol",
+    "price": 23663
+}
+2025-08-12 22:30:42 [32mINFO[0m Add user balance
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/185, body: {
+    "balance": 171665
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/185, status: 201, body:
+{
+    "balance": 171665.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:30:42 [32mINFO[0m Pay item
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/185, body: {
+    "itemId": 2000
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/185, status: 404, body:
+{
+    "message": "Item not found"
+}

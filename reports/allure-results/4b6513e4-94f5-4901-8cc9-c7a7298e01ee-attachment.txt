@@ -1,0 +1,74 @@
+2025-08-12 22:30:42 [32mINFO[0m Register new user
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jonesbrandon@example.org",
+    "password": "*45MQAvKHv"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 186
+}
+2025-08-12 22:30:42 [32mINFO[0m Access to store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jonesbrandon@example.org",
+    "password": "*45MQAvKHv"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "0d9527eb-eb7f-4510-b28b-82cf00f91ee3"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add user info
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/186, body:
+{
+    "phone": "+1-575-464-0748x7312",
+    "email": "meganwade@example.net",
+    "address": {
+        "city": "New Lisa",
+        "street": "Thomas Streets",
+        "home_number": "743"
+    }
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/186, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Greene-Price
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Greene-Price, status: 201, body:
+{
+    "items": [],
+    "name": "Greene-Price",
+    "uuid": "104"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new item
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Synergized%20asymmetric%20knowledge%20user, body:
+{
+    "name": "Synergized asymmetric knowledge user",
+    "price": 2690,
+    "store_id": "104"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Synergized%20asymmetric%20knowledge%20user, status: 201, body:
+{
+    "itemID": 68,
+    "name": "Synergized asymmetric knowledge user",
+    "price": 2690
+}
+2025-08-12 22:30:42 [32mINFO[0m Add user balance
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/186, body: {
+    "balance": 0
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/186, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:30:42 [32mINFO[0m Pay item
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/186, body: {
+    "itemId": 68
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/186, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 2690.0"
+}

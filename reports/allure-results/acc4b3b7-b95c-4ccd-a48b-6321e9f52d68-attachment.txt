@@ -1,0 +1,52 @@
+2025-08-13 20:22:37 [32mINFO[0m Register new user
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ianbrown@example.net",
+    "password": "$XPL$zLh7L"
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 18
+}
+2025-08-13 20:22:37 [32mINFO[0m Access to store
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ianbrown@example.net",
+    "password": "$XPL$zLh7L"
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b4b6a35e-39bc-49aa-a5a8-972a847b9d3c"
+}
+2025-08-13 20:22:37 [32mINFO[0m Add user info
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/18, body:
+{
+    "phone": "648-305-0453x258",
+    "email": "gina51@example.net",
+    "address": {
+        "city": "East Samanthastad",
+        "street": "Jenny Ridges",
+        "home_number": "90888"
+    }
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/18, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 20:22:37 [32mINFO[0m Add new store
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Weaver-Riley
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Weaver-Riley, status: 201, body:
+{
+    "items": [],
+    "name": "Weaver-Riley",
+    "uuid": "15"
+}
+2025-08-13 20:22:37 [32mINFO[0m Add user balance
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2000, body: {
+    "balance": 140492
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "User not found."
+}

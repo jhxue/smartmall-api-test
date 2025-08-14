@@ -1,0 +1,77 @@
+2025-08-12 22:34:07 [32mINFO[0m Register new user
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jill24@example.org",
+    "password": "D@6NU1*n$Z"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 306
+}
+2025-08-12 22:34:07 [32mINFO[0m Access to store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jill24@example.org",
+    "password": "D@6NU1*n$Z"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "976c1238-30e0-4b3c-a275-fc36e4590c85"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user info
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/306, body:
+{
+    "phone": "398-714-1359",
+    "email": "andersonjulia@example.org",
+    "address": {
+        "city": "Sydneyview",
+        "street": "Wagner Lodge",
+        "home_number": "7869"
+    }
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/306, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Macdonald%20and%20Sons
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Macdonald%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Macdonald and Sons",
+    "uuid": "170"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new item
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Virtual%20motivating%20projection, body:
+{
+    "name": "Virtual motivating projection",
+    "price": 49913,
+    "store_id": "170"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Virtual%20motivating%20projection, status: 201, body:
+{
+    "itemID": 109,
+    "name": "Virtual motivating projection",
+    "price": 49913
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user balance
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/306, body: {
+    "balance": 121982
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/306, status: 201, body:
+{
+    "balance": 121982.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:34:07 [32mINFO[0m Pay item
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/306, body: {
+    "itemId": 109
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/306, status: 200, body:
+{
+    "balance": 72069.0,
+    "message": "Payment successful",
+    "name": "Virtual motivating projection",
+    "price": 49913.0
+}

@@ -1,0 +1,74 @@
+2025-08-12 22:29:49 [32mINFO[0m Register new user
+2025-08-12 22:29:49 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "rgreene@example.net",
+    "password": "_PdE2Z*aib"
+}
+2025-08-12 22:29:49 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 95
+}
+2025-08-12 22:29:49 [32mINFO[0m Access to store
+2025-08-12 22:29:49 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "rgreene@example.net",
+    "password": "_PdE2Z*aib"
+}
+2025-08-12 22:29:49 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "37d7ebcf-5e99-4bdb-b4cd-a6e853fdd2bd"
+}
+2025-08-12 22:29:49 [32mINFO[0m Add user info
+2025-08-12 22:29:49 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/95, body:
+{
+    "phone": "868-717-5544",
+    "email": "sschwartz@example.net",
+    "address": {
+        "city": "New Laurentown",
+        "street": "Nicholson Pike",
+        "home_number": "64328"
+    }
+}
+2025-08-12 22:29:49 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/95, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:29:49 [32mINFO[0m Add new store
+2025-08-12 22:29:49 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Berry,%20Wilson%20and%20Johnson
+2025-08-12 22:29:49 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Berry,%20Wilson%20and%20Johnson, status: 201, body:
+{
+    "items": [],
+    "name": "Berry, Wilson and Johnson",
+    "uuid": "53"
+}
+2025-08-12 22:29:49 [32mINFO[0m Add new item
+2025-08-12 22:29:49 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Intuitive%20optimal%20challenge, body:
+{
+    "name": "Intuitive optimal challenge",
+    "price": 69102,
+    "store_id": "53"
+}
+2025-08-12 22:29:49 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Intuitive%20optimal%20challenge, status: 201, body:
+{
+    "itemID": 35,
+    "name": "Intuitive optimal challenge",
+    "price": 69102
+}
+2025-08-12 22:29:49 [32mINFO[0m Add user balance
+2025-08-12 22:29:49 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/95, body: {
+    "balance": 122940
+}
+2025-08-12 22:29:49 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/95, status: 201, body:
+{
+    "balance": 122940.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:29:49 [32mINFO[0m Pay item
+2025-08-12 22:29:49 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/95, body: {
+    "itemId": 2000
+}
+2025-08-12 22:29:49 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/95, status: 404, body:
+{
+    "message": "Item not found"
+}

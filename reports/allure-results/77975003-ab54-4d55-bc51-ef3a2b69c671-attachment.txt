@@ -1,0 +1,66 @@
+2025-08-13 20:22:36 [32mINFO[0m Register new user
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "fwallace@example.com",
+    "password": "(LiT5VSrf("
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 10
+}
+2025-08-13 20:22:36 [32mINFO[0m Access to store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "fwallace@example.com",
+    "password": "(LiT5VSrf("
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "038ce95d-fd7d-4849-b3de-8bdb961dd89f"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add user info
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/10, body:
+{
+    "phone": "276-887-4507",
+    "email": "desireewarren@example.com",
+    "address": {
+        "city": "Mooreton",
+        "street": "Patricia Islands",
+        "home_number": "68213"
+    }
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/10, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Smith-Mitchell
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Smith-Mitchell, status: 201, body:
+{
+    "items": [],
+    "name": "Smith-Mitchell",
+    "uuid": "7"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new item
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Up-sized%20uniform%20ability, body:
+{
+    "name": "Up-sized uniform ability",
+    "price": 81696,
+    "store_id": "7"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Up-sized%20uniform%20ability, status: 201, body:
+{
+    "itemID": 7,
+    "name": "Up-sized uniform ability",
+    "price": 81696
+}
+2025-08-13 20:22:36 [32mINFO[0m Get item
+2025-08-13 20:22:36 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Up-sized%20uniform%20ability
+2025-08-13 20:22:36 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Up-sized%20uniform%20ability, status: 200, body:
+{
+    "itemID": 7,
+    "name": "Up-sized uniform ability",
+    "price": 81696,
+    "store_id": "7"
+}

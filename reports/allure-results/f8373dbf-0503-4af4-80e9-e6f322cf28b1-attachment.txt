@@ -1,0 +1,52 @@
+2025-08-12 22:30:29 [32mINFO[0m Register new user
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "bryan84@example.net",
+    "password": "VUZif!Tn&5"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 137
+}
+2025-08-12 22:30:29 [32mINFO[0m Access to store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "bryan84@example.net",
+    "password": "VUZif!Tn&5"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "d327e466-49d2-4b13-9dd5-072e0c3277c9"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user info
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/137, body:
+{
+    "phone": "+1-637-938-6577x853",
+    "email": "samantha34@example.net",
+    "address": {
+        "city": "Villaville",
+        "street": "Harris Canyon",
+        "home_number": "36161"
+    }
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/137, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Nash%20LLC
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Nash%20LLC, status: 201, body:
+{
+    "items": [],
+    "name": "Nash LLC",
+    "uuid": "80"
+}
+2025-08-12 22:30:29 [32mINFO[0m Get store
+2025-08-12 22:30:29 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/Nash%20LLC
+2025-08-12 22:30:29 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/Nash%20LLC, status: 200, body:
+{
+    "items": [],
+    "name": "Nash LLC",
+    "uuid": "80"
+}

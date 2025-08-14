@@ -1,0 +1,50 @@
+2025-08-12 22:30:42 [32mINFO[0m Register new user
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "morgan31@example.com",
+    "password": "v4rk8_Kt)I"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 196
+}
+2025-08-12 22:30:42 [32mINFO[0m Access to store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "morgan31@example.com",
+    "password": "v4rk8_Kt)I"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "a02a4163-433f-449b-b760-8d71a5bbdbc5"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add user info
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/196, body:
+{
+    "phone": "001-511-381-7636",
+    "email": "jonathanmiles@example.net",
+    "address": {
+        "city": "Sweeneyhaven",
+        "street": "Stephanie Centers",
+        "home_number": "544"
+    }
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/196, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Peterson-Robles
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Peterson-Robles, status: 201, body:
+{
+    "items": [],
+    "name": "Peterson-Robles",
+    "uuid": "112"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Peterson-Robles
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Peterson-Robles, status: 400, body:
+{
+    "message": "A store with name 'Peterson-Robles' already exists."
+}

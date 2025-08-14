@@ -1,0 +1,71 @@
+2025-08-12 22:33:47 [32mINFO[0m Register new user
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "hmcpherson@example.org",
+    "password": "hCvrA4Lq%h"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 283
+}
+2025-08-12 22:33:47 [32mINFO[0m Access to store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "hmcpherson@example.org",
+    "password": "hCvrA4Lq%h"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "ba6b43a1-1670-4dae-b66d-e69a32192df2"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add user info
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/283, body:
+{
+    "phone": "736-651-9059",
+    "email": "stephaniejones@example.net",
+    "address": {
+        "city": "Humphreyview",
+        "street": "Smith Forks",
+        "home_number": "1565"
+    }
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/283, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Howell%20Group
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Howell%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Howell Group",
+    "uuid": "158"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new item
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Integrated%20cohesive%20artificial%20intelligence, body:
+{
+    "name": "Integrated cohesive artificial intelligence",
+    "price": 85483,
+    "store_id": "158"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Integrated%20cohesive%20artificial%20intelligence, status: 201, body:
+{
+    "itemID": 103,
+    "name": "Integrated cohesive artificial intelligence",
+    "price": 85483
+}
+2025-08-12 22:33:47 [32mINFO[0m Change item
+2025-08-12 22:33:47 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Integrated%20cohesive%20artificial%20intelligence, body:
+{
+    "name": "Integrated cohesive artificial intelligence",
+    "price": 69829,
+    "store_id": "158"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Integrated%20cohesive%20artificial%20intelligence, status: 200, body:
+{
+    "itemID": 103,
+    "name": "Integrated cohesive artificial intelligence",
+    "price": 69829,
+    "store_id": "158"
+}

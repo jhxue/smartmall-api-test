@@ -1,0 +1,77 @@
+2025-08-13 17:26:05 [32mINFO[0m Register new user
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "simpsonrachel@example.com",
+    "password": "kKK2peVys@"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 2
+}
+2025-08-13 17:26:05 [32mINFO[0m Access to store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "simpsonrachel@example.com",
+    "password": "kKK2peVys@"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "e36e10a6-0dc9-4c08-ae6a-3f8390d94d41"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user info
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/2, body:
+{
+    "phone": "(710)345-4803",
+    "email": "brooksstephanie@example.org",
+    "address": {
+        "city": "New Shannon",
+        "street": "Ann Spurs",
+        "home_number": "07119"
+    }
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/2, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Lawrence%20PLC
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Lawrence%20PLC, status: 201, body:
+{
+    "items": [],
+    "name": "Lawrence PLC",
+    "uuid": "1"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new item
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Up-sized%20mission-critical%20encoding, body:
+{
+    "name": "Up-sized mission-critical encoding",
+    "price": 32960,
+    "store_id": "1"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Up-sized%20mission-critical%20encoding, status: 201, body:
+{
+    "itemID": 1,
+    "name": "Up-sized mission-critical encoding",
+    "price": 32960
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user balance
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2, body: {
+    "balance": 140946
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2, status: 201, body:
+{
+    "balance": 140946.0,
+    "message": "Balance added successfully"
+}
+2025-08-13 17:26:05 [32mINFO[0m Pay item
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/2, body: {
+    "itemId": 1
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/2, status: 200, body:
+{
+    "balance": 107986.0,
+    "message": "Payment successful",
+    "name": "Up-sized mission-critical encoding",
+    "price": 32960.0
+}

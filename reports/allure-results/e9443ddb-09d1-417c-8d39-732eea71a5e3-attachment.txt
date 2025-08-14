@@ -1,0 +1,36 @@
+2025-08-12 22:30:36 [32mINFO[0m Register new user
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "cruzjanice@example.org",
+    "password": "!0UIQ0lfam"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 173
+}
+2025-08-12 22:30:36 [32mINFO[0m Access to store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "cruzjanice@example.org",
+    "password": "!0UIQ0lfam"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "a83d52ca-b76b-47da-b3f0-1220f0f95647"
+}
+2025-08-12 22:30:36 [32mINFO[0m Add user info
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/173, body:
+{
+    "phone": "781-880-5326",
+    "email": "allisonhays@example.org",
+    "address": {
+        "city": "East Alicia",
+        "street": "Chapman Crossroad",
+        "home_number": "059"
+    }
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/173, status: 200, body:
+{
+    "message": "User info created successfully."
+}

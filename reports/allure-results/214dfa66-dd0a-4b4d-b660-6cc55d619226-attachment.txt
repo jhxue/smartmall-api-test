@@ -1,0 +1,72 @@
+2025-08-12 22:35:46 [32mINFO[0m Register new user
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "wheelerchristina@example.net",
+    "password": "*TeRSiaX10"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 80
+}
+2025-08-12 22:35:46 [32mINFO[0m Access to store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "wheelerchristina@example.net",
+    "password": "*TeRSiaX10"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "f394efbc-b67e-4fcb-afab-15375f4ab91f"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user info
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/80, body:
+{
+    "phone": "001-458-433-4590",
+    "email": "housebenjamin@example.com",
+    "address": {
+        "city": "Brettland",
+        "street": "Garrett Prairie",
+        "home_number": "552"
+    }
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/80, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Miller-Ponce
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Miller-Ponce, status: 201, body:
+{
+    "items": [],
+    "name": "Miller-Ponce",
+    "uuid": "51"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new item
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Enterprise-wide%20contextually-based%20focus%20group, body:
+{
+    "name": "Enterprise-wide contextually-based focus group",
+    "price": 35310,
+    "store_id": "51"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Enterprise-wide%20contextually-based%20focus%20group, status: 201, body:
+{
+    "itemID": 33,
+    "name": "Enterprise-wide contextually-based focus group",
+    "price": 35310
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user balance
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/80, body: {
+    "balance": 164886
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/80, status: 201, body:
+{
+    "balance": 164886.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:46 [32mINFO[0m Get user balance
+2025-08-12 22:35:46 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:35:46 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

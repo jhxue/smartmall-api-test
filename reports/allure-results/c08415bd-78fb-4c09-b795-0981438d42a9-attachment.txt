@@ -1,0 +1,74 @@
+2025-08-12 22:41:10 [32mINFO[0m Register new user
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "brandon22@example.com",
+    "password": "6)M8B*ErHe"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 4
+}
+2025-08-12 22:41:10 [32mINFO[0m Access to store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "brandon22@example.com",
+    "password": "6)M8B*ErHe"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "e6d67eaa-79e7-4130-b074-84b087b0608c"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add user info
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/4, body:
+{
+    "phone": "406.755.5725x940",
+    "email": "hcasey@example.org",
+    "address": {
+        "city": "Hernandezfort",
+        "street": "Daniel Spring",
+        "home_number": "94156"
+    }
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/4, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Ryan,%20Schmitt%20and%20Reyes
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Ryan,%20Schmitt%20and%20Reyes, status: 201, body:
+{
+    "items": [],
+    "name": "Ryan, Schmitt and Reyes",
+    "uuid": "3"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new item
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Decentralized%20heuristic%20product, body:
+{
+    "name": "Decentralized heuristic product",
+    "price": 46533,
+    "store_id": "3"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Decentralized%20heuristic%20product, status: 201, body:
+{
+    "itemID": 3,
+    "name": "Decentralized heuristic product",
+    "price": 46533
+}
+2025-08-12 22:41:10 [32mINFO[0m Add user balance
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/4, body: {
+    "balance": 0
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/4, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:41:10 [32mINFO[0m Pay item
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/4, body: {
+    "itemId": 3
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/4, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 46533.0"
+}

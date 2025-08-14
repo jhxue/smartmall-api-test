@@ -1,0 +1,22 @@
+2025-08-12 20:56:05 [32mINFO[0m Register new user
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "adamstammy@example.net",
+    "password": "D4eMuiAu!q"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 6
+}
+2025-08-12 20:56:05 [32mINFO[0m Register new user
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "adamstammy@example.net",
+    "password": "D4eMuiAu!q"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 400, body:
+{
+    "message": "User already exists",
+    "uuid": 6
+}

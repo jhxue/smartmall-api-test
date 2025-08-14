@@ -1,0 +1,52 @@
+2025-08-12 22:35:46 [32mINFO[0m Register new user
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "rrichards@example.org",
+    "password": "TH1!2Vn0z^"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 78
+}
+2025-08-12 22:35:46 [32mINFO[0m Access to store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "rrichards@example.org",
+    "password": "TH1!2Vn0z^"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "f2a8cdcf-9fd9-4b66-8d9d-44483f735716"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user info
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/78, body:
+{
+    "phone": "970.660.3253x14640",
+    "email": "heatherwelch@example.net",
+    "address": {
+        "city": "Penningtonhaven",
+        "street": "Simmons Glen",
+        "home_number": "554"
+    }
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/78, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Herrera%20and%20Sons
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Herrera%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Herrera and Sons",
+    "uuid": "49"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user balance
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2000, body: {
+    "balance": 162738
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "User not found."
+}

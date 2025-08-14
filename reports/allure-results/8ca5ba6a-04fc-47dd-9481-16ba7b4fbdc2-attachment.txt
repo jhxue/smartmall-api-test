@@ -1,0 +1,37 @@
+2025-08-12 22:33:46 [32mINFO[0m Register new user
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "nathan36@example.net",
+    "password": "(5cSshE)do"
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 278
+}
+2025-08-12 22:33:46 [32mINFO[0m Access to store
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "nathan36@example.net",
+    "password": "(5cSshE)do"
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b4ae78fa-8a26-4bcf-92a7-0409b59e3deb"
+}
+2025-08-12 22:33:46 [32mINFO[0m Add user info
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/278, body:
+{
+    "phone": "542-554-7866",
+    "email": "mking@example.net",
+    "address": {
+        "city": "Davisside",
+        "street": "Kim Cliffs",
+        "home_number": "566"
+    }
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/278, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:46 [32mINFO[0m Add new store

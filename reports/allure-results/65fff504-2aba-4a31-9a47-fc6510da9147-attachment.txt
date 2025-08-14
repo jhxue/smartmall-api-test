@@ -1,0 +1,36 @@
+2025-08-12 22:30:36 [32mINFO[0m Register new user
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "bridgetblackwell@example.net",
+    "password": "a#7Q_cdIcm"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 174
+}
+2025-08-12 22:30:36 [32mINFO[0m Access to store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "bridgetblackwell@example.net",
+    "password": "a#7Q_cdIcm"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "de926628-e5f8-41d4-9267-51f0c149ee01"
+}
+2025-08-12 22:30:36 [32mINFO[0m Add user info
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/1000, body:
+{
+    "phone": "386.521.1316x84121",
+    "email": "nicholas85@example.net",
+    "address": {
+        "city": "New Ericburgh",
+        "street": "Amanda Knolls",
+        "home_number": "770"
+    }
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/1000, status: 404, body:
+{
+    "message": "User not found"
+}

@@ -1,0 +1,74 @@
+2025-08-12 22:34:07 [32mINFO[0m Register new user
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kbailey@example.com",
+    "password": "toR6NlT#%7"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 307
+}
+2025-08-12 22:34:07 [32mINFO[0m Access to store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kbailey@example.com",
+    "password": "toR6NlT#%7"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "24f92661-15f1-41dd-9100-4237e235eebb"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user info
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/307, body:
+{
+    "phone": "(711)399-0728",
+    "email": "nicholsontyler@example.com",
+    "address": {
+        "city": "East Jesse",
+        "street": "Kristen Center",
+        "home_number": "84937"
+    }
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/307, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Dudley-Cowan
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Dudley-Cowan, status: 201, body:
+{
+    "items": [],
+    "name": "Dudley-Cowan",
+    "uuid": "171"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new item
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Optimized%20well-modulated%20ability, body:
+{
+    "name": "Optimized well-modulated ability",
+    "price": 5134,
+    "store_id": "171"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Optimized%20well-modulated%20ability, status: 201, body:
+{
+    "itemID": 110,
+    "name": "Optimized well-modulated ability",
+    "price": 5134
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user balance
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/307, body: {
+    "balance": 116795
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/307, status: 201, body:
+{
+    "balance": 116795.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:34:07 [32mINFO[0m Pay item
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/307, body: {
+    "itemId": 2000
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/307, status: 404, body:
+{
+    "message": "Item not found"
+}

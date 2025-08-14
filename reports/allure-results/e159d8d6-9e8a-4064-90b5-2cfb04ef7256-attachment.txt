@@ -1,0 +1,77 @@
+2025-08-12 22:30:28 [32mINFO[0m Register new user
+2025-08-12 22:30:28 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "banksjoseph@example.net",
+    "password": "!45Gyxwvl@"
+}
+2025-08-12 22:30:28 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 124
+}
+2025-08-12 22:30:28 [32mINFO[0m Access to store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "banksjoseph@example.net",
+    "password": "!45Gyxwvl@"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "9f85802c-6b23-485d-9826-d64432660c38"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user info
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/124, body:
+{
+    "phone": "001-463-431-5117x65808",
+    "email": "tracy19@example.net",
+    "address": {
+        "city": "Lake Bethanyburgh",
+        "street": "Simmons Turnpike",
+        "home_number": "740"
+    }
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/124, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/George-May
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/George-May, status: 201, body:
+{
+    "items": [],
+    "name": "George-May",
+    "uuid": "69"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new item
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Ameliorated%20logistical%20attitude, body:
+{
+    "name": "Ameliorated logistical attitude",
+    "price": 77350,
+    "store_id": "69"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Ameliorated%20logistical%20attitude, status: 201, body:
+{
+    "itemID": 44,
+    "name": "Ameliorated logistical attitude",
+    "price": 77350
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user balance
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/124, body: {
+    "balance": 192406
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/124, status: 201, body:
+{
+    "balance": 192406.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:30:29 [32mINFO[0m Pay item
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/124, body: {
+    "itemId": 44
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/124, status: 200, body:
+{
+    "balance": 115056.0,
+    "message": "Payment successful",
+    "name": "Ameliorated logistical attitude",
+    "price": 77350.0
+}

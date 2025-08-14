@@ -1,0 +1,73 @@
+2025-08-12 22:30:29 [32mINFO[0m Register new user
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "bonillachristine@example.com",
+    "password": "y9b9QWen*X"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 141
+}
+2025-08-12 22:30:29 [32mINFO[0m Access to store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "bonillachristine@example.com",
+    "password": "y9b9QWen*X"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "d522d594-1032-4548-89a9-ca95ea0077e1"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user info
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/141, body:
+{
+    "phone": "001-821-754-5036x69087",
+    "email": "jonathan76@example.net",
+    "address": {
+        "city": "Dunlapland",
+        "street": "Sherry Route",
+        "home_number": "36458"
+    }
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/141, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Webster,%20Kirby%20and%20Harris
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Webster,%20Kirby%20and%20Harris, status: 201, body:
+{
+    "items": [],
+    "name": "Webster, Kirby and Harris",
+    "uuid": "84"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new item
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Self-enabling%20bi-directional%20algorithm, body:
+{
+    "name": "Self-enabling bi-directional algorithm",
+    "price": 57307,
+    "store_id": "84"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Self-enabling%20bi-directional%20algorithm, status: 201, body:
+{
+    "itemID": 53,
+    "name": "Self-enabling bi-directional algorithm",
+    "price": 57307
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user balance
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/141, body: {
+    "balance": 139758
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/141, status: 201, body:
+{
+    "balance": 139758.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:30:29 [32mINFO[0m Get user balance
+2025-08-12 22:30:29 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/141
+2025-08-12 22:30:29 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/141, status: 200, body:
+{
+    "balance": 139758.0,
+    "message": "Balance retrieved successfully"
+}

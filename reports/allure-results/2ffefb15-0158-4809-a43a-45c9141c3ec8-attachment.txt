@@ -1,0 +1,68 @@
+2025-08-12 22:34:07 [32mINFO[0m Register new user
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "paula38@example.net",
+    "password": ")6h%P2yv@W"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 312
+}
+2025-08-12 22:34:07 [32mINFO[0m Access to store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "paula38@example.net",
+    "password": ")6h%P2yv@W"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "1a4e2b20-1b1a-449d-be86-cffeb7da38a7"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user info
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/312, body:
+{
+    "phone": "489.955.0368",
+    "email": "harrellbeth@example.net",
+    "address": {
+        "city": "Port Timothy",
+        "street": "Barbara Neck",
+        "home_number": "519"
+    }
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/312, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Barnes,%20Savage%20and%20Perez
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Barnes,%20Savage%20and%20Perez, status: 201, body:
+{
+    "items": [],
+    "name": "Barnes, Savage and Perez",
+    "uuid": "174"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new item
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Multi-layered%20actuating%20extranet, body:
+{
+    "name": "Multi-layered actuating extranet",
+    "price": 33953,
+    "store_id": "174"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Multi-layered%20actuating%20extranet, status: 201, body:
+{
+    "itemID": 113,
+    "name": "Multi-layered actuating extranet",
+    "price": 33953
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new item
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Multi-layered%20actuating%20extranet, body:
+{
+    "name": "Multi-layered actuating extranet",
+    "price": 33953,
+    "store_id": "174"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Multi-layered%20actuating%20extranet, status: 400, body:
+{
+    "message": "An item with name 'Multi-layered actuating extranet' already exists."
+}

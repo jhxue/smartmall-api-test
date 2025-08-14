@@ -1,0 +1,66 @@
+2025-08-12 22:29:50 [32mINFO[0m Register new user
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "rebecca01@example.org",
+    "password": "l!1FW5k&ss"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 102
+}
+2025-08-12 22:29:50 [32mINFO[0m Access to store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "rebecca01@example.org",
+    "password": "l!1FW5k&ss"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "0fcc31db-08cb-4525-80ef-d3eb55be580b"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add user info
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/102, body:
+{
+    "phone": "(338)213-0229x82975",
+    "email": "maureen06@example.com",
+    "address": {
+        "city": "Heatherville",
+        "street": "James Ports",
+        "home_number": "745"
+    }
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/102, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Young,%20Horn%20and%20Fowler
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Young,%20Horn%20and%20Fowler, status: 201, body:
+{
+    "items": [],
+    "name": "Young, Horn and Fowler",
+    "uuid": "58"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new item
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Intuitive%20neutral%20process%20improvement, body:
+{
+    "name": "Intuitive neutral process improvement",
+    "price": 17411,
+    "store_id": "58"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Intuitive%20neutral%20process%20improvement, status: 201, body:
+{
+    "itemID": 40,
+    "name": "Intuitive neutral process improvement",
+    "price": 17411
+}
+2025-08-12 22:29:50 [32mINFO[0m Get item
+2025-08-12 22:29:50 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Intuitive%20neutral%20process%20improvement
+2025-08-12 22:29:50 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Intuitive%20neutral%20process%20improvement, status: 200, body:
+{
+    "itemID": 40,
+    "name": "Intuitive neutral process improvement",
+    "price": 17411,
+    "store_id": "58"
+}

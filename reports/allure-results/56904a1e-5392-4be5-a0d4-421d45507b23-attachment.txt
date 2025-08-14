@@ -1,0 +1,118 @@
+2025-08-12 22:35:32 [32mINFO[0m Register new user
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kathynewman@example.net",
+    "password": ")m5M_pRrxW"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 12
+}
+2025-08-12 22:35:32 [32mINFO[0m Access to store
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kathynewman@example.net",
+    "password": ")m5M_pRrxW"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "10e91c44-43d2-4474-a622-3a87314b9db4"
+}
+2025-08-12 22:35:32 [32mINFO[0m Add user info
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/12, body:
+{
+    "phone": "001-527-580-6762x87264",
+    "email": "jennifersimmons@example.org",
+    "address": {
+        "city": "East Danielview",
+        "street": "Charles Orchard",
+        "home_number": "3166"
+    }
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/12, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new store
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Sutton,%20Phillips%20and%20Lozano
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Sutton,%20Phillips%20and%20Lozano, status: 201, body:
+{
+    "items": [],
+    "name": "Sutton, Phillips and Lozano",
+    "uuid": "9"
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new item
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Function-based%20global%20extranet, body:
+{
+    "name": "Function-based global extranet",
+    "price": 59194,
+    "store_id": "9"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Function-based%20global%20extranet, status: 201, body:
+{
+    "itemID": 9,
+    "name": "Function-based global extranet",
+    "price": 59194
+}
+2025-08-12 22:35:32 [32mINFO[0m Get all items
+2025-08-12 22:35:32 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/items
+2025-08-12 22:35:32 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/items, status: 200, body:
+{
+    "items": [
+        {
+            "itemID": 1,
+            "name": "Profound context-sensitive info-mediaries",
+            "price": 18630,
+            "store_id": "1"
+        },
+        {
+            "itemID": 2,
+            "name": "Multi-lateral incremental encryption",
+            "price": 48685,
+            "store_id": "2"
+        },
+        {
+            "itemID": 3,
+            "name": "Implemented bi-directional secured line",
+            "price": 22980,
+            "store_id": "3"
+        },
+        {
+            "itemID": 4,
+            "name": "Profit-focused disintermediate forecast",
+            "price": 41766,
+            "store_id": "4"
+        },
+        {
+            "itemID": 5,
+            "name": "Decentralized bottom-line task-force",
+            "price": 80629,
+            "store_id": "5"
+        },
+        {
+            "itemID": 6,
+            "name": "Expanded tertiary flexibility",
+            "price": 92766,
+            "store_id": "6"
+        },
+        {
+            "itemID": 7,
+            "name": "Optimized zero administration archive",
+            "price": 24143,
+            "store_id": "7"
+        },
+        {
+            "itemID": 8,
+            "name": "Horizontal real-time definition",
+            "price": 96998,
+            "store_id": "8"
+        },
+        {
+            "itemID": 9,
+            "name": "Function-based global extranet",
+            "price": 59194,
+            "store_id": "9"
+        }
+    ]
+}

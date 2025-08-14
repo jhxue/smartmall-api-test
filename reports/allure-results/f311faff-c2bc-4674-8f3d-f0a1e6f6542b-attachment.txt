@@ -1,0 +1,63 @@
+2025-08-12 22:29:50 [32mINFO[0m Register new user
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "hortongregory@example.net",
+    "password": "$772zirH9Z"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 103
+}
+2025-08-12 22:29:50 [32mINFO[0m Access to store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "hortongregory@example.net",
+    "password": "$772zirH9Z"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "c8bac08c-93dc-4c72-9355-16e09d490967"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add user info
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/103, body:
+{
+    "phone": "634-367-7984",
+    "email": "johnsonrachel@example.net",
+    "address": {
+        "city": "Mosesburgh",
+        "street": "Perkins Islands",
+        "home_number": "10759"
+    }
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/103, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Stone%20PLC
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Stone%20PLC, status: 201, body:
+{
+    "items": [],
+    "name": "Stone PLC",
+    "uuid": "59"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new item
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Cross-group%20human-resource%20flexibility, body:
+{
+    "name": "Cross-group human-resource flexibility",
+    "price": 42157,
+    "store_id": "59"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Cross-group%20human-resource%20flexibility, status: 201, body:
+{
+    "itemID": 41,
+    "name": "Cross-group human-resource flexibility",
+    "price": 42157
+}
+2025-08-12 22:29:50 [32mINFO[0m Get item
+2025-08-12 22:29:50 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-12 22:29:50 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

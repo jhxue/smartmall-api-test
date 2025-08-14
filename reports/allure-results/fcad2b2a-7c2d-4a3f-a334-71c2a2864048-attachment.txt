@@ -1,0 +1,112 @@
+2025-08-12 22:41:40 [32mINFO[0m Register new user
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ashleyfranklin@example.org",
+    "password": "BBTvJO+u^1"
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 12
+}
+2025-08-12 22:41:40 [32mINFO[0m Access to store
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ashleyfranklin@example.org",
+    "password": "BBTvJO+u^1"
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "c2c6d05c-9163-4f69-a03c-d535f52939a7"
+}
+2025-08-12 22:41:40 [32mINFO[0m Add user info
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/12, body:
+{
+    "phone": "(262)228-3560x00858",
+    "email": "gsmith@example.com",
+    "address": {
+        "city": "South Kenneth",
+        "street": "Anna Tunnel",
+        "home_number": "051"
+    }
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/12, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:40 [32mINFO[0m Add new store
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Snyder,%20Montgomery%20and%20Johnson
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Snyder,%20Montgomery%20and%20Johnson, status: 201, body:
+{
+    "items": [],
+    "name": "Snyder, Montgomery and Johnson",
+    "uuid": "9"
+}
+2025-08-12 22:41:40 [32mINFO[0m Add new item
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Cross-group%203rdgeneration%20protocol, body:
+{
+    "name": "Cross-group 3rdgeneration protocol",
+    "price": 68834,
+    "store_id": "9"
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Cross-group%203rdgeneration%20protocol, status: 201, body:
+{
+    "itemID": 8,
+    "name": "Cross-group 3rdgeneration protocol",
+    "price": 68834
+}
+2025-08-12 22:41:40 [32mINFO[0m Get all items
+2025-08-12 22:41:40 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/items
+2025-08-12 22:41:40 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/items, status: 200, body:
+{
+    "items": [
+        {
+            "itemID": 1,
+            "name": "Visionary didactic parallelism",
+            "price": 54773,
+            "store_id": "1"
+        },
+        {
+            "itemID": 2,
+            "name": "Programmable system-worthy model",
+            "price": 44045,
+            "store_id": "2"
+        },
+        {
+            "itemID": 3,
+            "name": "Reverse-engineered holistic archive",
+            "price": 47146,
+            "store_id": "3"
+        },
+        {
+            "itemID": 4,
+            "name": "Seamless intermediate function",
+            "price": 4082,
+            "store_id": "4"
+        },
+        {
+            "itemID": 5,
+            "name": "Team-oriented reciprocal support",
+            "price": 87323,
+            "store_id": "5"
+        },
+        {
+            "itemID": 6,
+            "name": "Persistent mobile system engine",
+            "price": 70931,
+            "store_id": "7"
+        },
+        {
+            "itemID": 7,
+            "name": "Public-key web-enabled capability",
+            "price": 60539,
+            "store_id": "8"
+        },
+        {
+            "itemID": 8,
+            "name": "Cross-group 3rdgeneration protocol",
+            "price": 68834,
+            "store_id": "9"
+        }
+    ]
+}

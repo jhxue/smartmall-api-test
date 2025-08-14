@@ -1,0 +1,112 @@
+2025-08-12 22:41:10 [32mINFO[0m Register new user
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "elang@example.org",
+    "password": "!cACMw4v9b"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 12
+}
+2025-08-12 22:41:10 [32mINFO[0m Access to store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "elang@example.org",
+    "password": "!cACMw4v9b"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "e47f8721-b279-4eef-b26b-b65832c8c5ce"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add user info
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/12, body:
+{
+    "phone": "(693)852-3395",
+    "email": "grayrobert@example.com",
+    "address": {
+        "city": "South Joshuabury",
+        "street": "Carlos Terrace",
+        "home_number": "50383"
+    }
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/12, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Rodriguez-Frost
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Rodriguez-Frost, status: 201, body:
+{
+    "items": [],
+    "name": "Rodriguez-Frost",
+    "uuid": "9"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new item
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Phased%20intermediate%20system%20engine, body:
+{
+    "name": "Phased intermediate system engine",
+    "price": 29395,
+    "store_id": "9"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Phased%20intermediate%20system%20engine, status: 201, body:
+{
+    "itemID": 8,
+    "name": "Phased intermediate system engine",
+    "price": 29395
+}
+2025-08-12 22:41:10 [32mINFO[0m Get all items
+2025-08-12 22:41:10 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/items
+2025-08-12 22:41:10 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/items, status: 200, body:
+{
+    "items": [
+        {
+            "itemID": 1,
+            "name": "Triple-buffered content-based policy",
+            "price": 82566,
+            "store_id": "1"
+        },
+        {
+            "itemID": 2,
+            "name": "Operative discrete leverage",
+            "price": 62674,
+            "store_id": "2"
+        },
+        {
+            "itemID": 3,
+            "name": "Decentralized heuristic product",
+            "price": 46533,
+            "store_id": "3"
+        },
+        {
+            "itemID": 4,
+            "name": "Self-enabling zero administration success",
+            "price": 73507,
+            "store_id": "4"
+        },
+        {
+            "itemID": 5,
+            "name": "Future-proofed web-enabled policy",
+            "price": 21690,
+            "store_id": "5"
+        },
+        {
+            "itemID": 6,
+            "name": "Digitized bi-directional encoding",
+            "price": 90963,
+            "store_id": "6"
+        },
+        {
+            "itemID": 7,
+            "name": "Open-architected multimedia portal",
+            "price": 92215,
+            "store_id": "7"
+        },
+        {
+            "itemID": 8,
+            "name": "Phased intermediate system engine",
+            "price": 29395,
+            "store_id": "9"
+        }
+    ]
+}

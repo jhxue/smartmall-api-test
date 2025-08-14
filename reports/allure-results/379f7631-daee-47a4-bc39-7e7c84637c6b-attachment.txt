@@ -1,0 +1,10 @@
+2025-08-12 22:41:40 [32mINFO[0m Register new user
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "johnlang@example.com",
+    "password": null
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 400, body:
+{
+    "message": "Username and password are required fields"
+}

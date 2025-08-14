@@ -1,0 +1,71 @@
+2025-08-12 22:30:35 [32mINFO[0m Register new user
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jodi70@example.org",
+    "password": "N)@3tXb2S!"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 161
+}
+2025-08-12 22:30:35 [32mINFO[0m Access to store
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jodi70@example.org",
+    "password": "N)@3tXb2S!"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "a8c2b6fc-ce85-4b85-a874-caa11636c417"
+}
+2025-08-12 22:30:35 [32mINFO[0m Add user info
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/161, body:
+{
+    "phone": "(441)937-5329x1002",
+    "email": "heatherphillips@example.com",
+    "address": {
+        "city": "New Christopherberg",
+        "street": "Velasquez Summit",
+        "home_number": "630"
+    }
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/161, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:35 [32mINFO[0m Add new store
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Stewart%20Ltd
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Stewart%20Ltd, status: 201, body:
+{
+    "items": [],
+    "name": "Stewart Ltd",
+    "uuid": "91"
+}
+2025-08-12 22:30:35 [32mINFO[0m Add new item
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Organized%20local%20instruction%20set, body:
+{
+    "name": "Organized local instruction set",
+    "price": 55589,
+    "store_id": "91"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Organized%20local%20instruction%20set, status: 201, body:
+{
+    "itemID": 60,
+    "name": "Organized local instruction set",
+    "price": 55589
+}
+2025-08-12 22:30:35 [32mINFO[0m Change item
+2025-08-12 22:30:35 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Organized%20local%20instruction%20set, body:
+{
+    "name": "Organized local instruction set",
+    "price": 41881,
+    "store_id": "91"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Organized%20local%20instruction%20set, status: 200, body:
+{
+    "itemID": 60,
+    "name": "Organized local instruction set",
+    "price": 41881,
+    "store_id": "91"
+}

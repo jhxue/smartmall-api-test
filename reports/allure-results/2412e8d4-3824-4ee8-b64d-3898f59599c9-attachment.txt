@@ -1,0 +1,77 @@
+2025-08-12 22:30:35 [32mINFO[0m Register new user
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kimberlymassey@example.net",
+    "password": "Q0*HYuwe@c"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 154
+}
+2025-08-12 22:30:35 [32mINFO[0m Access to store
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kimberlymassey@example.net",
+    "password": "Q0*HYuwe@c"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "692d7b3d-3084-4aa0-93e6-c5e66a63f96f"
+}
+2025-08-12 22:30:35 [32mINFO[0m Add user info
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/154, body:
+{
+    "phone": "(654)876-8034",
+    "email": "fletchermary@example.com",
+    "address": {
+        "city": "New Jayhaven",
+        "street": "Danny Glens",
+        "home_number": "716"
+    }
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/154, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:35 [32mINFO[0m Add new store
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Sawyer%20Ltd
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Sawyer%20Ltd, status: 201, body:
+{
+    "items": [],
+    "name": "Sawyer Ltd",
+    "uuid": "86"
+}
+2025-08-12 22:30:35 [32mINFO[0m Add new item
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Robust%20contextually-based%20monitoring, body:
+{
+    "name": "Robust contextually-based monitoring",
+    "price": 25852,
+    "store_id": "86"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Robust%20contextually-based%20monitoring, status: 201, body:
+{
+    "itemID": 55,
+    "name": "Robust contextually-based monitoring",
+    "price": 25852
+}
+2025-08-12 22:30:35 [32mINFO[0m Add user balance
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/154, body: {
+    "balance": 168586
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/154, status: 201, body:
+{
+    "balance": 168586.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:30:35 [32mINFO[0m Pay item
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/154, body: {
+    "itemId": 55
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/154, status: 200, body:
+{
+    "balance": 142734.0,
+    "message": "Payment successful",
+    "name": "Robust contextually-based monitoring",
+    "price": 25852.0
+}

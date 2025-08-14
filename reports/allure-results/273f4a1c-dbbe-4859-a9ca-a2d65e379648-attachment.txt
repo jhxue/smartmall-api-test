@@ -1,0 +1,71 @@
+2025-08-12 22:35:46 [32mINFO[0m Register new user
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "sean46@example.org",
+    "password": "e3wt%Z^a+V"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 69
+}
+2025-08-12 22:35:46 [32mINFO[0m Access to store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "sean46@example.org",
+    "password": "e3wt%Z^a+V"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "12f62f33-073b-413e-94ba-986c541c2b1c"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user info
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/69, body:
+{
+    "phone": "(792)595-4328",
+    "email": "fshaw@example.com",
+    "address": {
+        "city": "South Michael",
+        "street": "Leonard Streets",
+        "home_number": "8368"
+    }
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/69, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Brooks,%20Mcguire%20and%20Rivera
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Brooks,%20Mcguire%20and%20Rivera, status: 201, body:
+{
+    "items": [],
+    "name": "Brooks, Mcguire and Rivera",
+    "uuid": "40"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new item
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Self-enabling%20directional%20matrices, body:
+{
+    "name": "Self-enabling directional matrices",
+    "price": 85208,
+    "store_id": "40"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Self-enabling%20directional%20matrices, status: 201, body:
+{
+    "itemID": 28,
+    "name": "Self-enabling directional matrices",
+    "price": 85208
+}
+2025-08-12 22:35:46 [32mINFO[0m Change item
+2025-08-12 22:35:46 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Self-enabling%20directional%20matrices, body:
+{
+    "name": "Self-enabling directional matrices",
+    "price": 21651,
+    "store_id": "40"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Self-enabling%20directional%20matrices, status: 200, body:
+{
+    "itemID": 28,
+    "name": "Self-enabling directional matrices",
+    "price": 21651,
+    "store_id": "40"
+}

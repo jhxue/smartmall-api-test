@@ -1,0 +1,72 @@
+2025-08-13 20:22:37 [32mINFO[0m Register new user
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ntaylor@example.org",
+    "password": "7+B54%Gce7"
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 20
+}
+2025-08-13 20:22:37 [32mINFO[0m Access to store
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ntaylor@example.org",
+    "password": "7+B54%Gce7"
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "22ed2cde-c9bd-4279-8a8b-c1b189e8587d"
+}
+2025-08-13 20:22:37 [32mINFO[0m Add user info
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/20, body:
+{
+    "phone": "(808)492-2159x38696",
+    "email": "mfrye@example.org",
+    "address": {
+        "city": "Michellefort",
+        "street": "Rodriguez Garden",
+        "home_number": "7377"
+    }
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/20, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 20:22:37 [32mINFO[0m Add new store
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Wright-Green
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Wright-Green, status: 201, body:
+{
+    "items": [],
+    "name": "Wright-Green",
+    "uuid": "17"
+}
+2025-08-13 20:22:37 [32mINFO[0m Add new item
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Organic%20bottom-line%20collaboration, body:
+{
+    "name": "Organic bottom-line collaboration",
+    "price": 36060,
+    "store_id": "17"
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Organic%20bottom-line%20collaboration, status: 201, body:
+{
+    "itemID": 11,
+    "name": "Organic bottom-line collaboration",
+    "price": 36060
+}
+2025-08-13 20:22:37 [32mINFO[0m Add user balance
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/20, body: {
+    "balance": 174597
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/20, status: 201, body:
+{
+    "balance": 174597.0,
+    "message": "Balance added successfully"
+}
+2025-08-13 20:22:37 [32mINFO[0m Get user balance
+2025-08-13 20:22:37 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-13 20:22:37 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

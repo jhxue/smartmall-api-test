@@ -1,0 +1,52 @@
+2025-08-12 21:49:44 [32mINFO[0m Register new user
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "cwilson@example.net",
+    "password": "@p)TsosUv1"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 45
+}
+2025-08-12 21:49:44 [32mINFO[0m Access to store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "cwilson@example.net",
+    "password": "@p)TsosUv1"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "10f56364-2ffe-44e7-933e-23013a658785"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add user info
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/45, body:
+{
+    "phone": "001-478-487-0073x0941",
+    "email": "ronald92@example.com",
+    "address": {
+        "city": "Williamsfurt",
+        "street": "Jennifer Drive",
+        "home_number": "08153"
+    }
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/45, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Pena%20Inc
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Pena%20Inc, status: 201, body:
+{
+    "items": [],
+    "name": "Pena Inc",
+    "uuid": "29"
+}
+2025-08-12 21:49:44 [32mINFO[0m Get store
+2025-08-12 21:49:44 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/Pena%20Inc
+2025-08-12 21:49:44 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/Pena%20Inc, status: 200, body:
+{
+    "items": [],
+    "name": "Pena Inc",
+    "uuid": "29"
+}

@@ -1,0 +1,50 @@
+2025-08-12 22:35:20 [32mINFO[0m Register new user
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "nmiller@example.com",
+    "password": "Rom3FDbV_*"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 16
+}
+2025-08-12 22:35:20 [32mINFO[0m Access to store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "nmiller@example.com",
+    "password": "Rom3FDbV_*"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "90f9c2b8-418c-45db-9265-92947cd6e332"
+}
+2025-08-12 22:35:20 [32mINFO[0m Add user info
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/16, body:
+{
+    "phone": "743.906.0466",
+    "email": "jesse72@example.org",
+    "address": {
+        "city": "South Suzanne",
+        "street": "Cody Mills",
+        "home_number": "3357"
+    }
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/16, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:20 [32mINFO[0m Add new store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Robertson%20Ltd
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Robertson%20Ltd, status: 201, body:
+{
+    "items": [],
+    "name": "Robertson Ltd",
+    "uuid": "13"
+}
+2025-08-12 22:35:20 [32mINFO[0m Get store
+2025-08-12 22:35:20 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/1000
+2025-08-12 22:35:20 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/1000, status: 404, body:
+{
+    "message": "Store not found"
+}

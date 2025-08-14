@@ -1,0 +1,73 @@
+2025-08-12 21:49:44 [32mINFO[0m Register new user
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kellypotter@example.net",
+    "password": ")Ns$5#RoBu"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 49
+}
+2025-08-12 21:49:44 [32mINFO[0m Access to store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kellypotter@example.net",
+    "password": ")Ns$5#RoBu"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "a13583e6-7f5a-40cf-8b0e-7aa7e7d88fdf"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add user info
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/49, body:
+{
+    "phone": "813.950.8445",
+    "email": "jeffrey63@example.org",
+    "address": {
+        "city": "Lake Rebekahton",
+        "street": "Kelly Lane",
+        "home_number": "54067"
+    }
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/49, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Hurst%20Group
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Hurst%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Hurst Group",
+    "uuid": "33"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new item
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Polarized%20incremental%20superstructure, body:
+{
+    "name": "Polarized incremental superstructure",
+    "price": 57539,
+    "store_id": "33"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Polarized%20incremental%20superstructure, status: 201, body:
+{
+    "itemID": 21,
+    "name": "Polarized incremental superstructure",
+    "price": 57539
+}
+2025-08-12 21:49:44 [32mINFO[0m Add user balance
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/49, body: {
+    "balance": 113655
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/49, status: 201, body:
+{
+    "balance": 113655.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 21:49:44 [32mINFO[0m Get user balance
+2025-08-12 21:49:45 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/49
+2025-08-12 21:49:45 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/49, status: 200, body:
+{
+    "balance": 113655.0,
+    "message": "Balance retrieved successfully"
+}

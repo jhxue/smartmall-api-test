@@ -1,0 +1,53 @@
+2025-08-12 22:30:43 [32mINFO[0m Register new user
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "leemary@example.com",
+    "password": "+#3kEoF1sY"
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 199
+}
+2025-08-12 22:30:43 [32mINFO[0m Access to store
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "leemary@example.com",
+    "password": "+#3kEoF1sY"
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "6ef8faca-4227-434a-a8e6-170f79a11e38"
+}
+2025-08-12 22:30:43 [32mINFO[0m Add user info
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/199, body:
+{
+    "phone": "278.232.7705x54021",
+    "email": "ellisrobert@example.com",
+    "address": {
+        "city": "Keithport",
+        "street": "Braun Square",
+        "home_number": "11426"
+    }
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/199, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:43 [32mINFO[0m Add new store
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Smith,%20Williams%20and%20Turner
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Smith,%20Williams%20and%20Turner, status: 201, body:
+{
+    "items": [],
+    "name": "Smith, Williams and Turner",
+    "uuid": "115"
+}
+2025-08-12 22:30:43 [32mINFO[0m Add user balance
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/199, body: {
+    "balance": 142485
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/199, status: 201, body:
+{
+    "balance": 142485.0,
+    "message": "Balance added successfully"
+}

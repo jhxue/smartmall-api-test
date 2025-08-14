@@ -1,0 +1,57 @@
+2025-08-14 18:05:54 [32mINFO[0m Register new user
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jennifer31@example.org",
+    "password": "lM$P4dYo!3"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 7
+}
+2025-08-14 18:05:54 [32mINFO[0m Access to store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jennifer31@example.org",
+    "password": "lM$P4dYo!3"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "58aa2346-a366-4a9b-acdc-3676e18d2bc3"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add user info
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/7, body:
+{
+    "phone": "870-686-5263x957",
+    "email": "richardmorse@example.org",
+    "address": {
+        "city": "Jensenshire",
+        "street": "Julie Plain",
+        "home_number": "699"
+    }
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/7, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Kelly,%20Giles%20and%20Walters
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Kelly,%20Giles%20and%20Walters, status: 201, body:
+{
+    "items": [],
+    "name": "Kelly, Giles and Walters",
+    "uuid": "4"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new item
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Future-proofed%20transitional%20software, body:
+{
+    "name": "Future-proofed transitional software",
+    "price": 13635,
+    "store_id": "4"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Future-proofed%20transitional%20software, status: 201, body:
+{
+    "itemID": 4,
+    "name": "Future-proofed transitional software",
+    "price": 13635
+}

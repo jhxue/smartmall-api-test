@@ -1,0 +1,63 @@
+2025-08-12 21:49:44 [32mINFO[0m Register new user
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "danielmikayla@example.com",
+    "password": "ng+7NmpzR1"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 41
+}
+2025-08-12 21:49:44 [32mINFO[0m Access to store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "danielmikayla@example.com",
+    "password": "ng+7NmpzR1"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "0c716fbf-20fa-4137-b406-abebf0bcb0c2"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add user info
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/41, body:
+{
+    "phone": "562-325-4024x880",
+    "email": "morganschwartz@example.org",
+    "address": {
+        "city": "Deborahstad",
+        "street": "Castro River",
+        "home_number": "665"
+    }
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/41, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Long,%20Garcia%20and%20Pham
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Long,%20Garcia%20and%20Pham, status: 201, body:
+{
+    "items": [],
+    "name": "Long, Garcia and Pham",
+    "uuid": "25"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new item
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Innovative%20value-added%20moderator, body:
+{
+    "name": "Innovative value-added moderator",
+    "price": 60543,
+    "store_id": "25"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Innovative%20value-added%20moderator, status: 201, body:
+{
+    "itemID": 19,
+    "name": "Innovative value-added moderator",
+    "price": 60543
+}
+2025-08-12 21:49:44 [32mINFO[0m Get item
+2025-08-12 21:49:44 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-12 21:49:44 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

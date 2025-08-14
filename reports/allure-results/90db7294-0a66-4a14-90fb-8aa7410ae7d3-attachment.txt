@@ -1,0 +1,50 @@
+2025-08-12 22:29:50 [32mINFO[0m Register new user
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "fcherry@example.net",
+    "password": "D7Ks7f4!^O"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 108
+}
+2025-08-12 22:29:50 [32mINFO[0m Access to store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "fcherry@example.net",
+    "password": "D7Ks7f4!^O"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "78803f2c-7c05-420c-be51-50fb08378f6e"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add user info
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/108, body:
+{
+    "phone": "934-360-7650x909",
+    "email": "powellkaren@example.com",
+    "address": {
+        "city": "Port Susan",
+        "street": "Valentine Parkway",
+        "home_number": "53992"
+    }
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/108, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Russell,%20Castro%20and%20White
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Russell,%20Castro%20and%20White, status: 201, body:
+{
+    "items": [],
+    "name": "Russell, Castro and White",
+    "uuid": "64"
+}
+2025-08-12 22:29:50 [32mINFO[0m Get store
+2025-08-12 22:29:50 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/1000
+2025-08-12 22:29:50 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/1000, status: 404, body:
+{
+    "message": "Store not found"
+}

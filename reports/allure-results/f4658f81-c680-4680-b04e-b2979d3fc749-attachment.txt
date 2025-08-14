@@ -1,0 +1,66 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "lindsaymorgan@example.com",
+    "password": "5gUT8PMb&8"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 10
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "lindsaymorgan@example.com",
+    "password": "5gUT8PMb&8"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "83c6d6ab-83e5-41ce-88c2-2250516d10f3"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/10, body:
+{
+    "phone": "5677345024",
+    "email": "jonathan92@example.net",
+    "address": {
+        "city": "Nicholsfort",
+        "street": "Joshua Summit",
+        "home_number": "5238"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/10, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Morgan-Price
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Morgan-Price, status: 201, body:
+{
+    "items": [],
+    "name": "Morgan-Price",
+    "uuid": "7"
+}
+2025-08-12 22:40:21 INFO Add new item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/item/Multi-layered%2024hour%20help-desk, body:
+{
+    "name": "Multi-layered 24hour help-desk",
+    "price": 64036,
+    "store_id": "7"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/item/Multi-layered%2024hour%20help-desk, status: 201, body:
+{
+    "itemID": 7,
+    "name": "Multi-layered 24hour help-desk",
+    "price": 64036
+}
+2025-08-12 22:40:21 INFO Get item
+2025-08-12 22:40:21 INFO Request method: GET, url: http://127.0.0.1:8080/item/Multi-layered%2024hour%20help-desk
+2025-08-12 22:40:21 INFO Response method: GET, url: http://127.0.0.1:8080/item/Multi-layered%2024hour%20help-desk, status: 200, body:
+{
+    "itemID": 7,
+    "name": "Multi-layered 24hour help-desk",
+    "price": 64036,
+    "store_id": "7"
+}

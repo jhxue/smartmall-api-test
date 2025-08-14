@@ -1,0 +1,38 @@
+2025-08-12 22:40:22 INFO Register new user
+2025-08-12 22:40:22 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kerrjessica@example.org",
+    "password": "$(R5%db$s9"
+}
+2025-08-12 22:40:22 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 24
+}
+2025-08-12 22:40:22 INFO Access to store
+2025-08-12 22:40:22 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kerrjessica@example.org",
+    "password": "$(R5%db$s9"
+}
+2025-08-12 22:40:22 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "5dd616d4-1378-4f08-956b-7a0a1725ced3"
+}
+2025-08-12 22:40:22 INFO Add user info
+2025-08-12 22:40:22 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/24, body:
+{
+    "phone": "+1-465-758-9836x25002",
+    "email": "galvansusan@example.net",
+    "address": {
+        "city": "Jeremymouth",
+        "street": "Davis Islands",
+        "home_number": "3342"
+    }
+}
+2025-08-12 22:40:22 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/24, status: 401, body:
+{
+    "description": "Request does not contain an access token",
+    "error": "Authorization Required",
+    "status_code": 401
+}

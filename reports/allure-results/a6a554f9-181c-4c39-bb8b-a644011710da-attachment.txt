@@ -1,0 +1,63 @@
+2025-08-12 22:30:29 [32mINFO[0m Register new user
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "amandayoung@example.net",
+    "password": "*JAlFSg7w7"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 133
+}
+2025-08-12 22:30:29 [32mINFO[0m Access to store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "amandayoung@example.net",
+    "password": "*JAlFSg7w7"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "9f7141d2-ea48-41a7-91f3-cce162f5a5df"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user info
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/133, body:
+{
+    "phone": "(849)206-1635x64870",
+    "email": "gtran@example.net",
+    "address": {
+        "city": "Waltersstad",
+        "street": "Mary Trail",
+        "home_number": "9650"
+    }
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/133, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Boyd-Munoz
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Boyd-Munoz, status: 201, body:
+{
+    "items": [],
+    "name": "Boyd-Munoz",
+    "uuid": "76"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new item
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Advanced%20eco-centric%20adapter, body:
+{
+    "name": "Advanced eco-centric adapter",
+    "price": 4879,
+    "store_id": "76"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Advanced%20eco-centric%20adapter, status: 201, body:
+{
+    "itemID": 51,
+    "name": "Advanced eco-centric adapter",
+    "price": 4879
+}
+2025-08-12 22:30:29 [32mINFO[0m Get item
+2025-08-12 22:30:29 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-12 22:30:29 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

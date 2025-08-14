@@ -1,0 +1,315 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add store
+            5. Add item
+            6. Try to get all items
+            7. Check that status code is 200
+            8. Check response
+        ","0","test_get_all_item","","Tue Aug 12 21:32:47 CST 2025","skipped","Tue Aug 12 21:32:47 CST 2025","","","",""
+"
+        Steps.
+        1. Register new user
+        2. Get access to store
+        3. Add user info
+        4. Try to delete user info
+        5. Check that status code is 200
+        6. Check response
+        ","5","test_delete_user_info","tests.user_info","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestGetUserInfo","test_delete_user_info","",""
+"
+        1. Try to auth user (access to store) with random invalid data
+        2. Check that status code is 401
+        3. Check response
+        ","6","test_auth_user_with_random_data","tests.authorization","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestAuthUser","test_auth","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add new store
+            5. Add new item info
+            6. Add user balance
+            7. Try to pay for item
+            8. Check that status code is 200
+            9. Check response
+        ","11","test_pay_item","tests.pay_item","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestPayItem","test_pay_item","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add new store
+            5. Add new item info
+            6. Add user balance
+            7. Try to pay for item
+            8. Check that status code is 404
+            9. Check response
+        ","11","test_pay_for_non_existetnt_item","tests.pay_item","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestPayItem","test_pay_item","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add store
+            5. Add item
+            6. Try to get info about non-existent item
+            7. Check that status code is 404
+            8. Check response
+        ","5","test_get_info_about_non_existent_item","tests.store_item","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestStoreItem","test_get_item","",""
+"
+        Steps.
+        1. Register new user
+        2. Try to access to store with valid data
+        3. Check that status code is 200
+        4. Check response
+        ","5","test_auth_user_with_valid_data","tests.authorization","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestAuthUser","test_auth","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add new store
+            5. Try do add user balance
+            6. Check that status code is 201
+            7. Check response
+        ","4","test_add_user_balance","tests.user_balance","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestUserBalance","test_add_user_balance","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add new store
+            5. Add new item info
+            6. Add user balance
+            7. Try to pay for item
+            8. Check that status code is 400
+            9. Check response
+        ","10","test_pay_for_item_with_no_money","tests.pay_item","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestPayItem","test_pay_item","",""
+"
+        1. Try to register user with empty data
+        2. Check that status code is 400
+        3. Check response
+        ","4","test_register_user_with_empty_data[password]","tests.register","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestRegisterUser","test_register","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add store
+            5. Try to get info about created store
+            6. Check that status code is 200
+            7. Check response
+        ","3","test_get_store_info","tests.store_magazine","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestStore","test_get_store","",""
+"
+        1. Try to register user with valid data
+        2. Check that status code is 201
+        3. Check response
+        ","5","test_register_user_with_valid_data","tests.register","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestRegisterUser","test_register","",""
+"
+        Steps.
+            1. Register new user
+            2. Get access to store
+            3. Try to add info about non-existent user
+            4. Check that status code is 404
+            5. Check response
+        ","4","test_add_info_of_non_existent_user","tests.user_info","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestUserInfo","test_add_user_info","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add store
+            5. Try to add item
+            6. Check that status code is 201
+            7. Check response
+        ","4","test_add_new_item","tests.store_item","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestStoreItem","test_add_item","",""
+"
+        Steps.
+        1. Register new user
+        2. Get access to store
+        3. Add user info
+        4. Try to delete user info of non-existent user
+        5. Check that status code is 404
+        6. Check response
+        ","4","test_delete_info_of_non_existent_user","tests.user_info","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestGetUserInfo","test_delete_user_info","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add store
+            5. Add item
+            6. Try to get item
+            7. Check that status code is 200
+            8. Check response
+        ","5","test_get_item","tests.store_item","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestStoreItem","test_get_item","",""
+"
+        Steps.
+            1. Register new user
+            2. Get access to store
+            3. Add user info
+            4. Try to add the same info about user
+            5. Check that status code is 400
+            6. Check response
+        ","11","test_add_already_existing_info_of_user","tests.user_info","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestUserInfo","test_add_user_info","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add new store
+            5. Try do add balance to non-existent user
+            6. Check that status code is 404
+            7. Check response
+        ","3","test_add_balance_to_non_existent_user","tests.user_balance","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestUserBalance","test_add_user_balance","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add new store
+            5. Add new item
+            6. Add user balance
+            7. Try to get balance of non-existent user
+            8. Check that status code is 404
+            9. Check response
+        ","7","test_get_balance_of_non_existent_user","tests.user_balance","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestUserBalance","test_get_user_balance","",""
+"
+        Steps.
+        1. Register new user
+        2. Access to store
+        3. Add user info
+        4. Try to get user info
+        5. Check that status code is 200
+        6. Check response
+        ","6","test_get_user_info","tests.user_info","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestGetUserInfo","test_get_user_info","",""
+"
+        Steps.
+        1. Register new user
+        2. Access to store
+        3. Add user info
+        4. Try to get info of non-existent user
+        5. Check that status code is 404
+        6. Check response
+        ","4","test_get_info_of_non_existent_user","tests.user_info","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestGetUserInfo","test_get_user_info","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add store
+            5. Add item
+            6. Try to change item price
+            7. Check that status code is 200
+            8. Check response
+        ","5","test_change_item","tests.store_item","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestStoreItem","test_change_item","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add new store
+            5. Add new item
+            6. Add user balance
+            7. Try to get user balance
+            8. Check that status code is 200
+            9. Check response
+        ","11","test_get_user_balance","tests.user_balance","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestUserBalance","test_get_user_balance","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add store
+            5. Add new item
+            5. Try to add an existing item
+            6. Check that status code is 400
+            7. Check response
+        ","11","test_add_already_existing_item","tests.store_item","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestStoreItem","test_add_item","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add store
+            5. Try to get info about non-existent store
+            6. Check that status code is 404
+            7. Check response
+        ","3","test_get_info_about_non_existent_store","tests.store_magazine","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestStore","test_get_store","",""
+"
+        1. Try to register user with the same valid data
+        2. Check that status code is 400
+        3. Check response
+        ","10","test_register_user_with_the_same_data","tests.register","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestRegisterUser","test_register","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add store
+            5. Add item
+            6. Try to get all items
+            7. Check that status code is 200
+            8. Check response
+        ","6","test_get_all_item","tests.store_items","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestStoreItem","test_get_items","",""
+"
+        Steps.
+        1. Register new user
+        2. Access to store
+        3. Add user info
+        4. Try to update info of non-existent user
+        5. Check that status code is 404
+        6. Check response
+        ","7","test_update_info_of_non_existent_user","tests.user_info","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestUserInfo","test_update_user_info","",""
+"
+        Steps.
+        1. Register new user
+        2. Access to store
+        3. Add user info
+        4. Try to update user info
+        5. Check that status code is 200
+        6. Check response
+        ","6","test_update_user_info","tests.user_info","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestUserInfo","test_update_user_info","",""
+"
+        Steps.
+            1. Register new user
+            2. Get access to store
+            3. Try to add info without access token
+            4. Check that status code is 401
+            5. Check response
+        ","6","test_add_user_info_without_auth_header","tests.user_info","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestUserInfo","test_add_user_info","",""
+"
+        1. Try to register user with empty data
+        2. Check that status code is 400
+        3. Check response
+        ","5","test_register_user_with_empty_data[username]","tests.register","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestRegisterUser","test_register","",""
+"
+        Steps.
+            1. Register new user
+            2. Get access to store
+            3. Try to add user info
+            4. Check that status code is 200
+            5. Check response
+        ","6","test_add_user_info","tests.user_info","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestUserInfo","test_add_user_info","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Add new store
+            5. Try to add an existing store
+            6. Check that status code is 400
+            7. Check response
+        ","11","test_add_already_existing_store","tests.store_magazine","Tue Aug 12 21:34:39 CST 2025","passed","Tue Aug 12 21:34:39 CST 2025","TestStore","test_add_store","",""
+"
+        Steps.
+            1. Register new user
+            2. Access to store with valid data
+            3. Add user info
+            4. Try to add new store
+            5. Check that status code is 201
+            6. Check response
+        ","26","test_add_store","tests.store_magazine","Tue Aug 12 21:34:38 CST 2025","passed","Tue Aug 12 21:34:38 CST 2025","TestStore","test_add_store","",""

@@ -1,0 +1,50 @@
+2025-08-12 22:30:29 [32mINFO[0m Register new user
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "hansonsarah@example.com",
+    "password": "!F9grsNy*&"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 138
+}
+2025-08-12 22:30:29 [32mINFO[0m Access to store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "hansonsarah@example.com",
+    "password": "!F9grsNy*&"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "378c0d7f-f5d9-4fdf-85b1-cbd98003acb1"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user info
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/138, body:
+{
+    "phone": "(880)731-5996x8628",
+    "email": "greenjacqueline@example.com",
+    "address": {
+        "city": "East Scottview",
+        "street": "Michael Flats",
+        "home_number": "865"
+    }
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/138, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Gonzales,%20Wilson%20and%20Gibbs
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Gonzales,%20Wilson%20and%20Gibbs, status: 201, body:
+{
+    "items": [],
+    "name": "Gonzales, Wilson and Gibbs",
+    "uuid": "81"
+}
+2025-08-12 22:30:29 [32mINFO[0m Get store
+2025-08-12 22:30:29 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/1000
+2025-08-12 22:30:29 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/1000, status: 404, body:
+{
+    "message": "Store not found"
+}

@@ -1,0 +1,73 @@
+2025-08-14 18:05:54 [32mINFO[0m Register new user
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "christopherhuang@example.com",
+    "password": "+A9L1Gcpy7"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 19
+}
+2025-08-14 18:05:54 [32mINFO[0m Access to store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "christopherhuang@example.com",
+    "password": "+A9L1Gcpy7"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "2d80b873-4271-4f78-bfb6-a28286e47db1"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add user info
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/19, body:
+{
+    "phone": "936-906-4716x648",
+    "email": "lclayton@example.org",
+    "address": {
+        "city": "Lake Isabella",
+        "street": "Jesse Valley",
+        "home_number": "8451"
+    }
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/19, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Cohen,%20Henderson%20and%20Santos
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Cohen,%20Henderson%20and%20Santos, status: 201, body:
+{
+    "items": [],
+    "name": "Cohen, Henderson and Santos",
+    "uuid": "16"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new item
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Digitized%20disintermediate%20knowledgebase, body:
+{
+    "name": "Digitized disintermediate knowledgebase",
+    "price": 46391,
+    "store_id": "16"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Digitized%20disintermediate%20knowledgebase, status: 201, body:
+{
+    "itemID": 10,
+    "name": "Digitized disintermediate knowledgebase",
+    "price": 46391
+}
+2025-08-14 18:05:54 [32mINFO[0m Add user balance
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/19, body: {
+    "balance": 105476
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/19, status: 201, body:
+{
+    "balance": 105476.0,
+    "message": "Balance added successfully"
+}
+2025-08-14 18:05:54 [32mINFO[0m Get user balance
+2025-08-14 18:05:54 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/19
+2025-08-14 18:05:54 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/19, status: 200, body:
+{
+    "balance": 105476.0,
+    "message": "Balance retrieved successfully"
+}

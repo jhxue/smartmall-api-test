@@ -1,0 +1,68 @@
+2025-08-12 20:56:05 [32mINFO[0m Register new user
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "zacharybrown@example.com",
+    "password": "T9BB9Se!)A"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 8
+}
+2025-08-12 20:56:05 [32mINFO[0m Access to store
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "zacharybrown@example.com",
+    "password": "T9BB9Se!)A"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "950aec49-ebaf-408a-b38e-c4317acfe842"
+}
+2025-08-12 20:56:05 [32mINFO[0m Add user info
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/8, body:
+{
+    "phone": "907-242-0301x5410",
+    "email": "peterbryant@example.net",
+    "address": {
+        "city": "New Michael",
+        "street": "Kathleen Shores",
+        "home_number": "281"
+    }
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/8, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 20:56:05 [32mINFO[0m Add new store
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Russell%20Group
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Russell%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Russell Group",
+    "uuid": "5"
+}
+2025-08-12 20:56:05 [32mINFO[0m Add new item
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Profound%20mission-critical%20Graphic%20Interface, body:
+{
+    "name": "Profound mission-critical Graphic Interface",
+    "price": 18456,
+    "store_id": "5"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Profound%20mission-critical%20Graphic%20Interface, status: 201, body:
+{
+    "itemID": 5,
+    "name": "Profound mission-critical Graphic Interface",
+    "price": 18456
+}
+2025-08-12 20:56:05 [32mINFO[0m Add new item
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Profound%20mission-critical%20Graphic%20Interface, body:
+{
+    "name": "Profound mission-critical Graphic Interface",
+    "price": 18456,
+    "store_id": "5"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Profound%20mission-critical%20Graphic%20Interface, status: 400, body:
+{
+    "message": "An item with name 'Profound mission-critical Graphic Interface' already exists."
+}

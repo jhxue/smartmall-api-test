@@ -1,0 +1,50 @@
+2025-08-12 22:35:37 [32mINFO[0m Register new user
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kathryn73@example.org",
+    "password": "H_8fMYfp0B"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 44
+}
+2025-08-12 22:35:37 [32mINFO[0m Access to store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kathryn73@example.org",
+    "password": "H_8fMYfp0B"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "26e0eb10-27e6-47a9-9e5e-dd071b351f6d"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add user info
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/44, body:
+{
+    "phone": "783.990.5931x0447",
+    "email": "michaelreilly@example.com",
+    "address": {
+        "city": "Annashire",
+        "street": "Copeland Alley",
+        "home_number": "07249"
+    }
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/44, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Odom-Davis
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Odom-Davis, status: 201, body:
+{
+    "items": [],
+    "name": "Odom-Davis",
+    "uuid": "28"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Odom-Davis
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Odom-Davis, status: 400, body:
+{
+    "message": "A store with name 'Odom-Davis' already exists."
+}

@@ -1,0 +1,52 @@
+2025-08-12 22:06:03 [32mINFO[0m Register new user
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "vincentduran@example.com",
+    "password": "B*_s2Ab2pl"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 77
+}
+2025-08-12 22:06:03 [32mINFO[0m Access to store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "vincentduran@example.com",
+    "password": "B*_s2Ab2pl"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "640f206e-9448-409d-b94b-c324fb1c0acb"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user info
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/77, body:
+{
+    "phone": "611-885-2423x62861",
+    "email": "tracy04@example.org",
+    "address": {
+        "city": "East Dustin",
+        "street": "Sean Grove",
+        "home_number": "6035"
+    }
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/77, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Chandler,%20Sutton%20and%20Walker
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Chandler,%20Sutton%20and%20Walker, status: 201, body:
+{
+    "items": [],
+    "name": "Chandler, Sutton and Walker",
+    "uuid": "46"
+}
+2025-08-12 22:06:03 [32mINFO[0m Get store
+2025-08-12 22:06:03 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/Chandler,%20Sutton%20and%20Walker
+2025-08-12 22:06:03 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/Chandler,%20Sutton%20and%20Walker, status: 200, body:
+{
+    "items": [],
+    "name": "Chandler, Sutton and Walker",
+    "uuid": "46"
+}

@@ -1,0 +1,52 @@
+2025-08-12 22:35:37 [32mINFO[0m Register new user
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kristopherhunter@example.org",
+    "password": "@^er0SzhS3"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 45
+}
+2025-08-12 22:35:37 [32mINFO[0m Access to store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kristopherhunter@example.org",
+    "password": "@^er0SzhS3"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "28717be5-4aa1-4bc6-a6ec-bf984f7d7c5e"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add user info
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/45, body:
+{
+    "phone": "(857)504-9258",
+    "email": "carla28@example.com",
+    "address": {
+        "city": "West Jenniferview",
+        "street": "Ryan Ferry",
+        "home_number": "0426"
+    }
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/45, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Smith,%20Carrillo%20and%20Cole
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Smith,%20Carrillo%20and%20Cole, status: 201, body:
+{
+    "items": [],
+    "name": "Smith, Carrillo and Cole",
+    "uuid": "29"
+}
+2025-08-12 22:35:37 [32mINFO[0m Get store
+2025-08-12 22:35:37 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/Smith,%20Carrillo%20and%20Cole
+2025-08-12 22:35:37 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/Smith,%20Carrillo%20and%20Cole, status: 200, body:
+{
+    "items": [],
+    "name": "Smith, Carrillo and Cole",
+    "uuid": "29"
+}

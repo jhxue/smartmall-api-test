@@ -1,0 +1,63 @@
+2025-08-12 22:33:39 [32mINFO[0m Register new user
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "carrillodoris@example.org",
+    "password": "qHp2aFga(("
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 255
+}
+2025-08-12 22:33:39 [32mINFO[0m Access to store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "carrillodoris@example.org",
+    "password": "qHp2aFga(("
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "1f9d4f0d-5735-4ca1-8d27-80f464d235d7"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user info
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/255, body:
+{
+    "phone": "890.525.7007",
+    "email": "sullivanwanda@example.com",
+    "address": {
+        "city": "Hernandezville",
+        "street": "Lisa Glens",
+        "home_number": "6027"
+    }
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/255, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Wallace%20PLC
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Wallace%20PLC, status: 201, body:
+{
+    "items": [],
+    "name": "Wallace PLC",
+    "uuid": "144"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new item
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Multi-tiered%20didactic%20policy, body:
+{
+    "name": "Multi-tiered didactic policy",
+    "price": 63224,
+    "store_id": "144"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Multi-tiered%20didactic%20policy, status: 201, body:
+{
+    "itemID": 95,
+    "name": "Multi-tiered didactic policy",
+    "price": 63224
+}
+2025-08-12 22:33:39 [32mINFO[0m Get item
+2025-08-12 22:33:39 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-12 22:33:39 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

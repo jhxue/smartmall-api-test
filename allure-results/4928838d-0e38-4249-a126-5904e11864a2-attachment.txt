@@ -1,0 +1,44 @@
+2025-08-12 20:56:05 [32mINFO[0m Register new user
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "robertgregory@example.org",
+    "password": "U3wPl%+@(n"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 13
+}
+2025-08-12 20:56:05 [32mINFO[0m Access to store
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "robertgregory@example.org",
+    "password": "U3wPl%+@(n"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "07736ec7-276d-4806-a029-643215c30d5e"
+}
+2025-08-12 20:56:05 [32mINFO[0m Add user info
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/13, body:
+{
+    "phone": "(346)924-9015x788",
+    "email": "gabrielle31@example.net",
+    "address": {
+        "city": "Lake Nathan",
+        "street": "Robinson Crescent",
+        "home_number": "250"
+    }
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/13, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 20:56:05 [32mINFO[0m Add new store
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Sherman-Lamb
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Sherman-Lamb, status: 201, body:
+{
+    "items": [],
+    "name": "Sherman-Lamb",
+    "uuid": "10"
+}

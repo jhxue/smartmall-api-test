@@ -1,0 +1,71 @@
+2025-08-12 22:35:37 [32mINFO[0m Register new user
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "smithkevin@example.org",
+    "password": "t(M7Dnp7v0"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 39
+}
+2025-08-12 22:35:37 [32mINFO[0m Access to store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "smithkevin@example.org",
+    "password": "t(M7Dnp7v0"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "1c615970-48cf-416e-adde-0a86923dcaa2"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add user info
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/39, body:
+{
+    "phone": "372.717.0609x2181",
+    "email": "edward61@example.net",
+    "address": {
+        "city": "East Pamelaberg",
+        "street": "Evans Trace",
+        "home_number": "82177"
+    }
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/39, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Turner-Lewis
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Turner-Lewis, status: 201, body:
+{
+    "items": [],
+    "name": "Turner-Lewis",
+    "uuid": "23"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new item
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Fundamental%20cohesive%20Local%20Area%20Network, body:
+{
+    "name": "Fundamental cohesive Local Area Network",
+    "price": 12001,
+    "store_id": "23"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Fundamental%20cohesive%20Local%20Area%20Network, status: 201, body:
+{
+    "itemID": 17,
+    "name": "Fundamental cohesive Local Area Network",
+    "price": 12001
+}
+2025-08-12 22:35:37 [32mINFO[0m Change item
+2025-08-12 22:35:37 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Fundamental%20cohesive%20Local%20Area%20Network, body:
+{
+    "name": "Fundamental cohesive Local Area Network",
+    "price": 49145,
+    "store_id": "23"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Fundamental%20cohesive%20Local%20Area%20Network, status: 200, body:
+{
+    "itemID": 17,
+    "name": "Fundamental cohesive Local Area Network",
+    "price": 49145,
+    "store_id": "23"
+}

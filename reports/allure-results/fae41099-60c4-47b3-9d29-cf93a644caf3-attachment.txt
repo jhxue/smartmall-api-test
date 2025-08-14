@@ -1,0 +1,50 @@
+2025-08-12 22:06:03 [32mINFO[0m Register new user
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "michelle99@example.net",
+    "password": "&1%zJY6d@k"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 78
+}
+2025-08-12 22:06:03 [32mINFO[0m Access to store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "michelle99@example.net",
+    "password": "&1%zJY6d@k"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "d053c586-2c03-4c7f-a1e4-afce249fff53"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user info
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/78, body:
+{
+    "phone": "359-890-5152x3976",
+    "email": "kporter@example.org",
+    "address": {
+        "city": "Port Jacquelinebury",
+        "street": "Coleman Branch",
+        "home_number": "52429"
+    }
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/78, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Wells%20and%20Sons
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Wells%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Wells and Sons",
+    "uuid": "47"
+}
+2025-08-12 22:06:03 [32mINFO[0m Get store
+2025-08-12 22:06:03 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/1000
+2025-08-12 22:06:03 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/1000, status: 404, body:
+{
+    "message": "Store not found"
+}

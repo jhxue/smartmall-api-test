@@ -1,0 +1,63 @@
+2025-08-12 22:34:07 [32mINFO[0m Register new user
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "stephen72@example.net",
+    "password": "LI6KzAyK(X"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 315
+}
+2025-08-12 22:34:07 [32mINFO[0m Access to store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "stephen72@example.net",
+    "password": "LI6KzAyK(X"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "277fee5c-ead0-4cc9-9468-32b3030d722e"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user info
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/315, body:
+{
+    "phone": "325.523.5623x350",
+    "email": "moniquevazquez@example.net",
+    "address": {
+        "city": "Carriehaven",
+        "street": "Nguyen Road",
+        "home_number": "4518"
+    }
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/315, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Lin-Robinson
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Lin-Robinson, status: 201, body:
+{
+    "items": [],
+    "name": "Lin-Robinson",
+    "uuid": "177"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new item
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Synergistic%20uniform%20knowledgebase, body:
+{
+    "name": "Synergistic uniform knowledgebase",
+    "price": 71311,
+    "store_id": "177"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Synergistic%20uniform%20knowledgebase, status: 201, body:
+{
+    "itemID": 116,
+    "name": "Synergistic uniform knowledgebase",
+    "price": 71311
+}
+2025-08-12 22:34:07 [32mINFO[0m Get item
+2025-08-12 22:34:07 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-12 22:34:07 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

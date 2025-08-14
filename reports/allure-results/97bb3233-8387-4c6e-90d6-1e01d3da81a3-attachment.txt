@@ -1,0 +1,74 @@
+2025-08-12 22:41:39 [32mINFO[0m Register new user
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "eadkins@example.net",
+    "password": "+6J8OsQn37"
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 4
+}
+2025-08-12 22:41:39 [32mINFO[0m Access to store
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "eadkins@example.net",
+    "password": "+6J8OsQn37"
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b91fb514-a68c-4af4-bddb-c15a2bbcb1d4"
+}
+2025-08-12 22:41:39 [32mINFO[0m Add user info
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/4, body:
+{
+    "phone": "254-541-0251x688",
+    "email": "dhanson@example.com",
+    "address": {
+        "city": "New Shawnshire",
+        "street": "Lee Hills",
+        "home_number": "25610"
+    }
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/4, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:39 [32mINFO[0m Add new store
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Davis,%20Sanders%20and%20Williams
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Davis,%20Sanders%20and%20Williams, status: 201, body:
+{
+    "items": [],
+    "name": "Davis, Sanders and Williams",
+    "uuid": "3"
+}
+2025-08-12 22:41:39 [32mINFO[0m Add new item
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Reverse-engineered%20holistic%20archive, body:
+{
+    "name": "Reverse-engineered holistic archive",
+    "price": 47146,
+    "store_id": "3"
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Reverse-engineered%20holistic%20archive, status: 201, body:
+{
+    "itemID": 3,
+    "name": "Reverse-engineered holistic archive",
+    "price": 47146
+}
+2025-08-12 22:41:39 [32mINFO[0m Add user balance
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/4, body: {
+    "balance": 0
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/4, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:41:39 [32mINFO[0m Pay item
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/4, body: {
+    "itemId": 3
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/4, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 47146.0"
+}

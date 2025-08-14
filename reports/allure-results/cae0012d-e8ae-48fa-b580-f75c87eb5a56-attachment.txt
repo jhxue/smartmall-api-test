@@ -1,0 +1,63 @@
+2025-08-12 22:30:42 [32mINFO[0m Register new user
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "alicia88@example.net",
+    "password": "E6OOimUS+9"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 193
+}
+2025-08-12 22:30:42 [32mINFO[0m Access to store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "alicia88@example.net",
+    "password": "E6OOimUS+9"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "5c9d0ebb-a8bf-411e-89a0-fcd7cb4b273b"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add user info
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/193, body:
+{
+    "phone": "+1-376-408-4244x454",
+    "email": "robinsonkelly@example.net",
+    "address": {
+        "city": "North Dean",
+        "street": "Alvarado Tunnel",
+        "home_number": "9905"
+    }
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/193, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Dennis%20LLC
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Dennis%20LLC, status: 201, body:
+{
+    "items": [],
+    "name": "Dennis LLC",
+    "uuid": "109"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new item
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Streamlined%20incremental%20matrix, body:
+{
+    "name": "Streamlined incremental matrix",
+    "price": 78753,
+    "store_id": "109"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Streamlined%20incremental%20matrix, status: 201, body:
+{
+    "itemID": 73,
+    "name": "Streamlined incremental matrix",
+    "price": 78753
+}
+2025-08-12 22:30:42 [32mINFO[0m Get item
+2025-08-12 22:30:42 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-12 22:30:42 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

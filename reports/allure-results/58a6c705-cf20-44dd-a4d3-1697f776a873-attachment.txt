@@ -1,0 +1,57 @@
+2025-08-12 22:41:40 [32mINFO[0m Register new user
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "brittanyhardy@example.com",
+    "password": "@3mtkeMboN"
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 7
+}
+2025-08-12 22:41:40 [32mINFO[0m Access to store
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "brittanyhardy@example.com",
+    "password": "@3mtkeMboN"
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "8598b687-5aa6-4677-a3d4-5b292680c87c"
+}
+2025-08-12 22:41:40 [32mINFO[0m Add user info
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/7, body:
+{
+    "phone": "(311)365-5696x57425",
+    "email": "reynoldsdustin@example.net",
+    "address": {
+        "city": "Lake Rebecca",
+        "street": "Snow Trafficway",
+        "home_number": "029"
+    }
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/7, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:40 [32mINFO[0m Add new store
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Carson%20PLC
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Carson%20PLC, status: 201, body:
+{
+    "items": [],
+    "name": "Carson PLC",
+    "uuid": "4"
+}
+2025-08-12 22:41:40 [32mINFO[0m Add new item
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Seamless%20intermediate%20function, body:
+{
+    "name": "Seamless intermediate function",
+    "price": 4082,
+    "store_id": "4"
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Seamless%20intermediate%20function, status: 201, body:
+{
+    "itemID": 4,
+    "name": "Seamless intermediate function",
+    "price": 4082
+}

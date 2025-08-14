@@ -1,0 +1,72 @@
+2025-08-12 22:06:03 [32mINFO[0m Register new user
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "julian76@example.net",
+    "password": "^vFegdTq43"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 82
+}
+2025-08-12 22:06:03 [32mINFO[0m Access to store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "julian76@example.net",
+    "password": "^vFegdTq43"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "948a6029-83c8-4086-abcd-0a1cae224bdf"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user info
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/82, body:
+{
+    "phone": "001-252-642-9167x6362",
+    "email": "roger56@example.org",
+    "address": {
+        "city": "Jonesview",
+        "street": "Daniel Stream",
+        "home_number": "21601"
+    }
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/82, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Dawson%20Group
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Dawson%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Dawson Group",
+    "uuid": "51"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new item
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Organized%20leadingedge%20synergy, body:
+{
+    "name": "Organized leadingedge synergy",
+    "price": 45797,
+    "store_id": "51"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Organized%20leadingedge%20synergy, status: 201, body:
+{
+    "itemID": 33,
+    "name": "Organized leadingedge synergy",
+    "price": 45797
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user balance
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/82, body: {
+    "balance": 192678
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/82, status: 201, body:
+{
+    "balance": 192678.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:06:03 [32mINFO[0m Get user balance
+2025-08-12 22:06:03 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:06:03 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

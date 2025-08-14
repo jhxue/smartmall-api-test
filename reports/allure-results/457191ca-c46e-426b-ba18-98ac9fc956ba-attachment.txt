@@ -1,0 +1,66 @@
+2025-08-12 22:35:46 [32mINFO[0m Register new user
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "hernandezbill@example.net",
+    "password": "qWA3u0oN$8"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 70
+}
+2025-08-12 22:35:46 [32mINFO[0m Access to store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "hernandezbill@example.net",
+    "password": "qWA3u0oN$8"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "07b78e2f-e74a-41e0-9adc-bd3da9a65f8e"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user info
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/70, body:
+{
+    "phone": "842.851.3263",
+    "email": "nelsonbryan@example.org",
+    "address": {
+        "city": "Lake Samuelhaven",
+        "street": "Ashley Flats",
+        "home_number": "534"
+    }
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/70, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Davis%20Group
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Davis%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Davis Group",
+    "uuid": "41"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new item
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Future-proofed%20non-volatile%20migration, body:
+{
+    "name": "Future-proofed non-volatile migration",
+    "price": 62430,
+    "store_id": "41"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Future-proofed%20non-volatile%20migration, status: 201, body:
+{
+    "itemID": 29,
+    "name": "Future-proofed non-volatile migration",
+    "price": 62430
+}
+2025-08-12 22:35:46 [32mINFO[0m Get item
+2025-08-12 22:35:46 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Future-proofed%20non-volatile%20migration
+2025-08-12 22:35:46 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Future-proofed%20non-volatile%20migration, status: 200, body:
+{
+    "itemID": 29,
+    "name": "Future-proofed non-volatile migration",
+    "price": 62430,
+    "store_id": "41"
+}

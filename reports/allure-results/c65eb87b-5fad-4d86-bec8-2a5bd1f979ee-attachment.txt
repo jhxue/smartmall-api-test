@@ -1,0 +1,50 @@
+2025-08-12 22:30:36 [32mINFO[0m Register new user
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "juanreynolds@example.com",
+    "password": "+C083MEe$^"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 168
+}
+2025-08-12 22:30:36 [32mINFO[0m Access to store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "juanreynolds@example.com",
+    "password": "+C083MEe$^"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "7d41017c-2155-4866-9944-687b160c722c"
+}
+2025-08-12 22:30:36 [32mINFO[0m Add user info
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/168, body:
+{
+    "phone": "541-638-6071x359",
+    "email": "zanderson@example.org",
+    "address": {
+        "city": "East Lauren",
+        "street": "Victoria Fields",
+        "home_number": "218"
+    }
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/168, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:36 [32mINFO[0m Add new store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Krueger-Young
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Krueger-Young, status: 201, body:
+{
+    "items": [],
+    "name": "Krueger-Young",
+    "uuid": "98"
+}
+2025-08-12 22:30:36 [32mINFO[0m Get store
+2025-08-12 22:30:36 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/1000
+2025-08-12 22:30:36 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/1000, status: 404, body:
+{
+    "message": "Store not found"
+}

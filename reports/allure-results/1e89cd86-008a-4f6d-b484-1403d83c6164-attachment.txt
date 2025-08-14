@@ -1,0 +1,52 @@
+2025-08-13 17:26:05 [32mINFO[0m Register new user
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "davidwallace@example.com",
+    "password": "BUSwxYRK$1"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 18
+}
+2025-08-13 17:26:05 [32mINFO[0m Access to store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "davidwallace@example.com",
+    "password": "BUSwxYRK$1"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "92875e81-b530-49c2-9859-faa5e09b1824"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user info
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/18, body:
+{
+    "phone": "+1-369-817-2501",
+    "email": "carolynbryant@example.com",
+    "address": {
+        "city": "Hernandezstad",
+        "street": "Walters Views",
+        "home_number": "974"
+    }
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/18, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Gregory-Coleman
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Gregory-Coleman, status: 201, body:
+{
+    "items": [],
+    "name": "Gregory-Coleman",
+    "uuid": "15"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user balance
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2000, body: {
+    "balance": 195122
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "User not found."
+}

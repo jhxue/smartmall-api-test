@@ -1,0 +1,57 @@
+2025-08-12 22:33:39 [32mINFO[0m Register new user
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ljones@example.org",
+    "password": "Ot)9E4NxFV"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 251
+}
+2025-08-12 22:33:39 [32mINFO[0m Access to store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ljones@example.org",
+    "password": "Ot)9E4NxFV"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "3facf9b4-ce3f-46e6-9e27-607f8358fc05"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user info
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/251, body:
+{
+    "phone": "926-304-2625x030",
+    "email": "kellygutierrez@example.net",
+    "address": {
+        "city": "Stephenville",
+        "street": "Gary Centers",
+        "home_number": "00987"
+    }
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/251, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Clarke,%20Hall%20and%20Johnson
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Clarke,%20Hall%20and%20Johnson, status: 201, body:
+{
+    "items": [],
+    "name": "Clarke, Hall and Johnson",
+    "uuid": "140"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new item
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Customer-focused%20zero-defect%20artificial%20intelligence, body:
+{
+    "name": "Customer-focused zero-defect artificial intelligence",
+    "price": 69337,
+    "store_id": "140"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Customer-focused%20zero-defect%20artificial%20intelligence, status: 201, body:
+{
+    "itemID": 91,
+    "name": "Customer-focused zero-defect artificial intelligence",
+    "price": 69337
+}

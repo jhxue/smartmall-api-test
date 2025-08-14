@@ -1,0 +1,77 @@
+2025-08-12 22:41:39 [32mINFO[0m Register new user
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "joneskristine@example.org",
+    "password": "#2Dtt^9r)u"
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 2
+}
+2025-08-12 22:41:39 [32mINFO[0m Access to store
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "joneskristine@example.org",
+    "password": "#2Dtt^9r)u"
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "3ae2269f-44f5-4813-830d-5d4a6bab1c77"
+}
+2025-08-12 22:41:39 [32mINFO[0m Add user info
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/2, body:
+{
+    "phone": "(691)834-2809x064",
+    "email": "trichardson@example.net",
+    "address": {
+        "city": "Patrickton",
+        "street": "Courtney Creek",
+        "home_number": "39556"
+    }
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/2, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:39 [32mINFO[0m Add new store
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Lewis,%20Freeman%20and%20Cohen
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Lewis,%20Freeman%20and%20Cohen, status: 201, body:
+{
+    "items": [],
+    "name": "Lewis, Freeman and Cohen",
+    "uuid": "1"
+}
+2025-08-12 22:41:39 [32mINFO[0m Add new item
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Visionary%20didactic%20parallelism, body:
+{
+    "name": "Visionary didactic parallelism",
+    "price": 54773,
+    "store_id": "1"
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Visionary%20didactic%20parallelism, status: 201, body:
+{
+    "itemID": 1,
+    "name": "Visionary didactic parallelism",
+    "price": 54773
+}
+2025-08-12 22:41:39 [32mINFO[0m Add user balance
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2, body: {
+    "balance": 173073
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2, status: 201, body:
+{
+    "balance": 173073.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:41:39 [32mINFO[0m Pay item
+2025-08-12 22:41:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/2, body: {
+    "itemId": 1
+}
+2025-08-12 22:41:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/2, status: 200, body:
+{
+    "balance": 118300.0,
+    "message": "Payment successful",
+    "name": "Visionary didactic parallelism",
+    "price": 54773.0
+}

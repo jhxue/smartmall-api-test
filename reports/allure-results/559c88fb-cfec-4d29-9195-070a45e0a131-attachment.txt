@@ -1,0 +1,250 @@
+2025-08-12 22:35:46 [32mINFO[0m Register new user
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "stephensonnicole@example.net",
+    "password": "#3YP^x(b(c"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 72
+}
+2025-08-12 22:35:46 [32mINFO[0m Access to store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "stephensonnicole@example.net",
+    "password": "#3YP^x(b(c"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "77ac48f6-c77b-4180-80e4-678ab5e35e18"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user info
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/72, body:
+{
+    "phone": "+1-691-204-5373",
+    "email": "kathy80@example.net",
+    "address": {
+        "city": "Georgeview",
+        "street": "Jennifer Isle",
+        "home_number": "1372"
+    }
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/72, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Logan-Patel
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Logan-Patel, status: 201, body:
+{
+    "items": [],
+    "name": "Logan-Patel",
+    "uuid": "43"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new item
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Persistent%20zero%20tolerance%20policy, body:
+{
+    "name": "Persistent zero tolerance policy",
+    "price": 54875,
+    "store_id": "43"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Persistent%20zero%20tolerance%20policy, status: 201, body:
+{
+    "itemID": 31,
+    "name": "Persistent zero tolerance policy",
+    "price": 54875
+}
+2025-08-12 22:35:46 [32mINFO[0m Get all items
+2025-08-12 22:35:46 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/items
+2025-08-12 22:35:46 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/items, status: 200, body:
+{
+    "items": [
+        {
+            "itemID": 1,
+            "name": "Profound context-sensitive info-mediaries",
+            "price": 18630,
+            "store_id": "1"
+        },
+        {
+            "itemID": 2,
+            "name": "Multi-lateral incremental encryption",
+            "price": 48685,
+            "store_id": "2"
+        },
+        {
+            "itemID": 3,
+            "name": "Implemented bi-directional secured line",
+            "price": 22980,
+            "store_id": "3"
+        },
+        {
+            "itemID": 4,
+            "name": "Profit-focused disintermediate forecast",
+            "price": 41766,
+            "store_id": "4"
+        },
+        {
+            "itemID": 5,
+            "name": "Decentralized bottom-line task-force",
+            "price": 80629,
+            "store_id": "5"
+        },
+        {
+            "itemID": 6,
+            "name": "Expanded tertiary flexibility",
+            "price": 92766,
+            "store_id": "6"
+        },
+        {
+            "itemID": 7,
+            "name": "Optimized zero administration archive",
+            "price": 24143,
+            "store_id": "7"
+        },
+        {
+            "itemID": 8,
+            "name": "Horizontal real-time definition",
+            "price": 96998,
+            "store_id": "8"
+        },
+        {
+            "itemID": 9,
+            "name": "Function-based global extranet",
+            "price": 59194,
+            "store_id": "9"
+        },
+        {
+            "itemID": 10,
+            "name": "Balanced needs-based system engine",
+            "price": 50042,
+            "store_id": "16"
+        },
+        {
+            "itemID": 11,
+            "name": "Synchronized scalable process improvement",
+            "price": 39612,
+            "store_id": "17"
+        },
+        {
+            "itemID": 12,
+            "name": "Seamless eco-centric support",
+            "price": 71791,
+            "store_id": "18"
+        },
+        {
+            "itemID": 13,
+            "name": "Configurable neutral portal",
+            "price": 24910,
+            "store_id": "19"
+        },
+        {
+            "itemID": 14,
+            "name": "Open-architected bifurcated infrastructure",
+            "price": 65768,
+            "store_id": "20"
+        },
+        {
+            "itemID": 15,
+            "name": "Organized non-volatile strategy",
+            "price": 4485,
+            "store_id": "21"
+        },
+        {
+            "itemID": 16,
+            "name": "Digitized content-based alliance",
+            "price": 93224,
+            "store_id": "22"
+        },
+        {
+            "itemID": 17,
+            "name": "Fundamental cohesive Local Area Network",
+            "price": 49145,
+            "store_id": "23"
+        },
+        {
+            "itemID": 18,
+            "name": "Grass-roots executive system engine",
+            "price": 89537,
+            "store_id": "24"
+        },
+        {
+            "itemID": 19,
+            "name": "Team-oriented even-keeled alliance",
+            "price": 82252,
+            "store_id": "25"
+        },
+        {
+            "itemID": 20,
+            "name": "Inverse real-time conglomeration",
+            "price": 11249,
+            "store_id": "26"
+        },
+        {
+            "itemID": 21,
+            "name": "Extended bandwidth-monitored circuit",
+            "price": 57059,
+            "store_id": "33"
+        },
+        {
+            "itemID": 22,
+            "name": "Compatible bottom-line leverage",
+            "price": 10816,
+            "store_id": "34"
+        },
+        {
+            "itemID": 23,
+            "name": "Seamless global Graphical User Interface",
+            "price": 88876,
+            "store_id": "35"
+        },
+        {
+            "itemID": 24,
+            "name": "Multi-lateral leadingedge projection",
+            "price": 40862,
+            "store_id": "36"
+        },
+        {
+            "itemID": 25,
+            "name": "Open-architected homogeneous intranet",
+            "price": 80756,
+            "store_id": "37"
+        },
+        {
+            "itemID": 26,
+            "name": "Pre-emptive responsive infrastructure",
+            "price": 28358,
+            "store_id": "38"
+        },
+        {
+            "itemID": 27,
+            "name": "Extended heuristic project",
+            "price": 77985,
+            "store_id": "39"
+        },
+        {
+            "itemID": 28,
+            "name": "Self-enabling directional matrices",
+            "price": 21651,
+            "store_id": "40"
+        },
+        {
+            "itemID": 29,
+            "name": "Future-proofed non-volatile migration",
+            "price": 62430,
+            "store_id": "41"
+        },
+        {
+            "itemID": 30,
+            "name": "Exclusive secondary hardware",
+            "price": 65090,
+            "store_id": "42"
+        },
+        {
+            "itemID": 31,
+            "name": "Persistent zero tolerance policy",
+            "price": 54875,
+            "store_id": "43"
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+2025-08-12 22:30:42 [32mINFO[0m Register new user
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "alexismoore@example.com",
+    "password": "&5GQtaG+!e"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 191
+}
+2025-08-12 22:30:42 [32mINFO[0m Access to store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "alexismoore@example.com",
+    "password": "&5GQtaG+!e"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "58f87f0c-71e7-4d2d-bde1-a1c26e52846d"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add user info
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/191, body:
+{
+    "phone": "001-347-553-3211x170",
+    "email": "ysmith@example.org",
+    "address": {
+        "city": "East Charles",
+        "street": "Dylan Roads",
+        "home_number": "516"
+    }
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/191, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Jimenez-Anderson
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Jimenez-Anderson, status: 201, body:
+{
+    "items": [],
+    "name": "Jimenez-Anderson",
+    "uuid": "107"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new item
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/User-centric%20responsive%20analyzer, body:
+{
+    "name": "User-centric responsive analyzer",
+    "price": 65703,
+    "store_id": "107"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/User-centric%20responsive%20analyzer, status: 201, body:
+{
+    "itemID": 71,
+    "name": "User-centric responsive analyzer",
+    "price": 65703
+}
+2025-08-12 22:30:42 [32mINFO[0m Change item
+2025-08-12 22:30:42 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/User-centric%20responsive%20analyzer, body:
+{
+    "name": "User-centric responsive analyzer",
+    "price": 9279,
+    "store_id": "107"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/User-centric%20responsive%20analyzer, status: 200, body:
+{
+    "itemID": 71,
+    "name": "User-centric responsive analyzer",
+    "price": 9279,
+    "store_id": "107"
+}

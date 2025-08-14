@@ -1,0 +1,50 @@
+2025-08-12 22:30:36 [32mINFO[0m Register new user
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kevin03@example.net",
+    "password": "!fwPXuwaX3"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 166
+}
+2025-08-12 22:30:36 [32mINFO[0m Access to store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kevin03@example.net",
+    "password": "!fwPXuwaX3"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "679e6056-d36f-4c76-a160-14dd166d211e"
+}
+2025-08-12 22:30:36 [32mINFO[0m Add user info
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/166, body:
+{
+    "phone": "425.631.1336",
+    "email": "anna36@example.org",
+    "address": {
+        "city": "Conleyburgh",
+        "street": "Morgan Lane",
+        "home_number": "450"
+    }
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/166, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:36 [32mINFO[0m Add new store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Stewart%20PLC
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Stewart%20PLC, status: 201, body:
+{
+    "items": [],
+    "name": "Stewart PLC",
+    "uuid": "96"
+}
+2025-08-12 22:30:36 [32mINFO[0m Add new store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Stewart%20PLC
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Stewart%20PLC, status: 400, body:
+{
+    "message": "A store with name 'Stewart PLC' already exists."
+}

@@ -1,0 +1,178 @@
+2025-08-12 22:43:17 [32mINFO[0m Register new user
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "johnsmith@example.com",
+    "password": "(eWeTHtu@6"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 42
+}
+2025-08-12 22:43:17 [32mINFO[0m Access to store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "johnsmith@example.com",
+    "password": "(eWeTHtu@6"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "90532fdd-8a69-45e7-9fc9-425cde2cff09"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user info
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/42, body:
+{
+    "phone": "731-733-8712",
+    "email": "hudsonwilliam@example.org",
+    "address": {
+        "city": "Rodriguezmouth",
+        "street": "Mcclure Lane",
+        "home_number": "713"
+    }
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/42, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Tran,%20Reese%20and%20Nelson
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Tran,%20Reese%20and%20Nelson, status: 201, body:
+{
+    "items": [],
+    "name": "Tran, Reese and Nelson",
+    "uuid": "26"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new item
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Universal%20tangible%20Graphical%20User%20Interface, body:
+{
+    "name": "Universal tangible Graphical User Interface",
+    "price": 97798,
+    "store_id": "26"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Universal%20tangible%20Graphical%20User%20Interface, status: 201, body:
+{
+    "itemID": 19,
+    "name": "Universal tangible Graphical User Interface",
+    "price": 97798
+}
+2025-08-12 22:43:17 [32mINFO[0m Get all items
+2025-08-12 22:43:17 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/items
+2025-08-12 22:43:17 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/items, status: 200, body:
+{
+    "items": [
+        {
+            "itemID": 1,
+            "name": "Visionary didactic parallelism",
+            "price": 54773,
+            "store_id": "1"
+        },
+        {
+            "itemID": 2,
+            "name": "Programmable system-worthy model",
+            "price": 44045,
+            "store_id": "2"
+        },
+        {
+            "itemID": 3,
+            "name": "Reverse-engineered holistic archive",
+            "price": 47146,
+            "store_id": "3"
+        },
+        {
+            "itemID": 4,
+            "name": "Seamless intermediate function",
+            "price": 4082,
+            "store_id": "4"
+        },
+        {
+            "itemID": 5,
+            "name": "Team-oriented reciprocal support",
+            "price": 87323,
+            "store_id": "5"
+        },
+        {
+            "itemID": 6,
+            "name": "Persistent mobile system engine",
+            "price": 70931,
+            "store_id": "7"
+        },
+        {
+            "itemID": 7,
+            "name": "Public-key web-enabled capability",
+            "price": 60539,
+            "store_id": "8"
+        },
+        {
+            "itemID": 8,
+            "name": "Cross-group 3rdgeneration protocol",
+            "price": 68834,
+            "store_id": "9"
+        },
+        {
+            "itemID": 9,
+            "name": "Extended web-enabled definition",
+            "price": 41986,
+            "store_id": "16"
+        },
+        {
+            "itemID": 10,
+            "name": "Virtual holistic knowledge user",
+            "price": 40986,
+            "store_id": "17"
+        },
+        {
+            "itemID": 11,
+            "name": "Face-to-face regional parallelism",
+            "price": 91812,
+            "store_id": "18"
+        },
+        {
+            "itemID": 12,
+            "name": "Right-sized foreground concept",
+            "price": 88286,
+            "store_id": "19"
+        },
+        {
+            "itemID": 13,
+            "name": "Mandatory object-oriented support",
+            "price": 64665,
+            "store_id": "20"
+        },
+        {
+            "itemID": 14,
+            "name": "Down-sized radical orchestration",
+            "price": 83913,
+            "store_id": "21"
+        },
+        {
+            "itemID": 15,
+            "name": "Open-architected fresh-thinking open system",
+            "price": 9924,
+            "store_id": "22"
+        },
+        {
+            "itemID": 16,
+            "name": "Grass-roots intangible approach",
+            "price": 37648,
+            "store_id": "23"
+        },
+        {
+            "itemID": 17,
+            "name": "Managed bottom-line secured line",
+            "price": 45543,
+            "store_id": "24"
+        },
+        {
+            "itemID": 18,
+            "name": "Profound reciprocal structure",
+            "price": 25602,
+            "store_id": "25"
+        },
+        {
+            "itemID": 19,
+            "name": "Universal tangible Graphical User Interface",
+            "price": 97798,
+            "store_id": "26"
+        }
+    ]
+}

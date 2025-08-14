@@ -1,0 +1,66 @@
+2025-08-12 22:30:35 [32mINFO[0m Register new user
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "martin30@example.net",
+    "password": "(o25AdyxdK"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 162
+}
+2025-08-12 22:30:35 [32mINFO[0m Access to store
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "martin30@example.net",
+    "password": "(o25AdyxdK"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "9f26bc0b-4a63-4a86-ae23-4f8a9e53f6fd"
+}
+2025-08-12 22:30:35 [32mINFO[0m Add user info
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/162, body:
+{
+    "phone": "001-528-325-3335x210",
+    "email": "thomas71@example.net",
+    "address": {
+        "city": "Alexandermouth",
+        "street": "Diana Ferry",
+        "home_number": "173"
+    }
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/162, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:35 [32mINFO[0m Add new store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Lee,%20Rodriguez%20and%20Galvan
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Lee,%20Rodriguez%20and%20Galvan, status: 201, body:
+{
+    "items": [],
+    "name": "Lee, Rodriguez and Galvan",
+    "uuid": "92"
+}
+2025-08-12 22:30:36 [32mINFO[0m Add new item
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Switchable%20client-server%20core, body:
+{
+    "name": "Switchable client-server core",
+    "price": 84080,
+    "store_id": "92"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Switchable%20client-server%20core, status: 201, body:
+{
+    "itemID": 61,
+    "name": "Switchable client-server core",
+    "price": 84080
+}
+2025-08-12 22:30:36 [32mINFO[0m Get item
+2025-08-12 22:30:36 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Switchable%20client-server%20core
+2025-08-12 22:30:36 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Switchable%20client-server%20core, status: 200, body:
+{
+    "itemID": 61,
+    "name": "Switchable client-server core",
+    "price": 84080,
+    "store_id": "92"
+}

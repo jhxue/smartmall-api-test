@@ -1,0 +1,42 @@
+2025-08-12 22:30:43 [32mINFO[0m Register new user
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "turnerbrianna@example.net",
+    "password": "+L63tVi(C7"
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 210
+}
+2025-08-12 22:30:43 [32mINFO[0m Access to store
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "turnerbrianna@example.net",
+    "password": "+L63tVi(C7"
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "ec9c0f82-8855-40b0-8793-8138cbe410a2"
+}
+2025-08-12 22:30:43 [32mINFO[0m Add user info
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/210, body:
+{
+    "phone": "567.602.7379x44231",
+    "email": "keithtodd@example.net",
+    "address": {
+        "city": "New Gary",
+        "street": "Patricia Park",
+        "home_number": "3947"
+    }
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/210, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:43 [32mINFO[0m Get user info
+2025-08-12 22:30:43 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/user_info/1000
+2025-08-12 22:30:43 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/user_info/1000, status: 404, body:
+{
+    "message": "User info not found"
+}

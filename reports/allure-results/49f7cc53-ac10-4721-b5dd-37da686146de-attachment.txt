@@ -1,0 +1,74 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "christophergriffin@example.com",
+    "password": "5xM94LtYZ*"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 4
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "christophergriffin@example.com",
+    "password": "5xM94LtYZ*"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "0538c485-cd52-4c71-9765-a125d90b7e71"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/4, body:
+{
+    "phone": "523-249-4173x614",
+    "email": "owyatt@example.com",
+    "address": {
+        "city": "Fosterfurt",
+        "street": "Grant Brook",
+        "home_number": "6193"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/4, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Solomon%20and%20Sons
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Solomon%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Solomon and Sons",
+    "uuid": "3"
+}
+2025-08-12 22:40:21 INFO Add new item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/item/Ergonomic%20bifurcated%20success, body:
+{
+    "name": "Ergonomic bifurcated success",
+    "price": 18725,
+    "store_id": "3"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/item/Ergonomic%20bifurcated%20success, status: 201, body:
+{
+    "itemID": 3,
+    "name": "Ergonomic bifurcated success",
+    "price": 18725
+}
+2025-08-12 22:40:21 INFO Add user balance
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/balance/4, body: {
+    "balance": 0
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/balance/4, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:40:21 INFO Pay item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/pay/4, body: {
+    "itemId": 3
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/pay/4, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 18725.0"
+}

@@ -1,0 +1,12 @@
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "brandimarshall@example.net",
+    "password": "%IZkiMrn6z"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 401, body:
+{
+    "description": "Invalid credentials",
+    "error": "Bad Request",
+    "status_code": 401
+}

@@ -1,0 +1,63 @@
+2025-08-12 22:35:20 [32mINFO[0m Register new user
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "alvaradokimberly@example.net",
+    "password": "#4h0PxiT06"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 11
+}
+2025-08-12 22:35:20 [32mINFO[0m Access to store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "alvaradokimberly@example.net",
+    "password": "#4h0PxiT06"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "18895431-45fa-49b1-8ff8-ddcef5e81743"
+}
+2025-08-12 22:35:20 [32mINFO[0m Add user info
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/11, body:
+{
+    "phone": "(494)858-7026",
+    "email": "qrichardson@example.com",
+    "address": {
+        "city": "New Cynthia",
+        "street": "Melissa Knolls",
+        "home_number": "8373"
+    }
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/11, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:20 [32mINFO[0m Add new store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Holmes,%20Martinez%20and%20Davidson
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Holmes,%20Martinez%20and%20Davidson, status: 201, body:
+{
+    "items": [],
+    "name": "Holmes, Martinez and Davidson",
+    "uuid": "8"
+}
+2025-08-12 22:35:20 [32mINFO[0m Add new item
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Reduced%20didactic%20function, body:
+{
+    "name": "Reduced didactic function",
+    "price": 10636,
+    "store_id": "8"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Reduced%20didactic%20function, status: 201, body:
+{
+    "itemID": 8,
+    "name": "Reduced didactic function",
+    "price": 10636
+}
+2025-08-12 22:35:20 [32mINFO[0m Get item
+2025-08-12 22:35:20 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-12 22:35:20 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

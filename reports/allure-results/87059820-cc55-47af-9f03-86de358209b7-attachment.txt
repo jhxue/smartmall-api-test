@@ -1,0 +1,77 @@
+2025-08-12 22:41:10 [32mINFO[0m Register new user
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "hreynolds@example.org",
+    "password": "C_7MDMaXAb"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 2
+}
+2025-08-12 22:41:10 [32mINFO[0m Access to store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "hreynolds@example.org",
+    "password": "C_7MDMaXAb"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "bf471a48-ac46-49b4-90a9-092765465a5d"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add user info
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/2, body:
+{
+    "phone": "621-645-3707",
+    "email": "terrismith@example.net",
+    "address": {
+        "city": "Port James",
+        "street": "Robert Expressway",
+        "home_number": "8012"
+    }
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/2, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Conley%20PLC
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Conley%20PLC, status: 201, body:
+{
+    "items": [],
+    "name": "Conley PLC",
+    "uuid": "1"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new item
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Triple-buffered%20content-based%20policy, body:
+{
+    "name": "Triple-buffered content-based policy",
+    "price": 82566,
+    "store_id": "1"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Triple-buffered%20content-based%20policy, status: 201, body:
+{
+    "itemID": 1,
+    "name": "Triple-buffered content-based policy",
+    "price": 82566
+}
+2025-08-12 22:41:10 [32mINFO[0m Add user balance
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2, body: {
+    "balance": 197029
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2, status: 201, body:
+{
+    "balance": 197029.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:41:10 [32mINFO[0m Pay item
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/2, body: {
+    "itemId": 1
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/2, status: 200, body:
+{
+    "balance": 114463.0,
+    "message": "Payment successful",
+    "name": "Triple-buffered content-based policy",
+    "price": 82566.0
+}

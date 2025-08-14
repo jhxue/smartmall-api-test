@@ -1,0 +1,118 @@
+2025-08-13 17:26:05 [32mINFO[0m Register new user
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "sharon93@example.com",
+    "password": "TO6U!c0i(i"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 12
+}
+2025-08-13 17:26:05 [32mINFO[0m Access to store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "sharon93@example.com",
+    "password": "TO6U!c0i(i"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "df3c9bf0-2c45-40be-9333-4b0c6866292a"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user info
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/12, body:
+{
+    "phone": "3118596965",
+    "email": "mdavis@example.com",
+    "address": {
+        "city": "Port Guyborough",
+        "street": "Anthony Valley",
+        "home_number": "010"
+    }
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/12, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Mercer-Hines
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Mercer-Hines, status: 201, body:
+{
+    "items": [],
+    "name": "Mercer-Hines",
+    "uuid": "9"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new item
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Right-sized%20multi-state%20artificial%20intelligence, body:
+{
+    "name": "Right-sized multi-state artificial intelligence",
+    "price": 58029,
+    "store_id": "9"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Right-sized%20multi-state%20artificial%20intelligence, status: 201, body:
+{
+    "itemID": 9,
+    "name": "Right-sized multi-state artificial intelligence",
+    "price": 58029
+}
+2025-08-13 17:26:05 [32mINFO[0m Get all items
+2025-08-13 17:26:05 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/items
+2025-08-13 17:26:05 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/items, status: 200, body:
+{
+    "items": [
+        {
+            "itemID": 1,
+            "name": "Up-sized mission-critical encoding",
+            "price": 32960,
+            "store_id": "1"
+        },
+        {
+            "itemID": 2,
+            "name": "Streamlined well-modulated firmware",
+            "price": 96460,
+            "store_id": "2"
+        },
+        {
+            "itemID": 3,
+            "name": "Reverse-engineered eco-centric methodology",
+            "price": 68247,
+            "store_id": "3"
+        },
+        {
+            "itemID": 4,
+            "name": "Re-engineered grid-enabled orchestration",
+            "price": 75980,
+            "store_id": "4"
+        },
+        {
+            "itemID": 5,
+            "name": "Self-enabling radical initiative",
+            "price": 70771,
+            "store_id": "5"
+        },
+        {
+            "itemID": 6,
+            "name": "Phased radical data-warehouse",
+            "price": 99407,
+            "store_id": "6"
+        },
+        {
+            "itemID": 7,
+            "name": "Re-contextualized 4thgeneration implementation",
+            "price": 46212,
+            "store_id": "7"
+        },
+        {
+            "itemID": 8,
+            "name": "Stand-alone zero-defect support",
+            "price": 27258,
+            "store_id": "8"
+        },
+        {
+            "itemID": 9,
+            "name": "Right-sized multi-state artificial intelligence",
+            "price": 58029,
+            "store_id": "9"
+        }
+    ]
+}

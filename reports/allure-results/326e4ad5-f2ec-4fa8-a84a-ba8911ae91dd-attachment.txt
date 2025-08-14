@@ -1,0 +1,57 @@
+2025-08-12 22:33:08 [32mINFO[0m Register new user
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "serranochristian@example.net",
+    "password": "G&&q0HBnB8"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 221
+}
+2025-08-12 22:33:08 [32mINFO[0m Access to store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "serranochristian@example.net",
+    "password": "G&&q0HBnB8"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "42da048a-ed0c-4e72-9dcd-b275749af415"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add user info
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/221, body:
+{
+    "phone": "001-901-258-5487",
+    "email": "scottkim@example.org",
+    "address": {
+        "city": "Lawrenceburgh",
+        "street": "Morgan Circles",
+        "home_number": "9394"
+    }
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/221, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Weaver-Kennedy
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Weaver-Kennedy, status: 201, body:
+{
+    "items": [],
+    "name": "Weaver-Kennedy",
+    "uuid": "123"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new item
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Compatible%20responsive%20open%20system, body:
+{
+    "name": "Compatible responsive open system",
+    "price": 92581,
+    "store_id": "123"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Compatible%20responsive%20open%20system, status: 201, body:
+{
+    "itemID": 81,
+    "name": "Compatible responsive open system",
+    "price": 92581
+}

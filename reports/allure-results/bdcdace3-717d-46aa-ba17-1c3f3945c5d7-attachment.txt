@@ -1,0 +1,73 @@
+2025-08-12 22:34:07 [32mINFO[0m Register new user
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "patriciadavenport@example.net",
+    "password": "(Z2QWlJq+$"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 323
+}
+2025-08-12 22:34:07 [32mINFO[0m Access to store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "patriciadavenport@example.net",
+    "password": "(Z2QWlJq+$"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "03edfb42-1c68-4f96-84db-87155c3abb64"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user info
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/323, body:
+{
+    "phone": "472.830.7114x49392",
+    "email": "nhayes@example.com",
+    "address": {
+        "city": "Mackshire",
+        "street": "Warren Crossroad",
+        "home_number": "39622"
+    }
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/323, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Smith%20and%20Sons
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Smith%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Smith and Sons",
+    "uuid": "185"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new item
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Down-sized%20zero%20tolerance%20encoding, body:
+{
+    "name": "Down-sized zero tolerance encoding",
+    "price": 87033,
+    "store_id": "185"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Down-sized%20zero%20tolerance%20encoding, status: 201, body:
+{
+    "itemID": 118,
+    "name": "Down-sized zero tolerance encoding",
+    "price": 87033
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user balance
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/323, body: {
+    "balance": 133905
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/323, status: 201, body:
+{
+    "balance": 133905.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:34:07 [32mINFO[0m Get user balance
+2025-08-12 22:34:07 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/323
+2025-08-12 22:34:07 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/323, status: 200, body:
+{
+    "balance": 133905.0,
+    "message": "Balance retrieved successfully"
+}

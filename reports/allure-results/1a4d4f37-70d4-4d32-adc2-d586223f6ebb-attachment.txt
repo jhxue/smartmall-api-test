@@ -1,0 +1,36 @@
+2025-08-13 20:22:37 [32mINFO[0m Register new user
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "leejulie@example.net",
+    "password": "B*k1SgjcxN"
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 22
+}
+2025-08-13 20:22:37 [32mINFO[0m Access to store
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "leejulie@example.net",
+    "password": "B*k1SgjcxN"
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "8af16875-4a7f-4557-85f8-32cc64a50e55"
+}
+2025-08-13 20:22:37 [32mINFO[0m Add user info
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/1000, body:
+{
+    "phone": "(596)266-6973",
+    "email": "dustin42@example.net",
+    "address": {
+        "city": "New Leechester",
+        "street": "Anthony Tunnel",
+        "home_number": "99378"
+    }
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/1000, status: 404, body:
+{
+    "message": "User not found"
+}

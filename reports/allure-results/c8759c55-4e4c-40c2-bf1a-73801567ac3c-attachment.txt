@@ -1,0 +1,74 @@
+2025-08-13 17:26:05 [32mINFO[0m Register new user
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "raymondhicks@example.org",
+    "password": "H1D5C6tbs&"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 4
+}
+2025-08-13 17:26:05 [32mINFO[0m Access to store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "raymondhicks@example.org",
+    "password": "H1D5C6tbs&"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "2e2ba983-04c6-4e61-a900-31caa30a82cf"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user info
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/4, body:
+{
+    "phone": "+1-561-911-5462x85457",
+    "email": "sclark@example.net",
+    "address": {
+        "city": "West Mariastad",
+        "street": "Elliott Avenue",
+        "home_number": "435"
+    }
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/4, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Gomez,%20Brock%20and%20Trujillo
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Gomez,%20Brock%20and%20Trujillo, status: 201, body:
+{
+    "items": [],
+    "name": "Gomez, Brock and Trujillo",
+    "uuid": "3"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new item
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Reverse-engineered%20eco-centric%20methodology, body:
+{
+    "name": "Reverse-engineered eco-centric methodology",
+    "price": 68247,
+    "store_id": "3"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Reverse-engineered%20eco-centric%20methodology, status: 201, body:
+{
+    "itemID": 3,
+    "name": "Reverse-engineered eco-centric methodology",
+    "price": 68247
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user balance
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/4, body: {
+    "balance": 0
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/4, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-13 17:26:05 [32mINFO[0m Pay item
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/4, body: {
+    "itemId": 3
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/4, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 68247.0"
+}

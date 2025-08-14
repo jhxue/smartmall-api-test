@@ -1,0 +1,72 @@
+2025-08-12 22:33:39 [32mINFO[0m Register new user
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "elizabethhickman@example.com",
+    "password": "l0Wnj04h$y"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 264
+}
+2025-08-12 22:33:39 [32mINFO[0m Access to store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "elizabethhickman@example.com",
+    "password": "l0Wnj04h$y"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "fe0d1297-8201-4dcc-8e33-f16d4341d9ee"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user info
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/264, body:
+{
+    "phone": "001-366-625-2568x371",
+    "email": "brownchristina@example.org",
+    "address": {
+        "city": "Kristaborough",
+        "street": "Mark Islands",
+        "home_number": "7507"
+    }
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/264, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Elliott%20and%20Sons
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Elliott%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Elliott and Sons",
+    "uuid": "153"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new item
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Advanced%20solution-oriented%20function, body:
+{
+    "name": "Advanced solution-oriented function",
+    "price": 25756,
+    "store_id": "153"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Advanced%20solution-oriented%20function, status: 201, body:
+{
+    "itemID": 98,
+    "name": "Advanced solution-oriented function",
+    "price": 25756
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user balance
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/264, body: {
+    "balance": 140366
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/264, status: 201, body:
+{
+    "balance": 140366.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:33:39 [32mINFO[0m Get user balance
+2025-08-12 22:33:39 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:33:39 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

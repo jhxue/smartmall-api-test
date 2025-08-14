@@ -1,0 +1,52 @@
+2025-08-12 22:35:46 [32mINFO[0m Register new user
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "thomas32@example.org",
+    "password": "%+i0HtLSLn"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 75
+}
+2025-08-12 22:35:46 [32mINFO[0m Access to store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "thomas32@example.org",
+    "password": "%+i0HtLSLn"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "7dc78e09-a592-41ff-aa97-cc3b8e25143e"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user info
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/75, body:
+{
+    "phone": "835-481-5961",
+    "email": "douglas70@example.net",
+    "address": {
+        "city": "West Williamside",
+        "street": "Oneal Hollow",
+        "home_number": "625"
+    }
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/75, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Hansen,%20Parker%20and%20Donaldson
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Hansen,%20Parker%20and%20Donaldson, status: 201, body:
+{
+    "items": [],
+    "name": "Hansen, Parker and Donaldson",
+    "uuid": "46"
+}
+2025-08-12 22:35:46 [32mINFO[0m Get store
+2025-08-12 22:35:46 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/Hansen,%20Parker%20and%20Donaldson
+2025-08-12 22:35:46 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/Hansen,%20Parker%20and%20Donaldson, status: 200, body:
+{
+    "items": [],
+    "name": "Hansen, Parker and Donaldson",
+    "uuid": "46"
+}

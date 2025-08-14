@@ -1,0 +1,10 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": null,
+    "password": ")l3+zG2zNc"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 400, body:
+{
+    "message": "Username and password are required fields"
+}

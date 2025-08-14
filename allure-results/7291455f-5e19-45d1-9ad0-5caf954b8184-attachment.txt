@@ -1,0 +1,74 @@
+2025-08-12 20:56:05 [32mINFO[0m Register new user
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ryan71@example.net",
+    "password": "E*&D7ILhE)"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 3
+}
+2025-08-12 20:56:05 [32mINFO[0m Access to store
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ryan71@example.net",
+    "password": "E*&D7ILhE)"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "a11d5030-5061-4563-9bde-80352264829c"
+}
+2025-08-12 20:56:05 [32mINFO[0m Add user info
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/3, body:
+{
+    "phone": "661.436.8080x7241",
+    "email": "morgandaniel@example.org",
+    "address": {
+        "city": "Melaniestad",
+        "street": "James Tunnel",
+        "home_number": "7688"
+    }
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/3, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 20:56:05 [32mINFO[0m Add new store
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Johnson-Wilson
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Johnson-Wilson, status: 201, body:
+{
+    "items": [],
+    "name": "Johnson-Wilson",
+    "uuid": "2"
+}
+2025-08-12 20:56:05 [32mINFO[0m Add new item
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Distributed%20grid-enabled%20moderator, body:
+{
+    "name": "Distributed grid-enabled moderator",
+    "price": 14301,
+    "store_id": "2"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Distributed%20grid-enabled%20moderator, status: 201, body:
+{
+    "itemID": 2,
+    "name": "Distributed grid-enabled moderator",
+    "price": 14301
+}
+2025-08-12 20:56:05 [32mINFO[0m Add user balance
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/3, body: {
+    "balance": 184294
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/3, status: 201, body:
+{
+    "balance": 184294.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 20:56:05 [32mINFO[0m Pay item
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/3, body: {
+    "itemId": 2000
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/3, status: 404, body:
+{
+    "message": "Item not found"
+}

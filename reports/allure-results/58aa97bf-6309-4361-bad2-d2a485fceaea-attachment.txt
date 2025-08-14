@@ -1,0 +1,50 @@
+2025-08-12 22:06:03 [32mINFO[0m Register new user
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "mrogers@example.org",
+    "password": "_3KBdWXL3Z"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 76
+}
+2025-08-12 22:06:03 [32mINFO[0m Access to store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "mrogers@example.org",
+    "password": "_3KBdWXL3Z"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b117f00c-d1d9-491b-bf15-7abd740b4b3a"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user info
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/76, body:
+{
+    "phone": "969-530-0005",
+    "email": "jonathantaylor@example.com",
+    "address": {
+        "city": "Hubbardfurt",
+        "street": "Michael Flats",
+        "home_number": "5974"
+    }
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/76, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Boyle-Hernandez
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Boyle-Hernandez, status: 201, body:
+{
+    "items": [],
+    "name": "Boyle-Hernandez",
+    "uuid": "45"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Boyle-Hernandez
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Boyle-Hernandez, status: 400, body:
+{
+    "message": "A store with name 'Boyle-Hernandez' already exists."
+}

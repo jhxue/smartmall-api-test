@@ -1,0 +1,73 @@
+2025-08-12 22:33:08 [32mINFO[0m Register new user
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "bmcfarland@example.com",
+    "password": "NZ9LOpoS&1"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 233
+}
+2025-08-12 22:33:08 [32mINFO[0m Access to store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "bmcfarland@example.com",
+    "password": "NZ9LOpoS&1"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "c91fbf1f-e659-41cf-a02a-e377c345f74c"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add user info
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/233, body:
+{
+    "phone": "(394)381-0275x241",
+    "email": "ryan80@example.net",
+    "address": {
+        "city": "Edwardstad",
+        "street": "Sarah Harbors",
+        "home_number": "0765"
+    }
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/233, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Hill%20Ltd
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Hill%20Ltd, status: 201, body:
+{
+    "items": [],
+    "name": "Hill Ltd",
+    "uuid": "135"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new item
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Vision-oriented%20optimal%20utilization, body:
+{
+    "name": "Vision-oriented optimal utilization",
+    "price": 12634,
+    "store_id": "135"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Vision-oriented%20optimal%20utilization, status: 201, body:
+{
+    "itemID": 86,
+    "name": "Vision-oriented optimal utilization",
+    "price": 12634
+}
+2025-08-12 22:33:09 [32mINFO[0m Add user balance
+2025-08-12 22:33:09 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/233, body: {
+    "balance": 127264
+}
+2025-08-12 22:33:09 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/233, status: 201, body:
+{
+    "balance": 127264.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:33:09 [32mINFO[0m Get user balance
+2025-08-12 22:33:09 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/233
+2025-08-12 22:33:09 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/233, status: 200, body:
+{
+    "balance": 127264.0,
+    "message": "Balance retrieved successfully"
+}

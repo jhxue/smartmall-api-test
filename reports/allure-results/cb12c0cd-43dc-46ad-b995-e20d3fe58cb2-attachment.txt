@@ -1,0 +1,74 @@
+2025-08-12 22:35:46 [32mINFO[0m Register new user
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "mark48@example.org",
+    "password": "iu4pXMwdw#"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 64
+}
+2025-08-12 22:35:46 [32mINFO[0m Access to store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "mark48@example.org",
+    "password": "iu4pXMwdw#"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "8e3a72c1-26dd-4390-a304-ea8378ca95c2"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user info
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/64, body:
+{
+    "phone": "+1-572-403-4648x2178",
+    "email": "ehaas@example.org",
+    "address": {
+        "city": "Evansbury",
+        "street": "Delacruz Fall",
+        "home_number": "918"
+    }
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/64, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Mcdaniel%20LLC
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Mcdaniel%20LLC, status: 201, body:
+{
+    "items": [],
+    "name": "Mcdaniel LLC",
+    "uuid": "37"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new item
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Open-architected%20homogeneous%20intranet, body:
+{
+    "name": "Open-architected homogeneous intranet",
+    "price": 80756,
+    "store_id": "37"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Open-architected%20homogeneous%20intranet, status: 201, body:
+{
+    "itemID": 25,
+    "name": "Open-architected homogeneous intranet",
+    "price": 80756
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user balance
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/64, body: {
+    "balance": 0
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/64, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:46 [32mINFO[0m Pay item
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/64, body: {
+    "itemId": 25
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/64, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 80756.0"
+}

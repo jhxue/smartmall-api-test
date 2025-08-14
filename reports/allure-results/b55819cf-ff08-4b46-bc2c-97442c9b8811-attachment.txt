@@ -1,0 +1,57 @@
+2025-08-12 22:41:10 [32mINFO[0m Register new user
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kimberly98@example.net",
+    "password": "#z$8ZsW$T+"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 7
+}
+2025-08-12 22:41:10 [32mINFO[0m Access to store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kimberly98@example.net",
+    "password": "#z$8ZsW$T+"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "c098bef8-a725-4c7a-a7da-22f451aaa749"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add user info
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/7, body:
+{
+    "phone": "(666)677-3969x69054",
+    "email": "hawkinskaitlyn@example.com",
+    "address": {
+        "city": "Hortonside",
+        "street": "Dennis Creek",
+        "home_number": "22273"
+    }
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/7, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Carrillo-Cannon
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Carrillo-Cannon, status: 201, body:
+{
+    "items": [],
+    "name": "Carrillo-Cannon",
+    "uuid": "4"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new item
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Self-enabling%20zero%20administration%20success, body:
+{
+    "name": "Self-enabling zero administration success",
+    "price": 73507,
+    "store_id": "4"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Self-enabling%20zero%20administration%20success, status: 201, body:
+{
+    "itemID": 4,
+    "name": "Self-enabling zero administration success",
+    "price": 73507
+}

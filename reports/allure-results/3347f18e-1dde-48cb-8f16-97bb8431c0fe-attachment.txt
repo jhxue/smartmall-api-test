@@ -1,0 +1,68 @@
+2025-08-13 20:22:36 [32mINFO[0m Register new user
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "tanya53@example.net",
+    "password": "$*AyYlUh7x"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 8
+}
+2025-08-13 20:22:36 [32mINFO[0m Access to store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "tanya53@example.net",
+    "password": "$*AyYlUh7x"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "29fa4fbf-cda3-431c-9116-0acbb959db2e"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add user info
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/8, body:
+{
+    "phone": "(411)504-6609",
+    "email": "eric64@example.net",
+    "address": {
+        "city": "North Danielton",
+        "street": "Martin Coves",
+        "home_number": "31149"
+    }
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/8, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Brown-Morgan
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Brown-Morgan, status: 201, body:
+{
+    "items": [],
+    "name": "Brown-Morgan",
+    "uuid": "5"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new item
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Enterprise-wide%20secondary%20solution, body:
+{
+    "name": "Enterprise-wide secondary solution",
+    "price": 33223,
+    "store_id": "5"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Enterprise-wide%20secondary%20solution, status: 201, body:
+{
+    "itemID": 5,
+    "name": "Enterprise-wide secondary solution",
+    "price": 33223
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new item
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Enterprise-wide%20secondary%20solution, body:
+{
+    "name": "Enterprise-wide secondary solution",
+    "price": 33223,
+    "store_id": "5"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Enterprise-wide%20secondary%20solution, status: 400, body:
+{
+    "message": "An item with name 'Enterprise-wide secondary solution' already exists."
+}

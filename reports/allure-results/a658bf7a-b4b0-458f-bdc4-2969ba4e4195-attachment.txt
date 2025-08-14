@@ -1,0 +1,53 @@
+2025-08-12 22:41:40 [32mINFO[0m Register new user
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "frank11@example.com",
+    "password": "&2RjNUUr&4"
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 17
+}
+2025-08-12 22:41:40 [32mINFO[0m Access to store
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "frank11@example.com",
+    "password": "&2RjNUUr&4"
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "df62babf-29d5-4639-a44d-9be343df6bfc"
+}
+2025-08-12 22:41:40 [32mINFO[0m Add user info
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/17, body:
+{
+    "phone": "4243791262",
+    "email": "donald28@example.org",
+    "address": {
+        "city": "New Monicaborough",
+        "street": "Debra Forks",
+        "home_number": "840"
+    }
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/17, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:40 [32mINFO[0m Add new store
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Perez%20Group
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Perez%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Perez Group",
+    "uuid": "14"
+}
+2025-08-12 22:41:40 [32mINFO[0m Add user balance
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/17, body: {
+    "balance": 148874
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/17, status: 201, body:
+{
+    "balance": 148874.0,
+    "message": "Balance added successfully"
+}

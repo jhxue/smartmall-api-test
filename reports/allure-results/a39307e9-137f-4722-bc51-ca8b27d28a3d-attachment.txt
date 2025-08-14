@@ -1,0 +1,74 @@
+2025-08-13 20:22:36 [32mINFO[0m Register new user
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "deanandrew@example.net",
+    "password": "g6)L^t1N+C"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 3
+}
+2025-08-13 20:22:36 [32mINFO[0m Access to store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "deanandrew@example.net",
+    "password": "g6)L^t1N+C"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "515d1577-deda-45d6-9910-50316bd73e09"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add user info
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/3, body:
+{
+    "phone": "001-628-777-5466x509",
+    "email": "krauserenee@example.com",
+    "address": {
+        "city": "North Emily",
+        "street": "Michael Dale",
+        "home_number": "809"
+    }
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/3, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Lee%20and%20Sons
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Lee%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Lee and Sons",
+    "uuid": "2"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new item
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Streamlined%20multi-state%20hierarchy, body:
+{
+    "name": "Streamlined multi-state hierarchy",
+    "price": 97734,
+    "store_id": "2"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Streamlined%20multi-state%20hierarchy, status: 201, body:
+{
+    "itemID": 2,
+    "name": "Streamlined multi-state hierarchy",
+    "price": 97734
+}
+2025-08-13 20:22:36 [32mINFO[0m Add user balance
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/3, body: {
+    "balance": 170045
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/3, status: 201, body:
+{
+    "balance": 170045.0,
+    "message": "Balance added successfully"
+}
+2025-08-13 20:22:36 [32mINFO[0m Pay item
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/3, body: {
+    "itemId": 2000
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/3, status: 404, body:
+{
+    "message": "Item not found"
+}

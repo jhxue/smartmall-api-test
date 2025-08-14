@@ -1,0 +1,36 @@
+2025-08-12 22:35:37 [32mINFO[0m Register new user
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "harrygibson@example.com",
+    "password": "*7#b2ZvL0l"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 52
+}
+2025-08-12 22:35:37 [32mINFO[0m Access to store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "harrygibson@example.com",
+    "password": "*7#b2ZvL0l"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "283eed79-41c9-4a75-8339-24c2d3ee0352"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add user info
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/1000, body:
+{
+    "phone": "(587)900-2587",
+    "email": "susan38@example.net",
+    "address": {
+        "city": "North Katherine",
+        "street": "Mikayla Lakes",
+        "home_number": "81606"
+    }
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/1000, status: 404, body:
+{
+    "message": "User not found"
+}

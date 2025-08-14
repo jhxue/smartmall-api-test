@@ -1,0 +1,68 @@
+2025-08-12 22:29:50 [32mINFO[0m Register new user
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "natashaterry@example.org",
+    "password": "V7_!Utg2*g"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 100
+}
+2025-08-12 22:29:50 [32mINFO[0m Access to store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "natashaterry@example.org",
+    "password": "V7_!Utg2*g"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "372c1cdf-a437-4081-92e9-b6bfd452f1b4"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add user info
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/100, body:
+{
+    "phone": "340.632.7587x7507",
+    "email": "angelaclark@example.com",
+    "address": {
+        "city": "Kristinhaven",
+        "street": "Rose Overpass",
+        "home_number": "19344"
+    }
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/100, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Riley,%20French%20and%20Leon
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Riley,%20French%20and%20Leon, status: 201, body:
+{
+    "items": [],
+    "name": "Riley, French and Leon",
+    "uuid": "56"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new item
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Open-source%20uniform%20orchestration, body:
+{
+    "name": "Open-source uniform orchestration",
+    "price": 56640,
+    "store_id": "56"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Open-source%20uniform%20orchestration, status: 201, body:
+{
+    "itemID": 38,
+    "name": "Open-source uniform orchestration",
+    "price": 56640
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new item
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Open-source%20uniform%20orchestration, body:
+{
+    "name": "Open-source uniform orchestration",
+    "price": 56640,
+    "store_id": "56"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Open-source%20uniform%20orchestration, status: 400, body:
+{
+    "message": "An item with name 'Open-source uniform orchestration' already exists."
+}

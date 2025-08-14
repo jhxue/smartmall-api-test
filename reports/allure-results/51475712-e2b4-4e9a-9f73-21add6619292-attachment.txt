@@ -1,0 +1,57 @@
+2025-08-12 22:29:50 [32mINFO[0m Register new user
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "abigailbates@example.com",
+    "password": "RB@k9LvN!)"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 99
+}
+2025-08-12 22:29:50 [32mINFO[0m Access to store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "abigailbates@example.com",
+    "password": "RB@k9LvN!)"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "7f309c30-a005-4299-a437-68e315a8094d"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add user info
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/99, body:
+{
+    "phone": "517-836-9892x0071",
+    "email": "sabrina99@example.org",
+    "address": {
+        "city": "Williammouth",
+        "street": "Ford Grove",
+        "home_number": "19944"
+    }
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/99, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Miller,%20Vargas%20and%20Cisneros
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Miller,%20Vargas%20and%20Cisneros, status: 201, body:
+{
+    "items": [],
+    "name": "Miller, Vargas and Cisneros",
+    "uuid": "55"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new item
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Inverse%20modular%20neural-net, body:
+{
+    "name": "Inverse modular neural-net",
+    "price": 88008,
+    "store_id": "55"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Inverse%20modular%20neural-net, status: 201, body:
+{
+    "itemID": 37,
+    "name": "Inverse modular neural-net",
+    "price": 88008
+}

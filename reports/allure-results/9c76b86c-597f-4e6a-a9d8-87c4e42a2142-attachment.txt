@@ -1,0 +1,22 @@
+2025-08-12 22:30:28 [32mINFO[0m Start SmartMall API tests, url is http://127.0.0.1:8080
+2025-08-12 22:30:28 [32mINFO[0m Register new user
+2025-08-12 22:30:28 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "sibarra@example.net",
+    "password": "&LNhhy!u9l"
+}
+2025-08-12 22:30:28 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 123
+}
+2025-08-12 22:30:28 [32mINFO[0m Access to store
+2025-08-12 22:30:28 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "sibarra@example.net",
+    "password": "&LNhhy!u9l"
+}
+2025-08-12 22:30:28 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "a81824a8-653d-42c4-b1ef-ee64758259af"
+}

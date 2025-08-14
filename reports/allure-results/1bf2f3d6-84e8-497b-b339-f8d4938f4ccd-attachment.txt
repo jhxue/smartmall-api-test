@@ -1,0 +1,63 @@
+2025-08-12 22:30:36 [32mINFO[0m Register new user
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "william15@example.com",
+    "password": "vZlIowaC&3"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 163
+}
+2025-08-12 22:30:36 [32mINFO[0m Access to store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "william15@example.com",
+    "password": "vZlIowaC&3"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "ca33e069-414b-44d7-bee6-60c6d172fa73"
+}
+2025-08-12 22:30:36 [32mINFO[0m Add user info
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/163, body:
+{
+    "phone": "001-466-793-6383x411",
+    "email": "andersonnatalie@example.org",
+    "address": {
+        "city": "New Steven",
+        "street": "Joshua Unions",
+        "home_number": "178"
+    }
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/163, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:36 [32mINFO[0m Add new store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Wilson%20and%20Sons
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Wilson%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Wilson and Sons",
+    "uuid": "93"
+}
+2025-08-12 22:30:36 [32mINFO[0m Add new item
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Open-source%20incremental%20strategy, body:
+{
+    "name": "Open-source incremental strategy",
+    "price": 13238,
+    "store_id": "93"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Open-source%20incremental%20strategy, status: 201, body:
+{
+    "itemID": 62,
+    "name": "Open-source incremental strategy",
+    "price": 13238
+}
+2025-08-12 22:30:36 [32mINFO[0m Get item
+2025-08-12 22:30:36 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-12 22:30:36 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

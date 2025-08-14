@@ -1,0 +1,57 @@
+2025-08-12 22:35:46 [32mINFO[0m Register new user
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "gmatthews@example.net",
+    "password": "IGQ8EqNaf@"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 67
+}
+2025-08-12 22:35:46 [32mINFO[0m Access to store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "gmatthews@example.net",
+    "password": "IGQ8EqNaf@"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "2978d123-7337-468c-bc5d-a659a2ae078b"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add user info
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/67, body:
+{
+    "phone": "(938)214-1298",
+    "email": "brianwood@example.org",
+    "address": {
+        "city": "South Toni",
+        "street": "Jensen Parks",
+        "home_number": "4274"
+    }
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/67, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new store
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Lester-Nixon
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Lester-Nixon, status: 201, body:
+{
+    "items": [],
+    "name": "Lester-Nixon",
+    "uuid": "38"
+}
+2025-08-12 22:35:46 [32mINFO[0m Add new item
+2025-08-12 22:35:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Pre-emptive%20responsive%20infrastructure, body:
+{
+    "name": "Pre-emptive responsive infrastructure",
+    "price": 28358,
+    "store_id": "38"
+}
+2025-08-12 22:35:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Pre-emptive%20responsive%20infrastructure, status: 201, body:
+{
+    "itemID": 26,
+    "name": "Pre-emptive responsive infrastructure",
+    "price": 28358
+}

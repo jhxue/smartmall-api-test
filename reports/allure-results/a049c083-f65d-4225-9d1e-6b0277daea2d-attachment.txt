@@ -1,0 +1,42 @@
+2025-08-12 22:41:41 [32mINFO[0m Register new user
+2025-08-12 22:41:41 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ericfoster@example.org",
+    "password": "&j&9^Qj5C)"
+}
+2025-08-12 22:41:41 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 28
+}
+2025-08-12 22:41:41 [32mINFO[0m Access to store
+2025-08-12 22:41:41 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ericfoster@example.org",
+    "password": "&j&9^Qj5C)"
+}
+2025-08-12 22:41:41 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "1b3922a8-8a41-437f-a7ec-2613bcf61b6a"
+}
+2025-08-12 22:41:41 [32mINFO[0m Add user info
+2025-08-12 22:41:41 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/28, body:
+{
+    "phone": "622-526-2463x496",
+    "email": "kelliecase@example.org",
+    "address": {
+        "city": "North Calebtown",
+        "street": "Dennis Valley",
+        "home_number": "263"
+    }
+}
+2025-08-12 22:41:41 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/28, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:41 [32mINFO[0m Get user info
+2025-08-12 22:41:41 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/user_info/1000
+2025-08-12 22:41:41 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/user_info/1000, status: 404, body:
+{
+    "message": "User info not found"
+}

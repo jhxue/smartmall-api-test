@@ -1,0 +1,77 @@
+2025-08-12 22:33:46 [32mINFO[0m Register new user
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "xdiaz@example.com",
+    "password": "#08Sh9CvIz"
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 276
+}
+2025-08-12 22:33:46 [32mINFO[0m Access to store
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "xdiaz@example.com",
+    "password": "#08Sh9CvIz"
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "a790dfca-b179-420d-9ee6-17ef2d5d10ea"
+}
+2025-08-12 22:33:46 [32mINFO[0m Add user info
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/276, body:
+{
+    "phone": "001-259-583-0381x2564",
+    "email": "susanedwards@example.com",
+    "address": {
+        "city": "East Brianstad",
+        "street": "Alvarado Place",
+        "home_number": "5753"
+    }
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/276, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:46 [32mINFO[0m Add new store
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Henderson,%20Garcia%20and%20Cordova
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Henderson,%20Garcia%20and%20Cordova, status: 201, body:
+{
+    "items": [],
+    "name": "Henderson, Garcia and Cordova",
+    "uuid": "154"
+}
+2025-08-12 22:33:46 [32mINFO[0m Add new item
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Visionary%20radical%20Graphical%20User%20Interface, body:
+{
+    "name": "Visionary radical Graphical User Interface",
+    "price": 56923,
+    "store_id": "154"
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Visionary%20radical%20Graphical%20User%20Interface, status: 201, body:
+{
+    "itemID": 99,
+    "name": "Visionary radical Graphical User Interface",
+    "price": 56923
+}
+2025-08-12 22:33:46 [32mINFO[0m Add user balance
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/276, body: {
+    "balance": 163655
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/276, status: 201, body:
+{
+    "balance": 163655.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:33:46 [32mINFO[0m Pay item
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/276, body: {
+    "itemId": 99
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/276, status: 200, body:
+{
+    "balance": 106732.0,
+    "message": "Payment successful",
+    "name": "Visionary radical Graphical User Interface",
+    "price": 56923.0
+}

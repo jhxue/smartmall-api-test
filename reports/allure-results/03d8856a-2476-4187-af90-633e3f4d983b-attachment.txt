@@ -1,0 +1,51 @@
+2025-08-12 21:49:45 [32mINFO[0m Register new user
+2025-08-12 21:49:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ydavidson@example.net",
+    "password": ")K#(o)Ixw3"
+}
+2025-08-12 21:49:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 60
+}
+2025-08-12 21:49:45 [32mINFO[0m Access to store
+2025-08-12 21:49:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ydavidson@example.net",
+    "password": ")K#(o)Ixw3"
+}
+2025-08-12 21:49:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "f6643393-9c91-4ead-a6da-38639e421de4"
+}
+2025-08-12 21:49:45 [32mINFO[0m Add user info
+2025-08-12 21:49:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/60, body:
+{
+    "phone": "8587732594",
+    "email": "combspaula@example.com",
+    "address": {
+        "city": "Jenniferchester",
+        "street": "James Keys",
+        "home_number": "901"
+    }
+}
+2025-08-12 21:49:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/60, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:49:45 [32mINFO[0m Update user info
+2025-08-12 21:49:45 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/user_info/1000, body:
+{
+    "phone": "001-404-726-3906x412",
+    "email": "mcintoshamy@example.com",
+    "address": {
+        "city": "Robertton",
+        "street": "Amanda Squares",
+        "home_number": "32214"
+    }
+}
+2025-08-12 21:49:45 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/user_info/1000, status: 404, body:
+{
+    "message": "User info not found."
+}

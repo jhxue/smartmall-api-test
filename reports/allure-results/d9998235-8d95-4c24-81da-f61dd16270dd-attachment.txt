@@ -1,0 +1,52 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kgeorge@example.com",
+    "password": "#*Oc%74V)7"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 15
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kgeorge@example.com",
+    "password": "#*Oc%74V)7"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "65733dfe-8a07-43fd-9314-4da45d9cc974"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/15, body:
+{
+    "phone": "+1-302-597-0099x79962",
+    "email": "wilsonkimberly@example.com",
+    "address": {
+        "city": "Kaylaborough",
+        "street": "Woods Pine",
+        "home_number": "5831"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/15, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Frank-Serrano
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Frank-Serrano, status: 201, body:
+{
+    "items": [],
+    "name": "Frank-Serrano",
+    "uuid": "12"
+}
+2025-08-12 22:40:21 INFO Get store
+2025-08-12 22:40:21 INFO Request method: GET, url: http://127.0.0.1:8080/store/Frank-Serrano
+2025-08-12 22:40:21 INFO Response method: GET, url: http://127.0.0.1:8080/store/Frank-Serrano, status: 200, body:
+{
+    "items": [],
+    "name": "Frank-Serrano",
+    "uuid": "12"
+}

@@ -1,0 +1,73 @@
+2025-08-12 22:41:10 [32mINFO[0m Register new user
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "patriciarojas@example.org",
+    "password": "_hMoRZyRe9"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 19
+}
+2025-08-12 22:41:10 [32mINFO[0m Access to store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "patriciarojas@example.org",
+    "password": "_hMoRZyRe9"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "70fc3d1a-9be0-482d-99cd-99c27f380507"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add user info
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/19, body:
+{
+    "phone": "+1-340-412-1109x88734",
+    "email": "flowersjesus@example.com",
+    "address": {
+        "city": "New Benjaminfort",
+        "street": "Bates Underpass",
+        "home_number": "58823"
+    }
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/19, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Santiago-Taylor
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Santiago-Taylor, status: 201, body:
+{
+    "items": [],
+    "name": "Santiago-Taylor",
+    "uuid": "16"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new item
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Reduced%20non-volatile%20support, body:
+{
+    "name": "Reduced non-volatile support",
+    "price": 50354,
+    "store_id": "16"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Reduced%20non-volatile%20support, status: 201, body:
+{
+    "itemID": 9,
+    "name": "Reduced non-volatile support",
+    "price": 50354
+}
+2025-08-12 22:41:10 [32mINFO[0m Add user balance
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/19, body: {
+    "balance": 161332
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/19, status: 201, body:
+{
+    "balance": 161332.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:41:10 [32mINFO[0m Get user balance
+2025-08-12 22:41:10 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/19
+2025-08-12 22:41:10 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/19, status: 200, body:
+{
+    "balance": 161332.0,
+    "message": "Balance retrieved successfully"
+}

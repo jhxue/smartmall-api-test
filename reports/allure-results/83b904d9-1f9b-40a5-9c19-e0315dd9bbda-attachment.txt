@@ -1,0 +1,73 @@
+2025-08-12 22:33:47 [32mINFO[0m Register new user
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "vluna@example.net",
+    "password": "!5tUs$TdZ2"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 293
+}
+2025-08-12 22:33:47 [32mINFO[0m Access to store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "vluna@example.net",
+    "password": "!5tUs$TdZ2"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b3479785-4d88-4585-a14d-222bbc9956ee"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add user info
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/293, body:
+{
+    "phone": "836.811.7474",
+    "email": "clarkcatherine@example.org",
+    "address": {
+        "city": "North Kathryn",
+        "street": "Gibson Ferry",
+        "home_number": "2830"
+    }
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/293, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Johnson,%20Ferguson%20and%20Conley
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Johnson,%20Ferguson%20and%20Conley, status: 201, body:
+{
+    "items": [],
+    "name": "Johnson, Ferguson and Conley",
+    "uuid": "168"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new item
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Multi-channeled%2024hour%20task-force, body:
+{
+    "name": "Multi-channeled 24hour task-force",
+    "price": 83247,
+    "store_id": "168"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Multi-channeled%2024hour%20task-force, status: 201, body:
+{
+    "itemID": 107,
+    "name": "Multi-channeled 24hour task-force",
+    "price": 83247
+}
+2025-08-12 22:33:47 [32mINFO[0m Add user balance
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/293, body: {
+    "balance": 102528
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/293, status: 201, body:
+{
+    "balance": 102528.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:33:47 [32mINFO[0m Get user balance
+2025-08-12 22:33:47 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/293
+2025-08-12 22:33:47 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/293, status: 200, body:
+{
+    "balance": 102528.0,
+    "message": "Balance retrieved successfully"
+}

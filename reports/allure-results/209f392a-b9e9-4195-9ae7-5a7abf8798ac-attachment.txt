@@ -1,0 +1,77 @@
+2025-08-12 22:30:42 [32mINFO[0m Register new user
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "amy50@example.org",
+    "password": "+M4Me@zuA#"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 184
+}
+2025-08-12 22:30:42 [32mINFO[0m Access to store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "amy50@example.org",
+    "password": "+M4Me@zuA#"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "949e331d-eb25-4cf8-b35d-9282745f70c1"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add user info
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/184, body:
+{
+    "phone": "411.805.5567x385",
+    "email": "jacquelinewhite@example.org",
+    "address": {
+        "city": "West Amber",
+        "street": "Thompson Mountain",
+        "home_number": "127"
+    }
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/184, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/King%20Inc
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/King%20Inc, status: 201, body:
+{
+    "items": [],
+    "name": "King Inc",
+    "uuid": "102"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new item
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Implemented%206thgeneration%20secured%20line, body:
+{
+    "name": "Implemented 6thgeneration secured line",
+    "price": 35575,
+    "store_id": "102"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Implemented%206thgeneration%20secured%20line, status: 201, body:
+{
+    "itemID": 66,
+    "name": "Implemented 6thgeneration secured line",
+    "price": 35575
+}
+2025-08-12 22:30:42 [32mINFO[0m Add user balance
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/184, body: {
+    "balance": 175175
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/184, status: 201, body:
+{
+    "balance": 175175.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:30:42 [32mINFO[0m Pay item
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/184, body: {
+    "itemId": 66
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/184, status: 200, body:
+{
+    "balance": 139600.0,
+    "message": "Payment successful",
+    "name": "Implemented 6thgeneration secured line",
+    "price": 35575.0
+}

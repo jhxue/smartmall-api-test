@@ -1,0 +1,73 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "treyes@example.org",
+    "password": "v21kpVbi)("
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 19
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "treyes@example.org",
+    "password": "v21kpVbi)("
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "7c1d0e83-c72a-4178-a59f-edf49e469d56"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/19, body:
+{
+    "phone": "(322)688-9092",
+    "email": "saguirre@example.org",
+    "address": {
+        "city": "Carolynbury",
+        "street": "Robertson Ways",
+        "home_number": "7972"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/19, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Ryan%20Ltd
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Ryan%20Ltd, status: 201, body:
+{
+    "items": [],
+    "name": "Ryan Ltd",
+    "uuid": "16"
+}
+2025-08-12 22:40:21 INFO Add new item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/item/Self-enabling%20composite%20instruction%20set, body:
+{
+    "name": "Self-enabling composite instruction set",
+    "price": 66244,
+    "store_id": "16"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/item/Self-enabling%20composite%20instruction%20set, status: 201, body:
+{
+    "itemID": 10,
+    "name": "Self-enabling composite instruction set",
+    "price": 66244
+}
+2025-08-12 22:40:21 INFO Add user balance
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/balance/19, body: {
+    "balance": 148624
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/balance/19, status: 201, body:
+{
+    "balance": 148624.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:40:21 INFO Get user balance
+2025-08-12 22:40:21 INFO Request method: GET, url: http://127.0.0.1:8080/balance/19
+2025-08-12 22:40:21 INFO Response method: GET, url: http://127.0.0.1:8080/balance/19, status: 200, body:
+{
+    "balance": 148624.0,
+    "message": "Balance retrieved successfully"
+}

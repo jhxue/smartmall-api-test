@@ -1,0 +1,36 @@
+2025-08-12 22:29:50 [32mINFO[0m Register new user
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "elliottamanda@example.com",
+    "password": "w_1kKlztBk"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 113
+}
+2025-08-12 22:29:50 [32mINFO[0m Access to store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "elliottamanda@example.com",
+    "password": "w_1kKlztBk"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "5d305a84-cab1-49ad-ad31-8f5eb7a8446f"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add user info
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/113, body:
+{
+    "phone": "729-510-9498x15107",
+    "email": "angelacarter@example.net",
+    "address": {
+        "city": "West Jasonton",
+        "street": "Tonya Parks",
+        "home_number": "866"
+    }
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/113, status: 200, body:
+{
+    "message": "User info created successfully."
+}

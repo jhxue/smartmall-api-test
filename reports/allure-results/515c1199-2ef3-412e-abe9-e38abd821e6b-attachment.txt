@@ -1,0 +1,36 @@
+2025-08-12 22:43:17 [32mINFO[0m Register new user
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "zrodriguez@example.com",
+    "password": "_X9Go&ZPS)"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 52
+}
+2025-08-12 22:43:17 [32mINFO[0m Access to store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "zrodriguez@example.com",
+    "password": "_X9Go&ZPS)"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "00d8400a-e9a2-49fe-a1d4-d7dc38363f6c"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user info
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/1000, body:
+{
+    "phone": "282-537-5705",
+    "email": "jesse93@example.org",
+    "address": {
+        "city": "South Brianstad",
+        "street": "Jessica Villages",
+        "home_number": "2313"
+    }
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/1000, status: 404, body:
+{
+    "message": "User not found"
+}

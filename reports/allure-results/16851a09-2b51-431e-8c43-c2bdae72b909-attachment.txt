@@ -1,0 +1,57 @@
+2025-08-12 22:30:29 [32mINFO[0m Register new user
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "wcruz@example.net",
+    "password": "b4oCR+Fn)M"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 129
+}
+2025-08-12 22:30:29 [32mINFO[0m Access to store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "wcruz@example.net",
+    "password": "b4oCR+Fn)M"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "40f0cde9-2f44-490b-ad3f-8701800ad399"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user info
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/129, body:
+{
+    "phone": "310-858-1206",
+    "email": "kelly61@example.com",
+    "address": {
+        "city": "New Mitchellhaven",
+        "street": "Debbie Lake",
+        "home_number": "34050"
+    }
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/129, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Scott-Brown
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Scott-Brown, status: 201, body:
+{
+    "items": [],
+    "name": "Scott-Brown",
+    "uuid": "72"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new item
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Proactive%203rdgeneration%20data-warehouse, body:
+{
+    "name": "Proactive 3rdgeneration data-warehouse",
+    "price": 47782,
+    "store_id": "72"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Proactive%203rdgeneration%20data-warehouse, status: 201, body:
+{
+    "itemID": 47,
+    "name": "Proactive 3rdgeneration data-warehouse",
+    "price": 47782
+}

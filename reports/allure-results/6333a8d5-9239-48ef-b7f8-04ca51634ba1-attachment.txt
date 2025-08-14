@@ -1,0 +1,73 @@
+2025-08-12 22:43:17 [32mINFO[0m Register new user
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "matthew24@example.net",
+    "password": "s2bDbCbx!U"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 49
+}
+2025-08-12 22:43:17 [32mINFO[0m Access to store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "matthew24@example.net",
+    "password": "s2bDbCbx!U"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "faef09bc-79f6-41a8-8c7d-4d0e4530571d"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user info
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/49, body:
+{
+    "phone": "694.956.3531x2732",
+    "email": "mariapoole@example.org",
+    "address": {
+        "city": "Kristiburgh",
+        "street": "Brianna River",
+        "home_number": "20763"
+    }
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/49, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Morrow%20Group
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Morrow%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Morrow Group",
+    "uuid": "33"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new item
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Profound%20scalable%20software, body:
+{
+    "name": "Profound scalable software",
+    "price": 32884,
+    "store_id": "33"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Profound%20scalable%20software, status: 201, body:
+{
+    "itemID": 20,
+    "name": "Profound scalable software",
+    "price": 32884
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user balance
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/49, body: {
+    "balance": 183257
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/49, status: 201, body:
+{
+    "balance": 183257.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:43:17 [32mINFO[0m Get user balance
+2025-08-12 22:43:17 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/49
+2025-08-12 22:43:17 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/49, status: 200, body:
+{
+    "balance": 183257.0,
+    "message": "Balance retrieved successfully"
+}

@@ -1,0 +1,53 @@
+2025-08-12 22:30:29 [32mINFO[0m Register new user
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kimrojas@example.net",
+    "password": "c&A64Q%tnW"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 139
+}
+2025-08-12 22:30:29 [32mINFO[0m Access to store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kimrojas@example.net",
+    "password": "c&A64Q%tnW"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "bfd2c3a2-fb19-4d7a-ba75-07d0b93af3fe"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user info
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/139, body:
+{
+    "phone": "+1-413-614-9336x26620",
+    "email": "jeremy56@example.net",
+    "address": {
+        "city": "South Williamtown",
+        "street": "Sarah Mission",
+        "home_number": "706"
+    }
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/139, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Beard-Day
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Beard-Day, status: 201, body:
+{
+    "items": [],
+    "name": "Beard-Day",
+    "uuid": "82"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user balance
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/139, body: {
+    "balance": 103305
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/139, status: 201, body:
+{
+    "balance": 103305.0,
+    "message": "Balance added successfully"
+}

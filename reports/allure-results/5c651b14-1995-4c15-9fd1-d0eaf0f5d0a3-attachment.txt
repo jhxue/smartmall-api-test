@@ -1,0 +1,53 @@
+2025-08-12 22:33:08 [32mINFO[0m Register new user
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "lopezrobert@example.net",
+    "password": "64NDB)1f_C"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 231
+}
+2025-08-12 22:33:08 [32mINFO[0m Access to store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "lopezrobert@example.net",
+    "password": "64NDB)1f_C"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "1baabe97-487f-4380-a4db-267c169fe331"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add user info
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/231, body:
+{
+    "phone": "881-871-4692",
+    "email": "william58@example.com",
+    "address": {
+        "city": "Lauratown",
+        "street": "Molina Heights",
+        "home_number": "4413"
+    }
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/231, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Thomas-Lopez
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Thomas-Lopez, status: 201, body:
+{
+    "items": [],
+    "name": "Thomas-Lopez",
+    "uuid": "133"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add user balance
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/231, body: {
+    "balance": 170641
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/231, status: 201, body:
+{
+    "balance": 170641.0,
+    "message": "Balance added successfully"
+}

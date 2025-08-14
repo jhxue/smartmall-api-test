@@ -1,0 +1,72 @@
+2025-08-12 21:49:45 [32mINFO[0m Register new user
+2025-08-12 21:49:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "nicholas43@example.com",
+    "password": "#$KC2xhHI5"
+}
+2025-08-12 21:49:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 50
+}
+2025-08-12 21:49:45 [32mINFO[0m Access to store
+2025-08-12 21:49:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "nicholas43@example.com",
+    "password": "#$KC2xhHI5"
+}
+2025-08-12 21:49:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "fd20936b-3fa7-4eb4-8a0a-8161859911e2"
+}
+2025-08-12 21:49:45 [32mINFO[0m Add user info
+2025-08-12 21:49:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/50, body:
+{
+    "phone": "001-788-622-6612x970",
+    "email": "nancyanthony@example.com",
+    "address": {
+        "city": "Vanessachester",
+        "street": "Schmidt Walks",
+        "home_number": "7344"
+    }
+}
+2025-08-12 21:49:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/50, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:49:45 [32mINFO[0m Add new store
+2025-08-12 21:49:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Vincent-Calhoun
+2025-08-12 21:49:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Vincent-Calhoun, status: 201, body:
+{
+    "items": [],
+    "name": "Vincent-Calhoun",
+    "uuid": "34"
+}
+2025-08-12 21:49:45 [32mINFO[0m Add new item
+2025-08-12 21:49:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Balanced%20demand-driven%20interface, body:
+{
+    "name": "Balanced demand-driven interface",
+    "price": 59274,
+    "store_id": "34"
+}
+2025-08-12 21:49:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Balanced%20demand-driven%20interface, status: 201, body:
+{
+    "itemID": 22,
+    "name": "Balanced demand-driven interface",
+    "price": 59274
+}
+2025-08-12 21:49:45 [32mINFO[0m Add user balance
+2025-08-12 21:49:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/50, body: {
+    "balance": 104496
+}
+2025-08-12 21:49:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/50, status: 201, body:
+{
+    "balance": 104496.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 21:49:45 [32mINFO[0m Get user balance
+2025-08-12 21:49:45 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 21:49:45 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

@@ -1,0 +1,72 @@
+2025-08-12 22:35:37 [32mINFO[0m Register new user
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "rmoore@example.org",
+    "password": "yq+7LUwCH8"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 50
+}
+2025-08-12 22:35:37 [32mINFO[0m Access to store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "rmoore@example.org",
+    "password": "yq+7LUwCH8"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "c42c1c8c-08af-424a-96f4-ccbbc10ed733"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add user info
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/50, body:
+{
+    "phone": "001-443-767-9045x98642",
+    "email": "marissajones@example.net",
+    "address": {
+        "city": "Keithton",
+        "street": "William Walk",
+        "home_number": "12151"
+    }
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/50, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Jones%20Inc
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Jones%20Inc, status: 201, body:
+{
+    "items": [],
+    "name": "Jones Inc",
+    "uuid": "34"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new item
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Compatible%20bottom-line%20leverage, body:
+{
+    "name": "Compatible bottom-line leverage",
+    "price": 10816,
+    "store_id": "34"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Compatible%20bottom-line%20leverage, status: 201, body:
+{
+    "itemID": 22,
+    "name": "Compatible bottom-line leverage",
+    "price": 10816
+}
+2025-08-12 22:35:37 [32mINFO[0m Add user balance
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/50, body: {
+    "balance": 152311
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/50, status: 201, body:
+{
+    "balance": 152311.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:37 [32mINFO[0m Get user balance
+2025-08-12 22:35:37 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:35:37 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

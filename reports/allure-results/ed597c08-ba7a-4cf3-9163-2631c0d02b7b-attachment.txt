@@ -1,0 +1,66 @@
+2025-08-12 22:30:29 [32mINFO[0m Register new user
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "phillipking@example.org",
+    "password": "_Ol6CTscx!"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 132
+}
+2025-08-12 22:30:29 [32mINFO[0m Access to store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "phillipking@example.org",
+    "password": "_Ol6CTscx!"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b85b754f-c8ca-4b6c-bc9e-6c72664d877c"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user info
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/132, body:
+{
+    "phone": "856.256.0311x7022",
+    "email": "christinacurry@example.com",
+    "address": {
+        "city": "Lake Edgar",
+        "street": "Stewart Avenue",
+        "home_number": "79491"
+    }
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/132, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Rodriguez%20and%20Sons
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Rodriguez%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Rodriguez and Sons",
+    "uuid": "75"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new item
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Balanced%20background%20capacity, body:
+{
+    "name": "Balanced background capacity",
+    "price": 16779,
+    "store_id": "75"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Balanced%20background%20capacity, status: 201, body:
+{
+    "itemID": 50,
+    "name": "Balanced background capacity",
+    "price": 16779
+}
+2025-08-12 22:30:29 [32mINFO[0m Get item
+2025-08-12 22:30:29 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Balanced%20background%20capacity
+2025-08-12 22:30:29 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Balanced%20background%20capacity, status: 200, body:
+{
+    "itemID": 50,
+    "name": "Balanced background capacity",
+    "price": 16779,
+    "store_id": "75"
+}

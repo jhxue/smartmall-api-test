@@ -1,0 +1,72 @@
+2025-08-12 22:43:17 [32mINFO[0m Register new user
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "crystal75@example.net",
+    "password": "X%*2W!LlJk"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 50
+}
+2025-08-12 22:43:17 [32mINFO[0m Access to store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "crystal75@example.net",
+    "password": "X%*2W!LlJk"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "83f6586b-8779-4636-b242-5ad97623b397"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user info
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/50, body:
+{
+    "phone": "4009132253",
+    "email": "joseph76@example.org",
+    "address": {
+        "city": "New Garrettton",
+        "street": "Dustin Walks",
+        "home_number": "9301"
+    }
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/50, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Huffman,%20Ramirez%20and%20Daniel
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Huffman,%20Ramirez%20and%20Daniel, status: 201, body:
+{
+    "items": [],
+    "name": "Huffman, Ramirez and Daniel",
+    "uuid": "34"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new item
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Fully-configurable%20interactive%20solution, body:
+{
+    "name": "Fully-configurable interactive solution",
+    "price": 18143,
+    "store_id": "34"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Fully-configurable%20interactive%20solution, status: 201, body:
+{
+    "itemID": 21,
+    "name": "Fully-configurable interactive solution",
+    "price": 18143
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user balance
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/50, body: {
+    "balance": 177183
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/50, status: 201, body:
+{
+    "balance": 177183.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:43:17 [32mINFO[0m Get user balance
+2025-08-12 22:43:17 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:43:17 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

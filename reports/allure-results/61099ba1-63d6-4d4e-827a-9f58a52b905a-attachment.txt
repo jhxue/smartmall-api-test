@@ -1,0 +1,52 @@
+2025-08-12 21:34:39 [32mINFO[0m Register new user
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jordanronald@example.org",
+    "password": "^@9sw8WwYJ"
+}
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 18
+}
+2025-08-12 21:34:39 [32mINFO[0m Access to store
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jordanronald@example.org",
+    "password": "^@9sw8WwYJ"
+}
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "50607b93-341d-44e9-8e34-2b3755d9009a"
+}
+2025-08-12 21:34:39 [32mINFO[0m Add user info
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/18, body:
+{
+    "phone": "+1-992-503-2274x099",
+    "email": "harrismichelle@example.com",
+    "address": {
+        "city": "New Robert",
+        "street": "Smith River",
+        "home_number": "8852"
+    }
+}
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/18, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:34:39 [32mINFO[0m Add new store
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Young-Roberts
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Young-Roberts, status: 201, body:
+{
+    "items": [],
+    "name": "Young-Roberts",
+    "uuid": "15"
+}
+2025-08-12 21:34:39 [32mINFO[0m Add user balance
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2000, body: {
+    "balance": 190764
+}
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "User not found."
+}

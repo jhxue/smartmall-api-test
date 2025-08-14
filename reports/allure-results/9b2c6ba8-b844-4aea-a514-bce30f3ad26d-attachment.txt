@@ -1,0 +1,44 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "zachary91@example.com",
+    "password": "a^1G!0zgsP"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 13
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "zachary91@example.com",
+    "password": "a^1G!0zgsP"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "8ab035b1-6415-413b-b558-1a329af72718"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/13, body:
+{
+    "phone": "720-850-1108x56101",
+    "email": "zburns@example.org",
+    "address": {
+        "city": "Michaelborough",
+        "street": "Don Station",
+        "home_number": "1942"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/13, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Fuentes-Higgins
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Fuentes-Higgins, status: 201, body:
+{
+    "items": [],
+    "name": "Fuentes-Higgins",
+    "uuid": "10"
+}

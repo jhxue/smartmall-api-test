@@ -1,0 +1,66 @@
+2025-08-12 22:43:17 [32mINFO[0m Register new user
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "gwarren@example.org",
+    "password": "75V&b6k5^a"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 40
+}
+2025-08-12 22:43:17 [32mINFO[0m Access to store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "gwarren@example.org",
+    "password": "75V&b6k5^a"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "86af0ba5-f1b6-4dcf-aec8-11d848c608bb"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user info
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/40, body:
+{
+    "phone": "(600)495-0953",
+    "email": "millerdawn@example.com",
+    "address": {
+        "city": "Arnoldmouth",
+        "street": "Vincent Mews",
+        "home_number": "07556"
+    }
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/40, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Diaz%20PLC
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Diaz%20PLC, status: 201, body:
+{
+    "items": [],
+    "name": "Diaz PLC",
+    "uuid": "24"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new item
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Managed%20bottom-line%20secured%20line, body:
+{
+    "name": "Managed bottom-line secured line",
+    "price": 45543,
+    "store_id": "24"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Managed%20bottom-line%20secured%20line, status: 201, body:
+{
+    "itemID": 17,
+    "name": "Managed bottom-line secured line",
+    "price": 45543
+}
+2025-08-12 22:43:17 [32mINFO[0m Get item
+2025-08-12 22:43:17 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Managed%20bottom-line%20secured%20line
+2025-08-12 22:43:17 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Managed%20bottom-line%20secured%20line, status: 200, body:
+{
+    "itemID": 17,
+    "name": "Managed bottom-line secured line",
+    "price": 45543,
+    "store_id": "24"
+}

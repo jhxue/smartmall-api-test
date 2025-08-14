@@ -1,0 +1,63 @@
+2025-08-12 20:56:05 [32mINFO[0m Register new user
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kennethsimpson@example.com",
+    "password": "&8Ol$iiqDL"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 11
+}
+2025-08-12 20:56:05 [32mINFO[0m Access to store
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kennethsimpson@example.com",
+    "password": "&8Ol$iiqDL"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "75341584-5da0-4d70-bbee-3c077d908fdc"
+}
+2025-08-12 20:56:05 [32mINFO[0m Add user info
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/11, body:
+{
+    "phone": "(682)994-9434x28868",
+    "email": "gpacheco@example.org",
+    "address": {
+        "city": "Devinland",
+        "street": "Brittany Mews",
+        "home_number": "69752"
+    }
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/11, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 20:56:05 [32mINFO[0m Add new store
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Mejia-Downs
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Mejia-Downs, status: 201, body:
+{
+    "items": [],
+    "name": "Mejia-Downs",
+    "uuid": "8"
+}
+2025-08-12 20:56:05 [32mINFO[0m Add new item
+2025-08-12 20:56:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Cross-group%20intangible%20hardware, body:
+{
+    "name": "Cross-group intangible hardware",
+    "price": 58642,
+    "store_id": "8"
+}
+2025-08-12 20:56:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Cross-group%20intangible%20hardware, status: 201, body:
+{
+    "itemID": 8,
+    "name": "Cross-group intangible hardware",
+    "price": 58642
+}
+2025-08-12 20:56:05 [32mINFO[0m Get item
+2025-08-12 20:56:05 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-12 20:56:05 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

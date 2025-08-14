@@ -1,0 +1,53 @@
+2025-08-13 17:26:05 [32mINFO[0m Register new user
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "powersmichael@example.net",
+    "password": "_$WhaPP*1l"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 17
+}
+2025-08-13 17:26:05 [32mINFO[0m Access to store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "powersmichael@example.net",
+    "password": "_$WhaPP*1l"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "27fd95e3-557f-4c90-8c9c-c4bbd0159ea3"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user info
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/17, body:
+{
+    "phone": "+1-237-354-8229",
+    "email": "katie46@example.org",
+    "address": {
+        "city": "Shirleyfurt",
+        "street": "Smith Field",
+        "home_number": "353"
+    }
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/17, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Jones-Hill
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Jones-Hill, status: 201, body:
+{
+    "items": [],
+    "name": "Jones-Hill",
+    "uuid": "14"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user balance
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/17, body: {
+    "balance": 185649
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/17, status: 201, body:
+{
+    "balance": 185649.0,
+    "message": "Balance added successfully"
+}

@@ -1,0 +1,74 @@
+2025-08-12 21:34:38 [32mINFO[0m Register new user
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "williamskristopher@example.net",
+    "password": "1NIvcqHl#b"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 3
+}
+2025-08-12 21:34:38 [32mINFO[0m Access to store
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "williamskristopher@example.net",
+    "password": "1NIvcqHl#b"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "5e256a56-9e62-4193-9f28-7eb274bf240c"
+}
+2025-08-12 21:34:38 [32mINFO[0m Add user info
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/3, body:
+{
+    "phone": "264-470-9158",
+    "email": "reyestamara@example.org",
+    "address": {
+        "city": "West Marytown",
+        "street": "Amanda Throughway",
+        "home_number": "49348"
+    }
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/3, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:34:38 [32mINFO[0m Add new store
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Wheeler%20Ltd
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Wheeler%20Ltd, status: 201, body:
+{
+    "items": [],
+    "name": "Wheeler Ltd",
+    "uuid": "2"
+}
+2025-08-12 21:34:38 [32mINFO[0m Add new item
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Streamlined%20high-level%20encoding, body:
+{
+    "name": "Streamlined high-level encoding",
+    "price": 4125,
+    "store_id": "2"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Streamlined%20high-level%20encoding, status: 201, body:
+{
+    "itemID": 2,
+    "name": "Streamlined high-level encoding",
+    "price": 4125
+}
+2025-08-12 21:34:38 [32mINFO[0m Add user balance
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/3, body: {
+    "balance": 174570
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/3, status: 201, body:
+{
+    "balance": 174570.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 21:34:38 [32mINFO[0m Pay item
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/3, body: {
+    "itemId": 2000
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/3, status: 404, body:
+{
+    "message": "Item not found"
+}

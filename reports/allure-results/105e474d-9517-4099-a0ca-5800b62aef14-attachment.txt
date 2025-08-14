@@ -1,0 +1,51 @@
+2025-08-12 22:40:22 INFO Register new user
+2025-08-12 22:40:22 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "mark96@example.org",
+    "password": "(a!5mFg7on"
+}
+2025-08-12 22:40:22 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 29
+}
+2025-08-12 22:40:22 INFO Access to store
+2025-08-12 22:40:22 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "mark96@example.org",
+    "password": "(a!5mFg7on"
+}
+2025-08-12 22:40:22 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "7c857ab4-a9ad-4d66-bdb1-4cf07f6ce3d3"
+}
+2025-08-12 22:40:22 INFO Add user info
+2025-08-12 22:40:22 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/29, body:
+{
+    "phone": "2628875539",
+    "email": "clifford39@example.net",
+    "address": {
+        "city": "Michaelton",
+        "street": "Anthony Forges",
+        "home_number": "5068"
+    }
+}
+2025-08-12 22:40:22 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/29, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:22 INFO Update user info
+2025-08-12 22:40:22 INFO Request method: PUT, url: http://127.0.0.1:8080/user_info/29, body:
+{
+    "phone": "001-530-835-0315",
+    "email": "hwalter@example.org",
+    "address": {
+        "city": "Rodrigueztown",
+        "street": "Allen Run",
+        "home_number": "43409"
+    }
+}
+2025-08-12 22:40:22 INFO Response method: PUT, url: http://127.0.0.1:8080/user_info/29, status: 200, body:
+{
+    "message": "User info updated successfully."
+}

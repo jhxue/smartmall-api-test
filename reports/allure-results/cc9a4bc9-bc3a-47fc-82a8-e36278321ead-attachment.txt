@@ -1,0 +1,71 @@
+2025-08-12 22:33:08 [32mINFO[0m Register new user
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "larsonjoshua@example.com",
+    "password": "_6tWT66ok^"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 223
+}
+2025-08-12 22:33:08 [32mINFO[0m Access to store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "larsonjoshua@example.com",
+    "password": "_6tWT66ok^"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "db774d76-9155-42b7-85a7-0796eb91536c"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add user info
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/223, body:
+{
+    "phone": "916-819-2566",
+    "email": "knightmichael@example.com",
+    "address": {
+        "city": "Calvinbury",
+        "street": "Patterson Meadows",
+        "home_number": "40522"
+    }
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/223, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Figueroa,%20West%20and%20Ellis
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Figueroa,%20West%20and%20Ellis, status: 201, body:
+{
+    "items": [],
+    "name": "Figueroa, West and Ellis",
+    "uuid": "125"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new item
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Multi-channeled%20content-based%20data-warehouse, body:
+{
+    "name": "Multi-channeled content-based data-warehouse",
+    "price": 3367,
+    "store_id": "125"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Multi-channeled%20content-based%20data-warehouse, status: 201, body:
+{
+    "itemID": 83,
+    "name": "Multi-channeled content-based data-warehouse",
+    "price": 3367
+}
+2025-08-12 22:33:08 [32mINFO[0m Change item
+2025-08-12 22:33:08 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Multi-channeled%20content-based%20data-warehouse, body:
+{
+    "name": "Multi-channeled content-based data-warehouse",
+    "price": 21163,
+    "store_id": "125"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Multi-channeled%20content-based%20data-warehouse, status: 200, body:
+{
+    "itemID": 83,
+    "name": "Multi-channeled content-based data-warehouse",
+    "price": 21163,
+    "store_id": "125"
+}

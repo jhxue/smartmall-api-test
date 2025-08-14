@@ -1,0 +1,57 @@
+2025-08-12 22:34:07 [32mINFO[0m Register new user
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "vaughnmark@example.org",
+    "password": "S)9TYpcc^Y"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 311
+}
+2025-08-12 22:34:07 [32mINFO[0m Access to store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "vaughnmark@example.org",
+    "password": "S)9TYpcc^Y"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "5389b83d-ddd8-4e20-bde2-3fc36396842f"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user info
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/311, body:
+{
+    "phone": "777.889.4854",
+    "email": "kristygreer@example.org",
+    "address": {
+        "city": "West Adriana",
+        "street": "Carla Locks",
+        "home_number": "54365"
+    }
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/311, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/White%20Inc
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/White%20Inc, status: 201, body:
+{
+    "items": [],
+    "name": "White Inc",
+    "uuid": "173"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new item
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Decentralized%20cohesive%20support, body:
+{
+    "name": "Decentralized cohesive support",
+    "price": 16283,
+    "store_id": "173"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Decentralized%20cohesive%20support, status: 201, body:
+{
+    "itemID": 112,
+    "name": "Decentralized cohesive support",
+    "price": 16283
+}

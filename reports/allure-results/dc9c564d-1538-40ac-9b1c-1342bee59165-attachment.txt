@@ -1,0 +1,73 @@
+2025-08-12 22:06:03 [32mINFO[0m Register new user
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "nicole16@example.org",
+    "password": "o^@6IQ2vb6"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 81
+}
+2025-08-12 22:06:03 [32mINFO[0m Access to store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "nicole16@example.org",
+    "password": "o^@6IQ2vb6"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "dd9283c0-c4c9-48ae-8cba-bf42e5835338"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user info
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/81, body:
+{
+    "phone": "+1-314-547-1079x04427",
+    "email": "william13@example.org",
+    "address": {
+        "city": "New Amandastad",
+        "street": "Sharon Squares",
+        "home_number": "683"
+    }
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/81, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Byrd,%20Smith%20and%20Price
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Byrd,%20Smith%20and%20Price, status: 201, body:
+{
+    "items": [],
+    "name": "Byrd, Smith and Price",
+    "uuid": "50"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new item
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Upgradable%20dynamic%20policy, body:
+{
+    "name": "Upgradable dynamic policy",
+    "price": 86912,
+    "store_id": "50"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Upgradable%20dynamic%20policy, status: 201, body:
+{
+    "itemID": 32,
+    "name": "Upgradable dynamic policy",
+    "price": 86912
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user balance
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/81, body: {
+    "balance": 168666
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/81, status: 201, body:
+{
+    "balance": 168666.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:06:03 [32mINFO[0m Get user balance
+2025-08-12 22:06:03 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/81
+2025-08-12 22:06:03 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/81, status: 200, body:
+{
+    "balance": 168666.0,
+    "message": "Balance retrieved successfully"
+}

@@ -1,0 +1,74 @@
+2025-08-12 22:43:16 [32mINFO[0m Register new user
+2025-08-12 22:43:16 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "laurabailey@example.net",
+    "password": "hT85G6nuS^"
+}
+2025-08-12 22:43:16 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 33
+}
+2025-08-12 22:43:16 [32mINFO[0m Access to store
+2025-08-12 22:43:16 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "laurabailey@example.net",
+    "password": "hT85G6nuS^"
+}
+2025-08-12 22:43:16 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "0654a16b-f3e2-4583-987a-c3501f5e3d43"
+}
+2025-08-12 22:43:16 [32mINFO[0m Add user info
+2025-08-12 22:43:16 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/33, body:
+{
+    "phone": "+1-661-708-7294x1401",
+    "email": "psmith@example.com",
+    "address": {
+        "city": "Lake Ernestshire",
+        "street": "Steven Road",
+        "home_number": "152"
+    }
+}
+2025-08-12 22:43:16 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/33, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:43:16 [32mINFO[0m Add new store
+2025-08-12 22:43:16 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Nelson,%20Martinez%20and%20Green
+2025-08-12 22:43:16 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Nelson,%20Martinez%20and%20Green, status: 201, body:
+{
+    "items": [],
+    "name": "Nelson, Martinez and Green",
+    "uuid": "19"
+}
+2025-08-12 22:43:16 [32mINFO[0m Add new item
+2025-08-12 22:43:16 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Right-sized%20foreground%20concept, body:
+{
+    "name": "Right-sized foreground concept",
+    "price": 88286,
+    "store_id": "19"
+}
+2025-08-12 22:43:16 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Right-sized%20foreground%20concept, status: 201, body:
+{
+    "itemID": 12,
+    "name": "Right-sized foreground concept",
+    "price": 88286
+}
+2025-08-12 22:43:16 [32mINFO[0m Add user balance
+2025-08-12 22:43:16 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/33, body: {
+    "balance": 111594
+}
+2025-08-12 22:43:16 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/33, status: 201, body:
+{
+    "balance": 111594.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:43:16 [32mINFO[0m Pay item
+2025-08-12 22:43:16 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/33, body: {
+    "itemId": 2000
+}
+2025-08-12 22:43:16 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/33, status: 404, body:
+{
+    "message": "Item not found"
+}

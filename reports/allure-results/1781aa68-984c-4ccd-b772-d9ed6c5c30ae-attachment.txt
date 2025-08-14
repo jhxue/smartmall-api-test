@@ -1,0 +1,72 @@
+2025-08-12 22:33:47 [32mINFO[0m Register new user
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jacksonrichard@example.org",
+    "password": "Sb3x*Myx*5"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 294
+}
+2025-08-12 22:33:47 [32mINFO[0m Access to store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jacksonrichard@example.org",
+    "password": "Sb3x*Myx*5"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "cfbc7c3f-7010-4cd9-b002-a38cdec4e8ac"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add user info
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/294, body:
+{
+    "phone": "001-634-388-1966x15656",
+    "email": "lopezchristine@example.com",
+    "address": {
+        "city": "Armstrongton",
+        "street": "Thomas Spurs",
+        "home_number": "45053"
+    }
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/294, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Green-Thomas
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Green-Thomas, status: 201, body:
+{
+    "items": [],
+    "name": "Green-Thomas",
+    "uuid": "169"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new item
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Multi-lateral%20bifurcated%20flexibility, body:
+{
+    "name": "Multi-lateral bifurcated flexibility",
+    "price": 53303,
+    "store_id": "169"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Multi-lateral%20bifurcated%20flexibility, status: 201, body:
+{
+    "itemID": 108,
+    "name": "Multi-lateral bifurcated flexibility",
+    "price": 53303
+}
+2025-08-12 22:33:47 [32mINFO[0m Add user balance
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/294, body: {
+    "balance": 175998
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/294, status: 201, body:
+{
+    "balance": 175998.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:33:47 [32mINFO[0m Get user balance
+2025-08-12 22:33:47 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:33:47 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

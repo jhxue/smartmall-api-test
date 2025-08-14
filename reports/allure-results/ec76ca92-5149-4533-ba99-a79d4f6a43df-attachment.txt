@@ -1,0 +1,52 @@
+2025-08-12 22:43:17 [32mINFO[0m Register new user
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kaylamorgan@example.net",
+    "password": "S#e86)SzzR"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 45
+}
+2025-08-12 22:43:17 [32mINFO[0m Access to store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kaylamorgan@example.net",
+    "password": "S#e86)SzzR"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "d3b53e7f-7709-4614-ae2b-13c87716169a"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user info
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/45, body:
+{
+    "phone": "902.452.0873x72092",
+    "email": "foleyaaron@example.net",
+    "address": {
+        "city": "West Marieland",
+        "street": "Michael Green",
+        "home_number": "4688"
+    }
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/45, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Sullivan,%20Hubbard%20and%20Horton
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Sullivan,%20Hubbard%20and%20Horton, status: 201, body:
+{
+    "items": [],
+    "name": "Sullivan, Hubbard and Horton",
+    "uuid": "29"
+}
+2025-08-12 22:43:17 [32mINFO[0m Get store
+2025-08-12 22:43:17 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/Sullivan,%20Hubbard%20and%20Horton
+2025-08-12 22:43:17 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/Sullivan,%20Hubbard%20and%20Horton, status: 200, body:
+{
+    "items": [],
+    "name": "Sullivan, Hubbard and Horton",
+    "uuid": "29"
+}

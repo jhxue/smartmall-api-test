@@ -1,0 +1,52 @@
+2025-08-12 22:34:07 [32mINFO[0m Register new user
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "srobertson@example.org",
+    "password": "4qP3N5FPk*"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 319
+}
+2025-08-12 22:34:07 [32mINFO[0m Access to store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "srobertson@example.org",
+    "password": "4qP3N5FPk*"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "11c76331-0e38-4f65-8d59-2a1cf06af68b"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user info
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/319, body:
+{
+    "phone": "593-710-8072",
+    "email": "nicholas02@example.net",
+    "address": {
+        "city": "Monicaside",
+        "street": "Brett Ramp",
+        "home_number": "0283"
+    }
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/319, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Garcia%20Inc
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Garcia%20Inc, status: 201, body:
+{
+    "items": [],
+    "name": "Garcia Inc",
+    "uuid": "181"
+}
+2025-08-12 22:34:07 [32mINFO[0m Get store
+2025-08-12 22:34:07 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/Garcia%20Inc
+2025-08-12 22:34:07 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/Garcia%20Inc, status: 200, body:
+{
+    "items": [],
+    "name": "Garcia Inc",
+    "uuid": "181"
+}

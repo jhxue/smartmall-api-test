@@ -1,0 +1,73 @@
+2025-08-12 22:41:40 [32mINFO[0m Register new user
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "brittany21@example.org",
+    "password": "aY5X(1RxRt"
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 19
+}
+2025-08-12 22:41:40 [32mINFO[0m Access to store
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "brittany21@example.org",
+    "password": "aY5X(1RxRt"
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "647e3db2-ec24-4ac7-b64a-5cd574e5784e"
+}
+2025-08-12 22:41:40 [32mINFO[0m Add user info
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/19, body:
+{
+    "phone": "536-892-5295x7578",
+    "email": "jjones@example.org",
+    "address": {
+        "city": "Port Lucas",
+        "street": "Carly Center",
+        "home_number": "13620"
+    }
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/19, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:40 [32mINFO[0m Add new store
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Weiss%20Group
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Weiss%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Weiss Group",
+    "uuid": "16"
+}
+2025-08-12 22:41:40 [32mINFO[0m Add new item
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Extended%20web-enabled%20definition, body:
+{
+    "name": "Extended web-enabled definition",
+    "price": 41986,
+    "store_id": "16"
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Extended%20web-enabled%20definition, status: 201, body:
+{
+    "itemID": 9,
+    "name": "Extended web-enabled definition",
+    "price": 41986
+}
+2025-08-12 22:41:40 [32mINFO[0m Add user balance
+2025-08-12 22:41:40 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/19, body: {
+    "balance": 104920
+}
+2025-08-12 22:41:40 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/19, status: 201, body:
+{
+    "balance": 104920.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:41:40 [32mINFO[0m Get user balance
+2025-08-12 22:41:40 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/19
+2025-08-12 22:41:40 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/19, status: 200, body:
+{
+    "balance": 104920.0,
+    "message": "Balance retrieved successfully"
+}

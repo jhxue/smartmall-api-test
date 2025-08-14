@@ -1,0 +1,68 @@
+2025-08-12 22:35:20 [32mINFO[0m Register new user
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "vicki91@example.net",
+    "password": "dyf3tPb5f#"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 8
+}
+2025-08-12 22:35:20 [32mINFO[0m Access to store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "vicki91@example.net",
+    "password": "dyf3tPb5f#"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "e7e6c3e2-c652-43f8-acc4-231fa58509f2"
+}
+2025-08-12 22:35:20 [32mINFO[0m Add user info
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/8, body:
+{
+    "phone": "324.905.9377x55912",
+    "email": "jordanjason@example.com",
+    "address": {
+        "city": "Port David",
+        "street": "Sarah Avenue",
+        "home_number": "166"
+    }
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/8, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:20 [32mINFO[0m Add new store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Cherry%20Group
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Cherry%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Cherry Group",
+    "uuid": "5"
+}
+2025-08-12 22:35:20 [32mINFO[0m Add new item
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Right-sized%206thgeneration%20customer%20loyalty, body:
+{
+    "name": "Right-sized 6thgeneration customer loyalty",
+    "price": 89018,
+    "store_id": "5"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Right-sized%206thgeneration%20customer%20loyalty, status: 201, body:
+{
+    "itemID": 5,
+    "name": "Right-sized 6thgeneration customer loyalty",
+    "price": 89018
+}
+2025-08-12 22:35:20 [32mINFO[0m Add new item
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Right-sized%206thgeneration%20customer%20loyalty, body:
+{
+    "name": "Right-sized 6thgeneration customer loyalty",
+    "price": 89018,
+    "store_id": "5"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Right-sized%206thgeneration%20customer%20loyalty, status: 400, body:
+{
+    "message": "An item with name 'Right-sized 6thgeneration customer loyalty' already exists."
+}

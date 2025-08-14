@@ -1,0 +1,53 @@
+2025-08-12 21:34:39 [32mINFO[0m Register new user
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kristie93@example.com",
+    "password": "#!XG6d&qC4"
+}
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 17
+}
+2025-08-12 21:34:39 [32mINFO[0m Access to store
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kristie93@example.com",
+    "password": "#!XG6d&qC4"
+}
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "a605db44-1e5b-4a09-81b5-8ade62ed168d"
+}
+2025-08-12 21:34:39 [32mINFO[0m Add user info
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/17, body:
+{
+    "phone": "5764995779",
+    "email": "john63@example.com",
+    "address": {
+        "city": "Derrickhaven",
+        "street": "Parker Spring",
+        "home_number": "796"
+    }
+}
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/17, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:34:39 [32mINFO[0m Add new store
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Byrd%20PLC
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Byrd%20PLC, status: 201, body:
+{
+    "items": [],
+    "name": "Byrd PLC",
+    "uuid": "14"
+}
+2025-08-12 21:34:39 [32mINFO[0m Add user balance
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/17, body: {
+    "balance": 181881
+}
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/17, status: 201, body:
+{
+    "balance": 181881.0,
+    "message": "Balance added successfully"
+}

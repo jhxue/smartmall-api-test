@@ -1,0 +1,71 @@
+2025-08-12 22:34:07 [32mINFO[0m Register new user
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "christopher79@example.net",
+    "password": "CqzCJJC($0"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 313
+}
+2025-08-12 22:34:07 [32mINFO[0m Access to store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "christopher79@example.net",
+    "password": "CqzCJJC($0"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "112e42c4-a114-4a31-ad9f-a05e36676fed"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user info
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/313, body:
+{
+    "phone": "408-920-0428x94772",
+    "email": "njones@example.com",
+    "address": {
+        "city": "Mitchellfurt",
+        "street": "Wright Mountains",
+        "home_number": "255"
+    }
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/313, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Maxwell,%20Sullivan%20and%20Johnson
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Maxwell,%20Sullivan%20and%20Johnson, status: 201, body:
+{
+    "items": [],
+    "name": "Maxwell, Sullivan and Johnson",
+    "uuid": "175"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new item
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Diverse%20user-facing%20framework, body:
+{
+    "name": "Diverse user-facing framework",
+    "price": 1373,
+    "store_id": "175"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Diverse%20user-facing%20framework, status: 201, body:
+{
+    "itemID": 114,
+    "name": "Diverse user-facing framework",
+    "price": 1373
+}
+2025-08-12 22:34:07 [32mINFO[0m Change item
+2025-08-12 22:34:07 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Diverse%20user-facing%20framework, body:
+{
+    "name": "Diverse user-facing framework",
+    "price": 14332,
+    "store_id": "175"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Diverse%20user-facing%20framework, status: 200, body:
+{
+    "itemID": 114,
+    "name": "Diverse user-facing framework",
+    "price": 14332,
+    "store_id": "175"
+}

@@ -1,0 +1,42 @@
+2025-08-12 22:06:03 [32mINFO[0m Register new user
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jeffreyjohnson@example.org",
+    "password": "Cn1O@w$S1_"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 87
+}
+2025-08-12 22:06:03 [32mINFO[0m Access to store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jeffreyjohnson@example.org",
+    "password": "Cn1O@w$S1_"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "3ae9ff1c-7e13-40b3-8b29-08392ce0f316"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user info
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/87, body:
+{
+    "phone": "4777925368",
+    "email": "hardysandra@example.com",
+    "address": {
+        "city": "Joelbury",
+        "street": "George Cliff",
+        "home_number": "70741"
+    }
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/87, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:06:03 [32mINFO[0m Delete user info
+2025-08-12 22:06:03 [32mINFO[0m Request method: DELETE, url: http://127.0.0.1:8080/user_info/87
+2025-08-12 22:06:03 [32mINFO[0m Response method: DELETE, url: http://127.0.0.1:8080/user_info/87, status: 200, body:
+{
+    "message": "User info deleted."
+}

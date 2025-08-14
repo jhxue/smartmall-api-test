@@ -1,0 +1,74 @@
+2025-08-12 21:49:44 [32mINFO[0m Register new user
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "michaelfernandez@example.org",
+    "password": "_R%_F1Kipu"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 34
+}
+2025-08-12 21:49:44 [32mINFO[0m Access to store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "michaelfernandez@example.org",
+    "password": "_R%_F1Kipu"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "392272d1-2146-447b-9de7-72ed742f1194"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add user info
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/34, body:
+{
+    "phone": "+1-389-469-6678",
+    "email": "james28@example.com",
+    "address": {
+        "city": "South Brian",
+        "street": "Hill Mission",
+        "home_number": "437"
+    }
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/34, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Moore,%20Villa%20and%20Smith
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Moore,%20Villa%20and%20Smith, status: 201, body:
+{
+    "items": [],
+    "name": "Moore, Villa and Smith",
+    "uuid": "20"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new item
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Managed%20bottom-line%20access, body:
+{
+    "name": "Managed bottom-line access",
+    "price": 50669,
+    "store_id": "20"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Managed%20bottom-line%20access, status: 201, body:
+{
+    "itemID": 14,
+    "name": "Managed bottom-line access",
+    "price": 50669
+}
+2025-08-12 21:49:44 [32mINFO[0m Add user balance
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/34, body: {
+    "balance": 0
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/34, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 21:49:44 [32mINFO[0m Pay item
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/34, body: {
+    "itemId": 14
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/34, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 50669.0"
+}

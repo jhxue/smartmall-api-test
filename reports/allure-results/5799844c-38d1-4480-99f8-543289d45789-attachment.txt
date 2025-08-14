@@ -1,0 +1,72 @@
+2025-08-12 22:34:07 [32mINFO[0m Register new user
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "gomezjeffery@example.org",
+    "password": "j+7ZOqb32b"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 324
+}
+2025-08-12 22:34:07 [32mINFO[0m Access to store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "gomezjeffery@example.org",
+    "password": "j+7ZOqb32b"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "385614c9-cc2d-45ca-a94d-0c8507ca34e8"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user info
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/324, body:
+{
+    "phone": "(920)217-5835x21760",
+    "email": "kwhite@example.net",
+    "address": {
+        "city": "Alyssaland",
+        "street": "Robinson Pine",
+        "home_number": "43052"
+    }
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/324, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new store
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Bowman-Bell
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Bowman-Bell, status: 201, body:
+{
+    "items": [],
+    "name": "Bowman-Bell",
+    "uuid": "186"
+}
+2025-08-12 22:34:07 [32mINFO[0m Add new item
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Centralized%20dedicated%20intranet, body:
+{
+    "name": "Centralized dedicated intranet",
+    "price": 20454,
+    "store_id": "186"
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Centralized%20dedicated%20intranet, status: 201, body:
+{
+    "itemID": 119,
+    "name": "Centralized dedicated intranet",
+    "price": 20454
+}
+2025-08-12 22:34:07 [32mINFO[0m Add user balance
+2025-08-12 22:34:07 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/324, body: {
+    "balance": 135729
+}
+2025-08-12 22:34:07 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/324, status: 201, body:
+{
+    "balance": 135729.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:34:07 [32mINFO[0m Get user balance
+2025-08-12 22:34:07 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:34:07 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

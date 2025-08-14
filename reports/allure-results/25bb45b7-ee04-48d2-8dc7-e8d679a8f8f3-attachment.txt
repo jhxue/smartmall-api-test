@@ -1,0 +1,42 @@
+2025-08-12 21:49:45 [32mINFO[0m Register new user
+2025-08-12 21:49:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ysullivan@example.com",
+    "password": "(3ErahF%H6"
+}
+2025-08-12 21:49:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 56
+}
+2025-08-12 21:49:45 [32mINFO[0m Access to store
+2025-08-12 21:49:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ysullivan@example.com",
+    "password": "(3ErahF%H6"
+}
+2025-08-12 21:49:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "73bc4d25-5393-4c51-9725-22e6ab0973d6"
+}
+2025-08-12 21:49:45 [32mINFO[0m Add user info
+2025-08-12 21:49:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/56, body:
+{
+    "phone": "306-576-7348x1173",
+    "email": "hicksjohn@example.com",
+    "address": {
+        "city": "South Christy",
+        "street": "Reed Vista",
+        "home_number": "06393"
+    }
+}
+2025-08-12 21:49:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/56, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:49:45 [32mINFO[0m Delete user info
+2025-08-12 21:49:45 [32mINFO[0m Request method: DELETE, url: http://127.0.0.1:8080/user_info/1000
+2025-08-12 21:49:45 [32mINFO[0m Response method: DELETE, url: http://127.0.0.1:8080/user_info/1000, status: 404, body:
+{
+    "message": "User info not found."
+}

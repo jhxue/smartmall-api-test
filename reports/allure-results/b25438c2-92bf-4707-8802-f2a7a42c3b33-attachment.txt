@@ -1,0 +1,73 @@
+2025-08-12 22:30:36 [32mINFO[0m Register new user
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "antonio15@example.com",
+    "password": "&%Kb43Lhv^"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 171
+}
+2025-08-12 22:30:36 [32mINFO[0m Access to store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "antonio15@example.com",
+    "password": "&%Kb43Lhv^"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "c858479c-ff39-4944-ba51-c9056d32f645"
+}
+2025-08-12 22:30:36 [32mINFO[0m Add user info
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/171, body:
+{
+    "phone": "709.419.2108x69168",
+    "email": "drobinson@example.org",
+    "address": {
+        "city": "Aguilarhaven",
+        "street": "Simon Lakes",
+        "home_number": "11630"
+    }
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/171, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:36 [32mINFO[0m Add new store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/White,%20Peters%20and%20Lopez
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/White,%20Peters%20and%20Lopez, status: 201, body:
+{
+    "items": [],
+    "name": "White, Peters and Lopez",
+    "uuid": "100"
+}
+2025-08-12 22:30:36 [32mINFO[0m Add new item
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Decentralized%20executive%20pricing%20structure, body:
+{
+    "name": "Decentralized executive pricing structure",
+    "price": 52433,
+    "store_id": "100"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Decentralized%20executive%20pricing%20structure, status: 201, body:
+{
+    "itemID": 64,
+    "name": "Decentralized executive pricing structure",
+    "price": 52433
+}
+2025-08-12 22:30:36 [32mINFO[0m Add user balance
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/171, body: {
+    "balance": 165744
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/171, status: 201, body:
+{
+    "balance": 165744.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:30:36 [32mINFO[0m Get user balance
+2025-08-12 22:30:36 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/171
+2025-08-12 22:30:36 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/171, status: 200, body:
+{
+    "balance": 165744.0,
+    "message": "Balance retrieved successfully"
+}

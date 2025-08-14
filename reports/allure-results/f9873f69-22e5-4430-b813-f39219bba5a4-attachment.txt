@@ -1,0 +1,63 @@
+2025-08-14 18:05:54 [32mINFO[0m Register new user
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "colleen50@example.com",
+    "password": "7h7AfBHq#h"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 11
+}
+2025-08-14 18:05:54 [32mINFO[0m Access to store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "colleen50@example.com",
+    "password": "7h7AfBHq#h"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "069390ed-d994-4db1-b52d-022378d3d3ee"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add user info
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/11, body:
+{
+    "phone": "(350)280-4965x927",
+    "email": "catherinegriffin@example.com",
+    "address": {
+        "city": "Christopherhaven",
+        "street": "Garcia Road",
+        "home_number": "01796"
+    }
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/11, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Swanson-Ramsey
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Swanson-Ramsey, status: 201, body:
+{
+    "items": [],
+    "name": "Swanson-Ramsey",
+    "uuid": "8"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new item
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Self-enabling%203rdgeneration%20help-desk, body:
+{
+    "name": "Self-enabling 3rdgeneration help-desk",
+    "price": 25392,
+    "store_id": "8"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Self-enabling%203rdgeneration%20help-desk, status: 201, body:
+{
+    "itemID": 8,
+    "name": "Self-enabling 3rdgeneration help-desk",
+    "price": 25392
+}
+2025-08-14 18:05:54 [32mINFO[0m Get item
+2025-08-14 18:05:54 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-14 18:05:54 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

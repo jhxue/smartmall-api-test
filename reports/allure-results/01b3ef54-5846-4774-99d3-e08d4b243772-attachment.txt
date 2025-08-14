@@ -1,0 +1,72 @@
+2025-08-12 22:35:33 [32mINFO[0m Register new user
+2025-08-12 22:35:33 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "williamturner@example.com",
+    "password": "x3EdOHib%O"
+}
+2025-08-12 22:35:33 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 20
+}
+2025-08-12 22:35:33 [32mINFO[0m Access to store
+2025-08-12 22:35:33 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "williamturner@example.com",
+    "password": "x3EdOHib%O"
+}
+2025-08-12 22:35:33 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "5d7e8d67-5445-4c0c-b2b4-0dc82bc5d772"
+}
+2025-08-12 22:35:33 [32mINFO[0m Add user info
+2025-08-12 22:35:33 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/20, body:
+{
+    "phone": "001-964-559-4036",
+    "email": "kimberlyortiz@example.net",
+    "address": {
+        "city": "East Bryceton",
+        "street": "Mcdonald Fords",
+        "home_number": "43667"
+    }
+}
+2025-08-12 22:35:33 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/20, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:33 [32mINFO[0m Add new store
+2025-08-12 22:35:33 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Carpenter-Taylor
+2025-08-12 22:35:33 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Carpenter-Taylor, status: 201, body:
+{
+    "items": [],
+    "name": "Carpenter-Taylor",
+    "uuid": "17"
+}
+2025-08-12 22:35:33 [32mINFO[0m Add new item
+2025-08-12 22:35:33 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Synchronized%20scalable%20process%20improvement, body:
+{
+    "name": "Synchronized scalable process improvement",
+    "price": 39612,
+    "store_id": "17"
+}
+2025-08-12 22:35:33 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Synchronized%20scalable%20process%20improvement, status: 201, body:
+{
+    "itemID": 11,
+    "name": "Synchronized scalable process improvement",
+    "price": 39612
+}
+2025-08-12 22:35:33 [32mINFO[0m Add user balance
+2025-08-12 22:35:33 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/20, body: {
+    "balance": 174915
+}
+2025-08-12 22:35:33 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/20, status: 201, body:
+{
+    "balance": 174915.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:33 [32mINFO[0m Get user balance
+2025-08-12 22:35:33 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:35:33 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

@@ -1,0 +1,71 @@
+2025-08-13 17:26:05 [32mINFO[0m Register new user
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "rachel56@example.com",
+    "password": "@)4YrjUpR^"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 9
+}
+2025-08-13 17:26:05 [32mINFO[0m Access to store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "rachel56@example.com",
+    "password": "@)4YrjUpR^"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "948e3b0e-415a-472d-b986-c2df218ce0d0"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user info
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/9, body:
+{
+    "phone": "(944)358-2018x1157",
+    "email": "jodithompson@example.net",
+    "address": {
+        "city": "Lake Stevenland",
+        "street": "Larson Track",
+        "home_number": "975"
+    }
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/9, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Jones%20Group
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Jones%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Jones Group",
+    "uuid": "6"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new item
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Phased%20radical%20data-warehouse, body:
+{
+    "name": "Phased radical data-warehouse",
+    "price": 64424,
+    "store_id": "6"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Phased%20radical%20data-warehouse, status: 201, body:
+{
+    "itemID": 6,
+    "name": "Phased radical data-warehouse",
+    "price": 64424
+}
+2025-08-13 17:26:05 [32mINFO[0m Change item
+2025-08-13 17:26:05 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Phased%20radical%20data-warehouse, body:
+{
+    "name": "Phased radical data-warehouse",
+    "price": 99407,
+    "store_id": "6"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Phased%20radical%20data-warehouse, status: 200, body:
+{
+    "itemID": 6,
+    "name": "Phased radical data-warehouse",
+    "price": 99407,
+    "store_id": "6"
+}

@@ -1,0 +1,72 @@
+2025-08-12 22:41:11 [32mINFO[0m Register new user
+2025-08-12 22:41:11 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "george21@example.net",
+    "password": "7*Z9Qx(%f#"
+}
+2025-08-12 22:41:11 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 20
+}
+2025-08-12 22:41:11 [32mINFO[0m Access to store
+2025-08-12 22:41:11 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "george21@example.net",
+    "password": "7*Z9Qx(%f#"
+}
+2025-08-12 22:41:11 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "a0bcf1da-fe84-4b61-a5b1-d3b8b65f9efa"
+}
+2025-08-12 22:41:11 [32mINFO[0m Add user info
+2025-08-12 22:41:11 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/20, body:
+{
+    "phone": "6335614870",
+    "email": "hansenjames@example.com",
+    "address": {
+        "city": "Port William",
+        "street": "Ashley Ridge",
+        "home_number": "1012"
+    }
+}
+2025-08-12 22:41:11 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/20, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:11 [32mINFO[0m Add new store
+2025-08-12 22:41:11 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Waller,%20Ryan%20and%20Garrett
+2025-08-12 22:41:11 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Waller,%20Ryan%20and%20Garrett, status: 201, body:
+{
+    "items": [],
+    "name": "Waller, Ryan and Garrett",
+    "uuid": "17"
+}
+2025-08-12 22:41:11 [32mINFO[0m Add new item
+2025-08-12 22:41:11 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Expanded%20empowering%20firmware, body:
+{
+    "name": "Expanded empowering firmware",
+    "price": 74460,
+    "store_id": "17"
+}
+2025-08-12 22:41:11 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Expanded%20empowering%20firmware, status: 201, body:
+{
+    "itemID": 10,
+    "name": "Expanded empowering firmware",
+    "price": 74460
+}
+2025-08-12 22:41:11 [32mINFO[0m Add user balance
+2025-08-12 22:41:11 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/20, body: {
+    "balance": 116854
+}
+2025-08-12 22:41:11 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/20, status: 201, body:
+{
+    "balance": 116854.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:41:11 [32mINFO[0m Get user balance
+2025-08-12 22:41:11 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:41:11 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

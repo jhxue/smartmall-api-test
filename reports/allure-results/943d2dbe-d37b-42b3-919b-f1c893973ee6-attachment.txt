@@ -1,0 +1,71 @@
+2025-08-12 22:35:20 [32mINFO[0m Register new user
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "peterthomas@example.com",
+    "password": "!3DJLChopo"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 9
+}
+2025-08-12 22:35:20 [32mINFO[0m Access to store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "peterthomas@example.com",
+    "password": "!3DJLChopo"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "af3b261c-c2ba-4d62-955e-cd2a9b818873"
+}
+2025-08-12 22:35:20 [32mINFO[0m Add user info
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/9, body:
+{
+    "phone": "315.990.2208x24754",
+    "email": "darren88@example.com",
+    "address": {
+        "city": "Meghanborough",
+        "street": "Alvarez Forges",
+        "home_number": "0387"
+    }
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/9, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:20 [32mINFO[0m Add new store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Silva-Barr
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Silva-Barr, status: 201, body:
+{
+    "items": [],
+    "name": "Silva-Barr",
+    "uuid": "6"
+}
+2025-08-12 22:35:20 [32mINFO[0m Add new item
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Team-oriented%20exuding%20model, body:
+{
+    "name": "Team-oriented exuding model",
+    "price": 89221,
+    "store_id": "6"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Team-oriented%20exuding%20model, status: 201, body:
+{
+    "itemID": 6,
+    "name": "Team-oriented exuding model",
+    "price": 89221
+}
+2025-08-12 22:35:20 [32mINFO[0m Change item
+2025-08-12 22:35:20 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Team-oriented%20exuding%20model, body:
+{
+    "name": "Team-oriented exuding model",
+    "price": 37733,
+    "store_id": "6"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Team-oriented%20exuding%20model, status: 200, body:
+{
+    "itemID": 6,
+    "name": "Team-oriented exuding model",
+    "price": 37733,
+    "store_id": "6"
+}

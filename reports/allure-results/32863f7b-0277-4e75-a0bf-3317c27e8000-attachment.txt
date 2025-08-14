@@ -1,0 +1,12 @@
+2025-08-12 21:49:44 [32mINFO[0m Access to store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "pmatthews@example.com",
+    "password": "_2$1MYkvDR"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 401, body:
+{
+    "description": "Invalid credentials",
+    "error": "Bad Request",
+    "status_code": 401
+}

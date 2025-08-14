@@ -1,0 +1,22 @@
+2025-08-12 21:49:44 [32mINFO[0m Start api tests, url is http://127.0.0.1:8080
+2025-08-12 21:49:44 [32mINFO[0m Register new user
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "dominguezkeith@example.net",
+    "password": "*82X(#8taI"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 31
+}
+2025-08-12 21:49:44 [32mINFO[0m Access to store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "dominguezkeith@example.net",
+    "password": "*82X(#8taI"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "24a0089c-32ad-4a8a-a621-7b2828bd87f4"
+}

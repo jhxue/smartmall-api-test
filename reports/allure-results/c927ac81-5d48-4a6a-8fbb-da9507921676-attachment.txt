@@ -1,0 +1,74 @@
+2025-08-12 22:35:32 [32mINFO[0m Register new user
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "megan88@example.org",
+    "password": "six4DE5NQ("
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 4
+}
+2025-08-12 22:35:32 [32mINFO[0m Access to store
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "megan88@example.org",
+    "password": "six4DE5NQ("
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "fd2e53d8-fe4f-49a8-a1ac-a6b69120ae97"
+}
+2025-08-12 22:35:32 [32mINFO[0m Add user info
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/4, body:
+{
+    "phone": "+1-214-244-7943",
+    "email": "isaac37@example.com",
+    "address": {
+        "city": "New Kimberly",
+        "street": "Pam Loop",
+        "home_number": "1868"
+    }
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/4, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new store
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Roberts-Reyes
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Roberts-Reyes, status: 201, body:
+{
+    "items": [],
+    "name": "Roberts-Reyes",
+    "uuid": "3"
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new item
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Implemented%20bi-directional%20secured%20line, body:
+{
+    "name": "Implemented bi-directional secured line",
+    "price": 22980,
+    "store_id": "3"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Implemented%20bi-directional%20secured%20line, status: 201, body:
+{
+    "itemID": 3,
+    "name": "Implemented bi-directional secured line",
+    "price": 22980
+}
+2025-08-12 22:35:32 [32mINFO[0m Add user balance
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/4, body: {
+    "balance": 0
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/4, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:32 [32mINFO[0m Pay item
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/4, body: {
+    "itemId": 3
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/4, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 22980.0"
+}

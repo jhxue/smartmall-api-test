@@ -1,0 +1,66 @@
+2025-08-12 22:41:10 [32mINFO[0m Register new user
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "bethfarrell@example.net",
+    "password": "76N1FY2O)s"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 10
+}
+2025-08-12 22:41:10 [32mINFO[0m Access to store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "bethfarrell@example.net",
+    "password": "76N1FY2O)s"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "1e4538be-75fd-42b5-803b-5e724cdb3a23"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add user info
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/10, body:
+{
+    "phone": "621.972.2614x09358",
+    "email": "patriciahernandez@example.net",
+    "address": {
+        "city": "East Ralph",
+        "street": "Rickey Rue",
+        "home_number": "303"
+    }
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/10, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Randall%20LLC
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Randall%20LLC, status: 201, body:
+{
+    "items": [],
+    "name": "Randall LLC",
+    "uuid": "7"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new item
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Open-architected%20multimedia%20portal, body:
+{
+    "name": "Open-architected multimedia portal",
+    "price": 92215,
+    "store_id": "7"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Open-architected%20multimedia%20portal, status: 201, body:
+{
+    "itemID": 7,
+    "name": "Open-architected multimedia portal",
+    "price": 92215
+}
+2025-08-12 22:41:10 [32mINFO[0m Get item
+2025-08-12 22:41:10 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Open-architected%20multimedia%20portal
+2025-08-12 22:41:10 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Open-architected%20multimedia%20portal, status: 200, body:
+{
+    "itemID": 7,
+    "name": "Open-architected multimedia portal",
+    "price": 92215,
+    "store_id": "7"
+}

@@ -1,0 +1,52 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "rollinsrobert@example.org",
+    "password": "A49ZjYOfi^"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 18
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "rollinsrobert@example.org",
+    "password": "A49ZjYOfi^"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "0a40d307-f851-4801-9c68-e2c56cc41814"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/18, body:
+{
+    "phone": "+1-202-401-4400x3942",
+    "email": "martindorothy@example.com",
+    "address": {
+        "city": "Harrisbury",
+        "street": "Berry Village",
+        "home_number": "438"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/18, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Potter,%20Campbell%20and%20Baker
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Potter,%20Campbell%20and%20Baker, status: 201, body:
+{
+    "items": [],
+    "name": "Potter, Campbell and Baker",
+    "uuid": "15"
+}
+2025-08-12 22:40:21 INFO Add user balance
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/balance/2000, body: {
+    "balance": 188719
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "User not found."
+}

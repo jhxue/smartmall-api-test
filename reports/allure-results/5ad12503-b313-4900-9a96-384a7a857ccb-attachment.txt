@@ -1,0 +1,77 @@
+2025-08-12 22:35:36 [32mINFO[0m Register new user
+2025-08-12 22:35:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "katherine03@example.org",
+    "password": "%yp21ZquUA"
+}
+2025-08-12 22:35:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 32
+}
+2025-08-12 22:35:36 [32mINFO[0m Access to store
+2025-08-12 22:35:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "katherine03@example.org",
+    "password": "%yp21ZquUA"
+}
+2025-08-12 22:35:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "86a64e2d-1af0-4937-adf8-5058906658ad"
+}
+2025-08-12 22:35:36 [32mINFO[0m Add user info
+2025-08-12 22:35:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/32, body:
+{
+    "phone": "001-309-246-5809x50340",
+    "email": "williamaguilar@example.org",
+    "address": {
+        "city": "Irwinstad",
+        "street": "Drew Garden",
+        "home_number": "63466"
+    }
+}
+2025-08-12 22:35:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/32, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:36 [32mINFO[0m Add new store
+2025-08-12 22:35:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Bass%20Group
+2025-08-12 22:35:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Bass%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Bass Group",
+    "uuid": "18"
+}
+2025-08-12 22:35:36 [32mINFO[0m Add new item
+2025-08-12 22:35:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Seamless%20eco-centric%20support, body:
+{
+    "name": "Seamless eco-centric support",
+    "price": 71791,
+    "store_id": "18"
+}
+2025-08-12 22:35:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Seamless%20eco-centric%20support, status: 201, body:
+{
+    "itemID": 12,
+    "name": "Seamless eco-centric support",
+    "price": 71791
+}
+2025-08-12 22:35:36 [32mINFO[0m Add user balance
+2025-08-12 22:35:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/32, body: {
+    "balance": 100578
+}
+2025-08-12 22:35:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/32, status: 201, body:
+{
+    "balance": 100578.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:36 [32mINFO[0m Pay item
+2025-08-12 22:35:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/32, body: {
+    "itemId": 12
+}
+2025-08-12 22:35:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/32, status: 200, body:
+{
+    "balance": 28787.0,
+    "message": "Payment successful",
+    "name": "Seamless eco-centric support",
+    "price": 71791.0
+}

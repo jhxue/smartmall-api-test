@@ -1,0 +1,74 @@
+2025-08-12 22:35:32 [32mINFO[0m Register new user
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "samuelhale@example.com",
+    "password": "fpCITvnc@6"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 3
+}
+2025-08-12 22:35:32 [32mINFO[0m Access to store
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "samuelhale@example.com",
+    "password": "fpCITvnc@6"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "1d260700-cf36-49e8-ae22-36eb18690a20"
+}
+2025-08-12 22:35:32 [32mINFO[0m Add user info
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/3, body:
+{
+    "phone": "001-684-884-5345",
+    "email": "austin10@example.net",
+    "address": {
+        "city": "New Jeremy",
+        "street": "Smith Island",
+        "home_number": "60515"
+    }
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/3, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new store
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Johnson-Medina
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Johnson-Medina, status: 201, body:
+{
+    "items": [],
+    "name": "Johnson-Medina",
+    "uuid": "2"
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new item
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Multi-lateral%20incremental%20encryption, body:
+{
+    "name": "Multi-lateral incremental encryption",
+    "price": 48685,
+    "store_id": "2"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Multi-lateral%20incremental%20encryption, status: 201, body:
+{
+    "itemID": 2,
+    "name": "Multi-lateral incremental encryption",
+    "price": 48685
+}
+2025-08-12 22:35:32 [32mINFO[0m Add user balance
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/3, body: {
+    "balance": 121358
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/3, status: 201, body:
+{
+    "balance": 121358.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:32 [32mINFO[0m Pay item
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/3, body: {
+    "itemId": 2000
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/3, status: 404, body:
+{
+    "message": "Item not found"
+}

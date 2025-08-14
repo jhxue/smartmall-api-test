@@ -1,0 +1,72 @@
+2025-08-12 22:30:36 [32mINFO[0m Register new user
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "aavila@example.com",
+    "password": "ve0RNafu$%"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 172
+}
+2025-08-12 22:30:36 [32mINFO[0m Access to store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "aavila@example.com",
+    "password": "ve0RNafu$%"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "285a82d3-b534-4320-adea-57d68ce0d943"
+}
+2025-08-12 22:30:36 [32mINFO[0m Add user info
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/172, body:
+{
+    "phone": "478.232.6045x8188",
+    "email": "sbaldwin@example.net",
+    "address": {
+        "city": "Port James",
+        "street": "Laurie Turnpike",
+        "home_number": "40116"
+    }
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/172, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:36 [32mINFO[0m Add new store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Jenkins,%20Williams%20and%20Watkins
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Jenkins,%20Williams%20and%20Watkins, status: 201, body:
+{
+    "items": [],
+    "name": "Jenkins, Williams and Watkins",
+    "uuid": "101"
+}
+2025-08-12 22:30:36 [32mINFO[0m Add new item
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Diverse%20multi-state%20flexibility, body:
+{
+    "name": "Diverse multi-state flexibility",
+    "price": 59793,
+    "store_id": "101"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Diverse%20multi-state%20flexibility, status: 201, body:
+{
+    "itemID": 65,
+    "name": "Diverse multi-state flexibility",
+    "price": 59793
+}
+2025-08-12 22:30:36 [32mINFO[0m Add user balance
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/172, body: {
+    "balance": 137964
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/172, status: 201, body:
+{
+    "balance": 137964.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:30:36 [32mINFO[0m Get user balance
+2025-08-12 22:30:36 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:30:36 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

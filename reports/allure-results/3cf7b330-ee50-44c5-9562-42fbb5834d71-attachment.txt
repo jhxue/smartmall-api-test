@@ -1,0 +1,74 @@
+2025-08-12 21:34:38 [32mINFO[0m Register new user
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "elizabeth15@example.org",
+    "password": "_6HH#kaMpe"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 4
+}
+2025-08-12 21:34:38 [32mINFO[0m Access to store
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "elizabeth15@example.org",
+    "password": "_6HH#kaMpe"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "0ec63173-59b0-4caf-bc7a-98e5d47d7e47"
+}
+2025-08-12 21:34:38 [32mINFO[0m Add user info
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/4, body:
+{
+    "phone": "+1-600-300-1183x05696",
+    "email": "carpenterpeter@example.org",
+    "address": {
+        "city": "Dalefurt",
+        "street": "Osborn Glen",
+        "home_number": "28473"
+    }
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/4, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:34:38 [32mINFO[0m Add new store
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Jones%20LLC
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Jones%20LLC, status: 201, body:
+{
+    "items": [],
+    "name": "Jones LLC",
+    "uuid": "3"
+}
+2025-08-12 21:34:38 [32mINFO[0m Add new item
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Upgradable%20analyzing%20standardization, body:
+{
+    "name": "Upgradable analyzing standardization",
+    "price": 38016,
+    "store_id": "3"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Upgradable%20analyzing%20standardization, status: 201, body:
+{
+    "itemID": 3,
+    "name": "Upgradable analyzing standardization",
+    "price": 38016
+}
+2025-08-12 21:34:38 [32mINFO[0m Add user balance
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/4, body: {
+    "balance": 0
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/4, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 21:34:38 [32mINFO[0m Pay item
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/4, body: {
+    "itemId": 3
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/4, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 38016.0"
+}

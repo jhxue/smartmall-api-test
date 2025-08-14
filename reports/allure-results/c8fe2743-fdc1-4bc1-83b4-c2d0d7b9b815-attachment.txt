@@ -1,0 +1,50 @@
+2025-08-13 20:22:36 [32mINFO[0m Register new user
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "cole51@example.com",
+    "password": "5!6EKdb8Eq"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 14
+}
+2025-08-13 20:22:36 [32mINFO[0m Access to store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "cole51@example.com",
+    "password": "5!6EKdb8Eq"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "5ad68980-b8a9-481f-a7af-687d79692e3c"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add user info
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/14, body:
+{
+    "phone": "710.906.3897x135",
+    "email": "bgillespie@example.net",
+    "address": {
+        "city": "South Madelineburgh",
+        "street": "Tammy Port",
+        "home_number": "04887"
+    }
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/14, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Moore,%20Smith%20and%20Thompson
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Moore,%20Smith%20and%20Thompson, status: 201, body:
+{
+    "items": [],
+    "name": "Moore, Smith and Thompson",
+    "uuid": "11"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Moore,%20Smith%20and%20Thompson
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Moore,%20Smith%20and%20Thompson, status: 400, body:
+{
+    "message": "A store with name 'Moore, Smith and Thompson' already exists."
+}

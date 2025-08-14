@@ -1,0 +1,57 @@
+2025-08-13 20:22:36 [32mINFO[0m Register new user
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "lynnhughes@example.com",
+    "password": ")Y1PKerR90"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 7
+}
+2025-08-13 20:22:36 [32mINFO[0m Access to store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "lynnhughes@example.com",
+    "password": ")Y1PKerR90"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "10debf9c-d4ba-4940-9b5a-384f01cd421a"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add user info
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/7, body:
+{
+    "phone": "001-306-866-6525",
+    "email": "pamelamedina@example.net",
+    "address": {
+        "city": "Jamesport",
+        "street": "Kelly Islands",
+        "home_number": "3891"
+    }
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/7, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Young%20Inc
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Young%20Inc, status: 201, body:
+{
+    "items": [],
+    "name": "Young Inc",
+    "uuid": "4"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new item
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Profound%20mobile%20initiative, body:
+{
+    "name": "Profound mobile initiative",
+    "price": 7707,
+    "store_id": "4"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Profound%20mobile%20initiative, status: 201, body:
+{
+    "itemID": 4,
+    "name": "Profound mobile initiative",
+    "price": 7707
+}

@@ -1,0 +1,52 @@
+2025-08-12 22:33:39 [32mINFO[0m Register new user
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "alicemurphy@example.net",
+    "password": "wxe7(1WurL"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 259
+}
+2025-08-12 22:33:39 [32mINFO[0m Access to store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "alicemurphy@example.net",
+    "password": "wxe7(1WurL"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "6725930d-8cfa-48b5-920f-8d5aeb6171ce"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user info
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/259, body:
+{
+    "phone": "8198261179",
+    "email": "suzanne80@example.net",
+    "address": {
+        "city": "South John",
+        "street": "John Vista",
+        "home_number": "86049"
+    }
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/259, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Torres%20Group
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Torres%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Torres Group",
+    "uuid": "148"
+}
+2025-08-12 22:33:39 [32mINFO[0m Get store
+2025-08-12 22:33:39 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/Torres%20Group
+2025-08-12 22:33:39 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/Torres%20Group, status: 200, body:
+{
+    "items": [],
+    "name": "Torres Group",
+    "uuid": "148"
+}

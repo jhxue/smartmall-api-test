@@ -1,0 +1,57 @@
+2025-08-12 22:33:47 [32mINFO[0m Register new user
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "andrew95@example.org",
+    "password": "Y(3IV+stkE"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 281
+}
+2025-08-12 22:33:47 [32mINFO[0m Access to store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "andrew95@example.org",
+    "password": "Y(3IV+stkE"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "45a11c28-509d-4506-bd07-6429a96ad380"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add user info
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/281, body:
+{
+    "phone": "(410)471-8812",
+    "email": "dvaldez@example.org",
+    "address": {
+        "city": "New Nicholasview",
+        "street": "Jamie Fields",
+        "home_number": "553"
+    }
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/281, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Hill,%20Jefferson%20and%20Cook
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Hill,%20Jefferson%20and%20Cook, status: 201, body:
+{
+    "items": [],
+    "name": "Hill, Jefferson and Cook",
+    "uuid": "156"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new item
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/User-friendly%20regional%20open%20system, body:
+{
+    "name": "User-friendly regional open system",
+    "price": 56101,
+    "store_id": "156"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/User-friendly%20regional%20open%20system, status: 201, body:
+{
+    "itemID": 101,
+    "name": "User-friendly regional open system",
+    "price": 56101
+}

@@ -1,0 +1,77 @@
+2025-08-14 18:05:53 [32mINFO[0m Register new user
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ecarroll@example.org",
+    "password": "vG0Nzn4x)&"
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 2
+}
+2025-08-14 18:05:53 [32mINFO[0m Access to store
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ecarroll@example.org",
+    "password": "vG0Nzn4x)&"
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "4502eef4-6d34-4750-b79f-d09002e9beeb"
+}
+2025-08-14 18:05:53 [32mINFO[0m Add user info
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/2, body:
+{
+    "phone": "734-616-3025x3830",
+    "email": "dwilliams@example.com",
+    "address": {
+        "city": "Huntport",
+        "street": "Jeffrey Canyon",
+        "home_number": "43276"
+    }
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/2, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-14 18:05:53 [32mINFO[0m Add new store
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Nguyen-Smith
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Nguyen-Smith, status: 201, body:
+{
+    "items": [],
+    "name": "Nguyen-Smith",
+    "uuid": "1"
+}
+2025-08-14 18:05:53 [32mINFO[0m Add new item
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Exclusive%20well-modulated%20knowledge%20user, body:
+{
+    "name": "Exclusive well-modulated knowledge user",
+    "price": 42557,
+    "store_id": "1"
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Exclusive%20well-modulated%20knowledge%20user, status: 201, body:
+{
+    "itemID": 1,
+    "name": "Exclusive well-modulated knowledge user",
+    "price": 42557
+}
+2025-08-14 18:05:53 [32mINFO[0m Add user balance
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2, body: {
+    "balance": 178840
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2, status: 201, body:
+{
+    "balance": 178840.0,
+    "message": "Balance added successfully"
+}
+2025-08-14 18:05:53 [32mINFO[0m Pay item
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/2, body: {
+    "itemId": 1
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/2, status: 200, body:
+{
+    "balance": 136283.0,
+    "message": "Payment successful",
+    "name": "Exclusive well-modulated knowledge user",
+    "price": 42557.0
+}

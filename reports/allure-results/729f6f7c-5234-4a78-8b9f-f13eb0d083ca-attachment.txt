@@ -1,0 +1,68 @@
+2025-08-12 22:35:32 [32mINFO[0m Register new user
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "lisafisher@example.org",
+    "password": "ILa&9vBb&o"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 8
+}
+2025-08-12 22:35:32 [32mINFO[0m Access to store
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "lisafisher@example.org",
+    "password": "ILa&9vBb&o"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "2b5c4da1-15c4-4c94-ba9e-129513a862be"
+}
+2025-08-12 22:35:32 [32mINFO[0m Add user info
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/8, body:
+{
+    "phone": "(818)875-5084",
+    "email": "katielee@example.com",
+    "address": {
+        "city": "West Mark",
+        "street": "Joseph Mountains",
+        "home_number": "7874"
+    }
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/8, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new store
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Hebert,%20Rogers%20and%20Johnson
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Hebert,%20Rogers%20and%20Johnson, status: 201, body:
+{
+    "items": [],
+    "name": "Hebert, Rogers and Johnson",
+    "uuid": "5"
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new item
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Decentralized%20bottom-line%20task-force, body:
+{
+    "name": "Decentralized bottom-line task-force",
+    "price": 80629,
+    "store_id": "5"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Decentralized%20bottom-line%20task-force, status: 201, body:
+{
+    "itemID": 5,
+    "name": "Decentralized bottom-line task-force",
+    "price": 80629
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new item
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Decentralized%20bottom-line%20task-force, body:
+{
+    "name": "Decentralized bottom-line task-force",
+    "price": 80629,
+    "store_id": "5"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Decentralized%20bottom-line%20task-force, status: 400, body:
+{
+    "message": "An item with name 'Decentralized bottom-line task-force' already exists."
+}

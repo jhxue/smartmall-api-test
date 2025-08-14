@@ -1,0 +1,74 @@
+2025-08-12 22:06:03 [32mINFO[0m Register new user
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "fieldsrobert@example.net",
+    "password": ")2Kgu3h@cR"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 65
+}
+2025-08-12 22:06:03 [32mINFO[0m Access to store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "fieldsrobert@example.net",
+    "password": ")2Kgu3h@cR"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "3779bfce-5195-4c26-b8dd-e47e753b1a1f"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user info
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/65, body:
+{
+    "phone": "001-649-887-5892x3846",
+    "email": "sandersandrew@example.com",
+    "address": {
+        "city": "Robinsonchester",
+        "street": "Collins Valleys",
+        "home_number": "0379"
+    }
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/65, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Taylor,%20Reed%20and%20Hall
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Taylor,%20Reed%20and%20Hall, status: 201, body:
+{
+    "items": [],
+    "name": "Taylor, Reed and Hall",
+    "uuid": "36"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new item
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Integrated%20web-enabled%20framework, body:
+{
+    "name": "Integrated web-enabled framework",
+    "price": 39467,
+    "store_id": "36"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Integrated%20web-enabled%20framework, status: 201, body:
+{
+    "itemID": 24,
+    "name": "Integrated web-enabled framework",
+    "price": 39467
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user balance
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/65, body: {
+    "balance": 176565
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/65, status: 201, body:
+{
+    "balance": 176565.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:06:03 [32mINFO[0m Pay item
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/65, body: {
+    "itemId": 2000
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/65, status: 404, body:
+{
+    "message": "Item not found"
+}

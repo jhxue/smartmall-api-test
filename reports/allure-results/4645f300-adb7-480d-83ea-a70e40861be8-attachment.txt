@@ -1,0 +1,66 @@
+2025-08-12 22:33:39 [32mINFO[0m Register new user
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "nelsondeborah@example.net",
+    "password": "!8K1BUp(th"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 254
+}
+2025-08-12 22:33:39 [32mINFO[0m Access to store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "nelsondeborah@example.net",
+    "password": "!8K1BUp(th"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "1438358f-ac14-44b7-8f84-8e195937d6d7"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user info
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/254, body:
+{
+    "phone": "9237298919",
+    "email": "cynthialambert@example.net",
+    "address": {
+        "city": "Anthonyview",
+        "street": "Palmer Plains",
+        "home_number": "327"
+    }
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/254, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Kim,%20Moreno%20and%20Mcguire
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Kim,%20Moreno%20and%20Mcguire, status: 201, body:
+{
+    "items": [],
+    "name": "Kim, Moreno and Mcguire",
+    "uuid": "143"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new item
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Grass-roots%206thgeneration%20budgetary%20management, body:
+{
+    "name": "Grass-roots 6thgeneration budgetary management",
+    "price": 71538,
+    "store_id": "143"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Grass-roots%206thgeneration%20budgetary%20management, status: 201, body:
+{
+    "itemID": 94,
+    "name": "Grass-roots 6thgeneration budgetary management",
+    "price": 71538
+}
+2025-08-12 22:33:39 [32mINFO[0m Get item
+2025-08-12 22:33:39 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Grass-roots%206thgeneration%20budgetary%20management
+2025-08-12 22:33:39 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Grass-roots%206thgeneration%20budgetary%20management, status: 200, body:
+{
+    "itemID": 94,
+    "name": "Grass-roots 6thgeneration budgetary management",
+    "price": 71538,
+    "store_id": "143"
+}

@@ -1,0 +1,77 @@
+2025-08-13 20:22:36 [32mINFO[0m Register new user
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jwarren@example.com",
+    "password": "5(04Fms70*"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 2
+}
+2025-08-13 20:22:36 [32mINFO[0m Access to store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jwarren@example.com",
+    "password": "5(04Fms70*"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "3516b51d-7273-4df1-a4ef-7e553d13485c"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add user info
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/2, body:
+{
+    "phone": "001-476-991-7940x190",
+    "email": "tblackwell@example.net",
+    "address": {
+        "city": "South Kellyfort",
+        "street": "Riley Locks",
+        "home_number": "61158"
+    }
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/2, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Booth%20Inc
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Booth%20Inc, status: 201, body:
+{
+    "items": [],
+    "name": "Booth Inc",
+    "uuid": "1"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new item
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/User-friendly%20composite%20strategy, body:
+{
+    "name": "User-friendly composite strategy",
+    "price": 20529,
+    "store_id": "1"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/User-friendly%20composite%20strategy, status: 201, body:
+{
+    "itemID": 1,
+    "name": "User-friendly composite strategy",
+    "price": 20529
+}
+2025-08-13 20:22:36 [32mINFO[0m Add user balance
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2, body: {
+    "balance": 177405
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2, status: 201, body:
+{
+    "balance": 177405.0,
+    "message": "Balance added successfully"
+}
+2025-08-13 20:22:36 [32mINFO[0m Pay item
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/2, body: {
+    "itemId": 1
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/2, status: 200, body:
+{
+    "balance": 156876.0,
+    "message": "Payment successful",
+    "name": "User-friendly composite strategy",
+    "price": 20529.0
+}

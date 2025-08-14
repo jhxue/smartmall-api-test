@@ -1,0 +1,53 @@
+2025-08-12 22:06:03 [32mINFO[0m Register new user
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "seanjones@example.net",
+    "password": "+s*0Qn020&"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 79
+}
+2025-08-12 22:06:03 [32mINFO[0m Access to store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "seanjones@example.net",
+    "password": "+s*0Qn020&"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "4e233d24-3e6b-4f55-b4ce-ed41a9abda45"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user info
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/79, body:
+{
+    "phone": "857-875-7023x0253",
+    "email": "markcarlson@example.net",
+    "address": {
+        "city": "South Matthew",
+        "street": "Wilson Valleys",
+        "home_number": "1626"
+    }
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/79, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Mcguire%20Group
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Mcguire%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "Mcguire Group",
+    "uuid": "48"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user balance
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/79, body: {
+    "balance": 177505
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/79, status: 201, body:
+{
+    "balance": 177505.0,
+    "message": "Balance added successfully"
+}

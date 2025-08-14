@@ -1,0 +1,42 @@
+2025-08-12 22:40:22 INFO Register new user
+2025-08-12 22:40:22 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "charlenerobinson@example.org",
+    "password": "k5SMQi@p^#"
+}
+2025-08-12 22:40:22 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 28
+}
+2025-08-12 22:40:22 INFO Access to store
+2025-08-12 22:40:22 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "charlenerobinson@example.org",
+    "password": "k5SMQi@p^#"
+}
+2025-08-12 22:40:22 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "774e4868-3e55-48fd-b9cf-50ff39089da5"
+}
+2025-08-12 22:40:22 INFO Add user info
+2025-08-12 22:40:22 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/28, body:
+{
+    "phone": "001-749-835-0913x5802",
+    "email": "xmontgomery@example.com",
+    "address": {
+        "city": "North Allison",
+        "street": "Joshua Lane",
+        "home_number": "4865"
+    }
+}
+2025-08-12 22:40:22 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/28, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:22 INFO Get user info
+2025-08-12 22:40:22 INFO Request method: GET, url: http://127.0.0.1:8080/user_info/1000
+2025-08-12 22:40:22 INFO Response method: GET, url: http://127.0.0.1:8080/user_info/1000, status: 404, body:
+{
+    "message": "User info not found"
+}

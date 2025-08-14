@@ -1,0 +1,53 @@
+2025-08-13 20:22:37 [32mINFO[0m Register new user
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jefferyjones@example.com",
+    "password": "+SC6W$rk#M"
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 17
+}
+2025-08-13 20:22:37 [32mINFO[0m Access to store
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jefferyjones@example.com",
+    "password": "+SC6W$rk#M"
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "4bf07154-dbb1-4b7a-913f-cddbc12e1530"
+}
+2025-08-13 20:22:37 [32mINFO[0m Add user info
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/17, body:
+{
+    "phone": "452-336-0358x212",
+    "email": "jenkinsdorothy@example.com",
+    "address": {
+        "city": "North Amberhaven",
+        "street": "Joseph Shore",
+        "home_number": "19586"
+    }
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/17, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 20:22:37 [32mINFO[0m Add new store
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Krause-Johnson
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Krause-Johnson, status: 201, body:
+{
+    "items": [],
+    "name": "Krause-Johnson",
+    "uuid": "14"
+}
+2025-08-13 20:22:37 [32mINFO[0m Add user balance
+2025-08-13 20:22:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/17, body: {
+    "balance": 149741
+}
+2025-08-13 20:22:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/17, status: 201, body:
+{
+    "balance": 149741.0,
+    "message": "Balance added successfully"
+}

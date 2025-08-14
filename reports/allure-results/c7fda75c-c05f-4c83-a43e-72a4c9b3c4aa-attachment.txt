@@ -1,0 +1,53 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "harrisshannon@example.net",
+    "password": "f^87CDMg7$"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 17
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "harrisshannon@example.net",
+    "password": "f^87CDMg7$"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b83d331d-46c6-4472-aad9-d586be0af2eb"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/17, body:
+{
+    "phone": "001-916-382-3081x4813",
+    "email": "carrie76@example.com",
+    "address": {
+        "city": "Lake Brandonfort",
+        "street": "Paul Ridge",
+        "home_number": "20465"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/17, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Barrett,%20Wallace%20and%20Lang
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Barrett,%20Wallace%20and%20Lang, status: 201, body:
+{
+    "items": [],
+    "name": "Barrett, Wallace and Lang",
+    "uuid": "14"
+}
+2025-08-12 22:40:21 INFO Add user balance
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/balance/17, body: {
+    "balance": 152195
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/balance/17, status: 201, body:
+{
+    "balance": 152195.0,
+    "message": "Balance added successfully"
+}

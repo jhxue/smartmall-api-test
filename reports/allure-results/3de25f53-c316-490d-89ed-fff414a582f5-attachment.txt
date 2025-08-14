@@ -1,0 +1,74 @@
+2025-08-14 18:05:53 [32mINFO[0m Register new user
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "rachelkrause@example.org",
+    "password": "f8ZkNmP4^Z"
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 4
+}
+2025-08-14 18:05:53 [32mINFO[0m Access to store
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "rachelkrause@example.org",
+    "password": "f8ZkNmP4^Z"
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "9bebed8a-dc59-414e-80cd-d754eb13cf31"
+}
+2025-08-14 18:05:53 [32mINFO[0m Add user info
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/4, body:
+{
+    "phone": "341-584-0428x0360",
+    "email": "hwilson@example.com",
+    "address": {
+        "city": "Lake Hannahstad",
+        "street": "Schmidt Court",
+        "home_number": "798"
+    }
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/4, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-14 18:05:53 [32mINFO[0m Add new store
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Hines,%20Glenn%20and%20Thompson
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Hines,%20Glenn%20and%20Thompson, status: 201, body:
+{
+    "items": [],
+    "name": "Hines, Glenn and Thompson",
+    "uuid": "3"
+}
+2025-08-14 18:05:53 [32mINFO[0m Add new item
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Enterprise-wide%20methodical%20success, body:
+{
+    "name": "Enterprise-wide methodical success",
+    "price": 71201,
+    "store_id": "3"
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Enterprise-wide%20methodical%20success, status: 201, body:
+{
+    "itemID": 3,
+    "name": "Enterprise-wide methodical success",
+    "price": 71201
+}
+2025-08-14 18:05:53 [32mINFO[0m Add user balance
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/4, body: {
+    "balance": 0
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/4, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-14 18:05:53 [32mINFO[0m Pay item
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/4, body: {
+    "itemId": 3
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/4, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 71201.0"
+}

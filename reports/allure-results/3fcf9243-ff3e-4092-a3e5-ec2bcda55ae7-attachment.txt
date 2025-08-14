@@ -1,0 +1,77 @@
+2025-08-12 22:33:08 [32mINFO[0m Register new user
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "vsmith@example.net",
+    "password": "m3KdZVb(_9"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 216
+}
+2025-08-12 22:33:08 [32mINFO[0m Access to store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "vsmith@example.net",
+    "password": "m3KdZVb(_9"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "d4719572-d128-4127-92a8-0431a73b5a15"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add user info
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/216, body:
+{
+    "phone": "552.910.8795",
+    "email": "jameshernandez@example.org",
+    "address": {
+        "city": "Bonnieport",
+        "street": "Stanley Prairie",
+        "home_number": "3306"
+    }
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/216, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Shelton,%20Parker%20and%20Calderon
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Shelton,%20Parker%20and%20Calderon, status: 201, body:
+{
+    "items": [],
+    "name": "Shelton, Parker and Calderon",
+    "uuid": "120"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new item
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Multi-layered%20interactive%20attitude, body:
+{
+    "name": "Multi-layered interactive attitude",
+    "price": 74467,
+    "store_id": "120"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Multi-layered%20interactive%20attitude, status: 201, body:
+{
+    "itemID": 78,
+    "name": "Multi-layered interactive attitude",
+    "price": 74467
+}
+2025-08-12 22:33:08 [32mINFO[0m Add user balance
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/216, body: {
+    "balance": 165513
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/216, status: 201, body:
+{
+    "balance": 165513.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:33:08 [32mINFO[0m Pay item
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/216, body: {
+    "itemId": 78
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/216, status: 200, body:
+{
+    "balance": 91046.0,
+    "message": "Payment successful",
+    "name": "Multi-layered interactive attitude",
+    "price": 74467.0
+}

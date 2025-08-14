@@ -1,0 +1,77 @@
+2025-08-12 21:49:44 [32mINFO[0m Register new user
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ajacobs@example.com",
+    "password": "^6R)851p7c"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 32
+}
+2025-08-12 21:49:44 [32mINFO[0m Access to store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ajacobs@example.com",
+    "password": "^6R)851p7c"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "69f522f0-4f85-4830-94a1-307f6f763bb3"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add user info
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/32, body:
+{
+    "phone": "+1-439-221-1852",
+    "email": "melissa43@example.net",
+    "address": {
+        "city": "Port Andrewborough",
+        "street": "Miller Corner",
+        "home_number": "0536"
+    }
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/32, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Taylor-Miller
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Taylor-Miller, status: 201, body:
+{
+    "items": [],
+    "name": "Taylor-Miller",
+    "uuid": "18"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new item
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Self-enabling%20systematic%20hub, body:
+{
+    "name": "Self-enabling systematic hub",
+    "price": 19571,
+    "store_id": "18"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Self-enabling%20systematic%20hub, status: 201, body:
+{
+    "itemID": 12,
+    "name": "Self-enabling systematic hub",
+    "price": 19571
+}
+2025-08-12 21:49:44 [32mINFO[0m Add user balance
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/32, body: {
+    "balance": 111560
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/32, status: 201, body:
+{
+    "balance": 111560.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 21:49:44 [32mINFO[0m Pay item
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/32, body: {
+    "itemId": 12
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/32, status: 200, body:
+{
+    "balance": 91989.0,
+    "message": "Payment successful",
+    "name": "Self-enabling systematic hub",
+    "price": 19571.0
+}

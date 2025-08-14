@@ -1,0 +1,74 @@
+2025-08-12 22:35:45 [32mINFO[0m Register new user
+2025-08-12 22:35:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "andersonmisty@example.net",
+    "password": ")u5GxR^R3s"
+}
+2025-08-12 22:35:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 63
+}
+2025-08-12 22:35:45 [32mINFO[0m Access to store
+2025-08-12 22:35:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "andersonmisty@example.net",
+    "password": ")u5GxR^R3s"
+}
+2025-08-12 22:35:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "3dab95f1-4c97-4b7d-bee2-4d36eb56b10c"
+}
+2025-08-12 22:35:45 [32mINFO[0m Add user info
+2025-08-12 22:35:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/63, body:
+{
+    "phone": "001-211-946-7597x36519",
+    "email": "rodgerstracey@example.org",
+    "address": {
+        "city": "Kimberlymouth",
+        "street": "Ortiz Passage",
+        "home_number": "06274"
+    }
+}
+2025-08-12 22:35:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/63, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:45 [32mINFO[0m Add new store
+2025-08-12 22:35:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Williams-Aguirre
+2025-08-12 22:35:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Williams-Aguirre, status: 201, body:
+{
+    "items": [],
+    "name": "Williams-Aguirre",
+    "uuid": "36"
+}
+2025-08-12 22:35:45 [32mINFO[0m Add new item
+2025-08-12 22:35:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Multi-lateral%20leadingedge%20projection, body:
+{
+    "name": "Multi-lateral leadingedge projection",
+    "price": 40862,
+    "store_id": "36"
+}
+2025-08-12 22:35:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Multi-lateral%20leadingedge%20projection, status: 201, body:
+{
+    "itemID": 24,
+    "name": "Multi-lateral leadingedge projection",
+    "price": 40862
+}
+2025-08-12 22:35:45 [32mINFO[0m Add user balance
+2025-08-12 22:35:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/63, body: {
+    "balance": 116463
+}
+2025-08-12 22:35:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/63, status: 201, body:
+{
+    "balance": 116463.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:45 [32mINFO[0m Pay item
+2025-08-12 22:35:45 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/63, body: {
+    "itemId": 2000
+}
+2025-08-12 22:35:45 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/63, status: 404, body:
+{
+    "message": "Item not found"
+}

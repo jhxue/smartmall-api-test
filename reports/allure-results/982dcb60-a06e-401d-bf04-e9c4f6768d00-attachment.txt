@@ -1,0 +1,74 @@
+2025-08-12 22:30:29 [32mINFO[0m Register new user
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "wolfmelissa@example.org",
+    "password": "#r#0A1lra!"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 125
+}
+2025-08-12 22:30:29 [32mINFO[0m Access to store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "wolfmelissa@example.org",
+    "password": "#r#0A1lra!"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "6730b646-e907-4fbf-b63f-69d463362dac"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user info
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/125, body:
+{
+    "phone": "(569)756-5861",
+    "email": "jacobslisa@example.net",
+    "address": {
+        "city": "East Jacquelineville",
+        "street": "Marie Curve",
+        "home_number": "619"
+    }
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/125, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Tran-Richard
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Tran-Richard, status: 201, body:
+{
+    "items": [],
+    "name": "Tran-Richard",
+    "uuid": "70"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new item
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Re-engineered%20full-range%20architecture, body:
+{
+    "name": "Re-engineered full-range architecture",
+    "price": 80298,
+    "store_id": "70"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Re-engineered%20full-range%20architecture, status: 201, body:
+{
+    "itemID": 45,
+    "name": "Re-engineered full-range architecture",
+    "price": 80298
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user balance
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/125, body: {
+    "balance": 115017
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/125, status: 201, body:
+{
+    "balance": 115017.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:30:29 [32mINFO[0m Pay item
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/125, body: {
+    "itemId": 2000
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/125, status: 404, body:
+{
+    "message": "Item not found"
+}

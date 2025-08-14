@@ -1,0 +1,44 @@
+2025-08-12 22:30:36 [32mINFO[0m Register new user
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "lsparks@example.org",
+    "password": "Dg3d5IKa)S"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 165
+}
+2025-08-12 22:30:36 [32mINFO[0m Access to store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "lsparks@example.org",
+    "password": "Dg3d5IKa)S"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "10f2d8e6-63a0-4b62-880e-f2ea00b9cf41"
+}
+2025-08-12 22:30:36 [32mINFO[0m Add user info
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/165, body:
+{
+    "phone": "809-932-7686x583",
+    "email": "danielle74@example.com",
+    "address": {
+        "city": "Port Henryburgh",
+        "street": "Jenkins Parks",
+        "home_number": "385"
+    }
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/165, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:36 [32mINFO[0m Add new store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Gutierrez,%20Carroll%20and%20Carson
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Gutierrez,%20Carroll%20and%20Carson, status: 201, body:
+{
+    "items": [],
+    "name": "Gutierrez, Carroll and Carson",
+    "uuid": "95"
+}

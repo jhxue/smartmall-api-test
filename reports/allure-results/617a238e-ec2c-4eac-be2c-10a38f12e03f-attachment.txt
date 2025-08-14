@@ -1,0 +1,72 @@
+2025-08-14 18:05:54 [32mINFO[0m Register new user
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "tina88@example.org",
+    "password": "k_4@M8Rh%h"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 20
+}
+2025-08-14 18:05:54 [32mINFO[0m Access to store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "tina88@example.org",
+    "password": "k_4@M8Rh%h"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "82b16aa3-acf7-44f8-a345-d9a6523db141"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add user info
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/20, body:
+{
+    "phone": "738.263.5711x8150",
+    "email": "lhowell@example.org",
+    "address": {
+        "city": "South Jamesbury",
+        "street": "Colleen Corner",
+        "home_number": "26413"
+    }
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/20, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Rodriguez%20and%20Sons
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Rodriguez%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Rodriguez and Sons",
+    "uuid": "17"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new item
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Horizontal%20bi-directional%20array, body:
+{
+    "name": "Horizontal bi-directional array",
+    "price": 79926,
+    "store_id": "17"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Horizontal%20bi-directional%20array, status: 201, body:
+{
+    "itemID": 11,
+    "name": "Horizontal bi-directional array",
+    "price": 79926
+}
+2025-08-14 18:05:54 [32mINFO[0m Add user balance
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/20, body: {
+    "balance": 154063
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/20, status: 201, body:
+{
+    "balance": 154063.0,
+    "message": "Balance added successfully"
+}
+2025-08-14 18:05:54 [32mINFO[0m Get user balance
+2025-08-14 18:05:54 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-14 18:05:54 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

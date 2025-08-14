@@ -1,0 +1,52 @@
+2025-08-12 22:30:42 [32mINFO[0m Register new user
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "holdenjoshua@example.com",
+    "password": "w121)Bu9G&"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 197
+}
+2025-08-12 22:30:42 [32mINFO[0m Access to store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "holdenjoshua@example.com",
+    "password": "w121)Bu9G&"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "0da1279d-1f40-4770-9e95-f8841ec55df4"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add user info
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/197, body:
+{
+    "phone": "+1-225-710-1038x622",
+    "email": "harriskathleen@example.org",
+    "address": {
+        "city": "West Brianna",
+        "street": "Paige Ford",
+        "home_number": "02940"
+    }
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/197, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Cooley-Jones
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Cooley-Jones, status: 201, body:
+{
+    "items": [],
+    "name": "Cooley-Jones",
+    "uuid": "113"
+}
+2025-08-12 22:30:42 [32mINFO[0m Get store
+2025-08-12 22:30:42 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/Cooley-Jones
+2025-08-12 22:30:42 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/Cooley-Jones, status: 200, body:
+{
+    "items": [],
+    "name": "Cooley-Jones",
+    "uuid": "113"
+}

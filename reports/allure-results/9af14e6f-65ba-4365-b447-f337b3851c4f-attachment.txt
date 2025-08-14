@@ -1,0 +1,68 @@
+2025-08-12 21:34:38 [32mINFO[0m Register new user
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "karen02@example.net",
+    "password": "u87X*TD(#L"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 8
+}
+2025-08-12 21:34:38 [32mINFO[0m Access to store
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "karen02@example.net",
+    "password": "u87X*TD(#L"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "aaf4d3dd-1fd2-4b11-ac8f-4b0b7189d576"
+}
+2025-08-12 21:34:38 [32mINFO[0m Add user info
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/8, body:
+{
+    "phone": "001-398-453-1000x75600",
+    "email": "erica23@example.net",
+    "address": {
+        "city": "South Scottshire",
+        "street": "Megan Shore",
+        "home_number": "5928"
+    }
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/8, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:34:38 [32mINFO[0m Add new store
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Mcdaniel-Butler
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Mcdaniel-Butler, status: 201, body:
+{
+    "items": [],
+    "name": "Mcdaniel-Butler",
+    "uuid": "5"
+}
+2025-08-12 21:34:38 [32mINFO[0m Add new item
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Automated%20reciprocal%20alliance, body:
+{
+    "name": "Automated reciprocal alliance",
+    "price": 85719,
+    "store_id": "5"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Automated%20reciprocal%20alliance, status: 201, body:
+{
+    "itemID": 5,
+    "name": "Automated reciprocal alliance",
+    "price": 85719
+}
+2025-08-12 21:34:38 [32mINFO[0m Add new item
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Automated%20reciprocal%20alliance, body:
+{
+    "name": "Automated reciprocal alliance",
+    "price": 85719,
+    "store_id": "5"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Automated%20reciprocal%20alliance, status: 400, body:
+{
+    "message": "An item with name 'Automated reciprocal alliance' already exists."
+}

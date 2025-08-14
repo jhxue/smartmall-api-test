@@ -1,0 +1,700 @@
+2025-08-12 22:33:47 [32mINFO[0m Register new user
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "higginsmichael@example.org",
+    "password": ")oqlLx(nx6"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 286
+}
+2025-08-12 22:33:47 [32mINFO[0m Access to store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "higginsmichael@example.org",
+    "password": ")oqlLx(nx6"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "6810fdc4-a914-4409-b48e-8fdbb760aeae"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add user info
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/286, body:
+{
+    "phone": "(590)832-3236",
+    "email": "jessicahunter@example.com",
+    "address": {
+        "city": "South Lisashire",
+        "street": "Derrick Manors",
+        "home_number": "43127"
+    }
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/286, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new store
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Thompson-Garcia
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Thompson-Garcia, status: 201, body:
+{
+    "items": [],
+    "name": "Thompson-Garcia",
+    "uuid": "161"
+}
+2025-08-12 22:33:47 [32mINFO[0m Add new item
+2025-08-12 22:33:47 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Distributed%20high-level%20website, body:
+{
+    "name": "Distributed high-level website",
+    "price": 91142,
+    "store_id": "161"
+}
+2025-08-12 22:33:47 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Distributed%20high-level%20website, status: 201, body:
+{
+    "itemID": 106,
+    "name": "Distributed high-level website",
+    "price": 91142
+}
+2025-08-12 22:33:47 [32mINFO[0m Get all items
+2025-08-12 22:33:47 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/items
+2025-08-12 22:33:47 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/items, status: 200, body:
+{
+    "items": [
+        {
+            "itemID": 1,
+            "name": "Intuitive system-worthy workforce",
+            "price": 95947,
+            "store_id": "1"
+        },
+        {
+            "itemID": 2,
+            "name": "Streamlined high-level encoding",
+            "price": 4125,
+            "store_id": "2"
+        },
+        {
+            "itemID": 3,
+            "name": "Upgradable analyzing standardization",
+            "price": 38016,
+            "store_id": "3"
+        },
+        {
+            "itemID": 4,
+            "name": "Programmable background help-desk",
+            "price": 6798,
+            "store_id": "4"
+        },
+        {
+            "itemID": 5,
+            "name": "Automated reciprocal alliance",
+            "price": 85719,
+            "store_id": "5"
+        },
+        {
+            "itemID": 6,
+            "name": "Object-based system-worthy interface",
+            "price": 70603,
+            "store_id": "6"
+        },
+        {
+            "itemID": 7,
+            "name": "Function-based coherent Graphical User Interface",
+            "price": 41243,
+            "store_id": "7"
+        },
+        {
+            "itemID": 8,
+            "name": "Upgradable methodical website",
+            "price": 97847,
+            "store_id": "8"
+        },
+        {
+            "itemID": 9,
+            "name": "Right-sized intangible emulation",
+            "price": 91492,
+            "store_id": "9"
+        },
+        {
+            "itemID": 10,
+            "name": "Reverse-engineered optimal paradigm",
+            "price": 93266,
+            "store_id": "16"
+        },
+        {
+            "itemID": 11,
+            "name": "Distributed stable time-frame",
+            "price": 11629,
+            "store_id": "17"
+        },
+        {
+            "itemID": 12,
+            "name": "Self-enabling systematic hub",
+            "price": 19571,
+            "store_id": "18"
+        },
+        {
+            "itemID": 13,
+            "name": "Self-enabling disintermediate capability",
+            "price": 75435,
+            "store_id": "19"
+        },
+        {
+            "itemID": 14,
+            "name": "Managed bottom-line access",
+            "price": 50669,
+            "store_id": "20"
+        },
+        {
+            "itemID": 15,
+            "name": "Expanded zero administration portal",
+            "price": 51699,
+            "store_id": "21"
+        },
+        {
+            "itemID": 16,
+            "name": "Intuitive mobile Internet solution",
+            "price": 87199,
+            "store_id": "22"
+        },
+        {
+            "itemID": 17,
+            "name": "Future-proofed regional open architecture",
+            "price": 5124,
+            "store_id": "23"
+        },
+        {
+            "itemID": 18,
+            "name": "Fundamental homogeneous hub",
+            "price": 81894,
+            "store_id": "24"
+        },
+        {
+            "itemID": 19,
+            "name": "Innovative value-added moderator",
+            "price": 60543,
+            "store_id": "25"
+        },
+        {
+            "itemID": 20,
+            "name": "Organic non-volatile model",
+            "price": 84124,
+            "store_id": "26"
+        },
+        {
+            "itemID": 21,
+            "name": "Polarized incremental superstructure",
+            "price": 57539,
+            "store_id": "33"
+        },
+        {
+            "itemID": 22,
+            "name": "Balanced demand-driven interface",
+            "price": 59274,
+            "store_id": "34"
+        },
+        {
+            "itemID": 23,
+            "name": "De-engineered multi-tasking core",
+            "price": 53389,
+            "store_id": "35"
+        },
+        {
+            "itemID": 24,
+            "name": "Integrated web-enabled framework",
+            "price": 39467,
+            "store_id": "36"
+        },
+        {
+            "itemID": 25,
+            "name": "Fundamental heuristic pricing structure",
+            "price": 662,
+            "store_id": "37"
+        },
+        {
+            "itemID": 26,
+            "name": "Total systemic knowledge user",
+            "price": 1819,
+            "store_id": "38"
+        },
+        {
+            "itemID": 27,
+            "name": "Realigned solution-oriented frame",
+            "price": 66002,
+            "store_id": "39"
+        },
+        {
+            "itemID": 28,
+            "name": "Visionary directional ability",
+            "price": 88000,
+            "store_id": "40"
+        },
+        {
+            "itemID": 29,
+            "name": "Monitored static help-desk",
+            "price": 9775,
+            "store_id": "41"
+        },
+        {
+            "itemID": 30,
+            "name": "Proactive 6thgeneration open system",
+            "price": 9770,
+            "store_id": "42"
+        },
+        {
+            "itemID": 31,
+            "name": "Reactive uniform policy",
+            "price": 52094,
+            "store_id": "43"
+        },
+        {
+            "itemID": 32,
+            "name": "Upgradable dynamic policy",
+            "price": 86912,
+            "store_id": "50"
+        },
+        {
+            "itemID": 33,
+            "name": "Organized leadingedge synergy",
+            "price": 45797,
+            "store_id": "51"
+        },
+        {
+            "itemID": 34,
+            "name": "Synergized encompassing synergy",
+            "price": 22421,
+            "store_id": "52"
+        },
+        {
+            "itemID": 35,
+            "name": "Intuitive optimal challenge",
+            "price": 69102,
+            "store_id": "53"
+        },
+        {
+            "itemID": 36,
+            "name": "Compatible clear-thinking Graphic Interface",
+            "price": 75181,
+            "store_id": "54"
+        },
+        {
+            "itemID": 37,
+            "name": "Inverse modular neural-net",
+            "price": 88008,
+            "store_id": "55"
+        },
+        {
+            "itemID": 38,
+            "name": "Open-source uniform orchestration",
+            "price": 56640,
+            "store_id": "56"
+        },
+        {
+            "itemID": 39,
+            "name": "Integrated interactive interface",
+            "price": 25089,
+            "store_id": "57"
+        },
+        {
+            "itemID": 40,
+            "name": "Intuitive neutral process improvement",
+            "price": 17411,
+            "store_id": "58"
+        },
+        {
+            "itemID": 41,
+            "name": "Cross-group human-resource flexibility",
+            "price": 42157,
+            "store_id": "59"
+        },
+        {
+            "itemID": 42,
+            "name": "Pre-emptive uniform workforce",
+            "price": 46928,
+            "store_id": "60"
+        },
+        {
+            "itemID": 43,
+            "name": "Progressive bifurcated portal",
+            "price": 47739,
+            "store_id": "68"
+        },
+        {
+            "itemID": 44,
+            "name": "Ameliorated logistical attitude",
+            "price": 77350,
+            "store_id": "69"
+        },
+        {
+            "itemID": 45,
+            "name": "Re-engineered full-range architecture",
+            "price": 80298,
+            "store_id": "70"
+        },
+        {
+            "itemID": 46,
+            "name": "Quality-focused local emulation",
+            "price": 71391,
+            "store_id": "71"
+        },
+        {
+            "itemID": 47,
+            "name": "Proactive 3rdgeneration data-warehouse",
+            "price": 47782,
+            "store_id": "72"
+        },
+        {
+            "itemID": 48,
+            "name": "Multi-lateral discrete hardware",
+            "price": 81739,
+            "store_id": "73"
+        },
+        {
+            "itemID": 49,
+            "name": "Organized multi-state synergy",
+            "price": 96422,
+            "store_id": "74"
+        },
+        {
+            "itemID": 50,
+            "name": "Balanced background capacity",
+            "price": 16779,
+            "store_id": "75"
+        },
+        {
+            "itemID": 51,
+            "name": "Advanced eco-centric adapter",
+            "price": 4879,
+            "store_id": "76"
+        },
+        {
+            "itemID": 52,
+            "name": "Exclusive 4thgeneration model",
+            "price": 78629,
+            "store_id": "77"
+        },
+        {
+            "itemID": 53,
+            "name": "Self-enabling bi-directional algorithm",
+            "price": 57307,
+            "store_id": "84"
+        },
+        {
+            "itemID": 54,
+            "name": "Open-architected regional moratorium",
+            "price": 99357,
+            "store_id": "85"
+        },
+        {
+            "itemID": 55,
+            "name": "Robust contextually-based monitoring",
+            "price": 25852,
+            "store_id": "86"
+        },
+        {
+            "itemID": 56,
+            "name": "Team-oriented needs-based core",
+            "price": 92205,
+            "store_id": "87"
+        },
+        {
+            "itemID": 57,
+            "name": "Open-source contextually-based project",
+            "price": 87573,
+            "store_id": "88"
+        },
+        {
+            "itemID": 58,
+            "name": "Decentralized web-enabled infrastructure",
+            "price": 40864,
+            "store_id": "89"
+        },
+        {
+            "itemID": 59,
+            "name": "Organized real-time utilization",
+            "price": 46559,
+            "store_id": "90"
+        },
+        {
+            "itemID": 60,
+            "name": "Organized local instruction set",
+            "price": 41881,
+            "store_id": "91"
+        },
+        {
+            "itemID": 61,
+            "name": "Switchable client-server core",
+            "price": 84080,
+            "store_id": "92"
+        },
+        {
+            "itemID": 62,
+            "name": "Open-source incremental strategy",
+            "price": 13238,
+            "store_id": "93"
+        },
+        {
+            "itemID": 63,
+            "name": "Self-enabling hybrid solution",
+            "price": 38161,
+            "store_id": "94"
+        },
+        {
+            "itemID": 64,
+            "name": "Decentralized executive pricing structure",
+            "price": 52433,
+            "store_id": "100"
+        },
+        {
+            "itemID": 65,
+            "name": "Diverse multi-state flexibility",
+            "price": 59793,
+            "store_id": "101"
+        },
+        {
+            "itemID": 66,
+            "name": "Implemented 6thgeneration secured line",
+            "price": 35575,
+            "store_id": "102"
+        },
+        {
+            "itemID": 67,
+            "name": "Self-enabling leadingedge protocol",
+            "price": 23663,
+            "store_id": "103"
+        },
+        {
+            "itemID": 68,
+            "name": "Synergized asymmetric knowledge user",
+            "price": 2690,
+            "store_id": "104"
+        },
+        {
+            "itemID": 69,
+            "name": "Cross-platform asynchronous core",
+            "price": 67128,
+            "store_id": "105"
+        },
+        {
+            "itemID": 70,
+            "name": "Streamlined attitude-oriented leverage",
+            "price": 30531,
+            "store_id": "106"
+        },
+        {
+            "itemID": 71,
+            "name": "User-centric responsive analyzer",
+            "price": 9279,
+            "store_id": "107"
+        },
+        {
+            "itemID": 72,
+            "name": "Cross-platform transitional data-warehouse",
+            "price": 36484,
+            "store_id": "108"
+        },
+        {
+            "itemID": 73,
+            "name": "Streamlined incremental matrix",
+            "price": 78753,
+            "store_id": "109"
+        },
+        {
+            "itemID": 74,
+            "name": "Progressive methodical matrix",
+            "price": 80085,
+            "store_id": "110"
+        },
+        {
+            "itemID": 75,
+            "name": "Enhanced asynchronous knowledgebase",
+            "price": 21298,
+            "store_id": "117"
+        },
+        {
+            "itemID": 76,
+            "name": "Enterprise-wide system-worthy paradigm",
+            "price": 61234,
+            "store_id": "118"
+        },
+        {
+            "itemID": 77,
+            "name": "Versatile scalable leverage",
+            "price": 824,
+            "store_id": "119"
+        },
+        {
+            "itemID": 78,
+            "name": "Multi-layered interactive attitude",
+            "price": 74467,
+            "store_id": "120"
+        },
+        {
+            "itemID": 79,
+            "name": "Visionary bifurcated attitude",
+            "price": 61280,
+            "store_id": "121"
+        },
+        {
+            "itemID": 80,
+            "name": "Pre-emptive transitional system engine",
+            "price": 51179,
+            "store_id": "122"
+        },
+        {
+            "itemID": 81,
+            "name": "Compatible responsive open system",
+            "price": 92581,
+            "store_id": "123"
+        },
+        {
+            "itemID": 82,
+            "name": "Cross-group contextually-based framework",
+            "price": 32975,
+            "store_id": "124"
+        },
+        {
+            "itemID": 83,
+            "name": "Multi-channeled content-based data-warehouse",
+            "price": 21163,
+            "store_id": "125"
+        },
+        {
+            "itemID": 84,
+            "name": "Distributed context-sensitive function",
+            "price": 60309,
+            "store_id": "126"
+        },
+        {
+            "itemID": 85,
+            "name": "Pre-emptive demand-driven groupware",
+            "price": 92648,
+            "store_id": "128"
+        },
+        {
+            "itemID": 86,
+            "name": "Vision-oriented optimal utilization",
+            "price": 12634,
+            "store_id": "135"
+        },
+        {
+            "itemID": 87,
+            "name": "Managed composite time-frame",
+            "price": 71398,
+            "store_id": "136"
+        },
+        {
+            "itemID": 88,
+            "name": "Quality-focused static utilization",
+            "price": 12674,
+            "store_id": "137"
+        },
+        {
+            "itemID": 89,
+            "name": "Networked analyzing extranet",
+            "price": 76937,
+            "store_id": "138"
+        },
+        {
+            "itemID": 90,
+            "name": "Up-sized transitional encryption",
+            "price": 95356,
+            "store_id": "139"
+        },
+        {
+            "itemID": 91,
+            "name": "Customer-focused zero-defect artificial intelligence",
+            "price": 69337,
+            "store_id": "140"
+        },
+        {
+            "itemID": 92,
+            "name": "Expanded heuristic database",
+            "price": 10136,
+            "store_id": "141"
+        },
+        {
+            "itemID": 93,
+            "name": "Advanced scalable leverage",
+            "price": 24870,
+            "store_id": "142"
+        },
+        {
+            "itemID": 94,
+            "name": "Grass-roots 6thgeneration budgetary management",
+            "price": 71538,
+            "store_id": "143"
+        },
+        {
+            "itemID": 95,
+            "name": "Multi-tiered didactic policy",
+            "price": 63224,
+            "store_id": "144"
+        },
+        {
+            "itemID": 96,
+            "name": "Up-sized zero-defect projection",
+            "price": 98093,
+            "store_id": "145"
+        },
+        {
+            "itemID": 97,
+            "name": "Re-contextualized discrete concept",
+            "price": 94885,
+            "store_id": "152"
+        },
+        {
+            "itemID": 98,
+            "name": "Advanced solution-oriented function",
+            "price": 25756,
+            "store_id": "153"
+        },
+        {
+            "itemID": 99,
+            "name": "Visionary radical Graphical User Interface",
+            "price": 56923,
+            "store_id": "154"
+        },
+        {
+            "itemID": 100,
+            "name": "Automated client-driven frame",
+            "price": 47172,
+            "store_id": "155"
+        },
+        {
+            "itemID": 101,
+            "name": "User-friendly regional open system",
+            "price": 56101,
+            "store_id": "156"
+        },
+        {
+            "itemID": 102,
+            "name": "Reduced fresh-thinking infrastructure",
+            "price": 9708,
+            "store_id": "157"
+        },
+        {
+            "itemID": 103,
+            "name": "Integrated cohesive artificial intelligence",
+            "price": 69829,
+            "store_id": "158"
+        },
+        {
+            "itemID": 104,
+            "name": "Total foreground strategy",
+            "price": 31207,
+            "store_id": "159"
+        },
+        {
+            "itemID": 105,
+            "name": "Upgradable real-time frame",
+            "price": 98140,
+            "store_id": "160"
+        },
+        {
+            "itemID": 106,
+            "name": "Distributed high-level website",
+            "price": 91142,
+            "store_id": "161"
+        }
+    ]
+}

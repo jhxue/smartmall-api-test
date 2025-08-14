@@ -1,0 +1,68 @@
+2025-08-12 22:35:37 [32mINFO[0m Register new user
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "vevans@example.org",
+    "password": "Lc7TM@$f$_"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 38
+}
+2025-08-12 22:35:37 [32mINFO[0m Access to store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "vevans@example.org",
+    "password": "Lc7TM@$f$_"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "4717d607-b86e-4068-8225-bfe12d6311e1"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add user info
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/38, body:
+{
+    "phone": "643.824.8898x142",
+    "email": "collinsrussell@example.com",
+    "address": {
+        "city": "South Johnstad",
+        "street": "Rachel Spurs",
+        "home_number": "8352"
+    }
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/38, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Rice%20Inc
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Rice%20Inc, status: 201, body:
+{
+    "items": [],
+    "name": "Rice Inc",
+    "uuid": "22"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new item
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Digitized%20content-based%20alliance, body:
+{
+    "name": "Digitized content-based alliance",
+    "price": 93224,
+    "store_id": "22"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Digitized%20content-based%20alliance, status: 201, body:
+{
+    "itemID": 16,
+    "name": "Digitized content-based alliance",
+    "price": 93224
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new item
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Digitized%20content-based%20alliance, body:
+{
+    "name": "Digitized content-based alliance",
+    "price": 93224,
+    "store_id": "22"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Digitized%20content-based%20alliance, status: 400, body:
+{
+    "message": "An item with name 'Digitized content-based alliance' already exists."
+}

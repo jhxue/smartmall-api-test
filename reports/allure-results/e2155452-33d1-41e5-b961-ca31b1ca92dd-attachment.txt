@@ -1,0 +1,50 @@
+2025-08-12 22:29:50 [32mINFO[0m Register new user
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "katherine37@example.net",
+    "password": "Y3XXhvfB^X"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 106
+}
+2025-08-12 22:29:50 [32mINFO[0m Access to store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "katherine37@example.net",
+    "password": "Y3XXhvfB^X"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "d1147859-b7d3-481d-b120-0e2f7546ef3e"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add user info
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/106, body:
+{
+    "phone": "772-875-7366",
+    "email": "kimberlymorton@example.org",
+    "address": {
+        "city": "Lake Judy",
+        "street": "Emily Common",
+        "home_number": "87308"
+    }
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/106, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Riggs,%20Parker%20and%20Anderson
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Riggs,%20Parker%20and%20Anderson, status: 201, body:
+{
+    "items": [],
+    "name": "Riggs, Parker and Anderson",
+    "uuid": "62"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Riggs,%20Parker%20and%20Anderson
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Riggs,%20Parker%20and%20Anderson, status: 400, body:
+{
+    "message": "A store with name 'Riggs, Parker and Anderson' already exists."
+}

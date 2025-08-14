@@ -1,0 +1,52 @@
+2025-08-12 22:30:36 [32mINFO[0m Register new user
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "mcdonaldvictoria@example.org",
+    "password": "VB9WEz6p(4"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 167
+}
+2025-08-12 22:30:36 [32mINFO[0m Access to store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "mcdonaldvictoria@example.org",
+    "password": "VB9WEz6p(4"
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "1c037130-9d27-43da-bf13-01a5f5c44487"
+}
+2025-08-12 22:30:36 [32mINFO[0m Add user info
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/167, body:
+{
+    "phone": "632.872.1273x169",
+    "email": "juantrujillo@example.net",
+    "address": {
+        "city": "Lake David",
+        "street": "Joseph Point",
+        "home_number": "68152"
+    }
+}
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/167, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:36 [32mINFO[0m Add new store
+2025-08-12 22:30:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Preston-Martinez
+2025-08-12 22:30:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Preston-Martinez, status: 201, body:
+{
+    "items": [],
+    "name": "Preston-Martinez",
+    "uuid": "97"
+}
+2025-08-12 22:30:36 [32mINFO[0m Get store
+2025-08-12 22:30:36 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/Preston-Martinez
+2025-08-12 22:30:36 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/Preston-Martinez, status: 200, body:
+{
+    "items": [],
+    "name": "Preston-Martinez",
+    "uuid": "97"
+}

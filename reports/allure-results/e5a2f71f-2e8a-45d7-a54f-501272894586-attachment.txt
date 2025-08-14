@@ -1,0 +1,74 @@
+2025-08-12 22:35:37 [32mINFO[0m Register new user
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "mejiaabigail@example.com",
+    "password": ")I&tAbTlN0"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 34
+}
+2025-08-12 22:35:37 [32mINFO[0m Access to store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "mejiaabigail@example.com",
+    "password": ")I&tAbTlN0"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b5112792-d8f8-4c12-a782-e8c09654a4a8"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add user info
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/34, body:
+{
+    "phone": "+1-934-978-8714x0903",
+    "email": "zacharyjohnson@example.com",
+    "address": {
+        "city": "North Timothymouth",
+        "street": "Jacob Motorway",
+        "home_number": "10111"
+    }
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/34, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Harris-Parker
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Harris-Parker, status: 201, body:
+{
+    "items": [],
+    "name": "Harris-Parker",
+    "uuid": "20"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new item
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Open-architected%20bifurcated%20infrastructure, body:
+{
+    "name": "Open-architected bifurcated infrastructure",
+    "price": 65768,
+    "store_id": "20"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Open-architected%20bifurcated%20infrastructure, status: 201, body:
+{
+    "itemID": 14,
+    "name": "Open-architected bifurcated infrastructure",
+    "price": 65768
+}
+2025-08-12 22:35:37 [32mINFO[0m Add user balance
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/34, body: {
+    "balance": 0
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/34, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:37 [32mINFO[0m Pay item
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/34, body: {
+    "itemId": 14
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/34, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 65768.0"
+}

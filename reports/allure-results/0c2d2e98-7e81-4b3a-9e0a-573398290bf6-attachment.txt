@@ -1,0 +1,42 @@
+2025-08-12 22:40:22 INFO Register new user
+2025-08-12 22:40:22 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "benjamin77@example.org",
+    "password": "P3W%CGWc*%"
+}
+2025-08-12 22:40:22 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 26
+}
+2025-08-12 22:40:22 INFO Access to store
+2025-08-12 22:40:22 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "benjamin77@example.org",
+    "password": "P3W%CGWc*%"
+}
+2025-08-12 22:40:22 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "6a33c90e-708d-4043-aac3-00890973772f"
+}
+2025-08-12 22:40:22 INFO Add user info
+2025-08-12 22:40:22 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/26, body:
+{
+    "phone": "(876)331-3680",
+    "email": "jessica11@example.net",
+    "address": {
+        "city": "New Rebecca",
+        "street": "Moss Shoal",
+        "home_number": "708"
+    }
+}
+2025-08-12 22:40:22 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/26, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:22 INFO Delete user info
+2025-08-12 22:40:22 INFO Request method: DELETE, url: http://127.0.0.1:8080/user_info/1000
+2025-08-12 22:40:22 INFO Response method: DELETE, url: http://127.0.0.1:8080/user_info/1000, status: 404, body:
+{
+    "message": "User info not found."
+}

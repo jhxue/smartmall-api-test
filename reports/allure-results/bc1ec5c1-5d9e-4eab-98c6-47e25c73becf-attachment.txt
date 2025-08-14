@@ -1,0 +1,50 @@
+2025-08-12 22:33:08 [32mINFO[0m Register new user
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "whitemelissa@example.com",
+    "password": "M7u%FS+s+S"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 228
+}
+2025-08-12 22:33:08 [32mINFO[0m Access to store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "whitemelissa@example.com",
+    "password": "M7u%FS+s+S"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "682e9567-1c1a-4735-adf8-a2a71d262c20"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add user info
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/228, body:
+{
+    "phone": "(602)940-2540",
+    "email": "nolanstephen@example.com",
+    "address": {
+        "city": "Johnview",
+        "street": "Sanchez Center",
+        "home_number": "50849"
+    }
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/228, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Oconnor,%20Alexander%20and%20Smith
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Oconnor,%20Alexander%20and%20Smith, status: 201, body:
+{
+    "items": [],
+    "name": "Oconnor, Alexander and Smith",
+    "uuid": "130"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Oconnor,%20Alexander%20and%20Smith
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Oconnor,%20Alexander%20and%20Smith, status: 400, body:
+{
+    "message": "A store with name 'Oconnor, Alexander and Smith' already exists."
+}

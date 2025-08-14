@@ -1,0 +1,68 @@
+2025-08-12 22:06:03 [32mINFO[0m Register new user
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "williamskimberly@example.net",
+    "password": "*D1IYbxX@z"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 70
+}
+2025-08-12 22:06:03 [32mINFO[0m Access to store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "williamskimberly@example.net",
+    "password": "*D1IYbxX@z"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "e0db1a96-dc0e-4f25-9b35-93885b95bd37"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user info
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/70, body:
+{
+    "phone": "517.871.2473x3198",
+    "email": "friley@example.net",
+    "address": {
+        "city": "Tiffanychester",
+        "street": "Navarro Fords",
+        "home_number": "1768"
+    }
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/70, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Mccoy-Wright
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Mccoy-Wright, status: 201, body:
+{
+    "items": [],
+    "name": "Mccoy-Wright",
+    "uuid": "39"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new item
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Realigned%20solution-oriented%20frame, body:
+{
+    "name": "Realigned solution-oriented frame",
+    "price": 66002,
+    "store_id": "39"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Realigned%20solution-oriented%20frame, status: 201, body:
+{
+    "itemID": 27,
+    "name": "Realigned solution-oriented frame",
+    "price": 66002
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new item
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Realigned%20solution-oriented%20frame, body:
+{
+    "name": "Realigned solution-oriented frame",
+    "price": 66002,
+    "store_id": "39"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Realigned%20solution-oriented%20frame, status: 400, body:
+{
+    "message": "An item with name 'Realigned solution-oriented frame' already exists."
+}

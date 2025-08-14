@@ -1,0 +1,52 @@
+2025-08-12 22:33:08 [32mINFO[0m Register new user
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "william71@example.com",
+    "password": "BP%*7T5h^M"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 229
+}
+2025-08-12 22:33:08 [32mINFO[0m Access to store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "william71@example.com",
+    "password": "BP%*7T5h^M"
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "4c411105-f4c4-4fbd-934e-e9170f62b97f"
+}
+2025-08-12 22:33:08 [32mINFO[0m Add user info
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/229, body:
+{
+    "phone": "336.464.2781",
+    "email": "davisjeffrey@example.net",
+    "address": {
+        "city": "West William",
+        "street": "Ellison Inlet",
+        "home_number": "33505"
+    }
+}
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/229, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:08 [32mINFO[0m Add new store
+2025-08-12 22:33:08 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Drake,%20Kelly%20and%20Frank
+2025-08-12 22:33:08 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Drake,%20Kelly%20and%20Frank, status: 201, body:
+{
+    "items": [],
+    "name": "Drake, Kelly and Frank",
+    "uuid": "131"
+}
+2025-08-12 22:33:08 [32mINFO[0m Get store
+2025-08-12 22:33:08 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/Drake,%20Kelly%20and%20Frank
+2025-08-12 22:33:08 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/Drake,%20Kelly%20and%20Frank, status: 200, body:
+{
+    "items": [],
+    "name": "Drake, Kelly and Frank",
+    "uuid": "131"
+}

@@ -1,0 +1,72 @@
+2025-08-12 22:30:43 [32mINFO[0m Register new user
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ohayes@example.com",
+    "password": "YB+6Kzl&MA"
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 202
+}
+2025-08-12 22:30:43 [32mINFO[0m Access to store
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ohayes@example.com",
+    "password": "YB+6Kzl&MA"
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "ce6d10d4-1611-4c56-a389-647d3a1e1304"
+}
+2025-08-12 22:30:43 [32mINFO[0m Add user info
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/202, body:
+{
+    "phone": "001-692-364-8126x7414",
+    "email": "fmills@example.org",
+    "address": {
+        "city": "Wrightland",
+        "street": "Wright Port",
+        "home_number": "851"
+    }
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/202, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:43 [32mINFO[0m Add new store
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Mullins,%20Alvarez%20and%20Stone
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Mullins,%20Alvarez%20and%20Stone, status: 201, body:
+{
+    "items": [],
+    "name": "Mullins, Alvarez and Stone",
+    "uuid": "117"
+}
+2025-08-12 22:30:43 [32mINFO[0m Add new item
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Enhanced%20asynchronous%20knowledgebase, body:
+{
+    "name": "Enhanced asynchronous knowledgebase",
+    "price": 21298,
+    "store_id": "117"
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Enhanced%20asynchronous%20knowledgebase, status: 201, body:
+{
+    "itemID": 75,
+    "name": "Enhanced asynchronous knowledgebase",
+    "price": 21298
+}
+2025-08-12 22:30:43 [32mINFO[0m Add user balance
+2025-08-12 22:30:43 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/202, body: {
+    "balance": 115174
+}
+2025-08-12 22:30:43 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/202, status: 201, body:
+{
+    "balance": 115174.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:30:43 [32mINFO[0m Get user balance
+2025-08-12 22:30:43 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:30:43 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

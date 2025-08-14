@@ -1,0 +1,74 @@
+2025-08-12 22:06:03 [32mINFO[0m Register new user
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ypeters@example.net",
+    "password": "U4p0WlZ2#r"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 66
+}
+2025-08-12 22:06:03 [32mINFO[0m Access to store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ypeters@example.net",
+    "password": "U4p0WlZ2#r"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "dd8383fc-6b52-4dbc-b252-2124320601a6"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user info
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/66, body:
+{
+    "phone": "001-952-915-6740x58159",
+    "email": "williamkirk@example.com",
+    "address": {
+        "city": "Berryview",
+        "street": "Drake Lane",
+        "home_number": "236"
+    }
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/66, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Charles%20LLC
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Charles%20LLC, status: 201, body:
+{
+    "items": [],
+    "name": "Charles LLC",
+    "uuid": "37"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new item
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Fundamental%20heuristic%20pricing%20structure, body:
+{
+    "name": "Fundamental heuristic pricing structure",
+    "price": 662,
+    "store_id": "37"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Fundamental%20heuristic%20pricing%20structure, status: 201, body:
+{
+    "itemID": 25,
+    "name": "Fundamental heuristic pricing structure",
+    "price": 662
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user balance
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/66, body: {
+    "balance": 0
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/66, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:06:03 [32mINFO[0m Pay item
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/66, body: {
+    "itemId": 25
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/66, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 662.0"
+}

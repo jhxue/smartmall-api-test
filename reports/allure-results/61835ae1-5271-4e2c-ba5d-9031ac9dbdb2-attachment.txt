@@ -1,0 +1,184 @@
+2025-08-12 21:49:44 [32mINFO[0m Register new user
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "quinnronald@example.com",
+    "password": ")#JfvzWyM4"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 42
+}
+2025-08-12 21:49:44 [32mINFO[0m Access to store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "quinnronald@example.com",
+    "password": ")#JfvzWyM4"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "28c49baf-bc43-4a9b-a46c-19cd234433c4"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add user info
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/42, body:
+{
+    "phone": "+1-820-393-3920x41110",
+    "email": "kevinbonilla@example.net",
+    "address": {
+        "city": "Richardland",
+        "street": "Rodriguez Junctions",
+        "home_number": "63917"
+    }
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/42, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Miles-Jenkins
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Miles-Jenkins, status: 201, body:
+{
+    "items": [],
+    "name": "Miles-Jenkins",
+    "uuid": "26"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new item
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Organic%20non-volatile%20model, body:
+{
+    "name": "Organic non-volatile model",
+    "price": 84124,
+    "store_id": "26"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Organic%20non-volatile%20model, status: 201, body:
+{
+    "itemID": 20,
+    "name": "Organic non-volatile model",
+    "price": 84124
+}
+2025-08-12 21:49:44 [32mINFO[0m Get all items
+2025-08-12 21:49:44 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/items
+2025-08-12 21:49:44 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/items, status: 200, body:
+{
+    "items": [
+        {
+            "itemID": 1,
+            "name": "Intuitive system-worthy workforce",
+            "price": 95947,
+            "store_id": "1"
+        },
+        {
+            "itemID": 2,
+            "name": "Streamlined high-level encoding",
+            "price": 4125,
+            "store_id": "2"
+        },
+        {
+            "itemID": 3,
+            "name": "Upgradable analyzing standardization",
+            "price": 38016,
+            "store_id": "3"
+        },
+        {
+            "itemID": 4,
+            "name": "Programmable background help-desk",
+            "price": 6798,
+            "store_id": "4"
+        },
+        {
+            "itemID": 5,
+            "name": "Automated reciprocal alliance",
+            "price": 85719,
+            "store_id": "5"
+        },
+        {
+            "itemID": 6,
+            "name": "Object-based system-worthy interface",
+            "price": 70603,
+            "store_id": "6"
+        },
+        {
+            "itemID": 7,
+            "name": "Function-based coherent Graphical User Interface",
+            "price": 41243,
+            "store_id": "7"
+        },
+        {
+            "itemID": 8,
+            "name": "Upgradable methodical website",
+            "price": 97847,
+            "store_id": "8"
+        },
+        {
+            "itemID": 9,
+            "name": "Right-sized intangible emulation",
+            "price": 91492,
+            "store_id": "9"
+        },
+        {
+            "itemID": 10,
+            "name": "Reverse-engineered optimal paradigm",
+            "price": 93266,
+            "store_id": "16"
+        },
+        {
+            "itemID": 11,
+            "name": "Distributed stable time-frame",
+            "price": 11629,
+            "store_id": "17"
+        },
+        {
+            "itemID": 12,
+            "name": "Self-enabling systematic hub",
+            "price": 19571,
+            "store_id": "18"
+        },
+        {
+            "itemID": 13,
+            "name": "Self-enabling disintermediate capability",
+            "price": 75435,
+            "store_id": "19"
+        },
+        {
+            "itemID": 14,
+            "name": "Managed bottom-line access",
+            "price": 50669,
+            "store_id": "20"
+        },
+        {
+            "itemID": 15,
+            "name": "Expanded zero administration portal",
+            "price": 51699,
+            "store_id": "21"
+        },
+        {
+            "itemID": 16,
+            "name": "Intuitive mobile Internet solution",
+            "price": 87199,
+            "store_id": "22"
+        },
+        {
+            "itemID": 17,
+            "name": "Future-proofed regional open architecture",
+            "price": 5124,
+            "store_id": "23"
+        },
+        {
+            "itemID": 18,
+            "name": "Fundamental homogeneous hub",
+            "price": 81894,
+            "store_id": "24"
+        },
+        {
+            "itemID": 19,
+            "name": "Innovative value-added moderator",
+            "price": 60543,
+            "store_id": "25"
+        },
+        {
+            "itemID": 20,
+            "name": "Organic non-volatile model",
+            "price": 84124,
+            "store_id": "26"
+        }
+    ]
+}

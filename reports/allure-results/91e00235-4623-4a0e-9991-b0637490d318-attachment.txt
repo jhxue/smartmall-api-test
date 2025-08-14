@@ -1,0 +1,68 @@
+2025-08-12 21:49:44 [32mINFO[0m Register new user
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "robinsonhenry@example.com",
+    "password": "%1@P*KPrll"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 38
+}
+2025-08-12 21:49:44 [32mINFO[0m Access to store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "robinsonhenry@example.com",
+    "password": "%1@P*KPrll"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "a65f79d4-8781-4169-85a2-100549f921a7"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add user info
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/38, body:
+{
+    "phone": "001-391-938-2869x0918",
+    "email": "greg44@example.net",
+    "address": {
+        "city": "Jamesport",
+        "street": "Stephanie Forge",
+        "home_number": "9054"
+    }
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/38, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Robinson%20and%20Sons
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Robinson%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Robinson and Sons",
+    "uuid": "22"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new item
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Intuitive%20mobile%20Internet%20solution, body:
+{
+    "name": "Intuitive mobile Internet solution",
+    "price": 87199,
+    "store_id": "22"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Intuitive%20mobile%20Internet%20solution, status: 201, body:
+{
+    "itemID": 16,
+    "name": "Intuitive mobile Internet solution",
+    "price": 87199
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new item
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Intuitive%20mobile%20Internet%20solution, body:
+{
+    "name": "Intuitive mobile Internet solution",
+    "price": 87199,
+    "store_id": "22"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Intuitive%20mobile%20Internet%20solution, status: 400, body:
+{
+    "message": "An item with name 'Intuitive mobile Internet solution' already exists."
+}

@@ -1,0 +1,63 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "bobby48@example.com",
+    "password": "@69vc^tWbF"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 11
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "bobby48@example.com",
+    "password": "@69vc^tWbF"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "fbb472b8-a8ca-4ece-b6ac-d4b1c602f590"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/11, body:
+{
+    "phone": "001-438-280-5873x500",
+    "email": "christopher45@example.org",
+    "address": {
+        "city": "North Margaret",
+        "street": "Natalie Place",
+        "home_number": "330"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/11, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Castillo%20PLC
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Castillo%20PLC, status: 201, body:
+{
+    "items": [],
+    "name": "Castillo PLC",
+    "uuid": "8"
+}
+2025-08-12 22:40:21 INFO Add new item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/item/Implemented%20dedicated%20moratorium, body:
+{
+    "name": "Implemented dedicated moratorium",
+    "price": 38942,
+    "store_id": "8"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/item/Implemented%20dedicated%20moratorium, status: 201, body:
+{
+    "itemID": 8,
+    "name": "Implemented dedicated moratorium",
+    "price": 38942
+}
+2025-08-12 22:40:21 INFO Get item
+2025-08-12 22:40:21 INFO Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-12 22:40:21 INFO Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

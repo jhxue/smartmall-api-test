@@ -1,0 +1,53 @@
+2025-08-12 21:49:44 [32mINFO[0m Register new user
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jaredrichards@example.org",
+    "password": "PL_0VOut2!"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 47
+}
+2025-08-12 21:49:44 [32mINFO[0m Access to store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jaredrichards@example.org",
+    "password": "PL_0VOut2!"
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "f27e43d9-fd46-4ef5-b22f-422e86906ed6"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add user info
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/47, body:
+{
+    "phone": "396-897-8219x3690",
+    "email": "ashleyosborne@example.net",
+    "address": {
+        "city": "Lake Linda",
+        "street": "Andrew Meadow",
+        "home_number": "62032"
+    }
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/47, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:49:44 [32mINFO[0m Add new store
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Young-Johnson
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Young-Johnson, status: 201, body:
+{
+    "items": [],
+    "name": "Young-Johnson",
+    "uuid": "31"
+}
+2025-08-12 21:49:44 [32mINFO[0m Add user balance
+2025-08-12 21:49:44 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/47, body: {
+    "balance": 174636
+}
+2025-08-12 21:49:44 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/47, status: 201, body:
+{
+    "balance": 174636.0,
+    "message": "Balance added successfully"
+}

@@ -1,0 +1,50 @@
+2025-08-12 21:34:38 [32mINFO[0m Register new user
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kerrirussell@example.net",
+    "password": ")nmCydWvh0"
+}
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 14
+}
+2025-08-12 21:34:39 [32mINFO[0m Access to store
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kerrirussell@example.net",
+    "password": ")nmCydWvh0"
+}
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "769b6915-7065-451d-a435-d468e416d12e"
+}
+2025-08-12 21:34:39 [32mINFO[0m Add user info
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/14, body:
+{
+    "phone": "001-782-279-5799",
+    "email": "emily78@example.com",
+    "address": {
+        "city": "Michaeltown",
+        "street": "Gregory Fall",
+        "home_number": "38099"
+    }
+}
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/14, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:34:39 [32mINFO[0m Add new store
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Chase%20Ltd
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Chase%20Ltd, status: 201, body:
+{
+    "items": [],
+    "name": "Chase Ltd",
+    "uuid": "11"
+}
+2025-08-12 21:34:39 [32mINFO[0m Add new store
+2025-08-12 21:34:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Chase%20Ltd
+2025-08-12 21:34:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Chase%20Ltd, status: 400, body:
+{
+    "message": "A store with name 'Chase Ltd' already exists."
+}

@@ -1,0 +1,74 @@
+2025-08-12 22:35:36 [32mINFO[0m Register new user
+2025-08-12 22:35:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "carolsmith@example.com",
+    "password": "!vAs51n1E5"
+}
+2025-08-12 22:35:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 33
+}
+2025-08-12 22:35:36 [32mINFO[0m Access to store
+2025-08-12 22:35:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "carolsmith@example.com",
+    "password": "!vAs51n1E5"
+}
+2025-08-12 22:35:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "2df5583c-7382-432c-862c-40ab020f9fc5"
+}
+2025-08-12 22:35:36 [32mINFO[0m Add user info
+2025-08-12 22:35:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/33, body:
+{
+    "phone": "822-784-3254x247",
+    "email": "destiny28@example.org",
+    "address": {
+        "city": "Tiffanyfort",
+        "street": "Travis Expressway",
+        "home_number": "668"
+    }
+}
+2025-08-12 22:35:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/33, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:36 [32mINFO[0m Add new store
+2025-08-12 22:35:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/French-Barnes
+2025-08-12 22:35:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/French-Barnes, status: 201, body:
+{
+    "items": [],
+    "name": "French-Barnes",
+    "uuid": "19"
+}
+2025-08-12 22:35:36 [32mINFO[0m Add new item
+2025-08-12 22:35:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Configurable%20neutral%20portal, body:
+{
+    "name": "Configurable neutral portal",
+    "price": 24910,
+    "store_id": "19"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Configurable%20neutral%20portal, status: 201, body:
+{
+    "itemID": 13,
+    "name": "Configurable neutral portal",
+    "price": 24910
+}
+2025-08-12 22:35:37 [32mINFO[0m Add user balance
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/33, body: {
+    "balance": 166882
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/33, status: 201, body:
+{
+    "balance": 166882.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:37 [32mINFO[0m Pay item
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/33, body: {
+    "itemId": 2000
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/33, status: 404, body:
+{
+    "message": "Item not found"
+}

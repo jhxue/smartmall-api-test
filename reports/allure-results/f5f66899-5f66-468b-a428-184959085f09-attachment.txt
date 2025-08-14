@@ -1,0 +1,71 @@
+2025-08-12 22:06:03 [32mINFO[0m Register new user
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "april10@example.org",
+    "password": "(0IUCNi&!d"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 71
+}
+2025-08-12 22:06:03 [32mINFO[0m Access to store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "april10@example.org",
+    "password": "(0IUCNi&!d"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "ea63c219-b079-404a-a9fd-40fca0389449"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user info
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/71, body:
+{
+    "phone": "210-515-9448x6452",
+    "email": "rcarter@example.net",
+    "address": {
+        "city": "New James",
+        "street": "Michael Plaza",
+        "home_number": "30932"
+    }
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/71, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Beck,%20Taylor%20and%20Li
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Beck,%20Taylor%20and%20Li, status: 201, body:
+{
+    "items": [],
+    "name": "Beck, Taylor and Li",
+    "uuid": "40"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new item
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Visionary%20directional%20ability, body:
+{
+    "name": "Visionary directional ability",
+    "price": 3356,
+    "store_id": "40"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Visionary%20directional%20ability, status: 201, body:
+{
+    "itemID": 28,
+    "name": "Visionary directional ability",
+    "price": 3356
+}
+2025-08-12 22:06:03 [32mINFO[0m Change item
+2025-08-12 22:06:03 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Visionary%20directional%20ability, body:
+{
+    "name": "Visionary directional ability",
+    "price": 88000,
+    "store_id": "40"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Visionary%20directional%20ability, status: 200, body:
+{
+    "itemID": 28,
+    "name": "Visionary directional ability",
+    "price": 88000,
+    "store_id": "40"
+}

@@ -1,0 +1,77 @@
+2025-08-12 22:35:32 [32mINFO[0m Register new user
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ksimmons@example.org",
+    "password": "&03umzOjvt"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 2
+}
+2025-08-12 22:35:32 [32mINFO[0m Access to store
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ksimmons@example.org",
+    "password": "&03umzOjvt"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "a8f15783-0b87-4af5-90f3-7210bfcecfb2"
+}
+2025-08-12 22:35:32 [32mINFO[0m Add user info
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/2, body:
+{
+    "phone": "424-870-9488",
+    "email": "stephensingh@example.com",
+    "address": {
+        "city": "Christineburgh",
+        "street": "Carl Divide",
+        "home_number": "63744"
+    }
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/2, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new store
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Holt,%20Long%20and%20Green
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Holt,%20Long%20and%20Green, status: 201, body:
+{
+    "items": [],
+    "name": "Holt, Long and Green",
+    "uuid": "1"
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new item
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Profound%20context-sensitive%20info-mediaries, body:
+{
+    "name": "Profound context-sensitive info-mediaries",
+    "price": 18630,
+    "store_id": "1"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Profound%20context-sensitive%20info-mediaries, status: 201, body:
+{
+    "itemID": 1,
+    "name": "Profound context-sensitive info-mediaries",
+    "price": 18630
+}
+2025-08-12 22:35:32 [32mINFO[0m Add user balance
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2, body: {
+    "balance": 111853
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2, status: 201, body:
+{
+    "balance": 111853.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:32 [32mINFO[0m Pay item
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/2, body: {
+    "itemId": 1
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/2, status: 200, body:
+{
+    "balance": 93223.0,
+    "message": "Payment successful",
+    "name": "Profound context-sensitive info-mediaries",
+    "price": 18630.0
+}

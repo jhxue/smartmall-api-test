@@ -1,0 +1,72 @@
+2025-08-12 22:29:50 [32mINFO[0m Register new user
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "nelsonmeghan@example.org",
+    "password": "&K3bMgN*qa"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 112
+}
+2025-08-12 22:29:50 [32mINFO[0m Access to store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "nelsonmeghan@example.org",
+    "password": "&K3bMgN*qa"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "c308268e-1364-47ef-98a3-879c9bbf8a12"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add user info
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/112, body:
+{
+    "phone": "7179951704",
+    "email": "sherri14@example.org",
+    "address": {
+        "city": "Raystad",
+        "street": "Betty Parkway",
+        "home_number": "47495"
+    }
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/112, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new store
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Rogers%20Ltd
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Rogers%20Ltd, status: 201, body:
+{
+    "items": [],
+    "name": "Rogers Ltd",
+    "uuid": "68"
+}
+2025-08-12 22:29:50 [32mINFO[0m Add new item
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Progressive%20bifurcated%20portal, body:
+{
+    "name": "Progressive bifurcated portal",
+    "price": 47739,
+    "store_id": "68"
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Progressive%20bifurcated%20portal, status: 201, body:
+{
+    "itemID": 43,
+    "name": "Progressive bifurcated portal",
+    "price": 47739
+}
+2025-08-12 22:29:50 [32mINFO[0m Add user balance
+2025-08-12 22:29:50 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/112, body: {
+    "balance": 197955
+}
+2025-08-12 22:29:50 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/112, status: 201, body:
+{
+    "balance": 197955.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:29:50 [32mINFO[0m Get user balance
+2025-08-12 22:29:50 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:29:50 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

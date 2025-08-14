@@ -1,0 +1,77 @@
+2025-08-12 22:35:19 [32mINFO[0m Register new user
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "barronadrian@example.com",
+    "password": "^L8T+42fAn"
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 2
+}
+2025-08-12 22:35:19 [32mINFO[0m Access to store
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "barronadrian@example.com",
+    "password": "^L8T+42fAn"
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "eb9a31d8-d39a-4f6d-8101-b43441cb7bc1"
+}
+2025-08-12 22:35:19 [32mINFO[0m Add user info
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/2, body:
+{
+    "phone": "001-239-335-4261x572",
+    "email": "justinjackson@example.org",
+    "address": {
+        "city": "Jasontown",
+        "street": "Watson Skyway",
+        "home_number": "638"
+    }
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/2, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:19 [32mINFO[0m Add new store
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Mason,%20Watson%20and%20Moore
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Mason,%20Watson%20and%20Moore, status: 201, body:
+{
+    "items": [],
+    "name": "Mason, Watson and Moore",
+    "uuid": "1"
+}
+2025-08-12 22:35:19 [32mINFO[0m Add new item
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Integrated%20system-worthy%20ability, body:
+{
+    "name": "Integrated system-worthy ability",
+    "price": 51873,
+    "store_id": "1"
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Integrated%20system-worthy%20ability, status: 201, body:
+{
+    "itemID": 1,
+    "name": "Integrated system-worthy ability",
+    "price": 51873
+}
+2025-08-12 22:35:19 [32mINFO[0m Add user balance
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2, body: {
+    "balance": 144466
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2, status: 201, body:
+{
+    "balance": 144466.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:19 [32mINFO[0m Pay item
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/2, body: {
+    "itemId": 1
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/2, status: 200, body:
+{
+    "balance": 92593.0,
+    "message": "Payment successful",
+    "name": "Integrated system-worthy ability",
+    "price": 51873.0
+}

@@ -1,0 +1,52 @@
+2025-08-13 17:26:05 [32mINFO[0m Register new user
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "uhuff@example.com",
+    "password": "%@t0$PPuS4"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 15
+}
+2025-08-13 17:26:05 [32mINFO[0m Access to store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "uhuff@example.com",
+    "password": "%@t0$PPuS4"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "0da8f91e-4a1a-48c9-98e8-f893eabf9979"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user info
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/15, body:
+{
+    "phone": "976-572-7890",
+    "email": "hcalhoun@example.net",
+    "address": {
+        "city": "Simsmouth",
+        "street": "Miller Valley",
+        "home_number": "993"
+    }
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/15, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/West%20PLC
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/West%20PLC, status: 201, body:
+{
+    "items": [],
+    "name": "West PLC",
+    "uuid": "12"
+}
+2025-08-13 17:26:05 [32mINFO[0m Get store
+2025-08-13 17:26:05 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/West%20PLC
+2025-08-13 17:26:05 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/West%20PLC, status: 200, body:
+{
+    "items": [],
+    "name": "West PLC",
+    "uuid": "12"
+}

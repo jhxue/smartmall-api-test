@@ -1,0 +1,63 @@
+2025-08-13 20:22:36 [32mINFO[0m Register new user
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ptran@example.net",
+    "password": "Ftyk9RHr^^"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 11
+}
+2025-08-13 20:22:36 [32mINFO[0m Access to store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ptran@example.net",
+    "password": "Ftyk9RHr^^"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "30e55f89-a2d6-425f-8f5a-e947a242b10a"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add user info
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/11, body:
+{
+    "phone": "698-460-5941x89532",
+    "email": "malonedeanna@example.org",
+    "address": {
+        "city": "Holmesberg",
+        "street": "Lopez Drives",
+        "home_number": "5717"
+    }
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/11, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/James%20Group
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/James%20Group, status: 201, body:
+{
+    "items": [],
+    "name": "James Group",
+    "uuid": "8"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new item
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Streamlined%20demand-driven%20intranet, body:
+{
+    "name": "Streamlined demand-driven intranet",
+    "price": 91980,
+    "store_id": "8"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Streamlined%20demand-driven%20intranet, status: 201, body:
+{
+    "itemID": 8,
+    "name": "Streamlined demand-driven intranet",
+    "price": 91980
+}
+2025-08-13 20:22:36 [32mINFO[0m Get item
+2025-08-13 20:22:36 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-13 20:22:36 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

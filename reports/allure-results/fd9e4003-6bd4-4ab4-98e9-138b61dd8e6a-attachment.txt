@@ -1,0 +1,118 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "kennethwaller@example.net",
+    "password": "_25M%IHxh8"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 12
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "kennethwaller@example.net",
+    "password": "_25M%IHxh8"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "46ae4c5e-a606-4371-9b31-bdb68e899389"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/12, body:
+{
+    "phone": "990-222-6708x7082",
+    "email": "elijahharris@example.com",
+    "address": {
+        "city": "Lake Nicolehaven",
+        "street": "Sheila Glen",
+        "home_number": "340"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/12, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Richardson,%20Willis%20and%20Smith
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Richardson,%20Willis%20and%20Smith, status: 201, body:
+{
+    "items": [],
+    "name": "Richardson, Willis and Smith",
+    "uuid": "9"
+}
+2025-08-12 22:40:21 INFO Add new item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/item/Cloned%20static%20access, body:
+{
+    "name": "Cloned static access",
+    "price": 44425,
+    "store_id": "9"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/item/Cloned%20static%20access, status: 201, body:
+{
+    "itemID": 9,
+    "name": "Cloned static access",
+    "price": 44425
+}
+2025-08-12 22:40:21 INFO Get all items
+2025-08-12 22:40:21 INFO Request method: GET, url: http://127.0.0.1:8080/items
+2025-08-12 22:40:21 INFO Response method: GET, url: http://127.0.0.1:8080/items, status: 200, body:
+{
+    "items": [
+        {
+            "itemID": 1,
+            "name": "Balanced mission-critical attitude",
+            "price": 84747,
+            "store_id": "1"
+        },
+        {
+            "itemID": 2,
+            "name": "Enterprise-wide contextually-based circuit",
+            "price": 7113,
+            "store_id": "2"
+        },
+        {
+            "itemID": 3,
+            "name": "Ergonomic bifurcated success",
+            "price": 18725,
+            "store_id": "3"
+        },
+        {
+            "itemID": 4,
+            "name": "Up-sized background attitude",
+            "price": 6280,
+            "store_id": "4"
+        },
+        {
+            "itemID": 5,
+            "name": "Reverse-engineered multi-tasking website",
+            "price": 50840,
+            "store_id": "5"
+        },
+        {
+            "itemID": 6,
+            "name": "Distributed regional matrix",
+            "price": 53315,
+            "store_id": "6"
+        },
+        {
+            "itemID": 7,
+            "name": "Multi-layered 24hour help-desk",
+            "price": 64036,
+            "store_id": "7"
+        },
+        {
+            "itemID": 8,
+            "name": "Implemented dedicated moratorium",
+            "price": 38942,
+            "store_id": "8"
+        },
+        {
+            "itemID": 9,
+            "name": "Cloned static access",
+            "price": 44425,
+            "store_id": "9"
+        }
+    ]
+}

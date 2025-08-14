@@ -1,0 +1,57 @@
+2025-08-13 17:26:05 [32mINFO[0m Register new user
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "john57@example.com",
+    "password": "^4N&PxH3j5"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 7
+}
+2025-08-13 17:26:05 [32mINFO[0m Access to store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "john57@example.com",
+    "password": "^4N&PxH3j5"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "8907a2b8-1dd6-4be2-b7c2-7c20c56c2a13"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user info
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/7, body:
+{
+    "phone": "2815729036",
+    "email": "josephwashington@example.com",
+    "address": {
+        "city": "Beckerhaven",
+        "street": "Werner Junctions",
+        "home_number": "991"
+    }
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/7, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Roberts-Armstrong
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Roberts-Armstrong, status: 201, body:
+{
+    "items": [],
+    "name": "Roberts-Armstrong",
+    "uuid": "4"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new item
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Re-engineered%20grid-enabled%20orchestration, body:
+{
+    "name": "Re-engineered grid-enabled orchestration",
+    "price": 75980,
+    "store_id": "4"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Re-engineered%20grid-enabled%20orchestration, status: 201, body:
+{
+    "itemID": 4,
+    "name": "Re-engineered grid-enabled orchestration",
+    "price": 75980
+}

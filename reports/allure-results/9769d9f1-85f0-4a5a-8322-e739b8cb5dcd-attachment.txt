@@ -1,0 +1,73 @@
+2025-08-12 22:35:37 [32mINFO[0m Register new user
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "rebeccarodriguez@example.net",
+    "password": ")czz5PJr4!"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 49
+}
+2025-08-12 22:35:37 [32mINFO[0m Access to store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "rebeccarodriguez@example.net",
+    "password": ")czz5PJr4!"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "64b73c1a-8344-4f11-b90f-e4a13f7755f2"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add user info
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/49, body:
+{
+    "phone": "3083394860",
+    "email": "uward@example.com",
+    "address": {
+        "city": "East Theresabury",
+        "street": "Jason Ville",
+        "home_number": "267"
+    }
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/49, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Adams,%20Cole%20and%20Garcia
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Adams,%20Cole%20and%20Garcia, status: 201, body:
+{
+    "items": [],
+    "name": "Adams, Cole and Garcia",
+    "uuid": "33"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new item
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Extended%20bandwidth-monitored%20circuit, body:
+{
+    "name": "Extended bandwidth-monitored circuit",
+    "price": 57059,
+    "store_id": "33"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Extended%20bandwidth-monitored%20circuit, status: 201, body:
+{
+    "itemID": 21,
+    "name": "Extended bandwidth-monitored circuit",
+    "price": 57059
+}
+2025-08-12 22:35:37 [32mINFO[0m Add user balance
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/49, body: {
+    "balance": 104060
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/49, status: 201, body:
+{
+    "balance": 104060.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:37 [32mINFO[0m Get user balance
+2025-08-12 22:35:37 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/49
+2025-08-12 22:35:37 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/49, status: 200, body:
+{
+    "balance": 104060.0,
+    "message": "Balance retrieved successfully"
+}

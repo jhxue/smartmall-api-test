@@ -1,0 +1,57 @@
+2025-08-12 22:43:17 [32mINFO[0m Register new user
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "chambersloretta@example.org",
+    "password": "I(1G7NwlWh"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 37
+}
+2025-08-12 22:43:17 [32mINFO[0m Access to store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "chambersloretta@example.org",
+    "password": "I(1G7NwlWh"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "6df17bfe-58ba-4142-ba45-693751f1bd91"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user info
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/37, body:
+{
+    "phone": "3887709565",
+    "email": "laura52@example.net",
+    "address": {
+        "city": "Michaelland",
+        "street": "Ashley Trace",
+        "home_number": "37900"
+    }
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/37, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Pham%20Ltd
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Pham%20Ltd, status: 201, body:
+{
+    "items": [],
+    "name": "Pham Ltd",
+    "uuid": "21"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new item
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Down-sized%20radical%20orchestration, body:
+{
+    "name": "Down-sized radical orchestration",
+    "price": 83913,
+    "store_id": "21"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Down-sized%20radical%20orchestration, status: 201, body:
+{
+    "itemID": 14,
+    "name": "Down-sized radical orchestration",
+    "price": 83913
+}

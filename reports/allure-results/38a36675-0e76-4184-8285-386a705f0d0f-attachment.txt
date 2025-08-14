@@ -1,0 +1,72 @@
+2025-08-12 22:35:20 [32mINFO[0m Register new user
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "sarah02@example.com",
+    "password": "j3!VoaQU(U"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 20
+}
+2025-08-12 22:35:20 [32mINFO[0m Access to store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "sarah02@example.com",
+    "password": "j3!VoaQU(U"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "a9bb33b9-2884-4add-92ba-eef3665ac7fd"
+}
+2025-08-12 22:35:20 [32mINFO[0m Add user info
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/20, body:
+{
+    "phone": "(333)272-5889x21499",
+    "email": "fmcintyre@example.com",
+    "address": {
+        "city": "West Jenniferhaven",
+        "street": "Mitchell Keys",
+        "home_number": "5129"
+    }
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/20, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:20 [32mINFO[0m Add new store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Lee-Edwards
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Lee-Edwards, status: 201, body:
+{
+    "items": [],
+    "name": "Lee-Edwards",
+    "uuid": "17"
+}
+2025-08-12 22:35:20 [32mINFO[0m Add new item
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Quality-focused%20transitional%20budgetary%20management, body:
+{
+    "name": "Quality-focused transitional budgetary management",
+    "price": 54213,
+    "store_id": "17"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Quality-focused%20transitional%20budgetary%20management, status: 201, body:
+{
+    "itemID": 11,
+    "name": "Quality-focused transitional budgetary management",
+    "price": 54213
+}
+2025-08-12 22:35:20 [32mINFO[0m Add user balance
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/20, body: {
+    "balance": 134063
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/20, status: 201, body:
+{
+    "balance": 134063.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:20 [32mINFO[0m Get user balance
+2025-08-12 22:35:20 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:35:20 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

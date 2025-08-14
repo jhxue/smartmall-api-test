@@ -1,0 +1,42 @@
+2025-08-12 22:33:09 [32mINFO[0m Register new user
+2025-08-12 22:33:09 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "michael85@example.org",
+    "password": "A7I0*ZjZ&f"
+}
+2025-08-12 22:33:09 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 240
+}
+2025-08-12 22:33:09 [32mINFO[0m Access to store
+2025-08-12 22:33:09 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "michael85@example.org",
+    "password": "A7I0*ZjZ&f"
+}
+2025-08-12 22:33:09 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "92d4371b-76c9-463c-afe0-cefb62d50ccc"
+}
+2025-08-12 22:33:09 [32mINFO[0m Add user info
+2025-08-12 22:33:09 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/240, body:
+{
+    "phone": "336.416.5917x20625",
+    "email": "gburke@example.org",
+    "address": {
+        "city": "East Monicatown",
+        "street": "Mccormick Landing",
+        "home_number": "1430"
+    }
+}
+2025-08-12 22:33:09 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/240, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:09 [32mINFO[0m Delete user info
+2025-08-12 22:33:09 [32mINFO[0m Request method: DELETE, url: http://127.0.0.1:8080/user_info/1000
+2025-08-12 22:33:09 [32mINFO[0m Response method: DELETE, url: http://127.0.0.1:8080/user_info/1000, status: 404, body:
+{
+    "message": "User info not found."
+}

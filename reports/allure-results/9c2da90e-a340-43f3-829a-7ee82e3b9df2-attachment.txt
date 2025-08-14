@@ -1,0 +1,72 @@
+2025-08-12 22:30:29 [32mINFO[0m Register new user
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "catherinetaylor@example.org",
+    "password": "ajBZE4zP&7"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 142
+}
+2025-08-12 22:30:29 [32mINFO[0m Access to store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "catherinetaylor@example.org",
+    "password": "ajBZE4zP&7"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "3d1b7090-afce-4b83-be68-7bbe91ef966a"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user info
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/142, body:
+{
+    "phone": "817.875.0033x4731",
+    "email": "lukethomas@example.org",
+    "address": {
+        "city": "Arnoldchester",
+        "street": "Allison Ville",
+        "home_number": "491"
+    }
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/142, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new store
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Harrison%20Inc
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Harrison%20Inc, status: 201, body:
+{
+    "items": [],
+    "name": "Harrison Inc",
+    "uuid": "85"
+}
+2025-08-12 22:30:29 [32mINFO[0m Add new item
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Open-architected%20regional%20moratorium, body:
+{
+    "name": "Open-architected regional moratorium",
+    "price": 99357,
+    "store_id": "85"
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Open-architected%20regional%20moratorium, status: 201, body:
+{
+    "itemID": 54,
+    "name": "Open-architected regional moratorium",
+    "price": 99357
+}
+2025-08-12 22:30:29 [32mINFO[0m Add user balance
+2025-08-12 22:30:29 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/142, body: {
+    "balance": 124277
+}
+2025-08-12 22:30:29 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/142, status: 201, body:
+{
+    "balance": 124277.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:30:29 [32mINFO[0m Get user balance
+2025-08-12 22:30:29 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/2000
+2025-08-12 22:30:29 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/2000, status: 404, body:
+{
+    "message": "Balance not found. Add money for user."
+}

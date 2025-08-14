@@ -1,0 +1,74 @@
+2025-08-12 22:33:39 [32mINFO[0m Register new user
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "ian79@example.net",
+    "password": "V^9K2EkjYE"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 247
+}
+2025-08-12 22:33:39 [32mINFO[0m Access to store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "ian79@example.net",
+    "password": "V^9K2EkjYE"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "7aa88633-1f74-47ba-9d41-dfec9ba02596"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user info
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/247, body:
+{
+    "phone": "537.612.7199",
+    "email": "yosborn@example.net",
+    "address": {
+        "city": "Port Julie",
+        "street": "Martinez Expressway",
+        "home_number": "551"
+    }
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/247, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new store
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Owens-Velasquez
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Owens-Velasquez, status: 201, body:
+{
+    "items": [],
+    "name": "Owens-Velasquez",
+    "uuid": "138"
+}
+2025-08-12 22:33:39 [32mINFO[0m Add new item
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Networked%20analyzing%20extranet, body:
+{
+    "name": "Networked analyzing extranet",
+    "price": 76937,
+    "store_id": "138"
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Networked%20analyzing%20extranet, status: 201, body:
+{
+    "itemID": 89,
+    "name": "Networked analyzing extranet",
+    "price": 76937
+}
+2025-08-12 22:33:39 [32mINFO[0m Add user balance
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/247, body: {
+    "balance": 155837
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/247, status: 201, body:
+{
+    "balance": 155837.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:33:39 [32mINFO[0m Pay item
+2025-08-12 22:33:39 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/247, body: {
+    "itemId": 2000
+}
+2025-08-12 22:33:39 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/247, status: 404, body:
+{
+    "message": "Item not found"
+}

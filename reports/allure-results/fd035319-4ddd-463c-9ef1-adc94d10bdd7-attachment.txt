@@ -1,0 +1,71 @@
+2025-08-12 22:41:10 [32mINFO[0m Register new user
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "travisdavis@example.org",
+    "password": "MX1FFMyaT$"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 9
+}
+2025-08-12 22:41:10 [32mINFO[0m Access to store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "travisdavis@example.org",
+    "password": "MX1FFMyaT$"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "029f500c-783c-4b2d-977f-29ba5940b0d8"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add user info
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/9, body:
+{
+    "phone": "(492)347-1809x65907",
+    "email": "norma08@example.org",
+    "address": {
+        "city": "Emilyshire",
+        "street": "Garcia Prairie",
+        "home_number": "7845"
+    }
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/9, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Taylor-Burgess
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Taylor-Burgess, status: 201, body:
+{
+    "items": [],
+    "name": "Taylor-Burgess",
+    "uuid": "6"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new item
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Digitized%20bi-directional%20encoding, body:
+{
+    "name": "Digitized bi-directional encoding",
+    "price": 54708,
+    "store_id": "6"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Digitized%20bi-directional%20encoding, status: 201, body:
+{
+    "itemID": 6,
+    "name": "Digitized bi-directional encoding",
+    "price": 54708
+}
+2025-08-12 22:41:10 [32mINFO[0m Change item
+2025-08-12 22:41:10 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Digitized%20bi-directional%20encoding, body:
+{
+    "name": "Digitized bi-directional encoding",
+    "price": 90963,
+    "store_id": "6"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Digitized%20bi-directional%20encoding, status: 200, body:
+{
+    "itemID": 6,
+    "name": "Digitized bi-directional encoding",
+    "price": 90963,
+    "store_id": "6"
+}

@@ -1,0 +1,66 @@
+2025-08-12 22:35:37 [32mINFO[0m Register new user
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "pgreen@example.net",
+    "password": "$+3AqgBH6j"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 40
+}
+2025-08-12 22:35:37 [32mINFO[0m Access to store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "pgreen@example.net",
+    "password": "$+3AqgBH6j"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "d9c077f2-72c5-4388-b38c-ebe829eb5390"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add user info
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/40, body:
+{
+    "phone": "546-798-0864x142",
+    "email": "juanrodriguez@example.org",
+    "address": {
+        "city": "North Tinaland",
+        "street": "Jose Throughway",
+        "home_number": "543"
+    }
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/40, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new store
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Spencer-Fernandez
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Spencer-Fernandez, status: 201, body:
+{
+    "items": [],
+    "name": "Spencer-Fernandez",
+    "uuid": "24"
+}
+2025-08-12 22:35:37 [32mINFO[0m Add new item
+2025-08-12 22:35:37 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Grass-roots%20executive%20system%20engine, body:
+{
+    "name": "Grass-roots executive system engine",
+    "price": 89537,
+    "store_id": "24"
+}
+2025-08-12 22:35:37 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Grass-roots%20executive%20system%20engine, status: 201, body:
+{
+    "itemID": 18,
+    "name": "Grass-roots executive system engine",
+    "price": 89537
+}
+2025-08-12 22:35:37 [32mINFO[0m Get item
+2025-08-12 22:35:37 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Grass-roots%20executive%20system%20engine
+2025-08-12 22:35:37 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Grass-roots%20executive%20system%20engine, status: 200, body:
+{
+    "itemID": 18,
+    "name": "Grass-roots executive system engine",
+    "price": 89537,
+    "store_id": "24"
+}

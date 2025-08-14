@@ -1,0 +1,74 @@
+2025-08-14 18:05:53 [32mINFO[0m Register new user
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jennifer77@example.net",
+    "password": "4outE34#+f"
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 3
+}
+2025-08-14 18:05:53 [32mINFO[0m Access to store
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jennifer77@example.net",
+    "password": "4outE34#+f"
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "3181e3ba-4b70-439d-8134-9c02a9b90c9c"
+}
+2025-08-14 18:05:53 [32mINFO[0m Add user info
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/3, body:
+{
+    "phone": "982.603.3529x30262",
+    "email": "warddanielle@example.net",
+    "address": {
+        "city": "Port Stacey",
+        "street": "Kevin Loaf",
+        "home_number": "91496"
+    }
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/3, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-14 18:05:53 [32mINFO[0m Add new store
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Lester-Ramirez
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Lester-Ramirez, status: 201, body:
+{
+    "items": [],
+    "name": "Lester-Ramirez",
+    "uuid": "2"
+}
+2025-08-14 18:05:53 [32mINFO[0m Add new item
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Business-focused%20systemic%20moderator, body:
+{
+    "name": "Business-focused systemic moderator",
+    "price": 6088,
+    "store_id": "2"
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Business-focused%20systemic%20moderator, status: 201, body:
+{
+    "itemID": 2,
+    "name": "Business-focused systemic moderator",
+    "price": 6088
+}
+2025-08-14 18:05:53 [32mINFO[0m Add user balance
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/3, body: {
+    "balance": 172364
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/3, status: 201, body:
+{
+    "balance": 172364.0,
+    "message": "Balance added successfully"
+}
+2025-08-14 18:05:53 [32mINFO[0m Pay item
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/3, body: {
+    "itemId": 2000
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/3, status: 404, body:
+{
+    "message": "Item not found"
+}

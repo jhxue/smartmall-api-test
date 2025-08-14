@@ -1,0 +1,63 @@
+2025-08-12 22:43:17 [32mINFO[0m Register new user
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "allenanna@example.net",
+    "password": "@(0X3zlFnJ"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 41
+}
+2025-08-12 22:43:17 [32mINFO[0m Access to store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "allenanna@example.net",
+    "password": "@(0X3zlFnJ"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "3bc66eb0-cb1e-4b36-85f1-1390a86028f4"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user info
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/41, body:
+{
+    "phone": "001-500-300-2867x2103",
+    "email": "jesseerickson@example.org",
+    "address": {
+        "city": "New Brent",
+        "street": "Melissa Station",
+        "home_number": "6763"
+    }
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/41, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Myers%20and%20Sons
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Myers%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Myers and Sons",
+    "uuid": "25"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new item
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Profound%20reciprocal%20structure, body:
+{
+    "name": "Profound reciprocal structure",
+    "price": 25602,
+    "store_id": "25"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Profound%20reciprocal%20structure, status: 201, body:
+{
+    "itemID": 18,
+    "name": "Profound reciprocal structure",
+    "price": 25602
+}
+2025-08-12 22:43:17 [32mINFO[0m Get item
+2025-08-12 22:43:17 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf
+2025-08-12 22:43:17 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/MMMdnfnfnf, status: 404, body:
+{
+    "message": "Item not found"
+}

@@ -1,0 +1,46 @@
+2025-08-12 22:35:20 [32mINFO[0m Register new user
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jonathan45@example.net",
+    "password": "nqHrWNeh*8"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 27
+}
+2025-08-12 22:35:20 [32mINFO[0m Access to store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jonathan45@example.net",
+    "password": "nqHrWNeh*8"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "0b3147a6-8c5c-4479-af3e-69bd7acea07f"
+}
+2025-08-12 22:35:20 [32mINFO[0m Add user info
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/27, body:
+{
+    "phone": "7772334662",
+    "email": "ucastro@example.com",
+    "address": {
+        "city": "Hawkinsborough",
+        "street": "Bishop Circle",
+        "home_number": "6717"
+    }
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/27, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:20 [32mINFO[0m Get user info
+2025-08-12 22:35:20 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/user_info/27
+2025-08-12 22:35:20 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/user_info/27, status: 200, body:
+{
+    "city": "Hawkinsborough",
+    "email": "ucastro@example.com",
+    "phone": "7772334662",
+    "street": "Bishop Circle",
+    "userID": 27
+}

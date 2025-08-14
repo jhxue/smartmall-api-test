@@ -1,0 +1,42 @@
+2025-08-13 17:26:06 [32mINFO[0m Register new user
+2025-08-13 17:26:06 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "knorton@example.com",
+    "password": "YH9lnDRc_a"
+}
+2025-08-13 17:26:06 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 28
+}
+2025-08-13 17:26:06 [32mINFO[0m Access to store
+2025-08-13 17:26:06 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "knorton@example.com",
+    "password": "YH9lnDRc_a"
+}
+2025-08-13 17:26:06 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "2cbd7f19-9220-41c2-b380-e4be0813dbf7"
+}
+2025-08-13 17:26:06 [32mINFO[0m Add user info
+2025-08-13 17:26:06 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/28, body:
+{
+    "phone": "001-754-995-3660x31815",
+    "email": "powellbrian@example.com",
+    "address": {
+        "city": "Lake Katelynburgh",
+        "street": "Ann Mountains",
+        "home_number": "15812"
+    }
+}
+2025-08-13 17:26:06 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/28, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 17:26:06 [32mINFO[0m Get user info
+2025-08-13 17:26:06 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/user_info/1000
+2025-08-13 17:26:06 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/user_info/1000, status: 404, body:
+{
+    "message": "User info not found"
+}

@@ -1,0 +1,57 @@
+2025-08-12 22:30:35 [32mINFO[0m Register new user
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "james46@example.com",
+    "password": "2VDiN7oS(5"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 159
+}
+2025-08-12 22:30:35 [32mINFO[0m Access to store
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "james46@example.com",
+    "password": "2VDiN7oS(5"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "855c2450-bc7d-44dd-8aa3-72ba9589e052"
+}
+2025-08-12 22:30:35 [32mINFO[0m Add user info
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/159, body:
+{
+    "phone": "867.751.7444x78880",
+    "email": "laurie03@example.org",
+    "address": {
+        "city": "North Courtneymouth",
+        "street": "May Expressway",
+        "home_number": "00691"
+    }
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/159, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:35 [32mINFO[0m Add new store
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Farrell,%20Thompson%20and%20Patterson
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Farrell,%20Thompson%20and%20Patterson, status: 201, body:
+{
+    "items": [],
+    "name": "Farrell, Thompson and Patterson",
+    "uuid": "89"
+}
+2025-08-12 22:30:35 [32mINFO[0m Add new item
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Decentralized%20web-enabled%20infrastructure, body:
+{
+    "name": "Decentralized web-enabled infrastructure",
+    "price": 40864,
+    "store_id": "89"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Decentralized%20web-enabled%20infrastructure, status: 201, body:
+{
+    "itemID": 58,
+    "name": "Decentralized web-enabled infrastructure",
+    "price": 40864
+}

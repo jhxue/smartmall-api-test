@@ -1,0 +1,77 @@
+2025-08-12 22:06:03 [32mINFO[0m Register new user
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "aaronboyle@example.com",
+    "password": "HVq5iZ9w@5"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 64
+}
+2025-08-12 22:06:03 [32mINFO[0m Access to store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "aaronboyle@example.com",
+    "password": "HVq5iZ9w@5"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "ab7ac310-2954-4009-bfde-019adce30c80"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user info
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/64, body:
+{
+    "phone": "486.627.0859x20586",
+    "email": "leealicia@example.net",
+    "address": {
+        "city": "North Kelly",
+        "street": "Lance Fall",
+        "home_number": "6739"
+    }
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/64, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new store
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Klein,%20Barnes%20and%20Hampton
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Klein,%20Barnes%20and%20Hampton, status: 201, body:
+{
+    "items": [],
+    "name": "Klein, Barnes and Hampton",
+    "uuid": "35"
+}
+2025-08-12 22:06:03 [32mINFO[0m Add new item
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/De-engineered%20multi-tasking%20core, body:
+{
+    "name": "De-engineered multi-tasking core",
+    "price": 53389,
+    "store_id": "35"
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/De-engineered%20multi-tasking%20core, status: 201, body:
+{
+    "itemID": 23,
+    "name": "De-engineered multi-tasking core",
+    "price": 53389
+}
+2025-08-12 22:06:03 [32mINFO[0m Add user balance
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/64, body: {
+    "balance": 194599
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/64, status: 201, body:
+{
+    "balance": 194599.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:06:03 [32mINFO[0m Pay item
+2025-08-12 22:06:03 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/64, body: {
+    "itemId": 23
+}
+2025-08-12 22:06:03 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/64, status: 200, body:
+{
+    "balance": 141210.0,
+    "message": "Payment successful",
+    "name": "De-engineered multi-tasking core",
+    "price": 53389.0
+}

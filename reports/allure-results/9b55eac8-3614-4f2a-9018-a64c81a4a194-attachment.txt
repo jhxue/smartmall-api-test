@@ -1,0 +1,50 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "valeriecasey@example.net",
+    "password": "%02cOVmd#W"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 16
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "valeriecasey@example.net",
+    "password": "%02cOVmd#W"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "e1d8185d-38f9-4613-8097-59359172c12a"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/16, body:
+{
+    "phone": "(409)545-9045x3717",
+    "email": "reesedawn@example.net",
+    "address": {
+        "city": "Matthewsmouth",
+        "street": "Mcguire Cape",
+        "home_number": "71173"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/16, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Decker-Bartlett
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Decker-Bartlett, status: 201, body:
+{
+    "items": [],
+    "name": "Decker-Bartlett",
+    "uuid": "13"
+}
+2025-08-12 22:40:21 INFO Get store
+2025-08-12 22:40:21 INFO Request method: GET, url: http://127.0.0.1:8080/store/1000
+2025-08-12 22:40:21 INFO Response method: GET, url: http://127.0.0.1:8080/store/1000, status: 404, body:
+{
+    "message": "Store not found"
+}

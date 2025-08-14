@@ -1,0 +1,74 @@
+2025-08-12 22:33:46 [32mINFO[0m Register new user
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "mortondanny@example.com",
+    "password": "3g26Frdw%#"
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 277
+}
+2025-08-12 22:33:46 [32mINFO[0m Access to store
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "mortondanny@example.com",
+    "password": "3g26Frdw%#"
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "075bef52-c037-4ce1-bba9-78198f939e37"
+}
+2025-08-12 22:33:46 [32mINFO[0m Add user info
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/277, body:
+{
+    "phone": "(993)844-3830",
+    "email": "wilsonmorgan@example.com",
+    "address": {
+        "city": "Lisaside",
+        "street": "Ryan Field",
+        "home_number": "67849"
+    }
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/277, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:33:46 [32mINFO[0m Add new store
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Martinez,%20Goodman%20and%20Smith
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Martinez,%20Goodman%20and%20Smith, status: 201, body:
+{
+    "items": [],
+    "name": "Martinez, Goodman and Smith",
+    "uuid": "155"
+}
+2025-08-12 22:33:46 [32mINFO[0m Add new item
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Automated%20client-driven%20frame, body:
+{
+    "name": "Automated client-driven frame",
+    "price": 47172,
+    "store_id": "155"
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Automated%20client-driven%20frame, status: 201, body:
+{
+    "itemID": 100,
+    "name": "Automated client-driven frame",
+    "price": 47172
+}
+2025-08-12 22:33:46 [32mINFO[0m Add user balance
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/277, body: {
+    "balance": 162405
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/277, status: 201, body:
+{
+    "balance": 162405.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:33:46 [32mINFO[0m Pay item
+2025-08-12 22:33:46 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/277, body: {
+    "itemId": 2000
+}
+2025-08-12 22:33:46 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/277, status: 404, body:
+{
+    "message": "Item not found"
+}

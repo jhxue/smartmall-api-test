@@ -1,0 +1,68 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "julie26@example.org",
+    "password": ")hNVAoH4B7"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 8
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "julie26@example.org",
+    "password": ")hNVAoH4B7"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "2f770430-9af1-4aa7-8c40-daca952fe5dc"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/8, body:
+{
+    "phone": "+1-800-729-4559x96186",
+    "email": "michael93@example.net",
+    "address": {
+        "city": "Lake Jason",
+        "street": "Gonzalez Brooks",
+        "home_number": "911"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/8, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Rodriguez,%20Price%20and%20Edwards
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Rodriguez,%20Price%20and%20Edwards, status: 201, body:
+{
+    "items": [],
+    "name": "Rodriguez, Price and Edwards",
+    "uuid": "5"
+}
+2025-08-12 22:40:21 INFO Add new item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/item/Reverse-engineered%20multi-tasking%20website, body:
+{
+    "name": "Reverse-engineered multi-tasking website",
+    "price": 50840,
+    "store_id": "5"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/item/Reverse-engineered%20multi-tasking%20website, status: 201, body:
+{
+    "itemID": 5,
+    "name": "Reverse-engineered multi-tasking website",
+    "price": 50840
+}
+2025-08-12 22:40:21 INFO Add new item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/item/Reverse-engineered%20multi-tasking%20website, body:
+{
+    "name": "Reverse-engineered multi-tasking website",
+    "price": 50840,
+    "store_id": "5"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/item/Reverse-engineered%20multi-tasking%20website, status: 400, body:
+{
+    "message": "An item with name 'Reverse-engineered multi-tasking website' already exists."
+}

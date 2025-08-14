@@ -1,0 +1,74 @@
+2025-08-12 22:35:19 [32mINFO[0m Register new user
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "sperez@example.com",
+    "password": "%KfJnUqTA9"
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 4
+}
+2025-08-12 22:35:19 [32mINFO[0m Access to store
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "sperez@example.com",
+    "password": "%KfJnUqTA9"
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "30656620-0934-42fa-a1d2-589fee87f43e"
+}
+2025-08-12 22:35:19 [32mINFO[0m Add user info
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/4, body:
+{
+    "phone": "299-791-0937x982",
+    "email": "jfrank@example.com",
+    "address": {
+        "city": "Lake Anneborough",
+        "street": "Maria Ramp",
+        "home_number": "965"
+    }
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/4, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:19 [32mINFO[0m Add new store
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Davis-Nolan
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Davis-Nolan, status: 201, body:
+{
+    "items": [],
+    "name": "Davis-Nolan",
+    "uuid": "3"
+}
+2025-08-12 22:35:19 [32mINFO[0m Add new item
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Self-enabling%20exuding%20data-warehouse, body:
+{
+    "name": "Self-enabling exuding data-warehouse",
+    "price": 43301,
+    "store_id": "3"
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Self-enabling%20exuding%20data-warehouse, status: 201, body:
+{
+    "itemID": 3,
+    "name": "Self-enabling exuding data-warehouse",
+    "price": 43301
+}
+2025-08-12 22:35:19 [32mINFO[0m Add user balance
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/4, body: {
+    "balance": 0
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/4, status: 201, body:
+{
+    "balance": 0.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:19 [32mINFO[0m Pay item
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/4, body: {
+    "itemId": 3
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/4, status: 400, body:
+{
+    "message": "Not enough money. Your balance is 0.0, item cost 43301.0"
+}

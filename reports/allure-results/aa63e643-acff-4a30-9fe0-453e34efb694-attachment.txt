@@ -1,0 +1,57 @@
+2025-08-12 22:30:42 [32mINFO[0m Register new user
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jenniferwilliams@example.net",
+    "password": "^#!tUp_Mv4"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 189
+}
+2025-08-12 22:30:42 [32mINFO[0m Access to store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jenniferwilliams@example.net",
+    "password": "^#!tUp_Mv4"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "90fb4e24-43ae-4382-9b66-dbfa104282d1"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add user info
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/189, body:
+{
+    "phone": "+1-220-748-3220x588",
+    "email": "katrina33@example.org",
+    "address": {
+        "city": "West Matthewstad",
+        "street": "Roger Unions",
+        "home_number": "55136"
+    }
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/189, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Wilson,%20Carr%20and%20Hernandez
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Wilson,%20Carr%20and%20Hernandez, status: 201, body:
+{
+    "items": [],
+    "name": "Wilson, Carr and Hernandez",
+    "uuid": "105"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new item
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Cross-platform%20asynchronous%20core, body:
+{
+    "name": "Cross-platform asynchronous core",
+    "price": 67128,
+    "store_id": "105"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Cross-platform%20asynchronous%20core, status: 201, body:
+{
+    "itemID": 69,
+    "name": "Cross-platform asynchronous core",
+    "price": 67128
+}

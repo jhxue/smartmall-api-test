@@ -1,0 +1,57 @@
+2025-08-12 22:35:32 [32mINFO[0m Register new user
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "hfields@example.org",
+    "password": "#7wqM6md!r"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 7
+}
+2025-08-12 22:35:32 [32mINFO[0m Access to store
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "hfields@example.org",
+    "password": "#7wqM6md!r"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "bf5f700b-6b6e-40bc-8481-03e9c7dc0277"
+}
+2025-08-12 22:35:32 [32mINFO[0m Add user info
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/7, body:
+{
+    "phone": "001-996-733-7370x46900",
+    "email": "michael72@example.net",
+    "address": {
+        "city": "Jamesview",
+        "street": "Robert Port",
+        "home_number": "009"
+    }
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/7, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new store
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Jones-Yoder
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Jones-Yoder, status: 201, body:
+{
+    "items": [],
+    "name": "Jones-Yoder",
+    "uuid": "4"
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new item
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Profit-focused%20disintermediate%20forecast, body:
+{
+    "name": "Profit-focused disintermediate forecast",
+    "price": 41766,
+    "store_id": "4"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Profit-focused%20disintermediate%20forecast, status: 201, body:
+{
+    "itemID": 4,
+    "name": "Profit-focused disintermediate forecast",
+    "price": 41766
+}

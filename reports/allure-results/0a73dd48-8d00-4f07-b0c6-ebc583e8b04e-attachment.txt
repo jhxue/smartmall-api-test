@@ -1,0 +1,71 @@
+2025-08-12 22:35:32 [32mINFO[0m Register new user
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "edwardsdavid@example.org",
+    "password": "+J60WXQlEQ"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 9
+}
+2025-08-12 22:35:32 [32mINFO[0m Access to store
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "edwardsdavid@example.org",
+    "password": "+J60WXQlEQ"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "9e5fae1a-2123-4ec6-9447-84fb08db45b0"
+}
+2025-08-12 22:35:32 [32mINFO[0m Add user info
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/9, body:
+{
+    "phone": "508.884.2278x87239",
+    "email": "lindaking@example.net",
+    "address": {
+        "city": "Ericksonbury",
+        "street": "Sanchez Union",
+        "home_number": "7270"
+    }
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/9, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new store
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Wright-Walker
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Wright-Walker, status: 201, body:
+{
+    "items": [],
+    "name": "Wright-Walker",
+    "uuid": "6"
+}
+2025-08-12 22:35:32 [32mINFO[0m Add new item
+2025-08-12 22:35:32 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Expanded%20tertiary%20flexibility, body:
+{
+    "name": "Expanded tertiary flexibility",
+    "price": 69456,
+    "store_id": "6"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Expanded%20tertiary%20flexibility, status: 201, body:
+{
+    "itemID": 6,
+    "name": "Expanded tertiary flexibility",
+    "price": 69456
+}
+2025-08-12 22:35:32 [32mINFO[0m Change item
+2025-08-12 22:35:32 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Expanded%20tertiary%20flexibility, body:
+{
+    "name": "Expanded tertiary flexibility",
+    "price": 92766,
+    "store_id": "6"
+}
+2025-08-12 22:35:32 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Expanded%20tertiary%20flexibility, status: 200, body:
+{
+    "itemID": 6,
+    "name": "Expanded tertiary flexibility",
+    "price": 92766,
+    "store_id": "6"
+}

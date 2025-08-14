@@ -1,0 +1,77 @@
+2025-08-12 21:34:38 [32mINFO[0m Register new user
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "bhowell@example.net",
+    "password": "&34YpeeIP7"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 2
+}
+2025-08-12 21:34:38 [32mINFO[0m Access to store
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "bhowell@example.net",
+    "password": "&34YpeeIP7"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "416ebf32-0213-4d8b-8e0f-10764e0e806f"
+}
+2025-08-12 21:34:38 [32mINFO[0m Add user info
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/2, body:
+{
+    "phone": "(414)944-5582x8934",
+    "email": "mwalker@example.org",
+    "address": {
+        "city": "East Sandrashire",
+        "street": "Carlos Underpass",
+        "home_number": "301"
+    }
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/2, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 21:34:38 [32mINFO[0m Add new store
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Parks,%20Perry%20and%20Stewart
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Parks,%20Perry%20and%20Stewart, status: 201, body:
+{
+    "items": [],
+    "name": "Parks, Perry and Stewart",
+    "uuid": "1"
+}
+2025-08-12 21:34:38 [32mINFO[0m Add new item
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Intuitive%20system-worthy%20workforce, body:
+{
+    "name": "Intuitive system-worthy workforce",
+    "price": 95947,
+    "store_id": "1"
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Intuitive%20system-worthy%20workforce, status: 201, body:
+{
+    "itemID": 1,
+    "name": "Intuitive system-worthy workforce",
+    "price": 95947
+}
+2025-08-12 21:34:38 [32mINFO[0m Add user balance
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/2, body: {
+    "balance": 172707
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/2, status: 201, body:
+{
+    "balance": 172707.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 21:34:38 [32mINFO[0m Pay item
+2025-08-12 21:34:38 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/2, body: {
+    "itemId": 1
+}
+2025-08-12 21:34:38 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/2, status: 200, body:
+{
+    "balance": 76760.0,
+    "message": "Payment successful",
+    "name": "Intuitive system-worthy workforce",
+    "price": 95947.0
+}

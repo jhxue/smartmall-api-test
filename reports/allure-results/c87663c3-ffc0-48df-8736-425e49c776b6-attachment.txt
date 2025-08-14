@@ -1,0 +1,71 @@
+2025-08-13 20:22:36 [32mINFO[0m Register new user
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "gloria58@example.org",
+    "password": "+fRAIEEt58"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 9
+}
+2025-08-13 20:22:36 [32mINFO[0m Access to store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "gloria58@example.org",
+    "password": "+fRAIEEt58"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "bf5f03ed-f59e-4ca3-9e7c-978f1328a8d8"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add user info
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/9, body:
+{
+    "phone": "(289)562-7096",
+    "email": "jonathan14@example.org",
+    "address": {
+        "city": "Port Elizabeth",
+        "street": "Sandoval Ridge",
+        "home_number": "3962"
+    }
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/9, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new store
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Christensen%20and%20Sons
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Christensen%20and%20Sons, status: 201, body:
+{
+    "items": [],
+    "name": "Christensen and Sons",
+    "uuid": "6"
+}
+2025-08-13 20:22:36 [32mINFO[0m Add new item
+2025-08-13 20:22:36 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Distributed%20optimal%20success, body:
+{
+    "name": "Distributed optimal success",
+    "price": 27272,
+    "store_id": "6"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Distributed%20optimal%20success, status: 201, body:
+{
+    "itemID": 6,
+    "name": "Distributed optimal success",
+    "price": 27272
+}
+2025-08-13 20:22:36 [32mINFO[0m Change item
+2025-08-13 20:22:36 [32mINFO[0m Request method: PUT, url: http://127.0.0.1:8080/item/Distributed%20optimal%20success, body:
+{
+    "name": "Distributed optimal success",
+    "price": 22182,
+    "store_id": "6"
+}
+2025-08-13 20:22:36 [32mINFO[0m Response method: PUT, url: http://127.0.0.1:8080/item/Distributed%20optimal%20success, status: 200, body:
+{
+    "itemID": 6,
+    "name": "Distributed optimal success",
+    "price": 22182,
+    "store_id": "6"
+}

@@ -1,0 +1,50 @@
+2025-08-12 22:43:17 [32mINFO[0m Register new user
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "preeves@example.org",
+    "password": "u55zL)Vn(*"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 44
+}
+2025-08-12 22:43:17 [32mINFO[0m Access to store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "preeves@example.org",
+    "password": "u55zL)Vn(*"
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "d515700b-b5a4-4cd4-b4d8-011629673c3b"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add user info
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/44, body:
+{
+    "phone": "(317)256-4639x12245",
+    "email": "jameswilson@example.com",
+    "address": {
+        "city": "Benjaminview",
+        "street": "Cisneros Mills",
+        "home_number": "0950"
+    }
+}
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/44, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Gomez,%20Pugh%20and%20King
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Gomez,%20Pugh%20and%20King, status: 201, body:
+{
+    "items": [],
+    "name": "Gomez, Pugh and King",
+    "uuid": "28"
+}
+2025-08-12 22:43:17 [32mINFO[0m Add new store
+2025-08-12 22:43:17 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Gomez,%20Pugh%20and%20King
+2025-08-12 22:43:17 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Gomez,%20Pugh%20and%20King, status: 400, body:
+{
+    "message": "A store with name 'Gomez, Pugh and King' already exists."
+}

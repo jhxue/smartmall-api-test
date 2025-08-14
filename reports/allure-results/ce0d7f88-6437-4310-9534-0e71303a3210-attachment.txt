@@ -1,0 +1,57 @@
+2025-08-12 22:35:19 [32mINFO[0m Register new user
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "deniseturner@example.org",
+    "password": "(H3xVQCd*0"
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 7
+}
+2025-08-12 22:35:19 [32mINFO[0m Access to store
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "deniseturner@example.org",
+    "password": "(H3xVQCd*0"
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "d3d1773a-c138-423c-8b25-9fc8f0d1939c"
+}
+2025-08-12 22:35:19 [32mINFO[0m Add user info
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/7, body:
+{
+    "phone": "575-269-3481",
+    "email": "elizabeth56@example.org",
+    "address": {
+        "city": "Lake Jasonberg",
+        "street": "Amanda Mountains",
+        "home_number": "34053"
+    }
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/7, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:19 [32mINFO[0m Add new store
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Osborn-Trevino
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Osborn-Trevino, status: 201, body:
+{
+    "items": [],
+    "name": "Osborn-Trevino",
+    "uuid": "4"
+}
+2025-08-12 22:35:19 [32mINFO[0m Add new item
+2025-08-12 22:35:19 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Front-line%20cohesive%20website, body:
+{
+    "name": "Front-line cohesive website",
+    "price": 6343,
+    "store_id": "4"
+}
+2025-08-12 22:35:19 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Front-line%20cohesive%20website, status: 201, body:
+{
+    "itemID": 4,
+    "name": "Front-line cohesive website",
+    "price": 6343
+}

@@ -1,0 +1,66 @@
+2025-08-13 17:26:05 [32mINFO[0m Register new user
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "hallkevin@example.org",
+    "password": "Znm%0Dgl%o"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 10
+}
+2025-08-13 17:26:05 [32mINFO[0m Access to store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "hallkevin@example.org",
+    "password": "Znm%0Dgl%o"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "b7360f5c-8f39-4098-b41e-03b8fd3be0fb"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add user info
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/10, body:
+{
+    "phone": "001-884-236-2652",
+    "email": "morrissusan@example.net",
+    "address": {
+        "city": "Jamieview",
+        "street": "Nelson Ports",
+        "home_number": "99552"
+    }
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/10, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new store
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Willis-Castaneda
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Willis-Castaneda, status: 201, body:
+{
+    "items": [],
+    "name": "Willis-Castaneda",
+    "uuid": "7"
+}
+2025-08-13 17:26:05 [32mINFO[0m Add new item
+2025-08-13 17:26:05 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Re-contextualized%204thgeneration%20implementation, body:
+{
+    "name": "Re-contextualized 4thgeneration implementation",
+    "price": 46212,
+    "store_id": "7"
+}
+2025-08-13 17:26:05 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Re-contextualized%204thgeneration%20implementation, status: 201, body:
+{
+    "itemID": 7,
+    "name": "Re-contextualized 4thgeneration implementation",
+    "price": 46212
+}
+2025-08-13 17:26:05 [32mINFO[0m Get item
+2025-08-13 17:26:05 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Re-contextualized%204thgeneration%20implementation
+2025-08-13 17:26:05 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Re-contextualized%204thgeneration%20implementation, status: 200, body:
+{
+    "itemID": 7,
+    "name": "Re-contextualized 4thgeneration implementation",
+    "price": 46212,
+    "store_id": "7"
+}

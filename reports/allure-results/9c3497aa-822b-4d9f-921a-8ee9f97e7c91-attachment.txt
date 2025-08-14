@@ -1,0 +1,57 @@
+2025-08-12 22:40:21 INFO Register new user
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "jaclynmanning@example.org",
+    "password": "^MOe5kPmL#"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 7
+}
+2025-08-12 22:40:21 INFO Access to store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "jaclynmanning@example.org",
+    "password": "^MOe5kPmL#"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "d7ba76c4-f830-44a1-9b7a-f26f2b80cb3d"
+}
+2025-08-12 22:40:21 INFO Add user info
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/user_info/7, body:
+{
+    "phone": "909.494.7019",
+    "email": "nicholas36@example.com",
+    "address": {
+        "city": "East Sarah",
+        "street": "Walters Ford",
+        "home_number": "5009"
+    }
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/user_info/7, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:40:21 INFO Add new store
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/store/Smith,%20King%20and%20Jones
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/store/Smith,%20King%20and%20Jones, status: 201, body:
+{
+    "items": [],
+    "name": "Smith, King and Jones",
+    "uuid": "4"
+}
+2025-08-12 22:40:21 INFO Add new item
+2025-08-12 22:40:21 INFO Request method: POST, url: http://127.0.0.1:8080/item/Up-sized%20background%20attitude, body:
+{
+    "name": "Up-sized background attitude",
+    "price": 6280,
+    "store_id": "4"
+}
+2025-08-12 22:40:21 INFO Response method: POST, url: http://127.0.0.1:8080/item/Up-sized%20background%20attitude, status: 201, body:
+{
+    "itemID": 4,
+    "name": "Up-sized background attitude",
+    "price": 6280
+}

@@ -1,0 +1,11 @@
+2025-08-14 18:05:53 [32mINFO[0m Register new user
+2025-08-14 18:05:53 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "sdeleon@example.org",
+    "password": "Vm_4rUOw@_"
+}
+2025-08-14 18:05:53 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 5
+}

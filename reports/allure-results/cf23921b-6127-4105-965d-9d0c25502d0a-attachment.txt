@@ -1,0 +1,68 @@
+2025-08-14 18:05:54 [32mINFO[0m Register new user
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "browndavid@example.com",
+    "password": "!8QXHADpqD"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 8
+}
+2025-08-14 18:05:54 [32mINFO[0m Access to store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "browndavid@example.com",
+    "password": "!8QXHADpqD"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "bf597d4f-51c5-47f5-8d02-1fdb818f117f"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add user info
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/8, body:
+{
+    "phone": "+1-820-711-1353x9101",
+    "email": "kimberly34@example.net",
+    "address": {
+        "city": "Taylorhaven",
+        "street": "Sean Shores",
+        "home_number": "044"
+    }
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/8, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new store
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Miller-Silva
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Miller-Silva, status: 201, body:
+{
+    "items": [],
+    "name": "Miller-Silva",
+    "uuid": "5"
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new item
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Right-sized%20client-driven%20success, body:
+{
+    "name": "Right-sized client-driven success",
+    "price": 33674,
+    "store_id": "5"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Right-sized%20client-driven%20success, status: 201, body:
+{
+    "itemID": 5,
+    "name": "Right-sized client-driven success",
+    "price": 33674
+}
+2025-08-14 18:05:54 [32mINFO[0m Add new item
+2025-08-14 18:05:54 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Right-sized%20client-driven%20success, body:
+{
+    "name": "Right-sized client-driven success",
+    "price": 33674,
+    "store_id": "5"
+}
+2025-08-14 18:05:54 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Right-sized%20client-driven%20success, status: 400, body:
+{
+    "message": "An item with name 'Right-sized client-driven success' already exists."
+}

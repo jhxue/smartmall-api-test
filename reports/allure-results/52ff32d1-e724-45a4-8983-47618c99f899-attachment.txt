@@ -1,0 +1,74 @@
+2025-08-12 22:30:35 [32mINFO[0m Register new user
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "marcbentley@example.com",
+    "password": "9k4rDoZnQ_"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 155
+}
+2025-08-12 22:30:35 [32mINFO[0m Access to store
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "marcbentley@example.com",
+    "password": "9k4rDoZnQ_"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "c432ccf7-6b3e-46fc-a8bd-ca72e9f746ca"
+}
+2025-08-12 22:30:35 [32mINFO[0m Add user info
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/155, body:
+{
+    "phone": "+1-368-907-0354",
+    "email": "kristin11@example.net",
+    "address": {
+        "city": "Markberg",
+        "street": "Gill Junctions",
+        "home_number": "612"
+    }
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/155, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:35 [32mINFO[0m Add new store
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Hinton%20PLC
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Hinton%20PLC, status: 201, body:
+{
+    "items": [],
+    "name": "Hinton PLC",
+    "uuid": "87"
+}
+2025-08-12 22:30:35 [32mINFO[0m Add new item
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Team-oriented%20needs-based%20core, body:
+{
+    "name": "Team-oriented needs-based core",
+    "price": 92205,
+    "store_id": "87"
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Team-oriented%20needs-based%20core, status: 201, body:
+{
+    "itemID": 56,
+    "name": "Team-oriented needs-based core",
+    "price": 92205
+}
+2025-08-12 22:30:35 [32mINFO[0m Add user balance
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/155, body: {
+    "balance": 126646
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/155, status: 201, body:
+{
+    "balance": 126646.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:30:35 [32mINFO[0m Pay item
+2025-08-12 22:30:35 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/pay/155, body: {
+    "itemId": 2000
+}
+2025-08-12 22:30:35 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/pay/155, status: 404, body:
+{
+    "message": "Item not found"
+}

@@ -1,0 +1,52 @@
+2025-08-12 22:41:10 [32mINFO[0m Register new user
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "hturner@example.org",
+    "password": "@gyoRX@Gs3"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 15
+}
+2025-08-12 22:41:10 [32mINFO[0m Access to store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "hturner@example.org",
+    "password": "@gyoRX@Gs3"
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "c9a57261-6e72-4571-b2ea-bc0377c4e257"
+}
+2025-08-12 22:41:10 [32mINFO[0m Add user info
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/15, body:
+{
+    "phone": "+1-817-241-6868x2229",
+    "email": "mpeterson@example.com",
+    "address": {
+        "city": "Brittanyville",
+        "street": "Ivan Glens",
+        "home_number": "746"
+    }
+}
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/15, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:41:10 [32mINFO[0m Add new store
+2025-08-12 22:41:10 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Diaz,%20Robinson%20and%20Fry
+2025-08-12 22:41:10 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Diaz,%20Robinson%20and%20Fry, status: 201, body:
+{
+    "items": [],
+    "name": "Diaz, Robinson and Fry",
+    "uuid": "12"
+}
+2025-08-12 22:41:10 [32mINFO[0m Get store
+2025-08-12 22:41:10 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/store/Diaz,%20Robinson%20and%20Fry
+2025-08-12 22:41:10 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/store/Diaz,%20Robinson%20and%20Fry, status: 200, body:
+{
+    "items": [],
+    "name": "Diaz, Robinson and Fry",
+    "uuid": "12"
+}

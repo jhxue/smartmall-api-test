@@ -1,0 +1,66 @@
+2025-08-12 22:35:20 [32mINFO[0m Register new user
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "mike01@example.net",
+    "password": "F(*$3O0thh"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 10
+}
+2025-08-12 22:35:20 [32mINFO[0m Access to store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "mike01@example.net",
+    "password": "F(*$3O0thh"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "7349d06f-f1c1-4588-9f2a-1b393f9f3fa5"
+}
+2025-08-12 22:35:20 [32mINFO[0m Add user info
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/10, body:
+{
+    "phone": "(481)258-7164x4976",
+    "email": "jameskline@example.net",
+    "address": {
+        "city": "East Glenda",
+        "street": "Vazquez Parks",
+        "home_number": "62110"
+    }
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/10, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:20 [32mINFO[0m Add new store
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Garcia%20LLC
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Garcia%20LLC, status: 201, body:
+{
+    "items": [],
+    "name": "Garcia LLC",
+    "uuid": "7"
+}
+2025-08-12 22:35:20 [32mINFO[0m Add new item
+2025-08-12 22:35:20 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Mandatory%20needs-based%20infrastructure, body:
+{
+    "name": "Mandatory needs-based infrastructure",
+    "price": 13597,
+    "store_id": "7"
+}
+2025-08-12 22:35:20 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Mandatory%20needs-based%20infrastructure, status: 201, body:
+{
+    "itemID": 7,
+    "name": "Mandatory needs-based infrastructure",
+    "price": 13597
+}
+2025-08-12 22:35:20 [32mINFO[0m Get item
+2025-08-12 22:35:20 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/item/Mandatory%20needs-based%20infrastructure
+2025-08-12 22:35:20 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/item/Mandatory%20needs-based%20infrastructure, status: 200, body:
+{
+    "itemID": 7,
+    "name": "Mandatory needs-based infrastructure",
+    "price": 13597,
+    "store_id": "7"
+}

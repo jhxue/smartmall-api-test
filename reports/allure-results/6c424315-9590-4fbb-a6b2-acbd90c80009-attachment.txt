@@ -1,0 +1,73 @@
+2025-08-12 22:35:33 [32mINFO[0m Register new user
+2025-08-12 22:35:33 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "cindysmith@example.org",
+    "password": "*1vZYJlO0I"
+}
+2025-08-12 22:35:33 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 19
+}
+2025-08-12 22:35:33 [32mINFO[0m Access to store
+2025-08-12 22:35:33 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "cindysmith@example.org",
+    "password": "*1vZYJlO0I"
+}
+2025-08-12 22:35:33 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "63e6bc58-3fb8-4680-9372-aca9d4505705"
+}
+2025-08-12 22:35:33 [32mINFO[0m Add user info
+2025-08-12 22:35:33 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/19, body:
+{
+    "phone": "001-900-483-6345x741",
+    "email": "katiegill@example.com",
+    "address": {
+        "city": "Ortegaberg",
+        "street": "Donna Walk",
+        "home_number": "1330"
+    }
+}
+2025-08-12 22:35:33 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/19, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:35:33 [32mINFO[0m Add new store
+2025-08-12 22:35:33 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Moore,%20Perry%20and%20Escobar
+2025-08-12 22:35:33 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Moore,%20Perry%20and%20Escobar, status: 201, body:
+{
+    "items": [],
+    "name": "Moore, Perry and Escobar",
+    "uuid": "16"
+}
+2025-08-12 22:35:33 [32mINFO[0m Add new item
+2025-08-12 22:35:33 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Balanced%20needs-based%20system%20engine, body:
+{
+    "name": "Balanced needs-based system engine",
+    "price": 50042,
+    "store_id": "16"
+}
+2025-08-12 22:35:33 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Balanced%20needs-based%20system%20engine, status: 201, body:
+{
+    "itemID": 10,
+    "name": "Balanced needs-based system engine",
+    "price": 50042
+}
+2025-08-12 22:35:33 [32mINFO[0m Add user balance
+2025-08-12 22:35:33 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/balance/19, body: {
+    "balance": 160055
+}
+2025-08-12 22:35:33 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/balance/19, status: 201, body:
+{
+    "balance": 160055.0,
+    "message": "Balance added successfully"
+}
+2025-08-12 22:35:33 [32mINFO[0m Get user balance
+2025-08-12 22:35:33 [32mINFO[0m Request method: GET, url: http://127.0.0.1:8080/balance/19
+2025-08-12 22:35:33 [32mINFO[0m Response method: GET, url: http://127.0.0.1:8080/balance/19, status: 200, body:
+{
+    "balance": 160055.0,
+    "message": "Balance retrieved successfully"
+}

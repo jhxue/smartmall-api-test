@@ -1,0 +1,68 @@
+2025-08-12 22:30:42 [32mINFO[0m Register new user
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/register, body:
+{
+    "username": "fallison@example.org",
+    "password": "$BD3yutR!8"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/register, status: 201, body:
+{
+    "message": "User created successfully.",
+    "uuid": 190
+}
+2025-08-12 22:30:42 [32mINFO[0m Access to store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/auth, body:
+{
+    "username": "fallison@example.org",
+    "password": "$BD3yutR!8"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/auth, status: 200, body:
+{
+    "access_token": "6a678de4-9666-42f3-9b42-8c36f01f0ff9"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add user info
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/user_info/190, body:
+{
+    "phone": "4564991767",
+    "email": "aliciamanning@example.com",
+    "address": {
+        "city": "Freemanburgh",
+        "street": "Calderon Gateway",
+        "home_number": "5469"
+    }
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/user_info/190, status: 200, body:
+{
+    "message": "User info created successfully."
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new store
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/store/Cross,%20Browning%20and%20Johnson
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/store/Cross,%20Browning%20and%20Johnson, status: 201, body:
+{
+    "items": [],
+    "name": "Cross, Browning and Johnson",
+    "uuid": "106"
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new item
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Streamlined%20attitude-oriented%20leverage, body:
+{
+    "name": "Streamlined attitude-oriented leverage",
+    "price": 30531,
+    "store_id": "106"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Streamlined%20attitude-oriented%20leverage, status: 201, body:
+{
+    "itemID": 70,
+    "name": "Streamlined attitude-oriented leverage",
+    "price": 30531
+}
+2025-08-12 22:30:42 [32mINFO[0m Add new item
+2025-08-12 22:30:42 [32mINFO[0m Request method: POST, url: http://127.0.0.1:8080/item/Streamlined%20attitude-oriented%20leverage, body:
+{
+    "name": "Streamlined attitude-oriented leverage",
+    "price": 30531,
+    "store_id": "106"
+}
+2025-08-12 22:30:42 [32mINFO[0m Response method: POST, url: http://127.0.0.1:8080/item/Streamlined%20attitude-oriented%20leverage, status: 400, body:
+{
+    "message": "An item with name 'Streamlined attitude-oriented leverage' already exists."
+}
