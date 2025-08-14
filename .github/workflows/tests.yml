@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - name: Set up Python 3.9
       uses: actions/setup-python@v4
@@ -24,33 +24,44 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest allure-pytest requests faker flask
+        pip install pytest requests faker flask
         
-    - name: Start Mock Server
+    - name: Start Mock Server and Run Tests
       run: |
+        # 启动Mock服务器
         cd mock_server
         python app.py &
-        sleep 5
-        echo "Mock server started"
+        SERVER_PID=$!
         
-    - name: Wait for server to be ready
-      run: |
-        timeout 30 bash -c 'until curl -f http://127.0.0.1:8080/health; do sleep 1; done'
-        echo "Mock server is ready"
+        # 等待服务器启动
+        echo "Waiting for Mock server to start..."
+        sleep 10
         
-    - name: Run tests with Allure reporting
-      run: |
-        python -m pytest --alluredir=allure-results --tb=short -v
-        
-    - name: Generate Allure Report
-      if: always()
-      run: |
-        # 这里可以添加Allure报告生成，如果需要的话
-        echo "Tests completed - check allure-results directory"
+        # 检查服务器是否运行
+        if curl -f http://127.0.0.1:8080/health; then
+          echo "Mock server is running successfully"
+          
+          # 运行测试
+          cd ..
+          python -m pytest -v --tb=short
+          TEST_EXIT_CODE=$?
+          
+          # 停止服务器
+          kill $SERVER_PID
+          
+          # 返回测试结果
+          exit $TEST_EXIT_CODE
+        else
+          echo "Mock server failed to start"
+          kill $SERVER_PID
+          exit 1
+        fi
         
     - name: Upload test results
       if: always()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
-        name: allure-results
-        path: allure-results/
+        name: test-results
+        path: |
+          allure-results/
+          reports/
