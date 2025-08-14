@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest requests faker flask
+        pip install pytest requests faker flask attrs cattrs response
         
     - name: Debug - List files
       run: |
