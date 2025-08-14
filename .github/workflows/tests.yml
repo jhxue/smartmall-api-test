@@ -26,42 +26,45 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest requests faker flask
         
-    - name: Start Mock Server and Run Tests
+    - name: Test Mock Server Startup
       run: |
-        # 启动Mock服务器
         cd mock_server
-        python app.py &
-        SERVER_PID=$!
+        python -c "from app import app; print('Mock server imports successfully')"
+        echo "Mock server code is valid"
         
-        # 等待服务器启动
+    - name: Start Mock Server
+      run: |
+        cd mock_server
+        nohup python app.py > server.log 2>&1 &
+        echo $! > server.pid
+        
+    - name: Wait for server
+      run: |
         echo "Waiting for Mock server to start..."
-        sleep 10
+        for i in {1..30}; do
+          if curl -f http://127.0.0.1:8080/health > /dev/null 2>&1; then
+            echo "Mock server is running successfully"
+            break
+          fi
+          echo "Attempt $i: Server not ready yet..."
+          sleep 2
+        done
         
-        # 检查服务器是否运行
-        if curl -f http://127.0.0.1:8080/health; then
-          echo "Mock server is running successfully"
-          
-          # 运行测试
-          cd ..
-          python -m pytest -v --tb=short
-          TEST_EXIT_CODE=$?
-          
-          # 停止服务器
-          kill $SERVER_PID
-          
-          # 返回测试结果
-          exit $TEST_EXIT_CODE
-        else
-          echo "Mock server failed to start"
-          kill $SERVER_PID
-          exit 1
+    - name: Run tests
+      run: |
+        python -m pytest -v --tb=short
+        
+    - name: Stop server
+      if: always()
+      run: |
+        if [ -f mock_server/server.pid ]; then
+          kill $(cat mock_server/server.pid) || true
+          rm mock_server/server.pid
         fi
         
-    - name: Upload test results
+    - name: Upload server logs
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: test-results
-        path: |
-          allure-results/
-          reports/
+        name: server-logs
+        path: mock_server/server.log
