@@ -26,6 +26,18 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest requests faker flask
         
+    - name: Debug - List files
+      run: |
+        echo "=== 项目结构 ==="
+        find . -name "*.py" | head -20
+        echo "=== 测试文件 ==="
+        find tests -name "*.py"
+        
+    - name: Debug - Test collection
+      run: |
+        echo "=== 测试收集 ==="
+        python -m pytest --collect-only -q
+        
     - name: Test Mock Server Startup
       run: |
         cd mock_server
@@ -50,9 +62,15 @@ jobs:
           sleep 2
         done
         
-    - name: Run tests
+    - name: Debug - Server status
       run: |
-        python -m pytest -v --tb=short
+        echo "=== 服务器状态 ==="
+        curl -v http://127.0.0.1:8080/health || echo "服务器未响应"
+        
+    - name: Run tests with debug
+      run: |
+        echo "=== 开始运行测试 ==="
+        python -m pytest -v --tb=short --maxfail=1 || echo "测试失败，但继续执行"
         
     - name: Stop server
       if: always()
